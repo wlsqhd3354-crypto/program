@@ -5,10 +5,12 @@ from __future__ import annotations
 import os
 import sys
 import json
+import re
+import shutil
 import threading
 import time
 import customtkinter as ctk
-from tkinter import messagebox
+from tkinter import messagebox, filedialog
 
 import auth
 import updater
@@ -349,6 +351,7 @@ class MainApp(ctk.CTk):
         self.cr_tree.bind("<Double-1>", self._cr_open_detail)
 
     def _build_common_tab(self, parent):
+        parent.grid_columnconfigure(0, weight=1)
         ctk.CTkLabel(parent, text="콘텐츠 (messages/ 의 .txt + images/ 의 이미지)",
                      font=("Pretendard", 13, "bold")).grid(row=0, column=0, columnspan=5, sticky="w", padx=10, pady=(10, 4))
 
@@ -360,11 +363,26 @@ class MainApp(ctk.CTk):
         self.img_attach = ctk.CTkEntry(parent, width=60); self.img_attach.insert(0, "1"); self.img_attach.grid(row=1, column=5)
         ctk.CTkButton(parent, text="폴더 새로고침", width=120, command=self._refresh_resources).grid(row=1, column=6, padx=10)
 
+        editor = ctk.CTkFrame(parent)
+        editor.grid(row=2, column=0, columnspan=7, padx=10, pady=(8, 4), sticky="ew")
+        editor.grid_columnconfigure(1, weight=1)
+        ctk.CTkLabel(editor, text="제목").grid(row=0, column=0, padx=8, pady=(8, 4), sticky="e")
+        self.msg_title_entry = ctk.CTkEntry(editor, placeholder_text="게시글 제목")
+        self.msg_title_entry.grid(row=0, column=1, columnspan=5, padx=(0, 8), pady=(8, 4), sticky="ew")
+        ctk.CTkLabel(editor, text="본문").grid(row=1, column=0, padx=8, pady=4, sticky="ne")
+        self.msg_body_box = ctk.CTkTextbox(editor, height=120)
+        self.msg_body_box.grid(row=1, column=1, columnspan=5, padx=(0, 8), pady=4, sticky="ew")
+        ctk.CTkButton(editor, text="메시지 저장", width=110, command=self._save_message_from_editor).grid(row=2, column=1, padx=4, pady=(4, 8), sticky="w")
+        ctk.CTkButton(editor, text="입력 지우기", width=100, command=self._clear_message_editor).grid(row=2, column=2, padx=4, pady=(4, 8), sticky="w")
+        ctk.CTkButton(editor, text="이미지 추가", width=100, command=self._add_images_from_dialog).grid(row=2, column=3, padx=4, pady=(4, 8), sticky="w")
+        ctk.CTkButton(editor, text="메시지 폴더", width=100, command=self._open_messages_dir).grid(row=2, column=4, padx=4, pady=(4, 8), sticky="w")
+        ctk.CTkButton(editor, text="이미지 폴더", width=100, command=self._open_images_dir).grid(row=2, column=5, padx=4, pady=(4, 8), sticky="w")
+
         ctk.CTkLabel(parent, text="\n발송 방식: 한 라운드에 활성화된 모든 사이트에 같은 글+이미지 동시 게시\n간격은 모든 사이트 공통, 아이보스만 일일 2회 도달 시 자동 건너뜀",
-                     text_color="#aaa", font=("Pretendard", 11)).grid(row=2, column=0, columnspan=7, padx=10, pady=10, sticky="w")
+                     text_color="#aaa", font=("Pretendard", 11)).grid(row=3, column=0, columnspan=7, padx=10, pady=6, sticky="w")
 
         sched = ctk.CTkFrame(parent)
-        sched.grid(row=3, column=0, columnspan=7, padx=10, pady=(8, 4), sticky="ew")
+        sched.grid(row=4, column=0, columnspan=7, padx=10, pady=(4, 4), sticky="ew")
         ctk.CTkLabel(sched, text="자동 스케줄", font=("Pretendard", 12, "bold")).grid(row=0, column=0, padx=8, pady=6, sticky="w")
         self.auto_post_enabled = ctk.CTkCheckBox(sched, text="발송")
         self.auto_post_enabled.grid(row=0, column=1, padx=6)
@@ -424,6 +442,66 @@ class MainApp(ctk.CTk):
         m = load_messages(); i = list_images()
         self.msg_count.configure(text=f"메시지: {len(m)}건")
         self.img_count.configure(text=f"이미지: {len(i)}건")
+
+    def _save_message_from_editor(self):
+        title = self.msg_title_entry.get().strip()
+        body = self.msg_body_box.get("1.0", "end").strip()
+        if not title:
+            messagebox.showwarning("메시지 저장", "제목을 입력하세요.")
+            return
+        if not body:
+            messagebox.showwarning("메시지 저장", "본문을 입력하세요.")
+            return
+
+        msg_dir = resource_path(MESSAGES_DIR)
+        os.makedirs(msg_dir, exist_ok=True)
+        safe_title = re.sub(r"[^0-9A-Za-z가-힣_-]+", "_", title).strip("_")[:40] or "message"
+        fname = f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{safe_title}.txt"
+        path = os.path.join(msg_dir, fname)
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(f"{title}\n{body}\n")
+        self._refresh_resources()
+        self._log(f"[메시지] 저장됨: {fname}")
+        messagebox.showinfo("메시지 저장", f"저장됐습니다.\n{fname}")
+
+    def _clear_message_editor(self):
+        self.msg_title_entry.delete(0, "end")
+        self.msg_body_box.delete("1.0", "end")
+
+    def _add_images_from_dialog(self):
+        paths = filedialog.askopenfilenames(
+            title="이미지 선택",
+            filetypes=[
+                ("Image files", "*.jpg *.jpeg *.png *.gif *.webp *.bmp"),
+                ("All files", "*.*"),
+            ],
+        )
+        if not paths:
+            return
+        img_dir = resource_path(IMAGES_DIR)
+        os.makedirs(img_dir, exist_ok=True)
+        copied = 0
+        for src in paths:
+            name = os.path.basename(src)
+            stem, ext = os.path.splitext(name)
+            dst = os.path.join(img_dir, name)
+            if os.path.exists(dst):
+                dst = os.path.join(img_dir, f"{stem}_{datetime.now().strftime('%Y%m%d_%H%M%S')}{ext}")
+            shutil.copy2(src, dst)
+            copied += 1
+        self._refresh_resources()
+        self._log(f"[이미지] {copied}개 추가")
+        messagebox.showinfo("이미지 추가", f"이미지 {copied}개를 추가했습니다.")
+
+    def _open_messages_dir(self):
+        path = resource_path(MESSAGES_DIR)
+        os.makedirs(path, exist_ok=True)
+        os.startfile(path)
+
+    def _open_images_dir(self):
+        path = resource_path(IMAGES_DIR)
+        os.makedirs(path, exist_ok=True)
+        os.startfile(path)
 
     def _check_update_async(self):
         def worker():
