@@ -23,7 +23,7 @@ dist\SellClubBot.exe
 Create a new release tag such as:
 
 ```text
-v1.1.0
+v1.2.0
 ```
 
 Upload these files as release assets:
@@ -39,9 +39,9 @@ Use this format:
 
 ```json
 {
-  "version": "1.1.0",
-  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.1.0/SellClubBot.exe",
-  "notes": "Update notes",
+  "version": "1.2.0",
+  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.2.0/SellClubBot.exe",
+  "notes": "사이트별 발송 횟수 스케줄, 공통 탭 콘텐츠 편집 기능",
   "sha256": "",
   "force": false
 }

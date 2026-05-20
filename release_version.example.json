@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
-  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.1.0/SellClubBot.exe",
-  "notes": "전체 본문 저장, 크롤러 전체 탭 수집, 자동 스케줄 기능",
+  "version": "1.2.0",
+  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.2.0/SellClubBot.exe",
+  "notes": "공통 탭 콘텐츠 편집, 사이트별 발송 횟수 스케줄, 전체 탭 크롤링",
   "sha256": "",
   "force": false
 }

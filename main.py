@@ -409,16 +409,20 @@ class MainApp(ctk.CTk):
         self.auto_stop_btn.grid(row=0, column=8, padx=4)
         self.auto_status = ctk.CTkLabel(sched, text="중지됨", text_color="#888")
         self.auto_status.grid(row=0, column=9, padx=8, sticky="w")
-        ctk.CTkLabel(sched, text="자동 발송 대상").grid(row=1, column=0, padx=8, pady=(0, 8), sticky="w")
-        self.auto_sc_enabled = ctk.CTkCheckBox(sched, text="셀클럽")
-        self.auto_sc_enabled.select()
-        self.auto_sc_enabled.grid(row=1, column=1, padx=6, pady=(0, 8))
-        self.auto_mm_enabled = ctk.CTkCheckBox(sched, text="마멘토")
-        self.auto_mm_enabled.select()
-        self.auto_mm_enabled.grid(row=1, column=2, padx=6, pady=(0, 8))
-        self.auto_ib_enabled = ctk.CTkCheckBox(sched, text="아이보스")
-        self.auto_ib_enabled.grid(row=1, column=3, padx=6, pady=(0, 8))
-        ctk.CTkLabel(sched, text="아이보스는 일일 2회 제한 적용", text_color="#aaa", font=("Pretendard", 10)).grid(row=1, column=4, columnspan=4, padx=8, pady=(0, 8), sticky="w")
+        ctk.CTkLabel(sched, text="자동 발송 횟수").grid(row=1, column=0, padx=8, pady=(0, 8), sticky="w")
+        ctk.CTkLabel(sched, text="셀클럽").grid(row=1, column=1, padx=(6, 2), pady=(0, 8), sticky="e")
+        self.auto_sc_count = ctk.CTkEntry(sched, width=54)
+        self.auto_sc_count.insert(0, "10")
+        self.auto_sc_count.grid(row=1, column=2, padx=(0, 8), pady=(0, 8))
+        ctk.CTkLabel(sched, text="마멘토").grid(row=1, column=3, padx=(6, 2), pady=(0, 8), sticky="e")
+        self.auto_mm_count = ctk.CTkEntry(sched, width=54)
+        self.auto_mm_count.insert(0, "10")
+        self.auto_mm_count.grid(row=1, column=4, padx=(0, 8), pady=(0, 8))
+        ctk.CTkLabel(sched, text="아이보스").grid(row=1, column=5, padx=(6, 2), pady=(0, 8), sticky="e")
+        self.auto_ib_count = ctk.CTkEntry(sched, width=54)
+        self.auto_ib_count.insert(0, "2")
+        self.auto_ib_count.grid(row=1, column=6, padx=(0, 8), pady=(0, 8))
+        ctk.CTkLabel(sched, text="0이면 제외, 아이보스는 일일 2회 제한 적용", text_color="#aaa", font=("Pretendard", 10)).grid(row=1, column=7, columnspan=3, padx=8, pady=(0, 8), sticky="w")
 
     # ---------- 저장/로드 ----------
     def _load_saved(self):
@@ -558,19 +562,20 @@ class MainApp(ctk.CTk):
         if not post_enabled and not crawl_enabled:
             messagebox.showwarning("자동 스케줄", "발송 또는 크롤링 중 하나 이상 선택하세요.")
             return
-        post_sites: tuple[str, ...] = ()
+        post_counts: dict[str, int] = {}
         if post_enabled:
-            sites = []
-            if self.auto_sc_enabled.get():
-                sites.append("sellclub")
-            if self.auto_mm_enabled.get():
-                sites.append("mamentor")
-            if self.auto_ib_enabled.get():
-                sites.append("iboss")
-            if not sites:
-                messagebox.showwarning("자동 스케줄", "자동 발송 대상 사이트를 하나 이상 선택하세요.")
+            try:
+                post_counts = {
+                    "sellclub": max(0, int(self.auto_sc_count.get() or 0)),
+                    "mamentor": max(0, int(self.auto_mm_count.get() or 0)),
+                    "iboss": max(0, int(self.auto_ib_count.get() or 0)),
+                }
+            except ValueError:
+                messagebox.showerror("자동 스케줄", "사이트별 발송 횟수는 숫자로 입력하세요.")
                 return
-            post_sites = tuple(sites)
+            if not any(post_counts.values()):
+                messagebox.showwarning("자동 스케줄", "사이트별 발송 횟수를 하나 이상 1 이상으로 입력하세요.")
+                return
         try:
             post_sec = max(60, int(float(self.auto_post_min.get()) * 60))
             crawl_sec = max(60, int(float(self.auto_crawl_min.get()) * 60))
@@ -581,29 +586,39 @@ class MainApp(ctk.CTk):
         self.auto_scheduler_stop.clear()
         self.auto_scheduler_thread = threading.Thread(
             target=self._auto_loop,
-            args=(post_enabled, crawl_enabled, post_sec, crawl_sec, post_sites),
+            args=(post_enabled, crawl_enabled, post_sec, crawl_sec, post_counts),
             daemon=True,
         )
         self.auto_scheduler_thread.start()
         self.auto_start_btn.configure(state="disabled")
         self.auto_stop_btn.configure(state="normal")
         self.auto_status.configure(text="실행 중", text_color="#81c784")
-        target_label = ",".join(post_sites) if post_sites else "-"
-        self._log(f"[자동 스케줄] 시작: 발송={post_enabled}({post_sec//60}분/{target_label}), 크롤링={crawl_enabled}({crawl_sec//60}분)")
+        target_label = ", ".join(f"{k} {v}회" for k, v in post_counts.items() if v > 0) if post_counts else "-"
+        self._log(f"[자동 스케줄] 시작: 발송={post_enabled}({post_sec//60}분마다/{target_label}), 크롤링={crawl_enabled}({crawl_sec//60}분마다)")
 
     def _auto_stop(self):
         self.auto_scheduler_stop.set()
         self.auto_status.configure(text="중지 요청", text_color="#ffcc80")
         self._log("[자동 스케줄] 중지 요청")
 
-    def _auto_loop(self, post_enabled: bool, crawl_enabled: bool, post_sec: int, crawl_sec: int, post_sites: tuple[str, ...]):
+    def _auto_loop(self, post_enabled: bool, crawl_enabled: bool, post_sec: int, crawl_sec: int, post_counts: dict[str, int]):
         next_post = time.monotonic()
         next_crawl = time.monotonic()
+        remaining = dict(post_counts)
+        post_done_logged = False
         try:
             while not self.auto_scheduler_stop.is_set():
                 now = time.monotonic()
                 if post_enabled and now >= next_post:
-                    self.after(0, self._auto_try_start_post, post_sites)
+                    post_sites = tuple(name for name, count in remaining.items() if count > 0)
+                    if post_sites:
+                        self.after(0, self._auto_try_start_post, post_sites, remaining)
+                    elif not post_done_logged:
+                        self.after(0, self._log, "[자동 스케줄] 사이트별 발송 횟수 완료")
+                        post_done_logged = True
+                        post_enabled = False
+                        if not crawl_enabled:
+                            self.auto_scheduler_stop.set()
                     next_post = now + post_sec
                 if crawl_enabled and now >= next_crawl:
                     self.after(0, self._auto_try_start_crawl)
@@ -617,7 +632,7 @@ class MainApp(ctk.CTk):
         self.auto_stop_btn.configure(state="disabled")
         self.auto_status.configure(text="중지됨", text_color="#888")
 
-    def _auto_try_start_post(self, post_sites: tuple[str, ...] = ()):
+    def _auto_try_start_post(self, post_sites: tuple[str, ...] = (), remaining: dict[str, int] | None = None):
         if self.job and self.job.is_running():
             self._log("[자동 스케줄] 발송 건너뜀: 이미 발송 중")
             return
@@ -625,7 +640,12 @@ class MainApp(ctk.CTk):
             self._log("[자동 스케줄] 발송 건너뜀: 크롤링 중")
             return
         self._log(f"[자동 스케줄] 발송 시작: {', '.join(post_sites) if post_sites else '활성 사이트'}")
-        self._start_job(set(post_sites) if post_sites else None)
+        started = self._start_job(set(post_sites) if post_sites else None, repeat_count=1)
+        if started and remaining is not None:
+            for name in post_sites:
+                remaining[name] = max(0, remaining.get(name, 0) - 1)
+            rest = ", ".join(f"{k} {v}회" for k, v in remaining.items() if v > 0) or "없음"
+            self._log(f"[자동 스케줄] 남은 발송 횟수: {rest}")
 
     def _auto_try_start_crawl(self):
         if self.crawl_job and self.crawl_job.is_running():
@@ -732,10 +752,10 @@ class MainApp(ctk.CTk):
             btn.configure(state=state)
 
     # ---------- 발송 시작 ----------
-    def _start_job(self, target_sites: set[str] | None = None):
+    def _start_job(self, target_sites: set[str] | None = None, repeat_count: int | None = None) -> bool:
         if self.job and self.job.is_running():
             messagebox.showwarning("발송 중", "이미 발송이 진행 중입니다.")
-            return
+            return False
 
         plans: dict[str, SitePlan] = {}
 
@@ -744,34 +764,34 @@ class MainApp(ctk.CTk):
 
         if selected("sellclub", self.sc_enabled):
             if not self.sellclub_client or not self.sellclub_client.logged_in:
-                messagebox.showwarning("셀클럽", "셀클럽 로그인이 필요합니다 (탭에서 로그인)"); return
+                messagebox.showwarning("셀클럽", "셀클럽 로그인이 필요합니다 (탭에서 로그인)"); return False
             opts = self._collect_sc_options()
             if not (opts.mobile_mid and opts.mobile_end):
-                messagebox.showwarning("셀클럽", "핸드폰 번호 모두 입력 (필수 항목)"); return
+                messagebox.showwarning("셀클럽", "핸드폰 번호 모두 입력 (필수 항목)"); return False
             plans["sellclub"] = SitePlan(enabled=True, client=self.sellclub_client, options=opts, daily_limit=DEFAULT_DAILY_LIMITS["sellclub"], image_supported=True)
 
         if selected("mamentor", self.mm_enabled):
             if not self.mamentor_client or not self.mamentor_client.logged_in:
-                messagebox.showwarning("마멘토", "마멘토 로그인이 필요합니다"); return
+                messagebox.showwarning("마멘토", "마멘토 로그인이 필요합니다"); return False
             plans["mamentor"] = SitePlan(enabled=True, client=self.mamentor_client, options=self._collect_mm_options(), daily_limit=DEFAULT_DAILY_LIMITS["mamentor"], image_supported=True)
 
         if selected("iboss", self.ib_enabled):
             if not self.iboss_client or not self.iboss_client.logged_in:
-                messagebox.showwarning("아이보스", "아이보스 로그인이 필요합니다"); return
+                messagebox.showwarning("아이보스", "아이보스 로그인이 필요합니다"); return False
             ib_opts = self._collect_ib_options()
             if not ib_opts.company_name or not ib_opts.contact_name:
-                messagebox.showwarning("아이보스", "회사명, 담당자명 필수"); return
+                messagebox.showwarning("아이보스", "회사명, 담당자명 필수"); return False
             if not ib_opts.has_any_contact():
-                messagebox.showwarning("아이보스", "연락처/이메일/카카오톡 중 하나 이상 필수"); return
+                messagebox.showwarning("아이보스", "연락처/이메일/카카오톡 중 하나 이상 필수"); return False
             plans["iboss"] = SitePlan(enabled=True, client=self.iboss_client, options=ib_opts, daily_limit=DEFAULT_DAILY_LIMITS["iboss"], image_supported=True)
 
         if not plans:
-            messagebox.showwarning("사이트 선택", "최소 1개 사이트를 선택해야 합니다"); return
+            messagebox.showwarning("사이트 선택", "최소 1개 사이트를 선택해야 합니다"); return False
 
         # 콘텐츠
         posts = load_messages()
         if not posts:
-            messagebox.showwarning("메시지 없음", f"{MESSAGES_DIR}/ 에 .txt 추가하세요 (첫 줄=제목)"); return
+            messagebox.showwarning("메시지 없음", f"{MESSAGES_DIR}/ 에 .txt 추가하세요 (첫 줄=제목)"); return False
         images = list_images()
         try:
             attach = int(self.img_attach.get())
@@ -780,16 +800,16 @@ class MainApp(ctk.CTk):
         try:
             rotator = Rotator(posts, images, mode=self.rotation_mode.get(), attach_image_count=attach)
         except ValueError as e:
-            messagebox.showerror("오류", str(e)); return
+            messagebox.showerror("오류", str(e)); return False
 
         try:
             cfg = JobConfig(
-                repeat_count=max(1, int(self.repeat_count.get())),
+                repeat_count=max(1, int(repeat_count if repeat_count is not None else self.repeat_count.get())),
                 interval_sec=max(5, int(self.interval.get())),
                 jitter_sec=max(0, int(self.jitter.get())),
             )
         except ValueError:
-            messagebox.showerror("입력", "반복횟수/간격은 숫자"); return
+            messagebox.showerror("입력", "반복횟수/간격은 숫자"); return False
 
         # 셀클럽/아이보스 필드 저장
         s = load_settings()
@@ -808,6 +828,7 @@ class MainApp(ctk.CTk):
         self._log(f"━━━ 발송 시작: {cfg.repeat_count}라운드, {cfg.interval_sec}±{cfg.jitter_sec}초 ━━━")
         self._log(f"활성 사이트: {', '.join(plans.keys())}")
         self.after(1000, self._poll_job)
+        return True
 
     def _stop_job(self):
         if self.job and self.job.is_running():
