@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS leads (
     category     TEXT,                          -- 카테고리 / 분류
     title        TEXT,
     body_excerpt TEXT,
+    body_text    TEXT,
     writer       TEXT,                          -- 작성자 닉네임/ID
     posted_at    TEXT,                          -- 게시 일시 (사이트 표시 그대로)
     kakao_ids    TEXT,                          -- JSON 배열 (쉼표 구분)
@@ -69,6 +70,7 @@ class Lead:
     category: str = ""
     title: str = ""
     body_excerpt: str = ""
+    body_text: str = ""
     writer: str = ""
     posted_at: str = ""
     kakao_ids: list[str] = field(default_factory=list)
@@ -84,6 +86,7 @@ class Lead:
 
     @classmethod
     def from_row(cls, row: sqlite3.Row) -> "Lead":
+        body_text = row["body_text"] if "body_text" in row.keys() else row["body_excerpt"]
         return cls(
             id=row["id"],
             site=row["site"],
@@ -92,6 +95,7 @@ class Lead:
             category=row["category"] or "",
             title=row["title"] or "",
             body_excerpt=row["body_excerpt"] or "",
+            body_text=body_text or "",
             writer=row["writer"] or "",
             posted_at=row["posted_at"] or "",
             kakao_ids=row["kakao_ids"].split(",") if row["kakao_ids"] else [],
@@ -132,6 +136,9 @@ def get_db():
 def init_db():
     with get_db() as conn:
         conn.executescript(SCHEMA)
+        cols = {r["name"] for r in conn.execute("PRAGMA table_info(leads)").fetchall()}
+        if "body_text" not in cols:
+            conn.execute("ALTER TABLE leads ADD COLUMN body_text TEXT")
 
 
 def upsert_lead(lead: Lead) -> int:
@@ -146,12 +153,12 @@ def upsert_lead(lead: Lead) -> int:
             # 본문/연락처/매칭키워드 등 새로 발견한 정보가 있으면 갱신
             conn.execute(
                 """UPDATE leads SET
-                    title = ?, body_excerpt = ?, writer = ?, posted_at = ?,
+                    title = ?, body_excerpt = ?, body_text = ?, writer = ?, posted_at = ?,
                     kakao_ids = ?, open_chats = ?, phones = ?, emails = ?, company = ?,
                     category = ?, matched_keywords = ?, updated_at = ?
                    WHERE id = ?""",
                 (
-                    lead.title or None, lead.body_excerpt or None,
+                    lead.title or None, lead.body_excerpt or None, lead.body_text or None,
                     lead.writer or None, lead.posted_at or None,
                     ",".join(lead.kakao_ids) or None,
                     ",".join(lead.open_chats) or None,
@@ -167,13 +174,13 @@ def upsert_lead(lead: Lead) -> int:
             return existing["id"]
         cur = conn.execute(
             """INSERT INTO leads
-               (site, post_url, board, category, title, body_excerpt, writer, posted_at,
+               (site, post_url, board, category, title, body_excerpt, body_text, writer, posted_at,
                 kakao_ids, open_chats, phones, emails, company, status, matched_keywords,
                 found_at, updated_at)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 lead.site, lead.post_url, lead.board or None, lead.category or None,
-                lead.title or None, lead.body_excerpt or None,
+                lead.title or None, lead.body_excerpt or None, lead.body_text or None,
                 lead.writer or None, lead.posted_at or None,
                 ",".join(lead.kakao_ids) or None,
                 ",".join(lead.open_chats) or None,
@@ -202,8 +209,8 @@ def get_leads(
     if status:
         where.append("status = ?"); params.append(status)
     if keyword:
-        where.append("(title LIKE ? OR body_excerpt LIKE ? OR company LIKE ?)")
-        kw = f"%{keyword}%"; params.extend([kw, kw, kw])
+        where.append("(title LIKE ? OR body_excerpt LIKE ? OR body_text LIKE ? OR company LIKE ?)")
+        kw = f"%{keyword}%"; params.extend([kw, kw, kw, kw])
     if where:
         sql += " WHERE " + " AND ".join(where)
     sql += f" ORDER BY {order} LIMIT ?"

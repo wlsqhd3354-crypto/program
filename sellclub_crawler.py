@@ -26,6 +26,19 @@ from sellclub import SellClubClient
 
 SITE_ENC = "euc-kr"
 
+SELLCLUB_CRAWL_CATEGORIES = [
+    "홍보/마케팅",
+    "프로그램/솔루션",
+    "교육/강의",
+    "IT/개발/보수",
+    "디자인/그래픽",
+    "유통/무역/생산",
+    "입점/제휴/섭외",
+    "운영/관리",
+    "컨텐츠/제작물",
+    "컨설팅/상담",
+]
+
 # 목록 행: <a href='../bbs/board.php?bo_table=maket_5_3&wr_id=NNNNNN' title='제목'>...</a>
 LIST_LINK_RE = re.compile(
     r"<a[^>]+href=['\"]\.\./bbs/board\.php\?bo_table=maket_5_3&(?:amp;)?wr_id=(\d+)[^'\"]*['\"][^>]*title=['\"]([^'\"]+)['\"]",
@@ -70,6 +83,13 @@ class SellClubCrawler(BaseCrawler):
 
     def _detail_url(self, bo_table: str, wr_id: str) -> str:
         return f"{SELLCLUB_BASE}/community/bbs/board.php?bo_table={bo_table}&wr_id={wr_id}"
+
+    @staticmethod
+    def _split_board_spec(spec: str) -> tuple[str, str]:
+        if "::" in spec:
+            bo_table, category = spec.split("::", 1)
+            return bo_table, category
+        return spec, ""
 
     def _get_text(self, url: str) -> str:
         r = self.session.get(url, timeout=self.client.timeout)
@@ -144,11 +164,13 @@ class SellClubCrawler(BaseCrawler):
         boards = cfg.boards or ["maket_5_3"]
         new_count = 0
 
-        for bo in boards:
+        for spec in boards:
+            bo, sca = self._split_board_spec(spec)
             empty_streak = 0
-            on_log(f"[셀클럽] 게시판 '{bo}' 수집 시작 ({cfg.pages_per_board}페이지)")
+            label = f"{bo}/{sca}" if sca else bo
+            on_log(f"[셀클럽] 게시판 '{label}' 수집 시작 ({cfg.pages_per_board}페이지)")
             for page in range(1, cfg.pages_per_board + 1):
-                url = self._list_url(bo, page)
+                url = self._list_url(bo, page, sca)
                 try:
                     html = self._get_text(url)
                 except Exception as e:
@@ -197,9 +219,10 @@ class SellClubCrawler(BaseCrawler):
                         site=self.site_name,
                         post_url=it["url"],
                         board=bo,
-                        category=detail.get("category", ""),
+                        category=detail.get("category", "") or sca,
                         title=it["title"],
                         body_excerpt=excerpt,
+                        body_text=body,
                         writer=detail.get("writer", ""),
                         posted_at=detail.get("posted_at", ""),
                         kakao_ids=contact.kakao_ids,

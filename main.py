@@ -6,6 +6,7 @@ import os
 import sys
 import json
 import threading
+import time
 import customtkinter as ctk
 from tkinter import messagebox
 
@@ -34,7 +35,7 @@ from db import (
     Contact, STATUS_OPTIONS, CHANNEL_OPTIONS, RESULT_OPTIONS,
 )
 from crawler_base import CrawlConfig
-from sellclub_crawler import SellClubCrawler
+from sellclub_crawler import SellClubCrawler, SELLCLUB_CRAWL_CATEGORIES
 from mamentor_crawler import MamentorCrawler
 from iboss_crawler import IBossCrawler
 from crawler_runner import CrawlJob
@@ -120,6 +121,8 @@ class MainApp(ctk.CTk):
         # 크롤러 잡 & DB
         crawler_init_db()
         self.crawl_job: CrawlJob | None = None
+        self.auto_scheduler_stop = threading.Event()
+        self.auto_scheduler_thread: threading.Thread | None = None
 
         self._build_ui()
         self._load_saved()
@@ -284,16 +287,19 @@ class MainApp(ctk.CTk):
 
         self.cr_sc_enabled = ctk.CTkCheckBox(site, text="셀클럽 (maket_5_3 대행합니다)"); self.cr_sc_enabled.select()
         self.cr_sc_enabled.grid(row=0, column=0, padx=8, pady=4, sticky="w")
+        sc_options = ["(전체+카테고리별)", "(전체)"] + SELLCLUB_CRAWL_CATEGORIES
+        self.cr_sc_scope = ctk.CTkOptionMenu(site, values=sc_options, width=220)
+        self.cr_sc_scope.grid(row=0, column=1, padx=4)
 
         self.cr_mm_enabled = ctk.CTkCheckBox(site, text="마멘토 게시판:"); self.cr_mm_enabled.select()
         self.cr_mm_enabled.grid(row=1, column=0, padx=8, pady=4, sticky="w")
-        mm_options = [f"{k} ({v})" for k, v in mamentor.FREE_AD_BOARDS.items()]
+        mm_options = ["(전체)"] + [f"{k} ({v})" for k, v in mamentor.FREE_AD_BOARDS.items()]
         self.cr_mm_board = ctk.CTkOptionMenu(site, values=mm_options, width=260)
         self.cr_mm_board.grid(row=1, column=1, padx=4)
 
         self.cr_ib_enabled = ctk.CTkCheckBox(site, text="아이보스 (BD2986 바이럴서비스, 카테고리)"); self.cr_ib_enabled.select()
         self.cr_ib_enabled.grid(row=2, column=0, padx=8, pady=4, sticky="w")
-        ib_options = ["(전체)"] + [f"{k} - {v}" for k, v in iboss.CATEGORY_OPTIONS.items()]
+        ib_options = ["(전체+카테고리별)", "(전체)"] + [f"{k} - {v}" for k, v in iboss.CATEGORY_OPTIONS.items()]
         self.cr_ib_cat = ctk.CTkOptionMenu(site, values=ib_options, width=180); self.cr_ib_cat.grid(row=2, column=1, padx=4)
 
         # 컨트롤 버튼
@@ -356,6 +362,28 @@ class MainApp(ctk.CTk):
 
         ctk.CTkLabel(parent, text="\n발송 방식: 한 라운드에 활성화된 모든 사이트에 같은 글+이미지 동시 게시\n간격은 모든 사이트 공통, 아이보스만 일일 2회 도달 시 자동 건너뜀",
                      text_color="#aaa", font=("Pretendard", 11)).grid(row=2, column=0, columnspan=7, padx=10, pady=10, sticky="w")
+
+        sched = ctk.CTkFrame(parent)
+        sched.grid(row=3, column=0, columnspan=7, padx=10, pady=(8, 4), sticky="ew")
+        ctk.CTkLabel(sched, text="자동 스케줄", font=("Pretendard", 12, "bold")).grid(row=0, column=0, padx=8, pady=6, sticky="w")
+        self.auto_post_enabled = ctk.CTkCheckBox(sched, text="발송")
+        self.auto_post_enabled.grid(row=0, column=1, padx=6)
+        self.auto_post_min = ctk.CTkEntry(sched, width=70)
+        self.auto_post_min.insert(0, "120")
+        self.auto_post_min.grid(row=0, column=2, padx=4)
+        ctk.CTkLabel(sched, text="분마다").grid(row=0, column=3, padx=4)
+        self.auto_crawl_enabled = ctk.CTkCheckBox(sched, text="크롤링")
+        self.auto_crawl_enabled.grid(row=0, column=4, padx=12)
+        self.auto_crawl_min = ctk.CTkEntry(sched, width=70)
+        self.auto_crawl_min.insert(0, "60")
+        self.auto_crawl_min.grid(row=0, column=5, padx=4)
+        ctk.CTkLabel(sched, text="분마다").grid(row=0, column=6, padx=4)
+        self.auto_start_btn = ctk.CTkButton(sched, text="스케줄 시작", width=110, command=self._auto_start)
+        self.auto_start_btn.grid(row=0, column=7, padx=8)
+        self.auto_stop_btn = ctk.CTkButton(sched, text="스케줄 중지", width=110, fg_color="#9c2c2c", state="disabled", command=self._auto_stop)
+        self.auto_stop_btn.grid(row=0, column=8, padx=4)
+        self.auto_status = ctk.CTkLabel(sched, text="중지됨", text_color="#888")
+        self.auto_status.grid(row=0, column=9, padx=8, sticky="w")
 
     # ---------- 저장/로드 ----------
     def _load_saved(self):
@@ -426,6 +454,79 @@ class MainApp(ctk.CTk):
                 messagebox.showinfo("업데이트", f"개발 실행 상태라 자동 교체는 생략했습니다.\n다운로드: {downloaded}")
         except Exception as e:
             messagebox.showerror("업데이트 실패", str(e))
+
+    def _auto_start(self):
+        if self.auto_scheduler_thread and self.auto_scheduler_thread.is_alive():
+            return
+        post_enabled = bool(self.auto_post_enabled.get())
+        crawl_enabled = bool(self.auto_crawl_enabled.get())
+        if not post_enabled and not crawl_enabled:
+            messagebox.showwarning("자동 스케줄", "발송 또는 크롤링 중 하나 이상 선택하세요.")
+            return
+        try:
+            post_sec = max(60, int(float(self.auto_post_min.get()) * 60))
+            crawl_sec = max(60, int(float(self.auto_crawl_min.get()) * 60))
+        except ValueError:
+            messagebox.showerror("자동 스케줄", "간격은 숫자(분)로 입력하세요.")
+            return
+
+        self.auto_scheduler_stop.clear()
+        self.auto_scheduler_thread = threading.Thread(
+            target=self._auto_loop,
+            args=(post_enabled, crawl_enabled, post_sec, crawl_sec),
+            daemon=True,
+        )
+        self.auto_scheduler_thread.start()
+        self.auto_start_btn.configure(state="disabled")
+        self.auto_stop_btn.configure(state="normal")
+        self.auto_status.configure(text="실행 중", text_color="#81c784")
+        self._log(f"[자동 스케줄] 시작: 발송={post_enabled}({post_sec//60}분), 크롤링={crawl_enabled}({crawl_sec//60}분)")
+
+    def _auto_stop(self):
+        self.auto_scheduler_stop.set()
+        self.auto_status.configure(text="중지 요청", text_color="#ffcc80")
+        self._log("[자동 스케줄] 중지 요청")
+
+    def _auto_loop(self, post_enabled: bool, crawl_enabled: bool, post_sec: int, crawl_sec: int):
+        next_post = time.monotonic()
+        next_crawl = time.monotonic()
+        try:
+            while not self.auto_scheduler_stop.is_set():
+                now = time.monotonic()
+                if post_enabled and now >= next_post:
+                    self.after(0, self._auto_try_start_post)
+                    next_post = now + post_sec
+                if crawl_enabled and now >= next_crawl:
+                    self.after(0, self._auto_try_start_crawl)
+                    next_crawl = now + crawl_sec
+                time.sleep(1)
+        finally:
+            self.after(0, self._auto_stopped)
+
+    def _auto_stopped(self):
+        self.auto_start_btn.configure(state="normal")
+        self.auto_stop_btn.configure(state="disabled")
+        self.auto_status.configure(text="중지됨", text_color="#888")
+
+    def _auto_try_start_post(self):
+        if self.job and self.job.is_running():
+            self._log("[자동 스케줄] 발송 건너뜀: 이미 발송 중")
+            return
+        if self.crawl_job and self.crawl_job.is_running():
+            self._log("[자동 스케줄] 발송 건너뜀: 크롤링 중")
+            return
+        self._log("[자동 스케줄] 발송 시작")
+        self._start_job()
+
+    def _auto_try_start_crawl(self):
+        if self.crawl_job and self.crawl_job.is_running():
+            self._log("[자동 스케줄] 크롤링 건너뜀: 이미 크롤링 중")
+            return
+        if self.job and self.job.is_running():
+            self._log("[자동 스케줄] 크롤링 건너뜀: 발송 중")
+            return
+        self._log("[자동 스케줄] 크롤링 시작")
+        self._cr_start()
 
     # ---------- 사이트별 로그인 ----------
     def _sc_login(self):
@@ -627,23 +728,36 @@ class MainApp(ctk.CTk):
         if self.cr_sc_enabled.get():
             if not self.sellclub_client or not self.sellclub_client.logged_in:
                 messagebox.showwarning("셀클럽", "셀클럽 탭에서 먼저 로그인하세요"); return
+            sc_scope = self.cr_sc_scope.get()
+            if sc_scope.startswith("(전체+"):
+                sc_boards = ["maket_5_3"] + [f"maket_5_3::{cat}" for cat in SELLCLUB_CRAWL_CATEGORIES]
+            elif sc_scope.startswith("(전체)"):
+                sc_boards = ["maket_5_3"]
+            else:
+                sc_boards = [f"maket_5_3::{sc_scope}"]
             crawlers.append(SellClubCrawler(self.sellclub_client))
-            cfg_map["sellclub"] = CrawlConfig(boards=["maket_5_3"], **common)
+            cfg_map["sellclub"] = CrawlConfig(boards=sc_boards, **common)
 
         if self.cr_mm_enabled.get():
             if not self.mamentor_client or not self.mamentor_client.logged_in:
                 messagebox.showwarning("마멘토", "마멘토 탭에서 먼저 로그인하세요"); return
-            mm_bo = self.cr_mm_board.get().split(" ")[0]
+            mm_choice = self.cr_mm_board.get()
+            mm_boards = list(mamentor.FREE_AD_BOARDS.keys()) if mm_choice.startswith("(전체)") else [mm_choice.split(" ")[0]]
             crawlers.append(MamentorCrawler(self.mamentor_client))
-            cfg_map["mamentor"] = CrawlConfig(boards=[mm_bo], **common)
+            cfg_map["mamentor"] = CrawlConfig(boards=mm_boards, **common)
 
         if self.cr_ib_enabled.get():
             if not self.iboss_client or not self.iboss_client.logged_in:
                 messagebox.showwarning("아이보스", "아이보스 탭에서 먼저 로그인하세요"); return
             cat = self.cr_ib_cat.get()
-            cat_code = "" if cat.startswith("(전체)") else cat.split(" ")[0]
+            if cat.startswith("(전체+"):
+                ib_boards = [""] + list(iboss.CATEGORY_OPTIONS.keys())
+            elif cat.startswith("(전체)"):
+                ib_boards = []
+            else:
+                ib_boards = [cat.split(" ")[0]]
             crawlers.append(IBossCrawler(self.iboss_client))
-            cfg_map["iboss"] = CrawlConfig(boards=[cat_code] if cat_code else [], **common)
+            cfg_map["iboss"] = CrawlConfig(boards=ib_boards, **common)
 
         if not crawlers:
             messagebox.showwarning("사이트", "최소 1개 사이트는 활성화해야 합니다"); return
@@ -750,7 +864,7 @@ class LeadDetailDialog(ctk.CTkToplevel):
         row("게시일", lead.posted_at)
         row("매칭키워드", ", ".join(lead.matched_keywords))
         row("URL", lead.post_url)
-        row("본문요약", lead.body_excerpt or "(상세 미수집)")
+        row("본문", lead.body_text or lead.body_excerpt or "(상세 미수집)")
 
         # 상태 변경
         status_frame = ctk.CTkFrame(self); status_frame.pack(fill="x", padx=10, pady=4)

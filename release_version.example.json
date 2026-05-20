@@ -1,7 +1,7 @@
 {
-  "version": "1.0.1",
-  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.0.1/SellClubBot.exe",
-  "notes": "업데이트 내용 요약",
+  "version": "1.1.0",
+  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.1.0/SellClubBot.exe",
+  "notes": "전체 본문 저장, 크롤러 전체 탭 수집, 자동 스케줄 기능",
   "sha256": "",
   "force": false
 }

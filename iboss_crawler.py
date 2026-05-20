@@ -201,6 +201,7 @@ class IBossCrawler(BaseCrawler):
                         category=cat,
                         title=detail.get("title") or it["title"],
                         body_excerpt=excerpt,
+                        body_text=body,
                         writer=detail.get("writer", ""),
                         posted_at=detail.get("posted_at", ""),
                         kakao_ids=contact.kakao_ids,

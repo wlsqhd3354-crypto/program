@@ -15,7 +15,7 @@ HEADERS = [
     "카톡ID", "오픈채팅", "전화", "이메일",
     "작성자", "게시일", "상태", "매칭키워드",
     "접촉횟수", "마지막접촉", "마지막결과", "메모",
-    "본문요약", "글URL",
+    "본문요약", "본문전체", "글URL",
 ]
 
 
@@ -65,13 +65,14 @@ def export_leads(out_path: str | None = None, site: str | None = None,
             last.result if last else "",
             last_note,
             L.body_excerpt,
+            L.body_text,
             L.post_url,
         ]
         for c, val in enumerate(row, start=1):
             ws.cell(row=i, column=c, value=val)
 
     # 컬럼 너비 조정
-    widths = [6, 10, 12, 14, 40, 18, 24, 32, 18, 28, 16, 16, 10, 18, 8, 18, 10, 28, 60, 60]
+    widths = [6, 10, 12, 14, 40, 18, 24, 32, 18, 28, 16, 16, 10, 18, 8, 18, 10, 28, 60, 80, 60]
     for idx, w in enumerate(widths, start=1):
         ws.column_dimensions[chr(64 + idx) if idx <= 26 else "A" + chr(64 + idx - 26)].width = w
 
