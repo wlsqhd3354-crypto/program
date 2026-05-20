@@ -1,0 +1,1725 @@
+<html lang="ko"><head>
+<link rel="canonical" href="https://www.i-boss.co.kr/ab-2988">
+<meta property="fb:app_id" name="fb_app_id" content="335902466612714">
+<meta property="og:image" content="https://www.i-boss.co.kr/images/meta_logo.gif">
+<meta property="og:site_name" content="아이보스">
+<link rel="stylesheet" href="https://kit.fontawesome.com/99f07c98e8.css" crossorigin="anonymous">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
+<link rel="preload" as="style" crossorigin="" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" crossorigin="" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<title>쓰기 - 서비스 홍보 - 아이보스</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="온라인마케팅 포털 아이보스, 컨설팅, 키워드광고, 블로그, 모바일, SEO, 바이럴광고, 온라인마케팅 교육, 광고대행사">
+<meta name="keywords" content="온라인마케팅 포털 아이보스, 컨설팅, 키워드광고, 블로그, 모바일, SEO, 바이럴광고, 온라인마케팅 교육, 광고대행사">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link href="/template/DESIGN_style/common.css?v=1779157262" rel="stylesheet" type="text/css">
+<link href="/template/DESIGN_style/gnb.css?v=1767496891" rel="stylesheet" type="text/css">
+<link href="/template/PLUGIN_marketplace/include/style_2986.css?v=1770373806" rel="stylesheet" type="text/css">
+<script src="https://connect.facebook.net/signals/config/1403511673290661?v=2.9.324&amp;r=stable&amp;domain=www.i-boss.co.kr&amp;hme=af8aa31887db259becaf70277daef60bd8bc35c2df82c2acd4258de27ecac4b5&amp;ex_m=104%2C207%2C155%2C22%2C72%2C73%2C146%2C68%2C67%2C11%2C164%2C90%2C16%2C138%2C127%2C39%2C75%2C78%2C134%2C160%2C166%2C8%2C4%2C5%2C7%2C6%2C3%2C91%2C101%2C167%2C172%2C221%2C62%2C188%2C189%2C55%2C279%2C30%2C74%2C233%2C232%2C231%2C23%2C33%2C103%2C61%2C10%2C63%2C97%2C98%2C99%2C105%2C130%2C31%2C29%2C132%2C133%2C129%2C128%2C156%2C76%2C159%2C157%2C158%2C50%2C60%2C123%2C15%2C163%2C45%2C266%2C267%2C265%2C26%2C27%2C28%2C48%2C147%2C77%2C112%2C18%2C20%2C44%2C40%2C42%2C41%2C83%2C92%2C96%2C110%2C145%2C148%2C46%2C111%2C24%2C21%2C119%2C69%2C36%2C150%2C149%2C151%2C142%2C140%2C25%2C35%2C59%2C109%2C162%2C70%2C17%2C153%2C114%2C81%2C66%2C19%2C85%2C86%2C116%2C84%2C136%2C135%2C139%2C161%2C34%2C281%2C297%2C214%2C203%2C204%2C202%2C300%2C291%2C52%2C215%2C107%2C131%2C80%2C121%2C54%2C47%2C49%2C113%2C120%2C126%2C125%2C58%2C64%2C152%2C115%2C37%2C32%2C53%2C56%2C100%2C165%2C1%2C124%2C14%2C122%2C12%2C2%2C57%2C93%2C65%2C118%2C89%2C88%2C168%2C169%2C94%2C95%2C9%2C102%2C51%2C143%2C87%2C79%2C71%2C117%2C106%2C43%2C144%2C0%2C82%2C137%2C141%2C154%2C38%2C108%2C13%2C170" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-998173518&amp;cx=c&amp;gtm=4e65i2h1"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-KNFLFBZ1YL&amp;cx=c&amp;gtm=4e65i2h1"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PMFVW7"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha512-ju6u+4bPX50JQmgU97YOGAXmRMrD9as4LE05PdC3qycsGQmjGlfm041azyB1VfCXpkpt1i9gqXCT6XuxhBJtKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" integrity="sha512-BHDCWLtdp0XpAFccP2NifCbJfYoYhsRSZOUM3KnAxy2b/Ay3Bn91frud+3A95brA4wDWV3yEOZrJqgV8aZRXUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="/include/jquery/jquery-abuilder.js?v=1776042256"></script>
+<script type="text/javascript" src="/include/js/javascript.js?v=1726683974"></script>
+<script type="text/javascript" src="/template/PLUGIN_iboss_display/program/js/jquery-bosstab.js?v=1726684002"></script>
+<script type="text/javascript" src="/template/PLUGIN_iboss_display/program/js/boss_common.js?v=1776819439"></script>
+<script type="text/javascript" src="/template/PLUGIN_topfixed_ad/js/script.js?v=1766473390"></script>
+<script type="text/javascript" src="https://alog.i-boss.co.kr/bl/bl.js?v=1.1.7"></script>
+<script type="text/javascript">
+var dataLayer =  dataLayer || [];
+
+var iboss_is_app='0';
+_id='lwoEjN38ht';
+dataLayer.push({'uid':'I00460990'});
+dataLayer.push({'rip':'125.142.156.8'});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMFVW7');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" async="" src="https://ssl.pstatic.net/melona/libs/gfp-nac-module/synchronizer.js"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/998173518/?random=1779258786811&amp;cv=11&amp;fst=1779258786811&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be65i2h1z871645705za20gzb71645705zd71645705xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616986~115938465~115938469&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.i-boss.co.kr%2Fab-2988%3Fserial_parent%3D&amp;ref=https%3A%2F%2Fwww.i-boss.co.kr%2Fab-2986&amp;rcb=9&amp;label=4yvcCPqI-wIQztb72wM&amp;frm=0&amp;tiba=%EC%93%B0%EA%B8%B0%20-%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%ED%99%8D%EB%B3%B4%20-%20%EC%95%84%EC%9D%B4%EB%B3%B4%EC%8A%A4&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1736037892.1779258606&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B148.0.7778.168%7CGoogle%2520Chrome%3B148.0.7778.168%7CNot%252FA)Brand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"></script></head>
+<body><div id="top_chk"></div><div class="adwrap"><div class="popwrap bd_R10"></div><div class="bgwrap"></div></div><header><div><div id="topAd" onclick="if(event.target.closest('i, a')) this.style.display='none';"><i class="fa-regular fa-times" onclick="set_cookie('topAd_s148', 'true', '24');"></i><a href="https://www.i-boss.co.kr/ab-5817-462?ref=gnbbn" target="_blank" rel="noopener" onclick="set_cookie('topAd_s148', 'true', '24');" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="띠배너" gtm-ev-action="uuib_MQDIJG3N_2" data-gtm-vis-recent-on-screen1645705_271="52" data-gtm-vis-first-on-screen1645705_271="52" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1">📌 아마존 진출 전략, 무료로 노하우 알려드릴 때 미리 알아두세요!<label>더보기</label></a></div><div id="header"><div class="logo-searchbox"><div id="iboss-logo"><a href="/" title="온라인마케팅 포털, 아이보스" class="header-logo"><img src="https://cdn.ibos.kr/images/iboss_home_logo.svg" height="22" border="0" alt="아이보스"></a></div><div class="LogoSchbox"><form name="frm_search_main" id="frm_search_main" method="get" action="/ab-sch_total_new" enctype="multipart/form-data" onsubmit="return frm_search_main_submit()" data-ajax="false"><div><fieldset><legend>통합검색</legend>
+	<input type="text" name="search_value" value="" class="search_box_input" placeholder="검색"><button type="submit" name="submit_OK"><i class="fa-regular fa-magnifying-glass"></i></button></fieldset></div>
+</form>
+</div></div><div id="sub_hd"><div class="Logged new">
+<div class="popularMenu"><a href="/ab-3023"><!--<label class="fa-light fa-memo-pad"></label>-->새로운 글</a><a href="/ab-1886"><!--<label class="fa-regular fa-chart-mixed"></label>-->인기글</a><div class="benefitWrap"><a class="benefits" href="/ab-benefits" onclick="set_cookie('benefitDisplay', 'N', '9')"><label class="fa-light fa-bounce fa-gift"></label> 혜택</a></div><div><a href="/ab-cash_store"><label class="fa-light fa-store"></label>캐시상점</a></div></div><div class="s_hd_menu"><a href="javascript:void(0)" onclick="open('/ab-msg_recv','아이보스 쪽지', 'top=0,left=0,width=1024,height=768').focus()" class="fa-light fa-comment-lines widget bsmsg btn_more bstip" data-tip="쪽지" data-pos="b"><span class="blind">쪽지</span></a><a href="javascript:void(0)" class="widget bsalarm notification btn_alarm_notification btn_more bstip fa-light fa-bell" data-action="open" data-type="alarm" data-ajax="1" data-tip="알림" data-pos="b"><span class="blind">알림</span></a></div><div class="profile"><span class="btn_more" data-type="profile"><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_60_60_profile_img_34.png" border="0" width="60" height="60"></span><div><dl class="s_popup s_pop_profile" style="display: none;">
+<div class="nickname"><a href="/@엔트리프로그램"><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_60_60_profile_img_34.png" border="0" width="60" height="60"></a><div><a href="/@엔트리프로그램"><span class="name">엔트리프로그램</span><span class="verified_icon fa-solid fa-circle-check bstip" data-tip="아이보스 정회원입니다."></span></a><div class="user-badge"></div></div><a class="moveMypage" href="/@엔트리프로그램">내 프로필 보기</a></div><dd><a href="/ab-6551"><label class="ltr"></label>4,803 리터</a>
+</dd><dd><a href="/ab-6490"><label class="icon_cash"></label>0 캐시</a></dd><label class="bar"></label><dd><a href="/ab-6527">활동로그</a></dd><dd><a href="/ab-member">설정</a></dd><dd><a href="/ab-6484">결제내역</a></dd><dd><a href="/ab-user_block">차단회원 관리</a></dd><label class="bar"></label><dd><a href="/member/logout_process.php?after_db_msg=&amp;next_page=">로그아웃</a></dd></dl></div>
+</div><span class="spacer"></span><span class="widget write" data-type="write"><span class="fa-light fa-pen-to-square"></span><p>글쓰기</p></span><div class="write-article"><strong>어떤 이야기를 나누세요?</strong><div class="list"><a href="/ab-1486506">자유롭게 글 남기기<span class="fa-regular fa-pen-circle"></span></a><a href="/ab-6142">마케팅 정보 공유하기<span class="fa-regular fa-pen-circle"></span></a><a href="/ab-2111">궁금한 점 질문하기<span class="fa-regular fa-pen-circle"></span></a><a href="/ab-1959">대행 의뢰하기<span class="fa-regular fa-pen-circle"></span></a><a href="/ab-8370">익명으로 글쓰기<span class="fa-regular fa-pen-circle"></span></a></div></div></div>
+<div class="s_popup s_pop_alarm notifiLayer" style="display: none;"><div class="bd_list" id="alert_msg"><div class="tit"><strong><i class="fa-light fa-bell"></i>알림</strong><div class="set_func"><span class="bd_R3 btn_alarm_read_all bstip" data-tip="모두 읽음으로 표시" data-pos="b" data-action="read_all"><i class="fa-light fa-envelope-open"></i> 읽음</span></div></div><div class="wrap msg_lst_wrap"><div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div></div></div></div></div></div>
+<div id="GNB">
+	<ul class="gnbWrap">
+		<li>
+			<a href="/ab-2936" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="커뮤니티">
+				<span class="txt">커뮤니티</span>
+			</a>
+			<dl class="col2">
+				<div>
+					<dd><a href="/ab-1486504" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="자유게시판"><span>자유게시판</span><em class="gnb_btn new">새글</em></a></dd>
+					<dd><a href="/ab-8083" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="회사생활"><span>회사생활</span></a></dd>
+                    <dd><a href="/ab-1486525" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="세미나·컨퍼런스"><span>세미나·컨퍼런스</span><em class="gnb_btn new">새글</em></a></dd>
+                    <dd><a href="/ab-5636" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케터의 서재"><span>마케터의 서재</span></a></dd>
+                    <dd><a href="/ab-8037" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케터 기초지식"><span>마케터 기초지식 🐤</span></a></dd>
+					<dd><a href="/ab-8368" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="익명게시판"><span>익명게시판</span><em class="gnb_btn new">새글</em></a></dd>
+				</div>
+				<div>
+					<dd><a href="/ab-2332" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="출석"><span>출석</span></a></dd>
+                    <dd><a href="/ab-benefits" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="혜택"><span>혜택</span></a></dd>
+					<dd><a href="/ab-74539" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="공지사항"><span>공지사항</span></a></dd>
+					<dd><a href="/ab-2972" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="이벤트"><span>이벤트</span><em class="gnb_btn new">새글</em></a></dd>
+                    <dd><a href="/ab-978" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="가입인사"><span>가입인사</span></a></dd>
+					<dd><a href="/ab-8302" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="아이보스 몰"><span>아이보스 몰</span></a></dd>
+				</div>
+				<div style="display:block; width:100%;"><dd><a href="/ab-8404" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="퇴직연금으로 노후 설계하기"><span>퇴직연금으로 노후 설계하기</span></a></dd></div>
+			</dl>
+		</li>
+		<li>
+			<a href="/ab-6166" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="정보공유">
+				<span class="txt">정보공유</span>
+			</a>
+			<dl class="col8">
+				<div class="wide-wrap">
+					<div>
+						<dt><a href="/ab-6167"><strong>검색마케팅</strong></a></dt>
+						<dd class="bd0"><a href="/ab-74601" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="키워드광고"><span>키워드광고</span></a></dd>
+						<dd><a href="/ab-74613" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="블로그 마케팅"><span>블로그 마케팅</span><em class="gnb_btn new">새글</em></a></dd>
+						<dd><a href="/ab-74631" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="카페 마케팅"><span>카페 마케팅</span></a></dd>
+						<dd><a href="/ab-74625" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="웹문서 마케팅"><span>웹문서 마케팅</span></a></dd>
+						<dd><a href="/ab-6176" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="기타 검색마케팅"><span>기타 검색마케팅</span></a></dd>
+						<dd><a href="/ab-6140?tag=AEO+GEO" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="AEO·GEO"><span>AEO·GEO</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-6168"><strong>SNS마케팅</strong></a></dt>
+                        <dd><a href="/ab-6179" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="SNS마케팅"><span>SNS마케팅</span></a></dd>
+						<dd class="bd0"><a href="/ab-5152" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="페이스북"><span>페이스북</span></a></dd>
+						<dd><a href="/ab-5339" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="인스타그램"><span>인스타그램</span></a></dd>
+                        <dd><a href="/ab-6757" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="유튜브"><span>유튜브</span></a></dd>
+                        <dd><a href="/ab-6140?tag=라이브커머스" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="라이브커머스"><span>라이브커머스</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-6169"><strong>온라인마케팅</strong></a></dt>
+						<dd class="bd0"><a href="/ab-74643" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="배너광고"><span>배너광고</span></a></dd>
+						<dd><a href="/ab-150076" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="모바일 광고"><span>모바일 광고</span></a></dd>
+						<dd><a href="/ab-74649" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="CPA·CPS"><span>CPA·CPS</span></a></dd>
+						<dd><a href="/ab-74655" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="리텐션 마케팅"><span>리텐션 마케팅</span></a></dd>
+						<dd><a href="/ab-6180" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="콘텐츠마케팅"><span>콘텐츠마케팅</span><em class="gnb_btn new">새글</em></a></dd>
+						<dd><a href="/ab-6181" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="기타 온라인마케팅"><span>기타 온라인마케팅</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-6170"><strong>마케팅 일반</strong></a></dt>
+                        <dd class="bd0"><a href="/ab-74583" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 정보"><span>마케팅 정보</span><em class="gnb_btn new">새글</em></a></dd>
+						<dd><a href="/ab-74589" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="오프라인 광고"><span>오프라인 광고</span></a></dd>
+						<dd><a href="/ab-74771" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="GA·데이터분석"><span>GA·데이터분석</span></a></dd>
+						<dd><a href="/ab-74637" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="언론홍보"><span>언론홍보</span></a></dd>
+						<dd><a href="/ab-1486510" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="웹사이트 운영"><span>웹사이트 운영</span></a></dd>
+						<dd><a href="/ab-6481" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 왕초보"><span>마케팅 왕초보</span></a></dd>
+                        <dd><a href="/ab-6140?tag=AI" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="AI"><span>AI</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-2874"><strong>경영</strong></a></dt>
+						<dd><a href="/ab-2894" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="경영/운영"><span>경영/운영</span></a></dd>
+						<dd><a href="/ab-2201" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="창업 정보"><span>창업 정보</span></a></dd>
+						<dd><a href="/ab-2900" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="특허/법률"><span>특허/법률</span></a></dd>
+						<dd><a href="/ab-74808" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="인사/노무"><span>인사/노무</span></a></dd>
+						<dd><a href="/ab-918" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="세무/회계"><span>세무/회계</span></a></dd>
+                        <dd><a href="/ab-5162" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="쇼핑몰 운영"><span>쇼핑몰 운영</span></a></dd>
+                        <dd><a href="/ab-7055" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="병의원"><span>병의원</span></a></dd>
+					</div>
+					<div>
+						<dd><a href="/ab-6845" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="자료 공유"><span>자료 공유</span></a></dd>
+						<dd><a href="/ab-6883" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="무료 툴 공유"><span>무료 툴 공유</span></a></dd>
+					</div>
+				</div>
+			</dl>
+		</li>
+		<li>
+			<a href="/ab-7214" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="뉴스">
+				<span class="txt">뉴스</span>
+			</a>
+		</li>
+		<li>
+			<a href="/ab-2109" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="질문답변" gtm-ev-visibility="" data-gtm-vis-recent-on-screen1645705_271="55" data-gtm-vis-first-on-screen1645705_271="55" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1">
+				<span class="txt">질문답변</span>
+			</a>
+		</li>
+		<li class="sp"></li>
+		<li>
+			<a href="/ab-1486336" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="대행컨설팅">
+				<span class="txt">대행컨설팅</span>
+			</a>
+			<div class="snb_consult">
+				<div>
+					<a href="/ab-1486336"><strong>대행의뢰</strong></a>
+					<a href="/ab-1957" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="대행의뢰"><span>대행의뢰</span></a>
+					<a href="/ab-7755" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 서비스"><span>마케팅 서비스</span><em class="gnb_btn new">새글</em></a>
+					<a href="/ab-2986" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="바이럴 서비스"><span>바이럴 서비스</span><em class="gnb_btn new">새글</em></a>
+					<a href="/ab-ai_blogger_seeding" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="AI 블로거 시딩"><span>AI 블로거 시딩<em class="gnb_btn new">새글</em></span></a>
+				</div>
+				<div class="flex-column-2">
+					<a href="/ab-partners_list">
+						<strong>아이보스 파트너스</strong>
+					</a>
+					<div class="grid-wrap">
+						<div>
+							<strong><a href="/ab-partners_list?authority=premium">공식 파트너스<i class="fa-solid fa-medal"></i></a></strong>
+							<div>
+								<a href="/ab-6911?ref=partners"><span>케어랩스</span></a>
+								<a href="/ab-7916?ref=partners"><span>콘크리트파머스</span></a>
+								<a href="/ab-7982?ref=partners"><span>엠서치마케팅</span></a>
+							</div>
+						</div>
+						<div>
+						<strong><a href="/ab-partners_list?authority=standard">파트너스<i class="fa-solid fa-circle-star"></i></a></strong>
+							<div>
+								<a href="/ab-partners_list?category=바이럴"><span>바이럴</span></a><a href="/ab-partners_list?category=커머스"><span>커머스</span></a><a href="/ab-partners_list?category=검색광고"><span>검색광고</span></a><a href="/ab-partners_list?category=퍼포먼스"><span>퍼포먼스</span></a><a href="/ab-partners_list?category=글로벌"><span>글로벌</span></a><a href="/ab-partners_list?category=DB"><span>DB</span></a>							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a href="/ab-5151?category_1=sponsor"><strong>상담문의</strong></a>
+					<a href="/ab-7610?ref=gnb" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="광고비 전용 카드"><span>광고비 전용 카드</span></a>
+					<a href="/ab-8336?ref=gnb" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="알뜰폰 요금제"><span>알뜰폰 요금제</span></a>
+					<a href="/ab-5545-84" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="아이보스 매체광고 상담"><span>아이보스 매체광고 상담</span></a>
+					<a href="https://www.ibossedu.co.kr/edu-329064?ref=gnb" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="아이보스 기업교육 상담"><span style="letter-spacing:-0.5px;">아이보스 기업교육 상담</span><em class="gnb_btn new">새글</em></a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="/ab-7553" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="디렉토리">
+				<span class="txt">디렉토리</span>
+			</a>
+            <dl>
+				<dd><a href="/ab-7553" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="대행사"><span>대행사</span></a></dd>
+                <dd><a href="/ab-7635" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 솔루션"><span>마케팅 솔루션</span></a></dd>
+				<dd><a href="/company" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="기업 데이터베이스"><span>기업 데이터베이스</span></a></dd>
+			</dl>
+		</li>
+        <li>
+            <a href="/ab-7654" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="광고상품">
+                <span class="txt">광고상품</span>
+            </a>
+        </li>
+        <li>
+            <a href="/ab-2794" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="채용">
+                <span class="txt">채용</span>
+            </a>
+        </li>
+		<li>
+			<a href="/ab-2984" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="콘텐츠">
+				<span class="txt">콘텐츠</span>
+			</a>
+            <dl class="col2 g_left_conts" style="left:-130px">
+				<div>
+					<dd><a href="/ab-74576" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 기초"><span>마케팅 기초</span></a></dd>
+                    <dd><a href="/ab-6486" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="탐방기"><span>탐방기</span></a></dd>
+                    <dd><a href="/ab-1486348" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="설문조사"><span>설문조사</span></a></dd>
+                    <dd><a href="/ab-word_dic_l" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 사전"><span>마케팅 사전</span></a></dd>
+				</div>
+				<div>
+                    <dd><a href="/ab-5826" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 퀴즈"><span>마케팅 퀴즈</span></a></dd>
+                    <dd><a href="/ab-3207" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 자료실"><span>마케팅 자료실</span><em class="gnb_btn new">새글</em></a></dd>
+                    <dd><a href="/ab-subkey" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="키워드 조합기"><span>키워드 조합기</span></a></dd>
+                    <dd><a href="/ab-marketing_calendar" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 캘린더"><span>마케팅 캘린더</span></a></dd>
+					<dd><a href="/ab-mktt_searcher" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="스크립트 분석"><span>스크립트 분석</span></a></dd>
+					<dd><a href="/ab-performance_calc" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="광고 성과 계산기"><span>광고 성과 계산기</span><i class="fa-solid fa-circle-n ico-new"></i></a></dd>
+				</div>
+			</dl>
+		</li>
+		<li>
+			<a href="/ab-74667" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="칼럼">
+				<span class="txt">칼럼</span>
+			</a>
+		</li>
+		<li>
+			<a href="/ab-5151" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="모임">
+				<span class="txt">모임</span>
+			</a>
+		</li>
+		<li>
+			<a href="/ab-5816" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="밋업">
+				<span class="txt">밋업</span>
+			</a>
+		</li>
+		<li class="sp"></li>
+		<li>
+            <a href="https://www.ibossedu.co.kr" target="_blank" class="c-fc6d35">
+    <span class="txt">교육</span>
+</a>
+<div class="gnb_edu_wrap">
+    <div class="gnb_edu_cont">
+        <div class="group_bn">
+            <div class="group_bn_img">
+             <a class="block ibtracid sponsored_banner_N8 overflow-hidden rounded-lg" href="https://www.ibossedu.co.kr/edu-329446?ref=gnbedu" data-id="200x200_201709011828" title="" data-location="GNB교육_200x200" data-subject="교육 원페이지 랜딩" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="GNB교육" gtm-ev-action="200x200_201709011828" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/4d187298cd05994b1a43663f6ad0457f_31146_1.png" width="200" height="200" alt="교육 원페이지 랜딩"></a>            </div>
+        </div>
+        <div class="group_cal">
+            <div class="gnb_edu_cal">
+            
+						<div class="gnb_edu_section">
+							<div class="gnb_edu_title"><h4>오프라인 교육과정</h4><a class="gnb_more" href="https://www.ibossedu.co.kr/edu-329060">더보기</a></div>
+							<div class="gnb_cal_cont">
+								<ul class="online_edu">
+									<li><a href="https://www.ibossedu.co.kr/edu-goods-470" target="_blank"> 메타 뮤즈 마케팅 X 머신러닝 설계</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-469" target="_blank"> 마케터를 위한 AI 바이브코딩 2일 클래스</a></li>
+								</ul>
+							</div>
+						</div>
+                <div class="gnb_edu_section">
+                    <div class="gnb_edu_title"><h4>온라인 교육과정</h4><a class="gnb_more" href="https://www.ibossedu.co.kr/edu-329446">더보기</a></div>
+                    <div class="gnb_cal_cont">
+                        <ul class="online_edu">
+                            <li><a href="https://www.ibossedu.co.kr/edu-goods-393" target="_blank">[GA4탑재] 구글 데이터 분석 GTM 실무 초단기 완성</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-387" target="_blank">퍼포먼스 마케팅 실전</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-391" target="_blank">정말 쉬운 디지털마케팅&amp;그로스해킹 입문</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-410" target="_blank">200% 효과 보는 블로그 체험단 전략</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-395" target="_blank">알면 돈 되는 블로그 수익화 전략</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-403" target="_blank">퍼포먼스 마케팅, 브랜딩 실무 전략 DAY1</a></li>
+                        </ul>
+                    </div>
+                </div>            </div>
+            <div class="gnb_edu_btn">
+                <ul>
+					<li><a href="https://www.ibossedu.co.kr/edu-329060">오프라인 교육<em class="gnb_btn new">새글</em></a></li>
+                    <li><a href="https://www.ibossedu.co.kr/edu-329446">온라인 교육<em class="gnb_btn new">새글</em></a></li>
+                    <li><a href="https://www.ibossedu.co.kr/edu-329064">기업교육</a></li>
+                    <li><a href="https://www.ibossedu.co.kr/edu-329062">교육후기</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'design_file=home_contents_905.php';
+				var submit_is_ing = 'N';
+				user_level = '99';
+		
+	
+			//-->
+		</script>
+	<!--0.018162965774536, VER20140318-->		</li>
+                <li class="gnb-text-rolling" style="border-color:#630df8; margin-left:auto; max-width:calc(100% - 920px);">
+            <a gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="gnb-text-rolling" gtm-ev-action="uuib_JLJIPKA4" href="/ab-7610?ref=gnbad" style="max-width:255px;font-weight:500;color:#630df8;" data-gtm-vis-first-on-screen1645705_271="56" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1"><span class="txt ellipsis-1">광고비 전용 카드 💳</span></a>        </li>
+
+	</ul>
+</div></div></header><div class="bg_wrap"><div id="Layout-wrap" class="BD2986-layout"><div id="side-nav"><div class="wrap"><h6><a href="/ab-2986">바이럴 서비스</a></h6><ul><li class="group-label">매체별</li><li><a href="/ab-2986?category_1=B"><span>블로그</span></a></li><li><a href="/ab-2986?category_1=C"><span>카페</span></a></li><li><a href="/ab-2986?category_1=A"><span>인스타그램</span></a></li><li><a href="/ab-2986?category_1=D"><span>유튜브</span></a></li><li><a href="/ab-2986?category_1=S"><span>SNS</span></a></li><li><a href="/ab-2986?category_1=J"><span>스토어</span></a></li><li><a href="/ab-2986?category_1=U"><span>언론홍보</span></a></li><li><a href="/ab-2986?category_1=W"><span>SEO</span></a></li><li><a href="/ab-2986?category_1=F"><span>지도</span></a></li><li class="group-label">유형별</li><li><a href="/ab-2986?category_1=G"><span>포스팅</span></a></li><li><a href="/ab-2986?category_1=E"><span>체험단</span></a></li><li><a href="/ab-2986?category_1=H"><span>인플루언서</span></a></li><li><a href="/ab-2986?category_1=O"><span>숏폼</span></a></li><li><a href="/ab-2986?category_1=N"><span>PPL</span></a></li><li class="group-label">기타</li><li><a href="/ab-2986?category_1=Z"><span>기타</span></a></li></ul></div></div><div class="ABA-container-box-730"><div class="ABA-subcontent GNB-color-09" id="ABA-read-top" style="_width:550px;margin:10px 0 0 0; display:none;">
+<h3 class="AB-sj-h3 GNB-color-09" id="ABA-contents-title-2988php">서비스 홍보</h3><ul class="map"><li id="AB-navi-home"><a href="/ab-home">HOME</a></li><li id="AB-navi-1"><a href="/ab-2986">서비스 홍보</a></li><li id="AB-navi-last">쓰기</li></ul></div>
+<div id="AB_contents"><div class="ServiceAdPopup"></div><form name="TCBOARD_BD2986_WRITE_index471" id="TCBOARD_BD2986_WRITE_index471" method="post" action="./board/article_write.php" enctype="multipart/form-data" onsubmit="return TCBOARD_BD2986_WRITE_index471_submit()" data-ajax="false"><input type="hidden" name="board" value="BD2986"><input type="hidden" name="after_db_script" value="%MOVE%../ab-{AY__after_process_article_info[1][view_page]//RMPHPEXT}-{AY__after_process_article_info[0][serial_num]}"><input type="hidden" name="after_db_msg" value=""><input type="hidden" name="Q_STRING" value="design_file=2988.php&amp;serial_parent="><input type="hidden" name="flag" value="i-boss.co.kr"><input type="hidden" name="VG_live_code" value="d2ddea18f00665ce8623e36bd4e3c7c5"><input type="hidden" name="P_SELF" value="insiter.php"><div class="proposal_wf">
+
+
+
+<script>
+$(function(){
+    $('input[name=etc_1]').val('N쇼핑, 플레이스 개발사');
+    $('input[name=etc_2]').val('');
+    $('input[name=etc_3]').val('y999i');
+    $('input[name=etc_4]').val('레이크');
+    $('input[name=etc_5]').val('q@naver.com');
+    $('input[name=phone_3]').val('');
+    // $('select[name=category_1]').val('B');
+});
+
+
+$(function(){
+    // 변수 선언 시 $ 접두사 제거
+    var customSelectWrapper = $('.custom-select-wrapper');
+    var customSelectDisplay = customSelectWrapper.find('.custom-select-display');
+    var selectedDisplayValue = customSelectDisplay.find('.selected-value');
+    var customOptions = customSelectWrapper.find('.custom-options');
+    var options = customOptions.find('.option');
+
+
+    var initialCategoryVal = $('input[name="category_1"]').val();
+
+    // 초기 상태 설정
+    if (initialCategoryVal) {
+        var initialSelectedOption = options.filter('[data-value="' + initialCategoryVal + '"]');
+        if (initialSelectedOption.length > 0) {
+            selectedDisplayValue.text(initialSelectedOption.text());
+            customSelectDisplay.attr('data-value', initialSelectedOption.data('value'));
+            initialSelectedOption.addClass('selected');
+        } else {
+            selectedDisplayValue.text('선택해주세요');
+            customSelectDisplay.attr('data-value', '');
+        }
+    } else {
+        selectedDisplayValue.text('선택해주세요');
+        customSelectDisplay.attr('data-value', '');
+    }
+
+    // 드롭다운 토글
+    customSelectDisplay.on('click', function() {
+        customOptions.slideToggle(100);
+        $(this).toggleClass('active'); // 여기서는 여전히 jQuery 객체이므로 $(this) 사용
+    });
+
+    // 옵션 선택
+    options.on('click', function() {
+        var selectedValue = $(this).data('value'); // data-value 속성 가져오기
+        var selectedText = $(this).text(); // 옵션의 텍스트 가져오기
+
+        // display 영역 업데이트
+        selectedDisplayValue.text(selectedText);
+        customSelectDisplay.attr('data-value', selectedValue); // data-value 업데이트
+
+        // 현재 선택된 옵션에 'selected' 클래스 추가/제거
+        options.removeClass('selected');
+        $(this).addClass('selected'); // 여기서는 여전히 jQuery 객체이므로 $(this) 사용
+
+        // 드롭다운 닫기
+        customOptions.hide();
+        customSelectDisplay.removeClass('active');
+
+        $('input[name="category_1"]').val(selectedValue); 
+    });
+
+    // 외부 클릭 시 드롭다운 닫기
+    $(document).on('click', function(e) {
+        if (!customSelectWrapper.is(e.target) && customSelectWrapper.has(e.target).length === 0) {
+            customOptions.hide();
+            customSelectDisplay.removeClass('active');
+        }
+    });
+
+
+    
+    // getCompanyHandler.init({
+    //     'company_name': '#AB_contents input[name=etc_1]',
+    //     'company_table': '#AB_contents input[name=relation_table_1]',
+    //     'company_serial': '#AB_contents input[name=relation_serial_1]',
+    // }, {
+    //     company_select: function(type, data) {
+    //         let company = $(data.target).find('.companyName').html();
+    //         $('#AB_contents input[name=etc_1]').val(company);
+    //     },
+    //     conpany_add_complete: function(data) {
+    //         $('#AB_contents input[name=etc_1]').val(data.subject); 
+    //         $('#AB_contents input[name=relation_table_1]').val(data.board);
+    //         $('#AB_contents input[name=relation_serial_1]').val(data.serial_num);
+    //         $('#findCompany').hide();
+    //     }
+    // }); 
+});
+
+function company_selected(form){
+    let selectedFormSerial = $(form).find('input[name=relation_serial_1]').val();
+    let rtn = false;
+    if (selectedFormSerial) {
+        rtn = true;
+    }else{
+        alert('회사를 선택해주세요.');
+        $(form).find('input[name=etc_1]').focus();
+        rtn = false;
+    }
+    return rtn;
+}
+
+
+
+function category_chk(form){
+    var category_1 = form.category_1.value;
+    if(!category_1) {
+        $('.custom-select-wrapper').addClass('AB-empty-value');
+        alert('카테고리를 선택해주세요.');
+        return false;
+    } else {
+        $('.custom-select-wrapper').removeClass('AB-empty-value');
+        return true;
+    }
+}
+function checkChar(){
+    var sj= $('input[name=subject]').val();
+    var rtn = false;
+    $.ajax({
+        url: '/template/PLUGIN_marketplace/program/BD2986_submit_chk.ajax.php',
+        data: {
+            sj: sj
+        },
+        type: 'post',
+        async: false,
+        dataType: 'json'
+    }).done(function (answer) {
+        if (answer.code) {
+            rtn = true;
+        } else {
+            alert(answer.msg);
+            $('input[name=subject]').addClass('AB-empty-value').focus();
+        }
+    });
+
+    
+    return rtn;
+}
+</script>
+<div><link href="/template/DESIGN_style/market/ad_request.css?v=1763343414" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/include/js/imagePreviewHandler.js?v=1773730969"></script>
+<script type="text/javascript" src="/include/js/getDaumMapsAdressHandler.js?v=1762733621"></script>
+<script src="//t1.kakaocdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=60c8c33efda9091f89ddf699d6ed5a22&amp;libraries=services"></script><script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/main/4.4.24/kakao.js"></script><script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/libs/services/1.0.2/services.js"></script>
+<script type="text/javascript" src="/template/PLUGIN_AgnecyDir/include/getCompanyHandler.js?v=1773109265"></script><div id="BDWriteForm" class="writeForm"><div class="board-title"><h3>글쓰기 - 바이럴 서비스 홍보</h3><div class="memo_list_bg">
+    <div class="memo_list">
+        <h5 class="btn_memo">임시저장</h5>
+        <a class="all-articles" href="/ab-6835" target="_blank">전체보기</a>
+        <div class="tmp-saved-close fa-regular fa-times"></div>
+        <div class="wrap_cover">
+            <div class="wrap">
+                <div class="title"></div>
+                <div class="conts"></div>
+                <div class="paging"></div>
+            </div>
+        </div>
+    </div>
+</div></div><div class="write_wrap ABA-auto-save" auto_save_term="30"><div class="item-subject"><input type="text" name="subject" value="" id="subject" size="40" placeholder="제목을 입력해주세요"><input type="hidden" name="writer_name" value="엔트리프로그램"><input type="hidden" name="email" value="wlsqhd5506@naver.com"><input type="hidden" name="phone_2" value=""></div><div class="WF_table"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="contact"><tbody><tr><th>회사명 <span>*</span></th><td><input type="text" name="etc_1" value="" class="AB-text"><input type="hidden" name="relation_serial_1" value=""><input type="hidden" name="relation_table_1" value=""><div id="findCompany"><div class="schCompany"><ul></ul></div></div></td></tr><tr><th>담당자명 <span>*</span></th><td><input type="text" name="etc_4" value="" class="AB-text"></td></tr><tr><th>연락처 <span>*</span></th><td class="_last"><table width="100%" cellpadding="0" cellspacing="0" align="center" border="0" class="info4"><tbody><tr><th width="120">연락처</th><td><input type="text" name="phone_2" value="" class="AB-text oneOfvalue"></td></tr><tr><th>이메일</th><td><input type="text" name="etc_5" value="" class="AB-text oneOfvalue"></td></tr><tr><th>네이트온</th><td><input type="text" name="etc_2" value="" class="AB-text oneOfvalue"></td></tr><tr><th>카카오톡</th><td><input type="text" name="etc_3" value="" class="AB-text oneOfvalue"></td></tr><tr><td colspan="2" class="col"><p>・ 반드시 아래 연락처 중 1개 이상 입력해주세요!<br>・ 가장 최근 게시글이 있는 경우 최근 입력하신 정보를 가져옵니다.</p></td></tr></tbody></table></td></tr><tr><th>구분 <span>*</span></th><td><input type="hidden" name="category_1" value=""><div class="BD2986-custom-selector"><div class="custom-select-wrapper">
+    <div class="custom-select-display" data-value="">
+        <span class="selected-value">선택해주세요</span>
+        <span class="arrow-down"></span>
+    </div>
+    <div class="custom-options"><div class="option-group"><div class="option-group-title">매체별</div><div class="option" data-value="B">블로그</div><div class="option" data-value="C">카페</div><div class="option" data-value="A">인스타그램</div><div class="option" data-value="D">유튜브</div><div class="option" data-value="S">SNS</div><div class="option" data-value="J">스토어</div><div class="option" data-value="U">언론홍보</div><div class="option" data-value="W">SEO</div><div class="option" data-value="F">지도</div></div><div class="option-group"><div class="option-group-title">유형별</div><div class="option" data-value="G">포스팅</div><div class="option" data-value="E">체험단</div><div class="option" data-value="H">인플루언서</div><div class="option" data-value="O">숏폼</div><div class="option" data-value="N">PPL</div></div><div class="option-group"><div class="option-group-title">기타</div><div class="option" data-value="Z">기타</div></div></div>
+</div></div></td></tr></tbody></table></div><div class="wf_editor" style="background-color:#FFF; margin-bottom:-2px; min-height:470px;"><script>
+const toolbar = [["misc",["attachImage","video","link","table","vote"]],["style",["style","bold","strikethrough","underline","clear"]],["para",["hr","ul","ol","paragraph"]],["color",["color"]]];
+var currerntPath = "./tools/editor/SummerEditor";
+</script>
+<!-- SummerNote Start -->
+<link href="./tools/editor/SummerEditor/summernote.css?v=1757034953" rel="stylesheet">
+<link href="./tools/editor/SummerEditor/ib_editor.css?v=1776048711" rel="stylesheet">
+<link href="./tools/editor/SummerEditor/plugin/image/summernote-ext-size.css?v=1768287869" rel="stylesheet">
+<script src="./tools/editor/SummerEditor/ib_editor.js?v=1756264159"></script>
+<script src="./tools/editor/SummerEditor/summernote.js?v=1775093532"></script>
+<script src="./tools/editor/SummerEditor/lang/summernote-ko-KR.js?v=1776048788"></script>
+<script src="./tools/editor/SummerEditor/plugin/video/summernote-UrlParser.js?v=1766036170"></script>
+<script src="./tools/editor/SummerEditor/plugin/video/summernote-video-common.js?v=1776834483"></script>
+<script src="./tools/editor/SummerEditor/plugin/video/summernote-video.js?v=1766036199"></script>
+<script src="./tools/editor/SummerEditor/plugin/autolink/summernote-autolink.js?v=1773731120"></script>
+<script src="./tools/editor/SummerEditor/plugin/image/summernote-ext-image.js?v=1744265215"></script>
+<script src="./tools/editor/SummerEditor/plugin/image/summernote-ext-size.js?v=1775093343"></script>
+<script src="./tools/editor/SummerEditor/plugin/image/summernote-image-captionit.js?v=1775092706"></script>
+<script src="./tools/editor/SummerEditor/plugin/vote/summernote-vote.js?v=1743472081"></script>
+<script src="./tools/editor/SummerEditor/summernote-iboss-desktop.js?v=1.2.5?v="></script>
+<textarea name="comment_1" id="oEdit-TCBOARD_BD2986_WRITE_index471-comment_1" data-editor="smNote-TCBOARD_BD2986_WRITE_index471-comment_1" class="summernote" style="width:100%; height:420; display: none;"></textarea><input type="hidden" name="is_html" value="Y">    <div id="smNote-TCBOARD_BD2986_WRITE_index471-comment_1" style="display: none;"></div><div class="note-editor note-frame panel" style="width: 100%;"><div class="note-dropzone">  <div class="note-dropzone-message"></div></div><div class="note-toolbar-wrapper panel-default" style="height: 115.75px;"><div class="note-toolbar panel-heading" style="position: relative; top: 0px; width: 100%;"><div class="note-btn-group btn-group note-misc"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1"><i class="fa-light fa-image"></i><span>사진</span></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="동영상"><i class="fa-light fa-clapperboard-play"></i><span>동영상</span></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="링크 (CTRL+K)"><i class="fa-light fa-link"></i><span>링크</span></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 dropdown-toggle" tabindex="-1" data-toggle="dropdown"><i class="fa-light fa-table-cells"></i><span>표</span></button><div class="dropdown-menu note-table"><div class="note-dimension-picker">  <div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"></div>  <div class="note-dimension-picker-highlighted"></div>  <div class="note-dimension-picker-unhighlighted"></div></div><div class="note-dimension-display">1 x 1</div></div></div><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1"><i class="fa-light fa-square-poll-horizontal"></i><span>투표</span><em class="fa-solid fa-circle-n"></em></button></div><div class="note-btn-group btn-group note-style"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="스타일"><i class="note-icon-magic"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu dropdown-style"><li><a href="#" data-value="h3"><h3>제목 1</h3></a></li><li><a href="#" data-value="h4"><h4>제목 2</h4></a></li><li><a href="#" data-value="h5"><h5>제목 3</h5></a></li><li><a href="#" data-value="h6"><h6>제목 4</h6></a></li><li><a href="#" data-value="p"><p>본문</p></a></li><li><a href="#" data-value="p"><p class="small">작은본문</p></a></li><li><a href="#" data-value="blockquote"><blockquote>인용구</blockquote></a></li><li><a href="#" data-value="pre"><pre>코드</pre></a></li></div></div><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 note-btn-bold" tabindex="-1" title="" data-original-title="굵게 (CTRL+B)"><i class="note-icon-bold"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 note-btn-strikethrough" tabindex="-1" title="" data-original-title="취소선 (CTRL+SHIFT+S)"><i class="note-icon-strikethrough"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 note-btn-underline" tabindex="-1" title="" data-original-title="밑줄 (CTRL+U)"><i class="note-icon-underline"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="글자 효과 없애기 (CTRL+\)"><i class="note-icon-eraser"></i></button></div><div class="note-btn-group btn-group note-para"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="구분선 추가 (CTRL+ENTER)"><i class="note-icon-minus"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="글머리 기호 (CTRL+SHIFT+NUM7)"><i class="note-icon-unorderedlist"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="번호 매기기 (CTRL+SHIFT+NUM8)"><i class="note-icon-orderedlist"></i></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="문단 정렬"><i class="note-icon-align-left"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu"><div class="note-btn-group btn-group note-align"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="왼쪽 정렬 (CTRL+SHIFT+L)"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="가운데 정렬 (CTRL+SHIFT+E)"><i class="note-icon-align-center"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="오른쪽 정렬 (CTRL+SHIFT+R)"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="양쪽 정렬 (CTRL+SHIFT+J)"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-list"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="내어쓰기 (CTRL+[)"><i class="note-icon-align-outdent"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="들여쓰기 (CTRL+])"><i class="note-icon-align-indent"></i></button></div></div></div></div><div class="note-btn-group btn-group note-color"><div class="note-btn-group btn-group note-color"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 note-current-color-button" tabindex="-1" title="" data-original-title="마지막으로 사용한 색" data-backcolor="#FFFF00"><i class="note-icon-font note-recent-color" style="background-color: rgb(255, 255, 0);"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100 dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="다른 색 선택"> <span class="note-icon-caret"></span></button><div class="dropdown-menu"><div class="note-palette">  <div class="note-palette-title">배경색</div>  <div>    <button type="button" class="note-color-reset btn btn-light" data-event="backColor" data-value="inherit">투명    </button>  </div>  <div class="note-holder" data-event="backColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="backColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="backColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="backColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="backColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="backColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="backColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="backColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="backColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="backColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="backColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="backColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="backColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="backColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="backColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="backColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="backColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="backColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="backColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="backColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="backColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="backColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="backColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="backColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="backColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="backColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="backColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="backColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="backColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="backColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="backColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="backColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="backColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="backColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="backColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="backColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="backColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="backColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="backColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="backColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="backColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="backColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="backColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="backColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="backColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="backColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="backColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="backColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="backColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="backColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="backColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="backColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="backColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="backColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="backColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="backColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="backColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="backColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="backColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="backColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="backColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="backColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="backColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="backColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div><div class="note-palette">  <div class="note-palette-title">글자색</div>  <div>    <button type="button" class="note-color-reset btn btn-light" data-event="removeFormat" data-value="foreColor">기본 값으로 변경    </button>  </div>  <div class="note-holder" data-event="foreColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="foreColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="foreColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="foreColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="foreColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="foreColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="foreColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="foreColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="foreColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="foreColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="foreColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="foreColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="foreColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="foreColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="foreColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="foreColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="foreColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="foreColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="foreColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="foreColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="foreColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="foreColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="foreColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="foreColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="foreColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="foreColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="foreColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="foreColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="foreColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="foreColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="foreColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="foreColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="foreColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="foreColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="foreColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="foreColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="foreColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="foreColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="foreColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="foreColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="foreColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="foreColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="foreColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="foreColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="foreColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="foreColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="foreColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="foreColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="foreColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="foreColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="foreColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="foreColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="foreColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="foreColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="foreColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="foreColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="foreColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="foreColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="foreColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="foreColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="foreColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="foreColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="foreColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="foreColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div></div></div></div></div></div><div class="note-editing-area"><div class="note-placeholder" style="display: block;">본문을 입력해 주세요.</div><div class="note-handle"><div class="note-control-selection" style="display: none;"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable"></textarea><div class="note-editable" contenteditable="true" style="height: 360px;"></div></div><div class="note-statusbar">  <div class="note-resizebar">    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>  </div></div><div class="modal link-dialog" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">링크 추가</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group"><label class="note-form-label">링크에 표시할 내용</label><input class="note-link-text form-control note-form-control  note-input" type="text"></div><div class="form-group note-form-group"><label class="note-form-label">이동할 URL</label><input class="note-link-url form-control note-form-control note-input" type="text" value="http://"></div><div class="checkbox"> <label for="sn-checkbox-open-in-new-window"> <input type="checkbox" id="sn-checkbox-open-in-new-window" checked="">새창으로 열기</label></div></div>    <div class="modal-footer"><button type="submit" href="#" class="btn btn-primary note-btn note-btn-primary note-link-btn" disabled="">링크 추가</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">사진 추가</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group note-group-select-from-files"><label class="note-form-label">파일 선택</label><input class="note-image-input note-form-control note-input" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url" style="overflow:auto;"><label class="note-form-label">사진 URL</label><input class="note-image-url form-control note-form-control note-input  col-md-12" type="text"></div></div>    <div class="modal-footer"><button type="submit" href="#" class="btn btn-primary note-btn note-btn-primary note-image-btn" disabled="">사진 추가</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">동영상 추가</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group row-fluid"><label class="note-form-label">동영상 URL <small class="text-muted">(유튜브, 인스타그램, 네이버TV, 카카오TV, 비메오, 데일리모션 사용 가능)</small></label><input class="note-video-url form-control note-form-control note-input" type="text" placeholder="동영상 URL을 입력하세요"></div></div>    <div class="modal-footer"><button type="submit" href="#" class="btn btn-primary note-btn note-btn-primary note-video-btn" disabled="">동영상 추가</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">도움말</h4>    </div>    <div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Y</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+K</kbd></label><span>Show Link Dialog</span></div>    <div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.9</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div>  </div></div></div></div>
+    <script type="text/javascript">
+    $('#smNote-TCBOARD_BD2986_WRITE_index471-comment_1').editor_init({'txtElement': $('#oEdit-TCBOARD_BD2986_WRITE_index471-comment_1'), width:'100%', height :'420', ed:'' });
+    $(window).bind('beforeunload', function(event) {
+        if ( submit_is_ing != "Y" ) {
+            return "변경사항이 저장되지 않을 수 있습니다.";
+        }
+    });
+    </script><input type="hidden" name="is_html" value="Y"></div><div class="modalPollWrap"></div><div><input type="hidden" name="pollInfo" value=""></div><div class="item-options"><div class="item-tag"><span class="fa-light fa-tag"></span><div class="tagShowbox"><div class="tag_showbox_div" style="display:inline;"></div><div class="tagInputBox"><input type="text" name="tag__TSBOX" value="" data-maxtagcount="5" size="40" placeholder="# 태그를 입력하세요 (최대 5개)" maxlength="20"><input type="hidden" name="tag" value=""><div class="searchBox"></div></div></div></div><div><span class="fa-light fa-link"></span><input type="text" name="homepage" value="" class="url_remove" autocomplete="off" size="40" placeholder="게시글 관련 링크 주소를 입력해주세요."></div><div><span class="fa-light fa-paperclip"></span><input type="file" name="user_file_6" class="input_file file_6"><input type="hidden" name="call_file_6" value="Y"></div></div></div><div class="wf_submit_btn"><div class="save-temp"><p class="save_memo"><span class="bstip" data-tip="작성 중인 게시글을 임시저장합니다.">저장</span></p>
+<label></label>
+<p class="call_memo bstip" data-tip="임시저장 게시글을 불러옵니다.">0</p></div><input type="submit" name="submit_OK" value="등록"></div></div><div class="tmp-save"><input type="hidden" name="memo_board" value="BD6835"><input type="hidden" name="memo_serial" value=""><script type="text/javascript">
+$(window).on('resize',function(){
+    if( $(window).height() < 900 ) {
+        $('.memo_list').css({'top':'10%','margin-top':'0'});
+    }else {
+        $('.memo_list').css({'top':'','margin-top':''});
+    }
+});
+
+$('.call_memo').on('click',function(){
+    $('.memo_list_bg').show();
+    $('html').css('overflow', 'hidden');
+    get_list();
+});
+
+var get_list = function(){
+    var time = new Date;
+    var getTime = time.getMilliseconds();
+    $.ajax({
+        url:'/ab-6866&AJAX=Y&time='+getTime,
+        method:'get'
+    }).done(function(data){
+        $('.memo_list .title').html($(data).find('.list-top'));
+        $('.memo_list .conts').html($(data).find('.list-body'));
+        $('.memo_list .paging').html($(data).find('.ABA-list-paging'));
+        put_content();
+        paging();
+        memo_delete();
+        get_list_count();
+    });
+}
+
+var get_list_count = function(){
+    var url = "2988.php";
+    $.ajax({
+        url:"/insiter.php?design_file="+url,
+    }).done(function(data){
+        var count = $(data).find(".call_memo").find("label").text();
+        $(".call_memo label").text(count);
+
+        var count_new = $(data).find(".call_memo.bstip").text();
+        $(".call_memo.bstip").text(count_new);
+    });
+}
+
+//목록 선택시 본문과 제목에 해당 값을 넣어줌
+var put_content = function(){
+    $('.memo_list .conts a.call').bind('click', function(event){
+        event.preventDefault();
+        var conf = confirm('메모장 내용을 불러오시겠습니까?\n현재 입력된 내용은 모두 삭제됩니다.');
+        if( conf == true ) {
+            var get_url = $(this).attr('href');
+
+            $.ajax({
+                url: get_url+'&AJAX=Y',
+                method:'get'
+            }).done(function(data){
+
+                // var memo_serial = get_url.replace(/([a-z0-9]*[-$])/g,'');
+                var memo_serial = get_url.replace(/^(.*)[\-]([^\-]+)$/g, '$2' );
+                var smNote = $( '#TCBOARD_BD2986_WRITE_index471').find('textarea[name=comment_1]').attr('data-editor');
+                var contents =  $(data).find('.ABA-article-contents').html();
+                var contents_re = contents.replace(/(<p><iframe.*iframe><\/p>)/,'');
+                var link = $(data).find('.VF_outlink').text();
+                var files = new Array();
+                var attrs = new Array();
+
+                //불러오는 메모장의 시리얼 넘버
+                $('input[name=memo_serial]').val(memo_serial);
+
+                //파일 이름과 미리보기 불러오기
+                $('.input_file').val('');
+                $('.file_link .file').parent().remove();
+                $(data).find('.article_file_lst .attached_file_in_conts .file_name a').each(function(index,item){
+                    var attr_replace = $(this).attr('href').replace(/^(.*)(\?)/,'');
+                    files.push($(this).find('span').text());
+                    attrs.push(attr_replace);
+                });
+                $('input[type=file].input_file').each(function(index,item){
+                    if( files[index] ){
+                        $(this).after('<p id="f_msg_1"><span class="file">'+files[index]+'</span><a href="/board/download_img.php?'+attrs[index]+'" target="_blank"><img src="/designer/thema/type_1/images/btn_img_preview.gif" border="0" align="absmiddle" hspace="1" alt="미리보기"></a><span class="delete"><img src="/designer/thema/type_1/images/btn_img_delete.gif" border="0" align="absmiddle" hspace="1" alt="삭제"></span></p>');
+                    }
+                });
+                $('.file_link .delete').on('click',function(){
+                    var conf = confirm('삭제하시겠습니까?');
+                    if( conf == true ) {
+                        $(this).parent().siblings('input[name=call_file_6]').val('N');
+                        $(this).parent().remove();
+                    }
+                });
+
+                //본문에 내용넣기
+                var title = $(data).find('.main_title').text();
+                $('#' + smNote).setSummerNote( contents_re);
+                $( '#TCBOARD_BD2986_WRITE_index471').find('textarea[name=comment_1]').val( contents_re );
+                $( '#TCBOARD_BD2986_WRITE_index471').find('input[name=subject]').val( title );
+                $( '#TCBOARD_BD2986_WRITE_index471').find('input[name=homepage]').val( link );
+                $('.memo_list_bg').hide();
+                $('html').css('overflow', 'auto');
+
+                put_content();
+                paging();
+                memo_delete();
+            });
+        }
+    });
+}
+
+//페이지 이동
+var paging = function(){
+    $('.memo_list .paging a').bind('click', function(event){
+        event.preventDefault();
+        var get_url = '/'+$(this).attr('href')+'&AJAX=Y';
+        $.ajax({
+            url:get_url,
+            method:'get'
+        }).done(function(data){
+            $('.memo_list .conts').html($(data).find('.list-body'));
+            $('.memo_list .paging').html($(data).find('.ABA-list-paging'));
+            put_content();
+            paging();
+            memo_delete();
+        });
+    });
+}
+
+//메모 삭제
+var memo_delete = function(){
+    $('.memo_list .delete').on('click',function(){
+
+        var conf = confirm('임시저장 게시글을 삭제 하시겠습니까?');
+        if ( $(this).find('a').length > 0 ) var data = $(this).find('a').attr('data');
+        else var data = $(this).data('serial');
+
+        if( conf == true ) {
+            $(this).closest('.cell').hide();
+            $.ajax({
+                url:'/template/PLUGIN_memo/program/ajax_memo_delete.inc.php',
+                method:'post',
+                dataType:'json',
+                data:{serial:data}
+            }).done(function(msg){
+                if( msg.code == 1 ) {
+                    get_list();
+                    put_content();
+                    paging();
+                    memo_delete();
+                    get_list_count();
+                }else {
+                    alert(msg.msg);
+                    $(this).closest('.cell').show();
+                }
+            });
+        };
+
+    });
+}
+
+// 닫기
+$('.memo_list .tmp-saved-close').on('click',function(){
+    $('.memo_list_bg').hide();
+    $('html').css('overflow', 'auto');
+});
+$(document).ready(function() {
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") {
+            $('.memo_list_bg').hide();
+            $('html').css('overflow', 'auto');
+        }
+    });
+});
+
+
+//메모장에 저장
+$('.save_memo').on('click',function(){
+
+    if( $('#TCBOARD_BD2986_WRITE_index471 input[name=subject]').val() == '' || $('#TCBOARD_BD2986_WRITE_index471 .note-editable').text() == '' ) {
+        if ($('#TCBOARD_BD2986_WRITE_index471 input[name=subject]').val() == '') alert('제목을 입력해주세요.');
+        else alert('입력된 게시글 내용이 없습니다.');
+    }else {
+        var conf = confirm('현재 작성 중인 게시글을 임시저장 하시겠습니까?\n저장된 내용은 다시 불러올 수 있습니다.');
+        if( conf == true ) {
+            iframe_send();
+            setTimeout(function() {
+                get_list_count();
+                }, 0);
+        }
+    }
+
+});
+
+function iframe_send(){
+
+    var form = document.TCBOARD_BD2986_WRITE_index471;
+    var editor_txt = $('textarea[data-editor]').attr('id');
+    var editor = $('textarea[data-editor]').data('editor');
+    $('#' + editor ).editor_update ( editor_txt );
+    form.target = "hiddenifr";
+    form.board.value = 'BD6835';
+    form.submit();
+}
+
+$('#TCBOARD_BD2986_WRITE_index471').on('submit',function(){
+    form = document.TCBOARD_BD2986_WRITE_index471;
+    if( form.target ) {
+        form.target = '';
+        form.board.value = 'BD2986';
+        return TCBOARD_BD2986_WRITE_index471_submit();
+    }
+});
+
+</script>
+</div><iframe src="/ab-blank" frameborder="0" marginheight="0" marginwidth="0" height="0" width="0"></iframe>
+
+<script type="text/javascript">
+function valid_value( form, str ) {
+
+    var len = $(form).find(".oneOfvalue").length;
+    var chk = false;
+    var patt = new RegExp("^(PHONE|EMAIL)[0-9][a-z0-9_]*$");
+    if ( len > 0 ) {
+        $(form).find(".oneOfvalue").each(function() {
+            var name_check =  $(this).attr('name').match(/^(PHONE|EMAIL)[0-9][a-z0-9_]*$/);
+            if ( name_check === null )
+            {
+                if ( $(this).val() && chk == false ) chk = true;
+            }
+            else
+            {
+                if ( valid_series(form, $(this).attr('name'), name_check[1] ) && chk == false ) chk = true;
+            }
+        });
+        if ( !chk ) {
+            alert(str);
+            return false;
+        }
+    }
+    return true;
+}
+
+function valid_series (form, ipName, ipType)
+{
+    var filedName= ipName.substr(7, ipName.len );
+    var input_obj = $(form).find("input[name$="+ filedName +"]");
+    var chk_cnt = 0;
+    input_obj.each( function() {
+        if ( $(this).val() ) chk_cnt ++;
+    } );
+
+    if ( input_obj.length > chk_cnt  ) return false;
+    else return true;
+}
+
+function budget_value( form ) {
+    var chk = false;
+    $(form).find("*[name*='min_budget'],*[name*='max_budget']").each(function() {
+        if ($(this).val()) {
+            if (chk == false) chk = true;
+        } else {
+            $(this).addClass('AB-empty-value');
+        }
+    });
+    if ( !chk ) {
+        alert('최소예산 또는 최대예산 중 하나 이상은 반드시 선택해야합니다.');
+        return chk;
+    }else {
+        return chk;
+    }
+}
+</script></div></div>
+</form>
+</div></div><div class="ABA-container-box-300" id="Layout-sub"><div><div><form name="TCSYSTEM_LOGIN_FORM_I39843" id="TCSYSTEM_LOGIN_FORM_I39843" method="post" action="./member/login_process.php" enctype="multipart/form-data" onsubmit="return TCSYSTEM_LOGIN_FORM_I39843_submit()" data-ajax="false"><input type="hidden" name="after_db_script" value="%SELF%"><input type="hidden" name="after_db_msg" value="">
+		<input type="hidden" name="flag" value="i-boss.co.kr">
+		<input type="hidden" name="Q_STRING" value="design_file=2988.php&amp;serial_parent=">
+		<input type="hidden" name="http_referer" value="https://www.i-boss.co.kr/ab-2986">
+	<input type="hidden" name="VG_live_code" value="03afdbd66e7929b125f8597834fa83a4"><input type="hidden" name="P_SELF" value="insiter.php"><div id="login-box">
+	<div class="Logged">
+	<script>
+$(function () {
+    const bar = $('#ex-progress-bar .ex-bar');
+    if (!bar.length) return;
+
+    const percent = bar.data('percent');
+    if (!percent) return;
+
+    // transition 보장용 (다음 렌더 프레임)
+    requestAnimationFrame(function () {
+        bar.css('width', percent + '%');
+    });
+});
+</script><div class="user-info flex gap-3"><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_80_80_profile_img_34.png" border="0" width="80" height="80" class="thumb-prof"><div class="flex flex-col" style="align-items:start"><div class="flex items-center gap-1 h-28"><a href="/@엔트리프로그램" class="nickname">엔트리프로그램</a><a class="setting fa-regular fa-cog bstip font-size-10" data-tip="정보수정" href="/ab-member"></a></div><div id="set-rep-career" class="mb-1" style="margin-left:-.375rem;">
+
+<script>
+let repCareerLoadedOnce = false;
+
+$(document).on('click', '#set-rep-career', function (e) {
+    e.stopPropagation();
+
+    const btn = $(this);
+
+    // 기존 popover 제거 (토글)
+    $('.rep-career-popover').remove();
+
+    // popover 기본 구조 (skeleton loading)
+    const popover = $(`
+        <div class="rep-career-popover">
+            <div class="w-64 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" style="min-width:360px;">
+                <div class="rep-career-content">
+                ${
+                    repCareerLoadedOnce
+                        ? '' // 👉 두 번째부터는 skeleton 없음
+                        : `
+                    <div class="p-3">
+                        <div class="skeleton-career flex items-center gap-3">
+                            <div class="skeleton-logo"></div>
+                            <div class="flex flex-col gap-2 flex-1 w-full">
+                                <div class="skeleton-text company"></div>
+                                <div class="skeleton-text position"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-career flex items-center gap-3">
+                            <div class="skeleton-logo"></div>
+                            <div class="flex flex-col gap-2 flex-1 w-full">
+                                <div class="skeleton-text company"></div>
+                                <div class="skeleton-text position"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-career flex items-center gap-3">
+                            <div class="skeleton-logo"></div>
+                            <div class="flex flex-col gap-2 flex-1 w-full">
+                                <div class="skeleton-text company"></div>
+                                <div class="skeleton-text position"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-career flex items-center gap-3" style="padding-bottom:0">
+                            <div class="skeleton-logo" style="width:100%; height:40px; box-sizing:border-box; border-radius:8px;"></div>
+                        </div>
+                    </div>
+                    `
+                }
+                </div>
+            </div>
+        </div>
+    `);
+
+    // 버튼 위치 기준 좌표
+    const offset = btn.offset();
+    const height = btn.outerHeight();
+
+    popover.css({
+        position:'absolute',
+        top:offset.top + height,
+        left:offset.left
+    });
+
+    // DOM 삽입
+    $('body').append(popover);
+
+    const skeletonStartTime = Date.now();
+
+    // AJAX로 실제 내용 로딩
+    $.ajax({
+        url:'/template/PLUGIN_login_box/program/loginbox_set_rep_career.ajax.php',
+        type:'GET',
+        dataType:'html',
+        success:function (html) {
+            const elapsed = Date.now() - skeletonStartTime;
+            const minDelay = repCareerLoadedOnce ? 0 : 700;
+            const delay = Math.max(minDelay - elapsed, 0);
+            
+            // 최초 로딩 완료 시점에서 true로 전환
+            repCareerLoadedOnce = true;
+            
+            setTimeout(function () {
+                popover.find('.rep-career-content').html(html);
+            }, delay);
+
+            // 한번 조회하면 true로 변경
+            repCareerLoadedOnce = true;
+        },
+        error:function () {
+            popover.find('.rep-career-content').html(
+                '<p class="text-red-400 text-sm">정보를 불러오지 못했습니다.</p>'
+            );
+        }
+    });
+});
+
+// popover 내부 클릭 시 닫힘 방지
+$(document).on('click', '.rep-career-popover', function (e) {
+    e.stopPropagation();
+});
+
+// 외부 클릭 시 popover 제거
+$(document).on('click', function () {
+    $('.rep-career-popover').remove();
+});
+
+
+// 경력 선택
+$(document).on('click', '.btn-set-rep-career', function () {
+
+    const $this = $(this);
+    
+    // ✅ 비공개(= disabled) 경력 선택 시 안내 메시지
+    if ($this.is('[disabled]')) {
+
+        fn_display_msg('대표경력 설정', '비공개한 경력은 대표경력으로 설정할 수없습니다.', '공개로 변경', '', 'confirm', '', function () {
+                // ✅ 공개로 변경 버튼 클릭 시
+                const serial = $this.data('serial');
+                const type = 'public';
+
+                // AJAX로 TCBOARD_BD5739 해당하는 데이터의 is_except = N 으로 update
+                $.ajax({
+                    url: '/template/PLUGIN_login_box/program/loginbox_modify_rep_career.ajax.php',
+                    method: 'POST',
+                    dataType: 'json',
+                    data: {
+                        serial: serial,
+                        type: type
+                    },
+                    success: function (res) {
+                        if (res.code === 1) {
+                            $this.removeAttr('disabled');
+                            fn_display_msg('경력정보 공개 완료', res.msg);
+                        } else {
+                            fn_display_msg('', res.msg || '처리 중 오류가 발생했습니다.');
+                        }
+                    },
+                    error: function () {
+                        fn_display_msg('오류', '서버 통신에 실패했습니다.');
+                    }
+                });
+            }
+        );
+
+        return;
+    }
+
+    if ( $this.data('rep') === 'Y' ) {
+        // 이미 대표경력 지정된 경력이면
+        return;
+    }
+
+    if ( $this.data('not_allowed') === 'Y' ) {
+        // 인증 불가 경력 선택 시 안내 메시지
+        fn_display_msg('대표경력 설정', '프리랜서, 취준생, 개인 등 인증할 수 없는 기업정보인 경우 대표경력으로 등록할 수 없습니다.', '정보 수정하기', '/ab-7457-'+$this.data('serial'), 'confirm', '');
+        return;
+    }
+
+    if ( $this.data('working') === 'N' ) {
+        // 재직 중인 경력이 아니라면
+        fn_display_msg('재직 설정 안내', '재직 중인 경력만 대표경력으로 등록할 수 있습니다.', '정보 수정하기', '/ab-7457-'+$this.data('serial'), 'confirm', '');
+        return;
+    }
+    
+    if ( $this.data('is_main') !== 'Y' ) {
+        // 재직 중인 경력이 아니라면
+        var company_serial = $(this).data('company_serial');
+        var career_serial = $(this).data('serial');
+
+        fn_display_msg('재직 인증 안내', '재직 인증을 하셔야 대표경력으로 등록할 수 있습니다.', '인증하기', '/ab-6289', 'confirm', '', '');
+        return;
+    }
+
+    const $popover = $this.closest('.rep-career-popover');
+
+    // 기존 selected 해제
+    $popover.find('.btn-set-rep-career.selected')
+        .removeClass('selected bg-indigo-50')
+        .find('.fa-solid.fa-circle-check')
+        .removeClass('fa-solid fa-circle-check')
+        .addClass('fa-regular fa-chevron-right');
+
+    // 현재 항목 selected
+    $this
+        .addClass('selected bg-indigo-50')
+        .find('.fa-regular.fa-chevron-right')
+        .removeClass('fa-regular fa-chevron-right')
+        .addClass('fa-solid fa-circle-check');
+
+    // 설정 완료 버튼 활성화
+    const $submitBtn = $('.btn-career-submit');
+
+    $submitBtn
+        .prop('disabled', false)
+        .removeClass('bg-gray-200 text-gray-400 cursor-not-allowed')
+        .addClass('bg-blue-600 text-white hover:bg-blue-700');
+});
+// 닫기 버튼 클릭 시 popover 제거
+$(document).on('click', '.btn-career-close', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $(this).closest('.rep-career-popover').remove();
+});
+
+
+
+// 설정하기 버튼 클릭
+$(document).on('click', '.btn-career-submit', function () {
+
+    const $btn = $(this);
+    if ($btn.prop('disabled')) return;
+
+    const $popover = $btn.closest('.rep-career-popover');
+    const $selected = $popover.find('.btn-set-rep-career.selected');
+    if (!$selected.length) return;
+
+    // ✅ 선택된 경력 정보 추출
+    const repCareer = {
+        serial:$selected.data('serial'),
+        company:$.trim(
+            $selected.find('p').eq(0).contents().filter(function () {
+                return this.nodeType === 3;
+            }).text()
+        ),
+        position:$.trim($selected.find('p').eq(1).text())
+    };
+
+    /* ----------------------------
+     * 1️⃣ 버튼 로딩 상태로 변경
+     * ---------------------------- */
+    const originalHtml = $btn.html();
+
+    $btn
+        .prop('disabled', true)
+        .removeClass('hover:bg-blue-700')
+        .html('<i class="fa-regular fa-loader fa-spin"></i>');
+
+    /* ----------------------------
+     * 2️⃣ 저장 중
+     * ---------------------------- */
+    setTimeout(function () {
+
+        /* ----------------------------
+         * 3️⃣ 대표 커리어 UI 반영
+         * ---------------------------- */
+        const repCareerHtml = `
+            <div class="button-init w-fit h-24 border-box flex items-center font-bold transition-all rounded-full cursor-pointer configured hover:bg-gray-100 px-1.5" style="letter-spacing:-0.5px;gap:2px">
+                <div class="flex items-center justify-center w-3.5 h-3.5 rounded-full bg-indigo-100 text-indigo-600 transition-all duration-300">
+                    <i class="fa-regular fa-briefcase font-size-10" style="color:#94a3b8"></i>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="font-size-13 font-bold" style="color:#475569">
+                        ${repCareer.company}
+                    </span>
+                    <div class="w-1 h-8" style="background:#cbd5e1;"></div>
+                    <span class="font-size-12 font-medium" style="color:#475569">
+                        ${repCareer.position}
+                    </span>
+                </div>
+            </div>
+        `;
+
+
+        // ✅ 공개로 변경 버튼 클릭 시
+        const serial = repCareer.serial;
+        const type = 'apply';
+
+        // AJAX로 TCBOARD_BD5739 해당하는 데이터의 is_except = N 으로 update
+        $.ajax({
+            url: '/template/PLUGIN_login_box/program/loginbox_modify_rep_career.ajax.php',
+            method: 'POST',
+            dataType: 'json',
+            data: {
+                serial: serial,
+                type: type
+            },
+            success: function (res) {
+
+                if (res.code === 1) {
+                    fn_display_msg('대표경력 설정', res.msg);
+                } else {
+                    fn_display_msg('', res.msg || '처리 중 오류가 발생했습니다.');
+                }
+            },
+            error: function () {
+                fn_display_msg('오류', '서버 통신에 실패했습니다.');
+            }
+        });
+
+
+        const $setBtn = $('#set-rep-career');
+
+        $setBtn
+            .html(repCareerHtml)
+            .addClass('configured')
+            .removeClass('text-gray-400 bg-gray-50 border-gray-100')
+            .attr('data-serial', repCareer.serial);
+
+        /* ----------------------------
+         * 4️⃣ popover 닫기
+         * ---------------------------- */
+        $popover.remove();
+
+    }, 750);
+});
+</script><div class="button-init w-fit h-24 border-box flex items-center gap-1 font-size-11 font-bold text-gray-400 transition-all py-1 px-2 bg-gray-50 border border-gray-100 rounded-full cursor-pointer">
+<i class="fa-regular fa-plus font-size-8"></i>대표 커리어 설정</div>
+</div><div class="flex items-center gap-3"><a href="/ab-mymembership" class="non-plus rounded-md flex items-center justify-center gap-1 font-bold h-24 font-size-12"><img src="https://cdn.ibos.kr/images/iboss_plus_logo_s.svg" width="16" height="16" alt="아이보스 플러스 멤버십"><span>시작하기</span></a></div></div><a class="LogOut bg-gray-100 font-medium" href="/member/logout_process.php?after_db_msg=&amp;next_page=">로그아웃</a></div><div class="stat flex justify-between gap-2"><a class="w-full flex items-center justify-center font-size-12 text-black rounded-lg hover:bg-gray-100 bg-gray-50 transition-all" href="/ab-6551">
+<i style="color:rgb(16 185 129);" class="fa-regular fa-leaf font-size-10"></i>
+<strong class="font-bold">4,803</strong>
+<span class="font-size-10 text-gray-600">리터</span>
+</a><a class="flex items-center justify-center w-full font-size-12 rounded-lg hover:bg-gray-100 bg-gray-50 transition-all" href="/ab-6490">
+<i style="color:rgb(59 130 246);" class="fa-solid fa-circle-c font-size-10"></i>
+<strong class="font-bold text-black">0</strong>
+<span class="font-size-10 text-gray-600">캐시</span>
+</a><a class="flex items-center justify-center w-full font-size-12 font-bold rounded-lg hover:bg-gray-100 bg-gray-50 transition-all" href="/ab-6009"><i style="color:rgb(99 102 241);" class="fa-regular fa-trophy font-size-10"></i>LV.4</a></div><div><div id="ex-progress-bar">
+    <div class="progress-wrap">
+        <div class="ex-bar" data-percent="95.15" style="width: 95.15%;">
+            <div class="animate-shimmer">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="ex-tooltip">
+        <div class="toolip-div"><p>다음 레벨까지</p><span>97리터</span></div>
+        <div class="divider"></div>
+        <div class="toolip-div"><p>현재 경험치</p><span>95.15%</span></div>
+        <div class="tooltip-arrow"></div>
+    </div>
+</div></div><div class="direct-link flex justify-between items-center">
+<a href="/ab-6527">내글</a><div class="w-1 h-12"></div><a href="/ab-6528">내댓글</a><div class="w-1 h-12"></div><a href="/ab-scrapbook">스크랩</a><div class="w-1 h-12"></div><a href="/ab-2332">출석</a></div>
+</div>
+</div>
+</form>
+</div></div><div class="write_guide">
+<div class="guide_pop"><div><h3>글쓰기 도움말</h3><img src="images/20180124_talk_form_close.png" width="30" height="30" border="0" class="close"><div class="wrap"><h4></h4><div class="cont_box"></div></div></div></div><dl><dt>글쓰기 기능 안내</dt><dd class="ad_img" data-idx="21"><em></em><span>게시글에 사진 추가하는 방법</span></dd><dd class="ad_video" data-idx="22"><em></em><span>동영상 추가하는 방법</span></dd><dd class="ad_file" data-idx="23"><em></em><span>파일 첨부하는 방법</span></dd><dd class="ad_link" data-idx="24"><em></em><span>게시글 관련 링크 넣는 방법</span></dd><dd class="ad_box" data-idx="25"><em></em><span>인용구 박스 추가하는 방법</span></dd></dl></div>
+<div id="service-board"><div>
+	<div class="wrap auth">
+	<h3>바이럴 서비스 홍보 이용권<a href="https://i-boss.gitbook.io/main/guide/forum/consulting/viral-service" target="_blank"><i class="far fa-question-circle"></i></a><a class="more" href="/ab-8220">결제내역</a></h3>		<div class="details">
+<div><span class="nodata">사용가능한 이용권이 없습니다.</span></div></div>
+<div class="btn_apply"><a href="/ab-8220">이용권 구매</a><a href="/ab-8159">이용권 정기결제</a></div></div>
+</div>
+<div><div class="wrap top">
+<h3>상단 노출<a href="https://i-boss.gitbook.io/main/guide/forum/consulting/viral-service/top-ad" target="_blank"><i class="far fa-question-circle bstip" data-tip="링크 클릭 시 이용안내로 이동합니다."></i></a><a href="/ab-6492" class="more">결제내역</a></h3><div class="details">
+<div><p class="null">서비스를 이용하고 있지 않습니다.</p></div></div>
+<div class="btn_apply">
+<a href="/ab-8134">상단 노출 서비스 신청</a></div>
+</div>
+</div></div><div id="BnSub"><a class="block ibtracid sponsored_banner_N2 overflow-hidden rounded-lg" href="https://www.dabonem.com/b2c/event/index.html?utm_source=iboss&amp;utm_medium=banner&amp;utm_campaign=202605_iboss_event" data-id="df472d69cb675a2cc43e0ee81fa1ef803486" title="다보냄" data-location="서브배너A_360x240" data-subject="케이피" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너A" gtm-ev-action="df472d69cb675a2cc43e0ee81fa1ef803486" iss="t" data-gtm-vis-first-on-screen1645705_271="400" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/c9e0983484d8a94db9c05eb2b7bddd13.png" width="360" height="240" alt="다보냄"></a></div><div class="layout_col"><style>
+.subb1 img {border-radius:8px;}
+</style>
+<div class="most_popular"><div class="tab-wrap"><span class="active">지금 인기</span>
+<span>주간 인기</span>
+<span>월간 인기</span></div><div class="tab-container"><div>
+	<div class="cell"><a class="num_1 text-ellipsis" href="/ab-1486505-53897" title="블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?">
+	<em>1</em><span>블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?</span><label>9</label></a></div><div class="cell"><a class="num_2 text-ellipsis" href="/ab-1486505-53910" title="스마트 스토어 세팅준비">
+<em>2</em><span>스마트 스토어 세팅준비</span><label>7</label></a></div><div class="cell"><a class="num_3 text-ellipsis" href="/ab-6141-70447" title="이 사달이 났지만 블로그 업로드하고 계신 분 계신가요?ㅠ">
+<em>3</em><span>이 사달이 났지만 블로그 업로드하고 계신 분 계신가요?ㅠ</span><label>6</label></a></div><div class="cell"><a class="num_4 text-ellipsis" href="/ab-1486505-53900" title="4년만에 아이보스로 복귀!">
+<em>4</em><span>4년만에 아이보스로 복귀!</span><label>4</label></a></div><div class="cell"><a class="num_5 text-ellipsis" href="/ab-6141-70423" title="우린 B2B 기업인데 어쩌다보니 숏폼을 찍게 됐어요">
+<em>5</em><span>우린 B2B 기업인데 어쩌다보니 숏폼을 찍게 됐어요</span></a></div><div class="cell cellAd">
+            <a class="text-ellipsis" href="/ab-2877-17258" data-bd="BD7728" data-sr="1098" data-id="uuib_U1MIEJ4R" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-action="uuib_U1MIEJ4R" gtm-ev-category="layout-popular-articles">
+                <em style="font-size:11px">AD</em><span>예측 가능한 위닝 인플루언서 마케팅</span>
+            </a>
+        </div><div></div><div class="cell"><a class="num_6 text-ellipsis" href="/ab-2110-32571" title="GA4 배우는법">
+<em>6</em><span>GA4 배우는법</span><label>3</label></a></div><div class="cell"><a class="num_7 text-ellipsis" href="/ab-6141-70455" title="우리 회사는 AI 검색에 노출되고 있을까? GEO/AEO 체크포인트">
+<em>7</em><span>우리 회사는 AI 검색에 노출되고 있을까? GEO/AEO 체크포인트</span></a></div><div class="cell"><a class="num_8 text-ellipsis" href="/ab-1486505-53914" title="이번에 블로그 글 검색하면서 알아냈던 사실">
+<em>8</em><span>이번에 블로그 글 검색하면서 알아냈던 사실</span><label>1</label></a></div><div class="cell"><a class="num_9 text-ellipsis" href="/ab-6141-70469" title="20년차 마케터가 본 네이버 사태 2">
+<em>9</em><span>20년차 마케터가 본 네이버 사태 2</span><label>1</label></a></div><div class="cell"><a class="num_10 text-ellipsis" href="/ab-6141-70450" title="금요일 작업 반영 안되신분 계실까요?">
+<em>10</em><span>금요일 작업 반영 안되신분 계실까요?</span><label>4</label></a></div></div>
+<div>
+	<div class="cell"><a class="num_1 text-ellipsis" href="/ab-1486505-53811" title="고유가 지원금 기준이래요">
+	<em>1</em><span>고유가 지원금 기준이래요</span><label>13</label></a></div><div class="cell"><a class="num_2 text-ellipsis" href="/ab-1486505-53897" title="블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?">
+<em>2</em><span>블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?</span><label>9</label></a></div><div class="cell"><a class="num_3 text-ellipsis" href="/ab-1486505-53840" title="초등학교 화장실을 향기롭게 바꿔준 마케터">
+<em>3</em><span>초등학교 화장실을 향기롭게 바꿔준 마케터</span><label>4</label></a></div><div class="cell"><a class="num_4 text-ellipsis" href="/ab-1486505-53836" title="첫 포트폴리오 질문있습니다..">
+<em>4</em><span>첫 포트폴리오 질문있습니다..</span><label>6</label></a></div><div class="cell"><a class="num_5 text-ellipsis" href="/ab-6141-70374" title="블로그 제목, 노출 잘 되게 작성하는 법은?">
+<em>5</em><span>블로그 제목, 노출 잘 되게 작성하는 법은?</span><label>5</label></a></div><div class="cell cellAd">
+            <a class="text-ellipsis" href="/ab-7729-1094" data-bd="BD7728" data-sr="1094" data-id="uuib_VQM10UXZ" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-action="uuib_VQM10UXZ" gtm-ev-category="layout-popular-articles">
+                <em style="font-size:11px">AD</em><span>[하이서울기업협회x아이보스] 콘텐츠 퍼포먼스 마케팅 전문가 과정 강서캠퍼스 8기 모집</span>
+            </a>
+        </div><div></div><div class="cell"><a class="num_6 text-ellipsis" href="/ab-1486505-53910" title="스마트 스토어 세팅준비">
+<em>6</em><span>스마트 스토어 세팅준비</span><label>7</label></a></div><div class="cell"><a class="num_7 text-ellipsis" href="/ab-1486505-53854" title="개발자 출신으로 마케팅 에이전시 시작했습니다. 커피챗 희망합니다.">
+<em>7</em><span>개발자 출신으로 마케팅 에이전시 시작했습니다. 커피챗 희망합니다.</span><label>3</label></a></div><div class="cell"><a class="num_8 text-ellipsis" href="/ab-6141-70395" title="이제 여기 블로그 게시판은 찾는 분들이 없어지겠네요..">
+<em>8</em><span>이제 여기 블로그 게시판은 찾는 분들이 없어지겠네요..</span><label>5</label></a></div><div class="cell"><a class="num_9 text-ellipsis" href="/ab-6141-70447" title="이 사달이 났지만 블로그 업로드하고 계신 분 계신가요?ㅠ">
+<em>9</em><span>이 사달이 났지만 블로그 업로드하고 계신 분 계신가요?ㅠ</span><label>6</label></a></div><div class="cell"><a class="num_10 text-ellipsis" href="/ab-1486505-53900" title="4년만에 아이보스로 복귀!">
+<em>10</em><span>4년만에 아이보스로 복귀!</span><label>4</label></a></div></div>
+<div>
+	<div class="cell"><a class="num_1 text-ellipsis" href="/ab-1486505-53609" title="퇴사할 때 내가 만든 개인 파일 지웠는데 회사한테 고소당할 위기ㅠ">
+<em>1</em><span>퇴사할 때 내가 만든 개인 파일 지웠는데 회사한테 고소당할 위기ㅠ</span><label>19</label></a></div><div class="cell"><a class="num_2 text-ellipsis" href="/ab-1486505-53811" title="고유가 지원금 기준이래요">
+<em>2</em><span>고유가 지원금 기준이래요</span><label>13</label></a></div><div class="cell"><a class="num_3 text-ellipsis" href="/ab-1486505-53675" title="팀에 프롬프트 절대 공유 안 해주는 신입 어떡하죠?">
+<em>3</em><span>팀에 프롬프트 절대 공유 안 해주는 신입 어떡하죠?</span><label>29</label></a></div><div class="cell"><a class="num_4 text-ellipsis" href="/ab-6141-70370" title="20년 검색 마케터가 본 네이버 사태">
+<em>4</em><span>20년 검색 마케터가 본 네이버 사태</span><label>14</label></a></div><div class="cell"><a class="num_5 text-ellipsis" href="/ab-1486505-53619" title="GPT로 바로 사용할 수 있는 배너를 만들었어요">
+<em>5</em><span>GPT로 바로 사용할 수 있는 배너를 만들었어요</span><label>12</label></a></div><div class="cell cellAd">
+            <a class="text-ellipsis" href="/ab-7729-732" data-bd="BD7728" data-sr="732" data-id="uuib_HKZW8QI6" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-action="uuib_HKZW8QI6" gtm-ev-category="layout-popular-articles">
+                <em style="font-size:11px">AD</em><span>광고 맡길 곳 고민될 땐, 아이보스 파트너스로 가보세요.</span>
+            </a>
+        </div><div></div><div class="cell"><a class="num_6 text-ellipsis" href="/ab-6141-70332" title="[네이버 스마트스토어 7편] 빅파워 90% 이상이 실수하는 SEO (리워드 쓰기전에 꼭 확인하세요!)">
+<em>6</em><span>[네이버 스마트스토어 7편] 빅파워 90% 이상이 실수하는 SEO (리워드 쓰기전에 꼭 확인하세요!)</span><label>16</label></a></div><div class="cell"><a class="num_7 text-ellipsis" href="/ab-6141-70283" title="[Meta]성과 안 나는 이유 90% 계정 문제 아님! 구조 문제입니다”">
+<em>7</em><span>[Meta]성과 안 나는 이유 90% 계정 문제 아님! 구조 문제입니다”</span><label>24</label></a></div><div class="cell"><a class="num_8 text-ellipsis" href="/ab-1486505-53840" title="초등학교 화장실을 향기롭게 바꿔준 마케터">
+<em>8</em><span>초등학교 화장실을 향기롭게 바꿔준 마케터</span><label>4</label></a></div><div class="cell"><a class="num_9 text-ellipsis" href="/ab-2973-773" title="AI 퀄리티는 디테일에서 나옵니다, AI 실전 마스터 칼릭스의 프롬프트 디테일 도서 증정 이벤트">
+<em>9</em><span>AI 퀄리티는 디테일에서 나옵니다, AI 실전 마스터 칼릭스의 프롬프트 디테일 도서 증정 이벤트</span><label>32</label></a></div><div class="cell"><a class="num_10 text-ellipsis" href="/ab-1486505-53743" title="직원 다시 뽑아야할까요...">
+<em>10</em><span>직원 다시 뽑아야할까요…</span><label>13</label></a></div></div>
+</div></div><div class="column-recommend"><div class="title"><strong>아이보스 칼럼</strong><a href="/ab-74667">전체보기 <i class="fa-light fa-chevron-right"></i></a></div><div class="cell-wrap"><div class="page active"><a href="/ab-74668-5691" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_92af2104c5157f677d9a75a5bcabed2e_31281_1.png" alt="유행이 피곤해진 현대인들, '나만 아는 취향'으로 숨었다"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">유행이 피곤해진 현대인들, '나만 아는 취향'으로 숨었다</p>
+            <p class="h2 ellipsis-1">위픽wepick</p>
+                    </div></a><a href="/ab-74668-5709" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_849de8bb0a3b31b74f19ec8157724fce_816_1.png" alt="우리 브랜드 인플루언서 콘텐츠만 밤티였던 이유"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">우리 브랜드 인플루언서 콘텐츠만 밤티였던 이유</p>
+            <p class="h2 ellipsis-1">인켓팅</p>
+                    </div></a><a href="/ab-74668-5688" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_97aab26a8072020cdb26320abc2ee8b2_92133_1.png" alt="AI는 어떻게 향수를 팔았을까"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">AI는 어떻게 향수를 팔았을까</p>
+            <p class="h2 ellipsis-1">AICX플래티어</p>
+                    </div></a><a href="/ab-74668-5712" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_6df1599cffe74c7f434f3aa2f9659f84_94323_1.jpg" alt="AI 주식 투자 서비스가 고객과 신뢰를 쌓는 방법"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">AI 주식 투자 서비스가 고객과 신뢰를 쌓는 방법</p>
+            <p class="h2 ellipsis-1">플랜브로</p>
+                    </div></a><a href="/ab-74668-5693" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_9dae30428a2d3850bea0661e899cde3d_69832_1.png" alt="에이전틱 커머스 뉴스피드 Vol. 3"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">에이전틱 커머스 뉴스피드 Vol. 3</p>
+            <p class="h2 ellipsis-1">AICX플래티어</p>
+                    </div></a><a href="/ab-74668-5697" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_2a4129380f30d2d8171ee653a34494d7_9516_1.png" alt="고효율 성과형 인플루언서 마케팅 하는 방법"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">고효율 성과형 인플루언서 마케팅 하는 방법</p>
+            <p class="h2 ellipsis-1">인켓팅</p>
+                    </div></a></div><div class="page"><a href="/ab-74668-5699" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_6291be643eff5e49c86c2a42a64b0346_65328_1.jpg" alt="1,000억 매출 냉동식품 브랜드의 핵심 마케팅 엔진"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">1,000억 매출 냉동식품 브랜드의 핵심 마케팅 엔진</p>
+            <p class="h2 ellipsis-1">플랜브로</p>
+                    </div></a><a href="/ab-74668-5682" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_69510c85d8718ee88547b77dc2112e5e_56574_1.jpg" alt="7500억 매출을 만든 5가지 마케팅 엔진"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">7500억 매출을 만든 5가지 마케팅 엔진</p>
+            <p class="h2 ellipsis-1">플랜브로</p>
+                    </div></a><a href="/ab-74668-5704" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_4ee4bb6973c94bc9f207b31825ecc35e_76734_1.png" alt="🇰🇷 한컴 vs  🌎뤼튼, 같은 ‘문서 AI’지만 가는 방향은 정반대"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">🇰🇷 한컴 vs  🌎뤼튼, 같은 ‘문서 AI’지만 가는 방향은 정반대</p>
+            <p class="h2 ellipsis-1">굿모닝MY브랜드</p>
+                    </div></a><a href="/ab-74668-5698" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_1bfd8a11ab9e6874329cb05fe5f7973b_81965_1.jpg" alt="(3) 인사이트는 해석이 아니라 결정이다"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">(3) 인사이트는 해석이 아니라 결정이다</p>
+            <p class="h2 ellipsis-1">비즈그리다매니저</p>
+                    </div></a><a href="/ab-74668-5689" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_fadbd73208310aa831768484ad404a2b_4557_1.png" alt="시그널플래너 캠페인 — '범' 하나로 보험 클리셰를 깨버린 법"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">시그널플래너 캠페인 — '범' 하나로 보험 클리셰를 깨버린 법</p>
+            <p class="h2 ellipsis-1">소마코</p>
+                    </div></a><a href="/ab-74668-5685" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_b0f8b30de708f306507f467e3858e6af_43030_1.png" alt="🛡️네이버 스마트스토어 대변혁, 셀러의 생존법"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">🛡️네이버 스마트스토어 대변혁, 셀러의 생존법</p>
+            <p class="h2 ellipsis-1">윈들리팀</p>
+                    </div></a></div><div class="page"><a href="/ab-74668-5706" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_dfcbff002d09430787bb7f2e1451c1c6_27360_1.png" alt="해체주의 소비자의 탄생"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">해체주의 소비자의 탄생</p>
+            <p class="h2 ellipsis-1">위픽wepick</p>
+                    </div></a><a href="/ab-74668-5703" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_991fd4114bc0eeaa78f30666d4f1161b_3884_1.png" alt="AI 시대, 고객의 언어로 콘텐츠를 설계해야 하는 이유"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">AI 시대, 고객의 언어로 콘텐츠를 설계해야 하는 이유</p>
+            <p class="h2 ellipsis-1">비즈스프링</p>
+                    </div></a><a href="/ab-74668-5694" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_406212abb968a1879eaba3ff9222f16a_35061_1.png" alt="🌐 글로벌 소싱 급변! 11번가는 왜 미국 대신 중국을 택했나"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">🌐 글로벌 소싱 급변! 11번가는 왜 미국 대신 중국을 택했나</p>
+            <p class="h2 ellipsis-1">윈들리팀</p>
+                    </div></a><a href="/ab-74668-5692" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_5e0d5fa41d14bac77d6e1a8cac9d6ddb_15029_1.png" alt="유튜브 알고리즘 완전정복 : 초보 유튜버가 자주 빠뜨리는 설정 3가지"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">유튜브 알고리즘 완전정복 : 초보 유튜버가 자주 빠뜨리는 설정 3가지</p>
+            <p class="h2 ellipsis-1">드롭샷매치</p>
+                    </div></a><a href="/ab-74668-5684" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_56b22b51977f98e4574fbc35ee68c86c_21911_1.png" alt="AI Search 시대 마케팅 전략: GEO, AEO, SEO를 위한 8가지 질문"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">AI Search 시대 마케팅 전략: GEO, AEO, SEO를 위한 8가지 질문</p>
+            <p class="h2 ellipsis-1">엘리펀트컴퍼니</p>
+                    </div></a><a href="/ab-74668-5701" target="_blank" class="article">
+            <div class="thumb_img"><img src="https://cdn.ibos.kr/design/upload_file/BD74667/THUMBNAIL_300_200_5cf9a5f65791fa26b6b0c01803658a8d_24512_1.png" alt="천만 감독 장항준, 광고까지 접수? G마켓 또 이상한 거 가져왔네"></div>
+            <div class="conts">
+            <p class="h1 ellipsis-2">천만 감독 장항준, 광고까지 접수? G마켓 또 이상한 거 가져왔네</p>
+            <p class="h2 ellipsis-1">소마코</p>
+                    </div></a></div></div><div class="column_pager"><i class="fa-solid fa-chevron-left" data-direction="prev" onclick="column_prevPage()"></i><label for="current_page" id="current_page">1</label><label>/</label><label for="total_page" id="total_page">3</label><i class="fa-solid fa-chevron-right" data-direction="next" onclick="column_prevPage()"></i></div></div><!-- NEW 서브배너B --><div class="subb1 flex flex-col gap-2.5 mb-5"><a class="block ibtracid sponsored_banner_N42 overflow-hidden rounded-lg" href="/ab-7610?ref=sub_b1" data-id="31cad2f742980652d48b8a8727e9b2713465" title="광고비 전용카드" data-location="서브배너B(NEW)_360x120" data-subject="아이보스 파트너" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B(NEW)" gtm-ev-action="31cad2f742980652d48b8a8727e9b2713465" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/4856d999bda9c31bab548c9c9b273b8d.png" width="360" height="120" alt="광고비 전용카드"></a><a class="block ibtracid sponsored_banner_N42 overflow-hidden rounded-lg" href="https://www.ibossedu.co.kr/edu-goods-470?ref=subBN" data-id="eb1fac5a76502c1e08c120b2df465b4e3508" title="메타뮤즈" data-location="서브배너B(NEW)_360x120" data-subject="아이보스교육" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B(NEW)" gtm-ev-action="eb1fac5a76502c1e08c120b2df465b4e3508" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/cda50cc3d2cb2cf823892ff224075d1a.png" width="360" height="120" alt="메타뮤즈"></a><a class="block ibtracid sponsored_banner_N42 overflow-hidden rounded-lg" href="/ab-partners_list?ref=sub_b1" data-id="918d6d9115d27b02d4ceac7f7b117b4b3464" title="파트너스" data-location="서브배너B(NEW)_360x120" data-subject="아이보스 매체팀" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B(NEW)" gtm-ev-action="918d6d9115d27b02d4ceac7f7b117b4b3464" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/b4006c56b3cc5e182e93209dcda1ed2b.png" width="360" height="120" alt="파트너스"></a><a class="block ibtracid sponsored_banner_N42 overflow-hidden rounded-lg" href="https://www.qletter.co.kr/subscribe/?ref=sub_b1" data-id="918d6d9115d27b02d4ceac7f7b117b4b3463" title="큐레터" data-location="서브배너B(NEW)_360x120" data-subject="아이보스 매체팀" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B(NEW)" gtm-ev-action="918d6d9115d27b02d4ceac7f7b117b4b3463" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/ff0e34eb3c241f179c06c9395ad95b3e.png" width="360" height="120" alt="큐레터"></a></div><div class="new_articles"><div class="tit"><h5>새글</h5><a class="more" href="/ab-3023">전체보기</a></div><div>
+	<div class="cell"><a class="num_1 text-ellipsis" href="/ab-1486526-654" title="[🔵 무료 웨비나] AI 시대, 마케터는 사라질까요? - 마케터가 설계하고 Agent가 실행하는  이커머스 CRM 운영의 미래">
+<em class="new_icon">새글</em><span class="AB-LF-common">[🔵 무료 웨비나] AI 시대, 마케터는 사라질까요? - 마케터가 설계하고 Agent..</span></a></div><div class="cell"><a class="num_2 text-ellipsis" href="/ab-3208-1743" title="2025 전자문서전자거래 분쟁조정 사례집(개인 간 거래, 온라인광고)">
+<em class="new_icon">새글</em><span class="AB-LF-common">2025 전자문서·전자거래 분쟁조정 사례집(개인 간 거래, 온라인광고)</span></a></div><div class="cell"><a class="num_3 text-ellipsis" href="/ab-1486505-53928" title="💐 요즘 유행하는 프롬프트 모아왔어요. 완전한 칭찬 부탁!">
+<em class="new_icon">새글</em><span class="AB-LF-common">💐 요즘 유행하는 프롬프트 모아왔어요. 완전한 칭찬 부탁!</span></a></div><div class="cell"><a class="num_4 text-ellipsis" href="/ab-6141-70488" title="엔티티 SEO, 앞으로의 검색 마케팅에서 꼭 봐야 할 개념">
+<em class="new_icon">새글</em><span class="AB-LF-common">엔티티 SEO, 앞으로의 검색 마케팅에서 꼭 봐야 할 개념</span></a></div><div class="cell"><a class="num_5 text-ellipsis" href="/ab-1486526-653" title="✴ [컨퍼런스] One AI, Elevate All - 실질적인 효율과 혁신 만들기 ✴">
+<em class="new_icon">새글</em><span class="AB-LF-common">✴️ [컨퍼런스] One AI, Elevate All - 실질적인 효율과 혁신 만들기 ✴️</span></a></div></div>
+</div><div class="new_comments"><div class="tit"><h5>새댓글</h5><a class="more" href="/ab-new_cmt">전체보기</a></div><div>
+	<div class="cell">
+	<a href="/ab-6141-70462#CmtList_2164901" class="text-ellipsis"><em class="new_icon">새글</em><span>하나는 하루지나야 제목검색으로 블탭에뜨고 하나는 바로뜨네요. 감이안옴···</span></a></div><div class="cell">
+<a href="/ab-2110-30996#CmtList_2164887" class="text-ellipsis"><em class="new_icon">새글</em><span>어떻게 해결하셨을까요?똑같은 현상입니다.ㅠㅠ미치겠습니다.</span></a></div><div class="cell">
+<a href="/ab-2110-32437#CmtList_2164883" class="text-ellipsis"><em class="new_icon">새글</em><span>안녕하세요! 네이버 공식대행사 마케터 입니다. 
+
+마케터의의 선택 조건은···</span></a></div><div class="cell">
+<a href="/ab-2110-32599#CmtList_2164882" class="text-ellipsis"><em class="new_icon">새글</em><span>1. 플레이스 광고 대행
+네이버 광고 시스템을 통한 광고는 키워드와 목표 ···</span></a></div><div class="cell">
+<a href="/ab-2110-32599#CmtList_2164879" class="text-ellipsis"><em class="new_icon">새글</em><span>안녕하세요.
+플레이스 광고의 경우 네이버 키워드광고와 동일하게 네이버 ···</span></a></div></div>
+</div>
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'design_file=home_contents_110.php';
+				var submit_is_ing = 'N';
+				user_level = '99';
+		
+	
+			//-->
+		</script>
+	<script>
+// Layout - 요소 Shuffle
+$(document).ready(function() {
+    var parent = $('.layout-column-right .gap30');
+    var divs = parent.children('div').not('.dirList'); // dirList 제외한 자식 div 선택
+
+    // Elements Shuffle
+    divs.sort(function() {
+        return Math.random() - 0.5;
+    });
+
+    divs.each(function() {
+        parent.prepend(this);
+    });
+});
+</script><!--0.89939713478088, VER20140318--></div><div class="flex flex-col gap-2.5 mb-5"><a class="block ibtracid sponsored_banner_N43 overflow-hidden rounded-lg" href="/ab-2794?ref=sub_b2" data-id="5adbae22be56874410c6b91609651b683494" title="채용" data-location="서브배너B2(NEW)_360x120" data-subject="아이보스 매체팀" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B2(NEW)" gtm-ev-action="5adbae22be56874410c6b91609651b683494" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/ce286bb176efd621ff7107fb07411757_86645_1.jpg" width="360" height="120" alt="채용"></a><a class="block ibtracid sponsored_banner_N43 overflow-hidden rounded-lg" href="/ab-ai_blogger_seeding?ref=sub_b2" data-id="5adbae22be56874410c6b91609651b683496" title="블로거시딩" data-location="서브배너B2(NEW)_360x120" data-subject="아이보스 매체팀" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B2(NEW)" gtm-ev-action="5adbae22be56874410c6b91609651b683496" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/779ee9e056702affcb8f7d1e2ee3105c.jpg" width="360" height="120" alt="블로거시딩"></a><a class="block ibtracid sponsored_banner_N43 overflow-hidden rounded-lg" href="/ab-5151?ref=sub_b2" data-id="5adbae22be56874410c6b91609651b683495" title="모임" data-location="서브배너B2(NEW)_360x120" data-subject="아이보스 매체팀" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B2(NEW)" gtm-ev-action="5adbae22be56874410c6b91609651b683495" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/b0564dba297dc26475a9a86478ac7702_43150_1.jpg" width="360" height="120" alt="모임"></a><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- SUB-B2 -->
+<ins class="adsbygoogle" style="display:inline-block;width:360px;height:120px" data-ad-client="ca-pub-7010825088562162" data-ad-slot="8155883197"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div></div></div>
+<script id="" text="" charset="" type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript" id="" charset="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_396fcbe563e7";if(!_nasa)var _nasa={};wcs.inflow();wcs_do(_nasa);</script><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">동영상 삽입</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group row-fluid"><label for="note-dialog-video-url-undefined" class="note-form-label">동영상 URL <small class="text-muted">(YouTube, Vimeo, Instagram, DailyMotion 등)</small></label><input id="note-dialog-video-url-undefined" class="note-video-url form-control note-form-control note-input" type="text"></div></div>    <div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-video-btn" value="동영상 삽입" disabled=""></div>  </div></div></div><div class="note-popover popover in note-link-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><span><a target="_blank"></a>&nbsp;</span><div class="note-btn-group btn-group note-link"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="수정"><i class="fa-light fa-link"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="링크 삭제"><i class="note-icon-chain-broken"></i></button></div></div></div><div class="note-popover popover in note-image-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><div class="note-btn-group btn-group note-custom"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="캡션"><i class="fa-regular fa-pen-field font-size-16"></i></button></div><div class="note-btn-group btn-group note-imageResize"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="100% 크기로 변경" title="" data-original-title="100% 크기로 변경"><span class="note-fontsize-10">100%</span></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="90% 크기로 변경" title="" data-original-title="90% 크기로 변경"><span class="note-fontsize-10">90%</span></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="75% 크기로 변경" title="" data-original-title="75% 크기로 변경"><span class="note-fontsize-10">75%</span></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="50% 크기로 변경" title="" data-original-title="50% 크기로 변경"><span class="note-fontsize-10">50%</span></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="25% 크기로 변경" title="" data-original-title="25% 크기로 변경"><span class="note-fontsize-10">25%</span></button></div><div class="note-btn-group btn-group note-imageborder"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="이미지 테두리" title="" data-original-title="이미지 테두리"><i class="fa-regular fa-square font-size-16"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="둥근 모서리" title="" data-original-title="둥근 모서리"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Border-Corner-Rounded--Streamline-Tabler" height="18" width="18"><path d="M4 20V10a6 6 0 0 1 6 -6h10" stroke-width="2"></path></svg></button></div><div class="note-btn-group btn-group note-float"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="왼쪽 정렬"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" data-aria-label="가운데 정렬" title="" data-original-title="가운데 정렬"><i class="note-icon-align-center"></i></button><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="오른쪽 정렬"><i class="note-icon-align-right"></i></button></div><div class="note-btn-group btn-group note-remove"><button type="button" class="note-btn btn btn-default btn-sm hover:bg-slate-100" tabindex="-1" title="" data-original-title="사진 삭제"><i class="note-icon-trash"></i></button></div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">동영상 삽입</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group row-fluid"><label for="note-dialog-video-url-undefined" class="note-form-label">동영상 URL <small class="text-muted">(YouTube, Vimeo, Instagram, DailyMotion 등)</small></label><input id="note-dialog-video-url-undefined" class="note-video-url form-control note-form-control note-input" type="text"></div></div>    <div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-video-btn" value="동영상 삽입" disabled=""></div>  </div></div></div><div><div id="adrop-popup" data-unit="01JGNFBEWA7NVATY875WKXPJ46"></div><footer><div class="footer1st"><div id="FooterMain" style="clear:both"><div class="footer_ibosslogo"><div class="ibosslogo_cover"><a href="/"><img src="https://cdn.ibos.kr/images/new_logo_home4.png" alt="아이보스 로고"></a></div></div><div class="footer_navbox"><div class="footer-nav"><ul><li><a href="https://i-boss.gitbook.io/iboss_ad" target="_blank">광고</a></li><li><a href="ab-policy">이용약관</a></li><li><a href="https://plip.kr/pcc/55e15c8e-7972-475d-8c59-398337970594/privacy-policy" target="_blank" style="font-weight:600">개인정보 처리방침</a></li><li><a href="https://i-boss.gitbook.io/main/guide" target="_blank">서비스 가이드</a></li><li><a href="https://omdm.i-boss.co.kr" target="_blank">광고분쟁조정</a></li><li><a href="/ab-right_policy">권리침해</a></li><li><a href="/ab-6562">블랙리스트</a></li><li class="cs"><a href="https://i-boss.gitbook.io/main" target="_blank"><span style="font-weight:bold">고객센터</span></a></li></ul></div><div class="footer-info"><ul>
+    <li><span>(주)아이보스</span><span>02-862-7643</span><span>E-mail : help@i-boss.co.kr</span><span>대표 : 신용성</span><span>105-87-01912</span><span>제 2012-서울금천-0373호</span><span>개인정보 관리책임자 : 유리나</span></li>
+    <li><span>서울 금천구 벚꽃로 234, 1202호 (가산동 60-25, 에이스하이엔드타워6차)</span></li>
+</ul></div></div></div><div><button type="button" id="pageTop" title="위로 가기">위로가기</button></div></div></footer></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://www.i-boss.co.kr/"},{"@type":"ListItem","position":2,"name":"서비스 홍보","item":"https://www.i-boss.co.kr/ab-2986"},{"@type":"ListItem","position":3,"name":"쓰기","item":"https://www.i-boss.co.kr/ab-2988"}]}</script><script>
+function frm_search_main_submit() {
+var frm = $('#frm_search_main')[0];
+if (!frm.search_value.value) {  alert('검색할 내용을 입력해 주세요'); return false; }
+}
+function frm_search_sub_submit(frm) {
+if ($(frm).find('input[name=search_value]').val() == '') {  alert('검색할 내용을 입력해 주세요'); return false; }
+}
+$('#regular_mb_bn .btn_close_bn').click(function(){
+	set_cookie('regular_mb_bn','Y',240);
+	$("#regular_mb_bn").hide();
+});
+// Top 버튼
+$('#pageTop').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'fast');
+        return false; 
+    });
+});
+// 검색 분류
+$('select[name=sch_cat]').bind('change', function(){ $('#frm_search_main').attr({'action': '/ab-'+ $(this).val()});  });
+</script><div id="global_dialog" style="display:none;clear:both;"></div>
+<script src="/template/PLUGIN_iboss_display/program/js/boss_act.js?v=1697579580"></script>
+<script src="https://cdn.ibos.kr/template/PLUGIN_directory/program/js/list_paging_pop.js"></script><script type="text/javascript" src="https://cdn.ibos.kr/template/PLUGIN_education/program/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'fast');
+}
+$(".cnt_cmt").click(function() {
+   scrollToAnchor('cmt_list_p');
+});
+$('#LNB_List .submenu').click(function(){
+    if( $(this).find('ul:visible').length > 0 ) return;
+
+    $('#LNB_List').find('.submenu ul').hide();
+    $(this).find('ul').fadeIn('fast');
+});
+$( document ).ready(function() {
+    $('#LNB_List').find('.lnb_active').parents('ul:first').show();
+});
+$('.sec_column .sec_column_slide').bxSlider({
+  auto:true,
+  mode: 'fade',
+  speed:0,
+  captions: true
+});
+
+$('.layout_col .board1 .slide_wrap').bxSlider({
+  captions:true,
+  mode:'fade',
+  controls:false,
+  speed:200,
+  pagerCustom:'.layout_col .most_popular .bx-pager',
+  onSlideBefore: function(){
+    $(".layout_col .board1 .slide_wrap .slide").hide();
+  }
+});
+
+$('.layout_col .today_issue .slide_wrap').bxSlider({
+  captions:true,
+  mode:'fade',
+  speed:0,
+  controls:false,
+  pagerCustom:'.layout_col .today_issue .bx-pager'
+});
+</script>
+<script type="text/javascript">
+$('.ServiceAdPopup .close').click(function(){
+      $('.ServiceAdPopup').hide();
+});
+	$(".icon_file").click(function() {
+                $(".gnb > ul > li").css('z-index', '0');
+		$(".file_box").fadeIn(150);
+	});
+	$(".icon_video").click(function() {
+		$("#video_link").fadeIn(150);
+                $(".gnb > ul > li").css('z-index', '0');
+                $(".bg").unbind('click');
+                
+	});
+	$(".close").click(function() {
+		$(".file_box").fadeOut(150);
+		$("#video_link").fadeOut(150);
+                $(".gnb > ul > li").css('z-index', '20');
+	});
+
+	$(".icon_link").click(function() {
+		$(".link_box").toggle();
+	});
+
+
+
+$('input[LD-USE=1],textarea[LD-USE=1]').each(function() {
+    var class_name = $(this).attr('LD_VIEW') ;
+    if( !$(this).val() ) $(this).addClass(class_name);
+});
+$('input[LD-USE=1],textarea[LD-USE=1]').focusin(function() {
+    var class_name = $(this).attr('LD_VIEW') ;
+    $(this).removeClass(class_name)
+}).focusout(function() {
+    var class_name = $(this).attr('LD_VIEW') ;
+    if( !$(this).val()) $(this).addClass(class_name);
+} );
+
+$('.icon_photo').click(function(){  $( $('iframe[src*=Smart]')[0].contentWindow.jindo.$$('.se2_photo') ).trigger('click'); });
+
+$('.done').click(function() {
+    if ( $(this).hasClass('bd_R3') ) {
+        var is_file = false;
+        $('input[name^=user_file_]').each(function(){
+            if( $(this).val() ) { is_file = true ; return false;  }
+        });
+        if ( is_file ) {
+            $(".file_box").fadeOut(150);
+            $(".gnb > ul > li").css('z-index', '20');
+        }
+    }
+});
+$(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+        $(".file_box").fadeOut(150);
+        $("#video_link").fadeOut(150);
+        $(".gnb > ul > li").css('z-index', '20');
+    }
+});
+if ($.trim($(".art_bg_homepage").val()) == "") {
+    $('.link_box').attr('display', 'block');
+}
+
+
+
+</script><script src="https://storage.adrop.io/js/adrop-0.1.2.min.js"></script>
+<script>adrop = window.adrop || {}</script>
+<script src="/template/PLUGIN_adrop/js/plugin_adrop.js?v=1736496733"></script>
+
+<script type="text/javascript" src="/template/PLUGIN_form_input_tag/include/tagShow2.js?v=1.0.9"></script>
+<script>
+(function($){
+    var topic = $('#TCBOARD_BD2986_WRITE_index471 select[name=rel_topic_2]');
+    $('#TCBOARD_BD2986_WRITE_index471 input[name=tag]').tagShowBox({'formName':'TCBOARD_BD2986_WRITE_index471', 'target_elem':'.tag_showbox_div', 'topic':topic });
+    
+}(jQuery));
+</script>
+<style>
+.item {overflow :unset !important;}
+.tagShowbox {padding:0 12px; border:1px solid #E0E0E0; box-sizing:border-box; border-radius:4px;}
+.tagShowbox .showbox_div p {background:#F9F9F9; color:#666; vertical-align:top; line-height:28px; margin:10px 2px; padding:0 18px 0 4px;}
+.tagShowbox .showbox_div p.recommend {background:#448AFF; color:#FFF;}
+.tagShowbox .tagInputBox {position:relative; display:inline-block;}
+.tagShowbox .tagInputBox .searchBox ul {position:absolute; left:5px; min-width:290px; border-radius:20px; overflow:hidden; min-height:120px; z-index:9999; background:#FFF; padding:24px 8px; box-shadow:0 12px 24px 0 rgb(0 29 58 / 18%), 0 8px 16px 0 rgb(2 32 71 / 5%);}
+.tagShowbox .tagInputBox .searchBox ul li {background:#fff; cursor:pointer; padding:0 12px !important; line-height:38px; font-size:15px; border:0 !important; border-radius:8px;}
+.tagShowbox .tagInputBox .searchBox ul li:last-child {border-bottom:1px solid #eee;}
+.tagShowbox .tagInputBox .searchBox ul li:hover {background:#F2F4F6;}
+.tagShowbox .tagInputBox .searchBox ul li.active {background:#F2F4F6; color:var(--event-point); font-weight:bold;}
+.tagShowbox .tagInputBox .searchBox ul li.active em {color:var(--event-point); font-weight:bold;}
+.tagShowbox .tagInputBox .searchBox em {font-style:normal; font-size:14px; letter-spacing:-0.5px; color:#333; font-weight:600; float:right;}
+#tagWrap div.wrapScroll {max-height:360px; overflow-y:auto;}
+#tagWrap div.wrapScroll::-webkit-scrollbar {background:none; width:5px;}
+#tagWrap div.wrapScroll::-webkit-scrollbar-thumb {background:#E0E0E0; border-radius:10px;}
+</style>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.i-boss.co.kr/#organization",
+    "name": "아이보스",
+    "legalName": "주식회사 아이보스",
+    "url": "https://www.i-boss.co.kr",
+    "telephone": "02-862-7643",
+    "email": "help@i-boss.co.kr",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "서울 금천구 벚꽃로 234, 1202호",
+        "addressLocality": "서울",
+        "postalCode": "08513",
+        "addressCountry": "KR"
+    },
+    "sameAs": [
+        "https://www.facebook.com/ibosscokr",
+        "https://www.instagram.com/iboss_official",
+        "https://www.threads.com/@iboss_official",
+        "https://play.google.com/store/apps/details?id=kr.co.i_boss.iboss",
+        "https://apps.apple.com/kr/app/id1440443218"
+    ]
+}
+</script>
+
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'design_file=2988.php&serial_parent=';
+				var submit_is_ing = 'N';
+				user_level = '95';
+		
+	
+		function TCSYSTEM_ETC_FORM_I19468_submit(button_type) {
+			errfld = '';
+			form = document.TCSYSTEM_ETC_FORM_I19468;
+			
+	
+			if (errfld != '') {
+				alert('필수입력사항을 채워주세요\n\n\'컬러가 변경된 입력상자\' 가 필수 입력항목 입니다.');
+				$('#loading_img').css('display', 'none');
+				if ((errfld.type === 'text' || errfld.type === 'tel' || errfld.type === 'textarea' || errfld.type === 'select' || errfld.type === 'password') && (errfld.style.display !== 'none')) errfld.focus();
+				errfld = '';
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (typeof(form.T_insiter_join_agree) !== 'undefined' && form.T_insiter_join_agree.value !== 'Y') {
+				alert('안내문을 읽고 동의 하셔야 진행 할 수 있습니다..');
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (submit_is_ing === 'N') {
+				
+				
+				if (form.target == '') submit_is_ing = 'Y';
+				
+			if (button_type === 'text') form.submit();
+			else return true;
+	
+			} else {
+				alert('진행중입니다. 잠시만 기다려주세요');
+				return false;
+			}
+		}
+	
+
+		function TCBOARD_BD2986_WRITE_index471_submit(button_type) {
+			errfld = '';
+			form = document.TCBOARD_BD2986_WRITE_index471;
+			$('#oEdit-TCBOARD_BD2986_WRITE_index471-comment_1').val( $('#smNote-TCBOARD_BD2986_WRITE_index471-comment_1').summernote('code'));
+
+	if (form.passwd !== undefined) {
+
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'passwd', '비밀번호를 입력해주세요.') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+ }if (form.chk_person !== undefined) {
+
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'chk_person', '스팸방지코드를 입력해주세요.') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+ }
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'etc_1', '') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'etc_4', '') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'comment_1', '') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'category_1', '') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'writer_name', '') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'subject', '') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCBOARD_BD2986_WRITE_index471', 'category_1', '') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+			if (errfld != '') {
+				alert('필수입력사항을 채워주세요\n\n\'컬러가 변경된 입력상자\' 가 필수 입력항목 입니다.');
+				$('#loading_img').css('display', 'none');
+				if ((errfld.type === 'text' || errfld.type === 'tel' || errfld.type === 'textarea' || errfld.type === 'select' || errfld.type === 'password') && (errfld.style.display !== 'none')) errfld.focus();
+				errfld = '';
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (typeof(form.T_insiter_join_agree) !== 'undefined' && form.T_insiter_join_agree.value !== 'Y') {
+				alert('안내문을 읽고 동의 하셔야 진행 할 수 있습니다..');
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (submit_is_ing === 'N') {
+				if(!category_chk(form))return false; if ( ! valid_value(form, '연락처를 1개 이상 반드시 입력해주세요.') ) return false;  if( ! checkChar(form) ) return false;
+				
+				if (form.target == '') submit_is_ing = 'Y';
+				
+			if (button_type === 'text') form.submit();
+			else return true;
+	
+			} else {
+				alert('진행중입니다. 잠시만 기다려주세요');
+				return false;
+			}
+		}
+	
+
+		function TCSYSTEM_LOGIN_FORM_I39843_submit(button_type) {
+			errfld = '';
+			form = document.TCSYSTEM_LOGIN_FORM_I39843;
+			
+	
+			if (typeof(form.user_level) !== 'undefined') {
+				if (submit_radio_check(form, 'user_level') == 0) {
+					alert('회원 분류를 선택하세요');
+					if (button_type === 'text') return;
+					else return false;
+				}
+			}
+		
+				if (chk_obj_input('TCSYSTEM_LOGIN_FORM_I39843', 'user_id', '아이디를 입력해주세요') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCSYSTEM_LOGIN_FORM_I39843', 'user_passwd', '비밀번호를 입력해주세요') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+			if (errfld != '') {
+				alert('필수입력사항을 채워주세요\n\n\'컬러가 변경된 입력상자\' 가 필수 입력항목 입니다.');
+				$('#loading_img').css('display', 'none');
+				if ((errfld.type === 'text' || errfld.type === 'tel' || errfld.type === 'textarea' || errfld.type === 'select' || errfld.type === 'password') && (errfld.style.display !== 'none')) errfld.focus();
+				errfld = '';
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (typeof(form.T_insiter_join_agree) !== 'undefined' && form.T_insiter_join_agree.value !== 'Y') {
+				alert('안내문을 읽고 동의 하셔야 진행 할 수 있습니다..');
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (submit_is_ing === 'N') {
+				
+				
+				if (form.target == '') submit_is_ing = 'Y';
+				
+			if (button_type === 'text') form.submit();
+			else return true;
+	
+			} else {
+				alert('진행중입니다. 잠시만 기다려주세요');
+				return false;
+			}
+		}
+	
+
+			//-->
+		</script>
+	
+<i class="fa-duotone fa-spinner-third fa-spin" style="font-size:44px;display:none;position:absolute;z-index:10001;--fa-primary-color: #4e5968;--fa-secondary-color:#8b95a1;" id="loading_img"></i><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1403511673290661");fbq("track","PageView");</script>
+</div><script type="text/javascript" id="" charset="">google_tag_manager["rm"]["1645705"](159)&&fbq("track","Search",{search_string:google_tag_manager["rm"]["1645705"](164)});</script>
+
+<script type="text/javascript" id="" charset="">function fbqSearchKeyword(){var a=document.referrer;if(a){var b=document.createElement("a");b.setAttribute("href",a);a=/[\?&](?:q|query)=([^&#]*)/;if((a=b.search.match(a))&&0<a.length)var c=a[1].replace(/\+/gi,"%20");c&&fbq("trackCustom","SearchKeyword",{hostname:b.hostname,keyword:decodeURIComponent(c)})}}fbqSearchKeyword();</script> 
+ 
+<div id="c4g-content-root" class="c4g-widget"></div></body></html>

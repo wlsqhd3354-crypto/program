@@ -1,0 +1,2086 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="naver-site-verification" content="b1605a10f1c86573680785fa2e13b8665d6a10dc">
+<meta name="google-site-verification" content="uMIJzKI5GaxnbmRQZzlQUjZHY_FHxejFfxcz_hwMCrs">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="마멘토">
+<meta property="og:title" content="마멘토">
+<meta property="og:description" content="마멘토 : 온라인마케팅 커뮤니티 - 인스타,유튜브,페이스북 ">
+<meta property="og:image" content="https://mamentor.co.kr/mamentor.png">
+<meta property="og:url" content="https://mamentor.co.kr">
+<meta name="description" content="마멘토 : 온라인마케팅 커뮤니티 - 인스타,유튜브,페이스북 ">
+<meta name="keywords" content="마멘토">
+<meta name="naver-site-verification" content="e4026a3a857be705b0c056a973e396f4cc62b32f">
+<link rel="canonical" href="https://mamentor.co.kr">
+
+<title>자유홍보광고 | 마멘토 : 유튜브,SNS,블로그 온라인마케팅 커뮤니티</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="stylesheet" href="https://mamentor.co.kr/theme/basic/skin/outlogin/side/style.css?ver=171222">
+<link rel="stylesheet" href="https://mamentor.co.kr/skin/social/style.css?ver=171222">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="마멘토">
+<meta name="application-name" content="마멘토">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://mamentor.co.kr/css/bootstrap.min.css?ver=1779258804">
+<link rel="stylesheet" href="https://mamentor.co.kr/css/bootstrap-select.min.css?ver=1779258804">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+<link rel="stylesheet" href="https://mamentor.co.kr/css/jquery.bxslider.css">
+
+<link rel="stylesheet" href="https://mamentor.co.kr/theme/basic/css/default.css?ver=1779258804">
+<!--[if lte IE 8]>
+<script src="https://mamentor.co.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://mamentor.co.kr";
+var g5_bbs_url   = "https://mamentor.co.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="https://mamentor.co.kr/js/jquery-1.8.3.min.js"></script>
+<script src="https://mamentor.co.kr/js/jquery.min.js"></script>
+<script src="https://mamentor.co.kr/js/bootstrap.min.js"></script>
+<script src="https://mamentor.co.kr/js/jquery.menu.js?ver=171222"></script>
+<script src="https://mamentor.co.kr/js/common.js?ver=171222"></script>
+<script src="https://mamentor.co.kr/js/wrest.js?ver=171222"></script>
+<script src="https://mamentor.co.kr/js/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="https://mamentor.co.kr/js/font-awesome/css/font-awesome.min.css">
+<style>
+    #bo_v_con {
+        margin: 0 !important;
+        font-size: 0.95rem;
+    }
+</style>
+</head>
+<body>
+<style>
+#your_level{position:relative;display:inline-block;margin:0 2px}
+#sch_stx{font-weight: 700; border: none !important; outline: none !important; box-shadow: none !important;}
+#sch_stx::placeholder{font-weight: 500; color:#999;}
+</style>
+
+<!-- 상단 시작 { -->
+<div id="hd">
+    <h1 id="hd_h1">자유홍보광고</h1>
+
+    <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+
+        <div id="tnb">
+        <ul>
+                        <li><a href="https://mamentor.co.kr/bbs/register.php">회원가입</a></li>
+			<li><a href="https://mamentor.co.kr/bbs/login.php?url=%2Fsubject">로그인</a></li>
+                  </ul>
+    </div>
+    <div id="hd_wrapper">
+
+        <div id="logo">
+            <a href="https://mamentor.co.kr"><span><img src="https://mamentor.co.kr/img/mamentor_logo.png" alt="마멘토 : 유튜브,SNS,블로그 온라인마케팅 커뮤니티"></span>MAMENTOR</a>
+        </div>
+
+        <div class="hd_sch_wr">
+            <fieldset id="pc_search_field">
+                <legend>사이트 내 전체검색</legend>
+
+                <!-- 검색 패널 -->
+                <div class="pc-search-panel" id="pcSearchPanel">
+                    <input type="text" name="stx" id="sch_stx" maxlength="50" placeholder="검색어를 입력해주세요" autocomplete="off" style="font-weight: 700;border: none !important; outline: none !important; box-shadow: none !important;">
+                    <button type="button" id="pc_sch_clear" class="pc-search-clear">×</button>
+                    <button type="button" id="pc_sch_submit" class="pc-search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+
+                <!-- 검색 드롭다운 -->
+                <div class="pc-search-dropdown" id="pcSearchDropdown" style="display: none;">
+                    <!-- 최근 검색어 + 인기 검색어 영역 -->
+                    <div class="pc-search-default-section" id="pcSearchDefaultSection">
+                        <!-- 최근 검색어 -->
+                        <div class="pc-search-recent-section" id="pcSearchRecentSection">
+                            <div class="pc-search-section-header">
+                                <span class="pc-search-section-title">최근 검색어</span>
+                                <button type="button" id="pcSearchRecentClearAll" class="pc-search-clear-all-btn">전체삭제</button>
+                            </div>
+                            <ul class="pc-search-recent-list" id="pcSearchRecentList">
+                                <li class="pc-search-empty">최근 검색 내역이 없습니다.</li>
+                            </ul>
+                            <button type="button" class="pc-search-more-btn" id="pcSearchRecentMoreBtn" style="display: none;">
+                                <span class="more-text">펼쳐서 더보기</span>
+                                <svg class="more-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                                    <path d="M6 9L1 4h10z"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- 인기 검색어 -->
+                        <div class="pc-search-popular-section" id="pcSearchPopularSection">
+                            <div class="pc-search-section-header">
+                                <span class="pc-search-section-title">추천 검색어</span>
+                            </div>
+                            <ul class="pc-search-popular-list" id="pcSearchPopularList">
+                                <li class="pc-search-loading">추천 검색어를 불러오는 중...</li>
+                            </ul>
+                            <button type="button" class="pc-search-more-btn" id="pcSearchPopularMoreBtn" style="display: none;">
+                                <span class="more-text">펼쳐서 더보기</span>
+                                <svg class="more-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                                    <path d="M6 9L1 4h10z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 자동완성 영역 -->
+                    <div class="pc-search-autocomplete-section" id="pcSearchAutocompleteSection" style="display: none;">
+                        <ul class="pc-search-autocomplete-list" id="pcSearchAutocompleteList"></ul>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+<style>
+/* PC 검색 필드 스타일 */
+#pc_search_field {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* PC 검색 패널 스타일 */
+.pc-search-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 24px;
+    padding: 14px 20px;
+    transition: all 0.2s;
+}
+
+.pc-search-panel.focused {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.pc-search-panel input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    padding: 0;
+    color: #333;
+}
+
+.pc-search-panel input::placeholder {
+    color: #999;
+}
+
+.pc-search-clear {
+    background: #ddd;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.pc-search-clear.show {
+    display: flex;
+}
+
+.pc-search-btn {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* PC 검색 드롭다운 */
+.pc-search-dropdown {
+    position: fixed;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    min-height: 400px;
+    max-height: 700px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* 기본 섹션 (최근 검색어 + 인기 검색어) */
+.pc-search-default-section {
+    padding: 15px;
+}
+
+/* 섹션 공통 스타일 */
+.pc-search-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.pc-search-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.pc-search-clear-all-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s;
+}
+
+.pc-search-clear-all-btn:hover {
+    color: #ff4444;
+}
+
+/* 최근 검색어 영역 */
+.pc-search-recent-section {
+    margin-bottom: 20px;
+}
+
+.pc-search-recent-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pc-search-recent-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.pc-search-recent-item:hover {
+    background: #f8f8f8;
+}
+
+.pc-search-recent-keyword {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pc-search-recent-icon {
+    width: 16px;
+    height: 16px;
+    color: #999;
+    flex-shrink: 0;
+}
+
+.pc-search-recent-delete {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+    flex-shrink: 0;
+}
+
+.pc-search-recent-delete:hover {
+    color: #ff4444;
+}
+
+/* 인기 검색어 영역 */
+.pc-search-popular-section {
+    margin-bottom: 0;
+}
+
+.pc-search-popular-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pc-search-popular-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.pc-search-popular-item:hover {
+    background: #f8f8f8;
+}
+
+.pc-search-popular-rank {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff4444;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.pc-search-popular-keyword {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 빈 목록 및 로딩 */
+.pc-search-empty,
+.pc-search-loading {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* 펼쳐서 더보기 버튼 */
+.pc-search-more-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.pc-search-more-btn:hover {
+    background: #f0f0f0;
+    border-color: #d0d0d0;
+}
+
+.pc-search-more-btn .more-icon {
+    transition: transform 0.2s;
+}
+
+.pc-search-more-btn.expanded .more-icon {
+    transform: rotate(180deg);
+}
+
+.pc-search-more-btn.expanded .more-text::before {
+    content: '접기 ';
+}
+
+/* 접힌 상태 (초기 5개만 표시) */
+.pc-search-recent-list.collapsed li:nth-child(n+6),
+.pc-search-popular-list.collapsed li:nth-child(n+6) {
+    display: none;
+}
+
+/* 자동완성 영역 */
+.pc-search-autocomplete-section {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.pc-search-autocomplete-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pc-search-autocomplete-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.2s;
+}
+
+.pc-search-autocomplete-item:hover {
+    background: #f8f8f8;
+}
+
+.pc-search-autocomplete-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.pc-search-autocomplete-text {
+    flex: 1;
+}
+
+.pc-search-autocomplete-keyword {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 3px;
+}
+
+.pc-search-autocomplete-main {
+    font-size: 14px;
+    color: #333;
+}
+
+.pc-search-autocomplete-main .highlight {
+    color: #ff4444;
+    font-weight: 500;
+}
+</style>
+
+<script>
+$(function() {
+    var pcSearchTimeout;
+    var $pcSearchInput = $('#sch_stx');
+    var $pcSearchPanel = $('#pcSearchPanel');
+    var $pcSearchDropdown = $('#pcSearchDropdown');
+    var $pcSearchClear = $('#pc_sch_clear');
+
+    // ========== LocalStorage 관리 함수 ==========
+
+    // 최근 검색어 가져오기
+    function getRecentKeywords() {
+        try {
+            var data = localStorage.getItem('recentSearchKeywords');
+            return data ? JSON.parse(data) : [];
+        } catch (e) {
+            console.error('LocalStorage 읽기 오류:', e);
+            return [];
+        }
+    }
+
+    // 최근 검색어 저장
+    function saveRecentKeyword(keyword) {
+        if (!keyword || keyword.trim() === '') return;
+
+        try {
+            var keywords = getRecentKeywords();
+            var trimmedKeyword = keyword.trim();
+
+            // 중복 제거 (이미 있으면 제거)
+            keywords = keywords.filter(function(item) {
+                return item.keyword !== trimmedKeyword;
+            });
+
+            // 맨 앞에 추가
+            keywords.unshift({
+                keyword: trimmedKeyword,
+                timestamp: Date.now()
+            });
+
+            // 최대 30개까지만 유지
+            if (keywords.length > 30) {
+                keywords = keywords.slice(0, 30);
+            }
+
+            localStorage.setItem('recentSearchKeywords', JSON.stringify(keywords));
+        } catch (e) {
+            console.error('LocalStorage 저장 오류:', e);
+        }
+    }
+
+    // 최근 검색어 개별 삭제
+    function removeRecentKeyword(keyword) {
+        try {
+            var keywords = getRecentKeywords();
+            keywords = keywords.filter(function(item) {
+                return item.keyword !== keyword;
+            });
+            localStorage.setItem('recentSearchKeywords', JSON.stringify(keywords));
+            displayRecentKeywords();
+        } catch (e) {
+            console.error('LocalStorage 삭제 오류:', e);
+        }
+    }
+
+    // 최근 검색어 전체 삭제
+    function clearAllRecentKeywords() {
+        try {
+            localStorage.removeItem('recentSearchKeywords');
+            displayRecentKeywords();
+        } catch (e) {
+            console.error('LocalStorage 전체 삭제 오류:', e);
+        }
+    }
+
+    // ========== 표시 함수 ==========
+
+    // 최근 검색어 표시
+    function displayRecentKeywords() {
+        var keywords = getRecentKeywords();
+        var $list = $('#pcSearchRecentList');
+        var $moreBtn = $('#pcSearchRecentMoreBtn');
+
+        $list.empty();
+
+        if (keywords.length === 0) {
+            $list.html('<li class="pc-search-empty">최근 검색 내역이 없습니다.</li>');
+            $list.removeClass('collapsed');
+            $moreBtn.hide();
+            return;
+        }
+
+        // 초기에는 collapsed 상태로 설정 (5개까지만 표시)
+        if (keywords.length > 5) {
+            $list.addClass('collapsed');
+            $moreBtn.show().removeClass('expanded');
+            $moreBtn.find('.more-text').text('펼쳐서 더보기');
+        } else {
+            $list.removeClass('collapsed');
+            $moreBtn.hide();
+        }
+
+        keywords.forEach(function(item) {
+            var html = '<li class="pc-search-recent-item">';
+            html += '<div class="pc-search-recent-keyword" data-keyword="' + item.keyword + '">';
+            html += '<svg class="pc-search-recent-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">';
+            html += '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>';
+            html += '</svg>';
+            html += '<span>' + item.keyword + '</span>';
+            html += '</div>';
+            html += '<button type="button" class="pc-search-recent-delete" data-keyword="' + item.keyword + '">×</button>';
+            html += '</li>';
+            $list.append(html);
+        });
+    }
+
+    // 인기 검색어 로드 및 표시
+    function loadPopularKeywords() {
+        $.ajax({
+            url: '/popular_keyword_api.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function(res) {
+                var $list = $('#pcSearchPopularList');
+                var $moreBtn = $('#pcSearchPopularMoreBtn');
+
+                $list.empty();
+
+                if (res.success && res.data.length > 0) {
+                    // 초기에는 collapsed 상태로 설정 (5개까지만 표시)
+                    if (res.data.length > 5) {
+                        $list.addClass('collapsed');
+                        $moreBtn.show().removeClass('expanded');
+                        $moreBtn.find('.more-text').text('펼쳐서 더보기');
+                    } else {
+                        $list.removeClass('collapsed');
+                        $moreBtn.hide();
+                    }
+
+                    res.data.forEach(function(item, index) {
+                        var html = '<li class="pc-search-popular-item" data-pk-id="' + item.pk_id + '" data-keyword="' + item.pk_keyword + '" data-link-url="' + (item.pk_link_url || '') + '">';
+                        html += '<span class="pc-search-popular-rank">' + (index + 1) + '</span>';
+                        html += '<span class="pc-search-popular-keyword">' + item.pk_keyword + '</span>';
+                        html += '</li>';
+                        $list.append(html);
+                    });
+                } else {
+                    $list.html('<li class="pc-search-empty">등록된 인기 검색어가 없습니다.</li>');
+                    $list.removeClass('collapsed');
+                    $moreBtn.hide();
+                }
+            },
+            error: function() {
+                $('#pcSearchPopularList').html('<li class="pc-search-empty">인기 검색어를 불러올 수 없습니다.</li>');
+                $('#pcSearchPopularList').removeClass('collapsed');
+                $('#pcSearchPopularMoreBtn').hide();
+            }
+        });
+    }
+
+    // 최근 검색어 + 인기 검색어 로드
+    function loadRecentAndPopularKeywords() {
+        displayRecentKeywords();
+        loadPopularKeywords();
+    }
+
+    // ========== 이벤트 핸들러 ==========
+
+    // 드롭다운 위치 및 크기 계산 함수
+    function updateDropdownPosition() {
+        var panelOffset = $pcSearchPanel.offset();
+        var panelWidth = $pcSearchPanel.outerWidth();
+        var panelHeight = $pcSearchPanel.outerHeight();
+
+        // 60% 더 넓게 (1.6배)
+        var dropdownWidth = panelWidth * 1.6;
+
+        // 중앙 정렬을 위한 left 계산
+        var dropdownLeft = panelOffset.left - ((dropdownWidth - panelWidth) / 2);
+
+        $pcSearchDropdown.css({
+            'top': (panelOffset.top + panelHeight + 8) + 'px',
+            'left': dropdownLeft + 'px',
+            'width': dropdownWidth + 'px'
+        });
+    }
+
+    // 검색창 포커스 시 드롭다운 표시
+    $pcSearchInput.on('focus', function() {
+        $pcSearchPanel.addClass('focused');
+        updateDropdownPosition();
+        $pcSearchDropdown.show();
+        loadRecentAndPopularKeywords();
+    });
+
+    // 검색어 입력 이벤트
+    $pcSearchInput.on('keyup input', function() {
+        clearTimeout(pcSearchTimeout);
+        var keyword = $(this).val().trim();
+
+        // 삭제 버튼 표시/숨김
+        if (keyword.length > 0) {
+            $pcSearchClear.addClass('show');
+        } else {
+            $pcSearchClear.removeClass('show');
+        }
+
+        if (keyword.length === 0) {
+            $('#pcSearchDefaultSection').show();
+            $('#pcSearchAutocompleteSection').hide();
+            return;
+        }
+
+        // 300ms 후 자동완성 API 호출
+        pcSearchTimeout = setTimeout(function() {
+            loadPcAutocomplete(keyword);
+        }, 300);
+    });
+
+    // 검색어 삭제 버튼
+    $pcSearchClear.on('click', function() {
+        $pcSearchInput.val('').focus();
+        $(this).removeClass('show');
+        $('#pcSearchDefaultSection').show();
+        $('#pcSearchAutocompleteSection').hide();
+    });
+
+    // Enter 키로 검색 실행
+    $pcSearchInput.on('keypress', function(e) {
+        if (e.which === 13) {
+            executePcSearch($(this).val().trim());
+        }
+    });
+
+    // 검색 버튼 클릭
+    $('#pc_sch_submit').on('click', function() {
+        executePcSearch($pcSearchInput.val().trim());
+    });
+
+    // 외부 클릭 시 드롭다운 닫기
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.hd_sch_wr').length) {
+            $pcSearchDropdown.hide();
+            $pcSearchPanel.removeClass('focused');
+        }
+    });
+
+    // 윈도우 리사이즈 시 드롭다운 위치 재계산
+    $(window).on('resize', function() {
+        if ($pcSearchDropdown.is(':visible')) {
+            updateDropdownPosition();
+        }
+    });
+
+    // 페이지 스크롤 시 드롭다운 위치 재계산 (유지)
+    $(window).on('scroll', function() {
+        if ($pcSearchDropdown.is(':visible')) {
+            updateDropdownPosition();
+        }
+    });
+
+    // 최근 검색어 전체 삭제 버튼
+    $(document).on('click', '#pcSearchRecentClearAll', function() {
+        if (confirm('최근 검색어를 모두 삭제하시겠습니까?')) {
+            clearAllRecentKeywords();
+        }
+    });
+
+    // 최근 검색어 개별 삭제 버튼
+    $(document).on('click', '.pc-search-recent-delete', function(e) {
+        e.stopPropagation();
+        var keyword = $(this).data('keyword');
+        removeRecentKeyword(keyword);
+    });
+
+    // 최근 검색어 펼쳐서 더보기 버튼
+    $(document).on('click', '#pcSearchRecentMoreBtn', function() {
+        var $list = $('#pcSearchRecentList');
+        var $btn = $(this);
+
+        if ($list.hasClass('collapsed')) {
+            // 펼치기
+            $list.removeClass('collapsed');
+            $btn.addClass('expanded');
+            $btn.find('.more-text').text('접기');
+        } else {
+            // 접기
+            $list.addClass('collapsed');
+            $btn.removeClass('expanded');
+            $btn.find('.more-text').text('펼쳐서 더보기');
+        }
+    });
+
+    // 인기 검색어 펼쳐서 더보기 버튼
+    $(document).on('click', '#pcSearchPopularMoreBtn', function() {
+        var $list = $('#pcSearchPopularList');
+        var $btn = $(this);
+
+        if ($list.hasClass('collapsed')) {
+            // 펼치기
+            $list.removeClass('collapsed');
+            $btn.addClass('expanded');
+            $btn.find('.more-text').text('접기');
+        } else {
+            // 접기
+            $list.addClass('collapsed');
+            $btn.removeClass('expanded');
+            $btn.find('.more-text').text('펼쳐서 더보기');
+        }
+    });
+
+    // 최근 검색어 클릭
+    $(document).on('click', '.pc-search-recent-keyword', function() {
+        var keyword = $(this).data('keyword');
+        executePcSearch(keyword);
+    });
+
+    // 인기 검색어 클릭
+    $(document).on('click', '.pc-search-popular-item', function() {
+        var pk_id = $(this).data('pk-id');
+        var keyword = $(this).data('keyword');
+        var link_url = $(this).data('link-url');
+
+        // 클릭 카운트 업데이트
+        if (pk_id) {
+            $.post('/popular_keyword_click.php', { pk_id: pk_id });
+        }
+
+        // 사용자 정의 URL이 있으면 해당 URL로 이동
+        if (link_url && link_url.trim() !== '') {
+            window.location.href = link_url;
+        } else {
+            // 없으면 검색 실행
+            executePcSearch(keyword);
+        }
+    });
+
+    // 자동완성 로드
+    function loadPcAutocomplete(keyword) {
+        $.ajax({
+            url: '/search_autocomplete_api.php',
+            type: 'GET',
+            dataType: 'json',
+            data: { keyword: keyword },
+            success: function(res) {
+                var list = $('#pcSearchAutocompleteList');
+                list.empty();
+
+                if (res.success && res.data.length > 0) {
+                    $('#pcSearchDefaultSection').hide();
+                    $('#pcSearchAutocompleteSection').show();
+
+                    res.data.forEach(function(item) {
+                        var html = '<li class="pc-search-autocomplete-item" data-keyword="' + item.autocomplete + '">';
+                        html += '<svg class="pc-search-autocomplete-icon" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2">';
+                        html += '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>';
+                        html += '</svg>';
+                        html += '<div class="pc-search-autocomplete-text">';
+                        html += '<div class="pc-search-autocomplete-keyword">검색어: ' + item.keyword + '</div>';
+                        html += '<div class="pc-search-autocomplete-main">' + item.autocomplete + '</div>';
+                        html += '</div>';
+                        html += '</li>';
+                        list.append(html);
+                    });
+                } else {
+                    $('#pcSearchDefaultSection').show();
+                    $('#pcSearchAutocompleteSection').hide();
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('자동완성 API 오류:', error);
+                $('#pcSearchDefaultSection').show();
+                $('#pcSearchAutocompleteSection').hide();
+            }
+        });
+    }
+
+    // 자동완성 항목 클릭
+    $(document).on('click', '.pc-search-autocomplete-item', function() {
+        var keyword = $(this).data('keyword');
+        executePcSearch(keyword);
+    });
+
+    // 검색 실행
+    function executePcSearch(keyword) {
+        if (!keyword || keyword.length < 1) {
+            alert("검색어를 입력하세요.");
+            return false;
+        }
+
+        // 최근 검색어에 저장
+        saveRecentKeyword(keyword);
+
+        var searchUrl = 'https://mamentor.co.kr/bbs/search.php?sfl=wr_subject||wr_content&sop=and&stx=' + encodeURIComponent(keyword);
+        location.href = searchUrl;
+    }
+});
+</script>
+        <style>
+#hd_visit {;float:right;width:200px;margin-top:15px;margin-right:10px;}
+#hd_visit dl {padding:10px 15px;border-radius:5px}
+#hd_visit dl:after {display:block;visibility:hidden;clear:both;content:""}
+#hd_visit dt {float:left;width:35%;padding:0 5px;line-height:23px;height:23px;color:#555}
+#hd_visit dt span{display:inline-block;width:5px;height:5px;border-radius:50%;vertical-align: middle;}
+#hd_visit dd {float:left;;width:65%;padding:0 5px;;text-align:right;text-align:right;font-weight:bold;line-height:23px;height:23px;font-size:0.92em}
+#hd_visit dd strong{display:inline-block;padding:0 5px;border-radius:20px;line-height:15px;color:#fff;}
+</style>
+<section id="hd_visit">
+    <dl>
+        <dt><span class="color_2"></span> 오늘</dt>
+        <dd><strong class="color_2" id="countup1">145,485</strong></dd>
+        <dt><span class="color_1"></span> 어제</dt>
+        <dd><strong class="color_1" id="countup2">191,736</strong></dd>
+    </dl>
+</section>
+
+<script src="https://mamentor.co.kr/js/countUp.min.js"></script>
+<script>
+var options = {
+    useEasing: true, 
+    useGrouping: true, 
+    separator: ',', 
+    decimal: '.', 
+};
+var countup1 = new CountUp('countup1', 0, 145485, 0, 2.5,options);
+countup1.start();
+var countup2 = new CountUp('countup2', 0, 191736, 0, 2.5,options);
+countup2.start();
+</script>
+
+    </div>
+
+    <nav id="gnb">
+        <h2>메인메뉴</h2>
+        <div class="gnb_wrap">
+            <ul id="gnb_1dul">
+                                <li class="gnb_1dli No" style="z-index:999">
+                    <a href="/community" target="_self" class="gnb_1da">커뮤니티</a>
+					                             <ul class="gnb_2dul mn10 ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=notice" target="_self" class="gnb_2da ">공지사항</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=free" target="_self" class="gnb_2da ">자유게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=humor" target="_self" class="gnb_2da ">유머게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=anon" target="_self" class="gnb_2da ">익명게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=registered_person" target="_self" class="gnb_2da ">가입인사</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=QnA" target="_self" class="gnb_2da ">질문답변</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/attendance" target="_self" class="gnb_2da ">출석게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=gallery" target="_self" class="gnb_2da ">사진첩</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=ad_db" target="_self" class="gnb_2da ">광고소재 DB</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli on No" style="z-index:998">
+                    <a href="/subject" target="_self" class="gnb_1da">자유홍보광고</a>
+					                             <ul class="gnb_2dul  nob20">
+					                        <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">쇼핑몰마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore" target="_self" class="snb_3da ">스마트스토어</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware" target="_self" class="snb_3da ">쇼핑리워드</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=coupang" target="_self" class="snb_3da ">쿠팡</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=openmarcket" target="_self" class="snb_3da ">기타오픈마켓</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=closemarcket" target="_self" class="snb_3da ">기타폐쇄몰</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">프로그램</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=program" target="_self" class="snb_3da ">프로그램 판매</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=programbuy" target="_self" class="snb_3da ">프로그램 구매</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">검색마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=keyword_ad" target="_self" class="snb_3da ">키워드광고</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad" target="_self" class="snb_3da ">플레이스리워드</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=autocomplete" target="_self" class="snb_3da ">자완</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=blog_mkt" target="_self" class="snb_3da ">블로그 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=cafe_mkt" target="_self" class="snb_3da ">카페 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_search_mkt" target="_self" class="snb_3da ">기타 검색마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=coin" target="_self" class="snb_3da ">플레이스배포</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">SNS마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=facebook" target="_self" class="snb_3da ">페이스북</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=instagram" target="_self" class="snb_3da ">인스타그램</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=youtube" target="_self" class="snb_3da ">유튜브</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_sns" target="_self" class="snb_3da ">기타 SNS</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">온라인마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=media_mkt" target="_self" class="snb_3da ">언론마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=CPA_CPS" target="_self" class="snb_3da ">CPA/CPS</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=app_mkt" target="_self" class="snb_3da ">앱 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_online_mkt" target="_self" class="snb_3da ">기타 온라인마케팅</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">마케팅일반</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=class" target="_self" class="snb_3da ">마케팅 강좌</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=aietc" target="_self" class="snb_3da ">AI마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=offline_mkt" target="_self" class="snb_3da ">오프라인 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=mkt_story" target="_self" class="snb_3da ">마케팅이야기</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=mkt_beginner" target="_self" class="snb_3da ">마케팅 왕초보</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_mkt" target="_self" class="snb_3da ">기타</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">중국마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=xiaohongshu" target="_self" class="snb_3da ">왕홍,샤오홍슈</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=chinaetc" target="_self" class="snb_3da ">중국마케팅기타</a>
+			</li>
+			</ul>
+				</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:997">
+                    <a href="/bbs/board.php?bo_table=marketing_news" target="_self" class="gnb_1da">마케팅이야기</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=marketing_news" target="_self" class="gnb_2da ">마케팅뉴스</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=tips" target="_self" class="gnb_2da ">마케팅 노하우</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://mamentor.co.kr/bbs/board.php?bo_table=card_news" target="_self" class="gnb_2da ">카드뉴스</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://mamentor.co.kr/bbs/board.php?bo_table=referenceRoom" target="_self" class="gnb_2da ">마케팅자료실</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:996">
+                    <a href="/consulting" target="_self" class="gnb_1da">대행컨설팅</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=introduction" target="_self" class="gnb_2da ">광고대행 소개</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=sellbuy" target="_self" class="gnb_2da ">장터</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=job_opening" target="_self" class="gnb_2da ">채용공고</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=request" target="_self" class="gnb_2da ">대행 견적 요청</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:995">
+                    <a href="/partner" target="_self" class="gnb_1da">협력업체</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="https://likestar.co.kr/product/list.html?cate_no=25" target="_blank" class="gnb_2da ">인스타팔로워작업</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://2pm.co.kr/" target="_blank" class="gnb_2da ">인스타추천게시물</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://linkup.co.kr/" target="_blank" class="gnb_2da ">무료 플레이스지수,순위조회,네이버순위조회</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="http://jium.ai/?utm_source=mamentor" target="_blank" class="gnb_2da ">AI글쓰기 지음</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:994">
+                    <a href="https://wolfmarketing.co.kr/" target="_blank" class="gnb_1da">프로그램센터</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:993">
+                    <a href="/keyword" target="_self" class="gnb_1da">N조회수</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:992">
+                    <a href="/shopping_ranking" target="_self" class="gnb_1da">N쇼핑순위</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:991">
+                    <a href="/my_shop_rank.php" target="_self" class="gnb_1da">쇼핑순위[회원]</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:990">
+                    <a href="/bbs/board.php?bo_table=dantalk" target="_self" class="gnb_1da">단톡</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:989">
+                    <a href="/cn_mkt" target="_self" class="gnb_1da">폐쇄</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=baidu_search_engine" target="_self" class="gnb_2da ">바이두/검색엔진</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=viral_marketing" target="_self" class="gnb_2da ">바이럴마케팅</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=advance_target" target="_self" class="gnb_2da ">게시판이동</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=distribution_trade" target="_self" class="gnb_2da ">유통무역</a>
+							</li>
+
+                    </ul>
+                </li>
+                            </ul>
+			</div>
+    </nav>
+    <script>
+
+    $(function(){
+        $(".gnb_menu_btn").click(function(){
+            $("#gnb_all").show();
+        });
+        $(".gnb_close_btn").click(function(){
+            $("#gnb_all").hide();
+        });
+    });
+
+    </script>
+</div>
+<!-- } 상단 끝 -->
+
+
+<!-- 콘텐츠 시작 { -->
+    <div id="container" class="container">
+
+		
+
+<div class="col-p-88 box_tb10 ">
+<h2 id="container_title"><span title="주제별 페이지"></span></h2>
+  
+<style>
+#bo_list {position:relative;font-size: 1.0em;}
+#bo_list:after {display:block;visibility:hidden;clear:both;content:""}
+#bo_list .td_datetime {width:60px;text-align:center;}
+#bo_list .td_name {width:120px;text-align:center;padding:10px 0}
+#bo_list .this_table{display:inline-block;float:left;margin-right:15px;font-size:12px;color:#448AFF}
+#bo_list .good{display:inline-block;float:left;padding:0 15px 0 10px;margin-right:5px;font-size:12px;color:#4462D2;font-weight:bold;border-right:1px solid #eaeaea;}
+#bo_list .good0{display:inline-block;float:left;padding:0 15px 0 10px;margin-right:5px;font-size:12px;color:#c9c9c9;font-weight:bold;border-right:1px solid #eaeaea;}
+#bo_list .sub0{width:70px;padding-right:5px;display:inline-block;text-align:center;border-right:1px solid #eaeaea;}
+
+.top_1{background-color:#f8f8f8;box-sizing:border-box;padding:20px 15px;border:1px solid #e0e0e0}
+.top_1 h2{font-size:1.9em;font-weight:bold;text-indent:10px;position:relative;}
+.top_1 h2 span{background-color:#000;position:absolute;display:inline-block;width:4px;height:22px;top:1px;left:0}
+.top_1 p{font-size:1.2em;position:relative;padding:50px 0 0 0;line-height:1.65}
+.box_tb10{position:relative;}
+.top_2{padding-top:0}
+.nav-tabs {background-color:#f7f7f7}
+.nav-tabs > li:first-child.active > a, .nav-tabs > li:first-child.active > a:focus, .nav-tabs > li:first-child.active > a:hover{border-left:none}
+.bo_tit{font-size: 1.2em;overflow: hidden;max-width:365px;width:100%;display:inline-block; text-overflow: ellipsis; white-space: nowrap;}
+</style>
+
+
+<style>
+	#acecol{width: 100%;}
+	#acecol img{width: 100%;height: auto;}
+</style>
+<div id="acecol" class="col-8" style="">
+	<div class="col-p-12 banner">
+		
+<a href="https://mamentor.co.kr/bbs/bannerhit.php?bn_id=700&amp;url=https%3A%2F%2Fhaion.net%2Fservice%2Fvps%2F%3Futm_source%3Dcafe%26utm_medium%3Dbanner%26utm_campaign%3Dmamento_xen30_260324" target="_blank"><img src="https://mamentor.co.kr/data/banner/700" width="1350" alt="" title=""></a>
+	</div>
+</div>
+
+<div style="display: none;">
+	<div class="col-5 top_1 ">
+		<h2><span></span>주제별 마케팅</h2>
+		<p><br>
+			마멘토에서<br>
+			주제별 마케팅 정보를 확인해보세요.
+		</p>
+	</div>
+
+	<div class="col-7 box_tb10 top_2">
+		<ul class="nav nav-tabs">
+			<li><a data-toggle="tab" href="#tab1-1">일일</a></li>
+			<li class="active"><a data-toggle="tab" href="#tab1-2">주간</a></li>
+			<!--<li><a data-toggle="tab" href="#tab1-3">월간</a></li>
+			 <li><a data-toggle="tab" href="#tab1-4">연간</a></li> -->
+		</ul>
+
+		<div class="tab-content">
+			<div id="tab1-1" class="tab-pane fade">
+							</div>
+			<div id="tab1-2" class="tab-pane fade in active">
+							</div>
+			<!--<div id="tab1-3" class="tab-pane fade">
+							</div>-->
+			<!-- <div id="tab1-4" class="tab-pane fade">
+							</div> -->
+		</div>
+	</div>
+</div>
+<div style="clear:both"></div>
+
+<style>
+#bo_cate {padding:7px;margin:10px 0;}
+#bo_cate h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#bo_cate ul {zoom:1}
+#bo_cate ul:after {display:block;visibility:hidden;clear:both;content:""}
+#bo_cate li {display:inline-block;padding:2px;}
+#bo_cate a {display:block;background:#fff;line-height:2.0;border-radius:3px;border:1px solid #ccc;text-align:center;font-size:1.1em}
+#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {text-decoration:none;color:#fff;background:#f44848;}
+#bo_cate #bo_cate_on {z-index:2;background:#f44848;color:#fff;width:100%}
+
+.cate_box_sd{border:1px solid #ccc;background-color:#dddddd;padding:40px 35px;margin:20px 0}
+.cate_box_sd h2{font-size:1.5em;text-align:center;font-weight:bold;margin-bottom:20px;line-height:1.3}
+
+</style>
+
+	<div class="cate_box_sd">
+	<h2>주제별</h2>
+    <!-- 게시판 카테고리 시작 { -->
+        <nav id="bo_cate">
+        <ul id="bo_cate_ul"> <li class="col-3"><a href="/subject" id="bo_cate_on">전체</a></li>
+				<li class="col-3"><a href="/bbs/board.php?bo_table=facebook">페이스북</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=instagram">인스타그램</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=youtube">유튜브</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=etc_sns">기타 SNS</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=program">프로그램 판매</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=programbuy">프로그램 구매</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=xiaohongshu">왕홍,샤오홍슈</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=keyword_ad">키워드광고</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=media_mkt">언론마케팅</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore">스마트스토어</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=class">마케팅 강좌</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=chinaetc">중국마케팅기타</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=CPA_CPS">CPA/CPS</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware">쇼핑리워드</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad">플레이스리워드</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=aietc">AI마케팅</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=offline_mkt">오프라인 마케팅</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=coupang">쿠팡</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=app_mkt">앱 마케팅</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=autocomplete">자완</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=blog_mkt">블로그 마케팅</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=etc_online_mkt">기타 온라인마케팅</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=mkt_story">마케팅이야기</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=openmarcket">기타오픈마켓</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=cafe_mkt">카페 마케팅</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=mkt_beginner">마케팅 왕초보</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=closemarcket">기타폐쇄몰</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=etc_search_mkt">기타 검색마케팅</a></li>
+							<li class="col-3"><a href="/bbs/board.php?bo_table=etc_mkt">기타</a></li>
+							<li class="col-3"><a href="https://mamentor.co.kr/bbs/board.php?bo_table=coin">플레이스배포</a></li>
+			
+        </ul>
+    </nav>
+</div>
+
+<style>
+    .bo_tit{width: auto;max-width:340px;}
+</style>
+
+<!-- 전체게시물 목록 시작 { -->
+<form name="fnewlist" id="fnewlist" method="post" action="#" onsubmit="return fnew_submit(this);">
+<input type="hidden" name="sfl" value="">
+<input type="hidden" name="stx" value="">
+<input type="hidden" name="page" value="1">
+
+ <div id="bo_list">
+   <div class="tbl_head01 tbl_wrap">
+        <table>
+        <colgroup><col width="67%">
+		<col width="17%">
+		<col width="8%">
+		<col width="8%">
+        </colgroup><caption>플레이스리워드 목록</caption>
+        <thead>
+        <tr>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">등록일</th>
+            <th scope="col">조회</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=offline_mkt" class="this_table"><span class="sub0">오프라인</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=offline_mkt&amp;wr_id=15067">
+                        ⭐️당근마케팅 단골맺기,후기,동네생활 배포⭐️                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tnqls3975" class="sv_member" title="마케팅천사 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/37.gif"></span> 마케팅천사</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tnqls3975" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tnqls3975" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=offline_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=tnqls3975">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tnqls3975" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tnqls3975" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tnqls3975" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=offline_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=tnqls3975">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tnqls3975" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:33</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=smartstore" class="this_table"><span class="sub0">스마트스토어</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;wr_id=116165">
+                        ☘️N쇼핑 순위 상승, 결과로 보여드립니다.☘️                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=whdxo0524" class="sv_member" title="reward1 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/100.gif"></span> reward1</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=whdxo0524" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=whdxo0524" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;sca=&amp;sfl=mb_id,1&amp;stx=whdxo0524">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=whdxo0524" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=whdxo0524" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=whdxo0524" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;sca=&amp;sfl=mb_id,1&amp;stx=whdxo0524">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=whdxo0524" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:33</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=s_reware" class="this_table"><span class="sub0">쇼핑리워드</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;wr_id=32320">
+                        ☘️☘️리워드 STAY☘️☘️                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=whdxo0524" class="sv_member" title="reward1 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/100.gif"></span> reward1</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=whdxo0524" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=whdxo0524" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;sca=&amp;sfl=mb_id,1&amp;stx=whdxo0524">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=whdxo0524" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=whdxo0524" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=whdxo0524" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;sca=&amp;sfl=mb_id,1&amp;stx=whdxo0524">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=whdxo0524" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:32</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=place_ad" class="this_table"><span class="sub0">플레이스리워드</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;wr_id=37978">
+                        ⛔⛔플레이스 상위노출 / 신규 리워드 “라떼” 진행⛔⛔                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tjdpqls1117" class="sv_member" title="셀로그 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/37.gif"></span> 셀로그</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tjdpqls1117" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tjdpqls1117" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;sca=&amp;sfl=mb_id,1&amp;stx=tjdpqls1117">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tjdpqls1117" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tjdpqls1117" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tjdpqls1117" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;sca=&amp;sfl=mb_id,1&amp;stx=tjdpqls1117">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tjdpqls1117" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:31</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=keyword_ad" class="this_table"><span class="sub0">키워드</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=keyword_ad&amp;wr_id=70225">
+                        ⛔⛔플레이스 상위노출 / 신규 리워드 “라떼” 진행⛔⛔                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tjdpqls1117" class="sv_member" title="셀로그 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/37.gif"></span> 셀로그</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tjdpqls1117" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tjdpqls1117" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=keyword_ad&amp;sca=&amp;sfl=mb_id,1&amp;stx=tjdpqls1117">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tjdpqls1117" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tjdpqls1117" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tjdpqls1117" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=keyword_ad&amp;sca=&amp;sfl=mb_id,1&amp;stx=tjdpqls1117">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tjdpqls1117" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:31</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=blog_mkt" class="this_table"><span class="sub0">블로그</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;wr_id=158309">
+                        키워드 제한없음 블로그 임대 병행알선 단독알선                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dbsrldudwkd" class="sv_member" title="불꽃사나이 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img"><img src="https://mamentor.co.kr/data/member/db/dbsrldudwkd.gif" width="60" height="60" alt=""></span><span id="\&quot;your_level\&quot;"><img src="/icon/100.gif"></span> 불꽃사나이</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=dbsrldudwkd" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dbsrldudwkd" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=dbsrldudwkd">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=dbsrldudwkd" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=dbsrldudwkd" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dbsrldudwkd" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=dbsrldudwkd">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=dbsrldudwkd" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:30</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=s_reware" class="this_table"><span class="sub0">쇼핑리워드</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;wr_id=32319">
+                        ✈️ 뮤즈 개발사 직접 공급✈️                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dlaudqkr" class="sv_member" title="박창선팀장 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/60.gif"></span> 박창선팀장</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=dlaudqkr" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dlaudqkr" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;sca=&amp;sfl=mb_id,1&amp;stx=dlaudqkr">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=dlaudqkr" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=dlaudqkr" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dlaudqkr" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;sca=&amp;sfl=mb_id,1&amp;stx=dlaudqkr">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=dlaudqkr" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:30</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=mkt_story" class="this_table"><span class="sub0">이야기</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=mkt_story&amp;wr_id=24182">
+                        ✅ 쿠팡 가구매 리뷰 업체 실 리뷰어 6,000여명 자체운영 중간 마진 0% ✅                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=qkrfhrms97" class="sv_member" title="hr실행사 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img"><img src="https://mamentor.co.kr/data/member/qk/qkrfhrms97.gif" width="60" height="60" alt=""></span><span id="\&quot;your_level\&quot;"><img src="/icon/82.gif"></span> hr실행사</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=qkrfhrms97" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=qkrfhrms97" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=mkt_story&amp;sca=&amp;sfl=mb_id,1&amp;stx=qkrfhrms97">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=qkrfhrms97" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=qkrfhrms97" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=qkrfhrms97" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=mkt_story&amp;sca=&amp;sfl=mb_id,1&amp;stx=qkrfhrms97">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=qkrfhrms97" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:30</td>
+            <td class="td_num">2</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=coin" class="this_table"><span class="sub0"></span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=coin&amp;wr_id=7626">
+                        모든 블로그 전문 실행사 200원 부터~                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=papa_1" class="sv_member" title="정부장님 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/100.gif"></span> 정부장님</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=papa_1" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=papa_1" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=coin&amp;sca=&amp;sfl=mb_id,1&amp;stx=papa_1">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=papa_1" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=papa_1" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=papa_1" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=coin&amp;sca=&amp;sfl=mb_id,1&amp;stx=papa_1">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=papa_1" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:30</td>
+            <td class="td_num">3</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=smartstore" class="this_table"><span class="sub0">스마트스토어</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;wr_id=116164">
+                        각종 플랫폼 가구매 리뷰 진행합니다                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=bunny7" class="sv_member" title="흐르미 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/37.gif"></span> 흐르미</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=bunny7" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=bunny7" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;sca=&amp;sfl=mb_id,1&amp;stx=bunny7">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=bunny7" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=bunny7" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=bunny7" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;sca=&amp;sfl=mb_id,1&amp;stx=bunny7">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=bunny7" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:27</td>
+            <td class="td_num">3</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=etc_mkt" class="this_table"><span class="sub0">마케팅일반기타</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_mkt&amp;wr_id=44527">
+                        247실명 / 비실명 배포 진행 및 플레이스 영수증리뷰 실행사                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=asdzfz" class="sv_member" title="서영락 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/28.gif"></span> 서영락</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=asdzfz" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=asdzfz" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=asdzfz">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=asdzfz" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=asdzfz" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=asdzfz" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=asdzfz">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=asdzfz" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:27</td>
+            <td class="td_num">3</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=blog_mkt" class="this_table"><span class="sub0">블로그</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;wr_id=158308">
+                        최적화 블로그 영구 매매                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tprtm1234" class="sv_member" title="네이버블로그광고 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/97.gif"></span> 네이버블로그광고</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tprtm1234" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tprtm1234" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=tprtm1234">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tprtm1234" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=tprtm1234" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=tprtm1234" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=tprtm1234">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=tprtm1234" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:27</td>
+            <td class="td_num">4</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=blog_mkt" class="this_table"><span class="sub0">블로그</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;wr_id=158307">
+                        언더키워드 전문 병원/대출/투자/법률/흥신소/등 배포블100개이상보유중                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dbsrldudwkd" class="sv_member" title="불꽃사나이 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img"><img src="https://mamentor.co.kr/data/member/db/dbsrldudwkd.gif" width="60" height="60" alt=""></span><span id="\&quot;your_level\&quot;"><img src="/icon/100.gif"></span> 불꽃사나이</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=dbsrldudwkd" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dbsrldudwkd" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=dbsrldudwkd">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=dbsrldudwkd" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=dbsrldudwkd" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=dbsrldudwkd" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=blog_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=dbsrldudwkd">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=dbsrldudwkd" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:26</td>
+            <td class="td_num">4</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=etc_mkt" class="this_table"><span class="sub0">마케팅일반기타</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_mkt&amp;wr_id=44526">
+                        구글맵 리뷰 100% 노출 보장 외국인 타겟 업종 최적화 리뷰 진행                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=asdzfz" class="sv_member" title="서영락 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/28.gif"></span> 서영락</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=asdzfz" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=asdzfz" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=asdzfz">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=asdzfz" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=asdzfz" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=asdzfz" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_mkt&amp;sca=&amp;sfl=mb_id,1&amp;stx=asdzfz">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=asdzfz" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:26</td>
+            <td class="td_num">4</td>
+
+        </tr>
+                <tr>
+            <td class="td_subject">
+				 <span class="good0">0</span>			    <a href="/bbs/board.php?bo_table=place_ad" class="this_table"><span class="sub0">플레이스리워드</span></a>
+                <div class="bo_tit" style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap;">
+                    <a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;wr_id=37977">
+                        ⭐떨어지는 플레이스 순위, 무적 트래픽으로 복구⭐                    </a>
+                                        <img src="/img/newimg.gif" class="title_icon" alt="새글" width="20">                </div>
+            </td>
+            <td class="td_name sv_use"><span class="sv_wrap">
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=eth1020" class="sv_member" title="모든문의환영 자기소개" target="_blank" rel="nofollow" onclick="return false;"><span class="profile_img2"><img src="https://mamentor.co.kr/img/no_profile.gif" alt="no_profile" width="20" height="20"></span><span id="\&quot;your_level\&quot;"><img src="/icon/100.gif"></span> 모든문의환영</a>
+<span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=eth1020" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=eth1020" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;sca=&amp;sfl=mb_id,1&amp;stx=eth1020">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=eth1020" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+
+<noscript class="sv_nojs"><span class="sv">
+<a href="https://mamentor.co.kr/bbs/memo_form.php?me_recv_mb_id=eth1020" onclick="win_memo(this.href); return false;">쪽지보내기</a>
+<a href="https://mamentor.co.kr/bbs/profile.php?mb_id=eth1020" onclick="win_profile(this.href); return false;">자기소개</a>
+<a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;sca=&amp;sfl=mb_id,1&amp;stx=eth1020">아이디로 검색</a>
+<a href="https://mamentor.co.kr/bbs/new.php?mb_id=eth1020" class="link_new_page" onclick="check_goto_new(this.href, event);">전체게시물</a>
+</span>
+</noscript></span></td>
+            <td class="td_datetime">15:25</td>
+            <td class="td_num">3</td>
+
+        </tr>
+                        </tbody>
+        </table>
+    </div>
+
+    
+
+<!-- 페이지 -->
+<nav class="pg_wrap"><span class="pg"><span class="sound_only">열린</span><strong class="pg_current">1</strong><span class="sound_only">페이지</span>
+<a href="?gr_id=subject&amp;page=2" class="pg_page">2<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=3" class="pg_page">3<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=4" class="pg_page">4<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=5" class="pg_page">5<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=6" class="pg_page">6<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=7" class="pg_page">7<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=8" class="pg_page">8<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=9" class="pg_page">9<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=10" class="pg_page">10<span class="sound_only">페이지</span></a>
+<a href="?gr_id=subject&amp;page=11" class="pg_page pg_next">다음</a>
+<a href="?gr_id=subject&amp;page=24261" class="pg_page pg_end">맨끝</a>
+</span></nav>    </div></form>
+
+
+
+</div>
+
+
+<div class="col-44 mg10">
+	<div class="col-12 boxo" style="padding:0">
+	<div class="padding:15px 15px;box-sizing:border-box;background-color:blue;display:table-cell">
+		<!-- 로그인 전 아웃로그인 시작 { -->
+<section id="ol_before" class="ol">
+    <h2>회원로그인</h2>
+    <form name="foutlogin" action="https://mamentor.co.kr/bbs/login_check.php" onsubmit="return fhead_submit(this);" method="post" autocomplete="off">
+    <fieldset>
+		<div class="id_login">
+		<div class="ol_wr">
+            <input type="hidden" name="url" value="%2Fsubject">
+            <label for="ol_id" id="ol_idlabel" class="sound_only ol_idlabel">회원아이디<strong>필수</strong></label>
+            <input type="text" id="ol_id" name="mb_id" required="" maxlength="20" placeholder="아이디">
+            <label for="ol_pw" id="ol_pwlabel" class="sound_only ol_pwlabel">비밀번호<strong>필수</strong></label>
+            <input type="password" name="mb_password" id="ol_pw" required="" maxlength="20" placeholder="비밀번호">
+            <input type="submit" id="ol_submit" value="로그인" class="btn_login">
+        </div>
+        <div class="ol_auto_wr"> 
+            <div id="ol_svc">
+                <a href="https://mamentor.co.kr/bbs/register.php"><b>회원가입</b></a> /
+                <a href="https://mamentor.co.kr/bbs/password_lost.php" id="ol_password_lost">ID/PW 찾기</a>
+                <!--<span id="ol_go_social_login">소셜 계정 로그인</span>-->
+            </div>
+        </div>
+        
+<div class="login-sns sns-wrap-32 sns-wrap-over" id="sns_outlogin">
+    <div class="sns-wrap">
+                        <a href="https://mamentor.co.kr/plugin/social/popup.php?provider=kakao&amp;url=%2Fsubject" class="sns-icon social_link sns-kakao" title="카카오">
+            <span class="ico"></span>
+            <span class="txt">카카오<i> 로그인</i></span>
+        </a>
+                                        
+                <script>
+            jQuery(function($){
+                $(".sns-wrap").on("click", "a.social_link", function(e){
+                    e.preventDefault();
+
+                    var pop_url = $(this).attr("href");
+                    var newWin = window.open(
+                        pop_url, 
+                        "social_sing_on", 
+                        "location=0,status=0,scrollbars=0,width=600,height=500"
+                    );
+
+                    if(!newWin || newWin.closed || typeof newWin.closed=='undefined')
+                         alert('브라우저에서 팝업이 차단되어 있습니다. 팝업 활성화 후 다시 시도해 주세요.');
+
+                    return false;
+                });
+            });
+        </script>
+        
+    </div>
+</div>   
+
+        </div>
+
+    </fieldset>
+    </form>
+</section>
+
+<script>
+$omi = $('#ol_id');
+$omp = $('#ol_pw');
+$omi_label = $('#ol_idlabel');
+$omi_label.addClass('ol_idlabel');
+$omp_label = $('#ol_pwlabel');
+$omp_label.addClass('ol_pwlabel');
+
+function fhead_submit(f)
+{
+    return true;
+}
+
+
+/*
+$("#view_id_login").click(function(){
+    $(".id_login").show();
+    $("#sns_outlogin").hide();
+});
+
+$("#ol_go_social_login").click(function(){
+    $(".id_login").hide();
+    $("#sns_outlogin").show();
+});
+*/
+
+</script>
+<!-- } 로그인 전 아웃로그인 끝 -->
+		</div>
+	</div>
+
+	<div class="col-12 sidebanner">
+			
+<a href="https://mamentor.co.kr/bbs/bannerhit.php?bn_id=713&amp;url=https%3A%2F%2Fwww.notion.so%2Fx-358838c621ad8077989ee086fdd44966%3Fsource%3Dcopy_link" target="_blank"><img src="https://mamentor.co.kr/data/banner/713" width="400" alt=""></a>
+	</div>
+
+	<div class="col-12 boxo" style="padding:0;margin-bottom:-1px">
+		<script src="/js/jquery.bxslider.min.js"></script>
+		<style>
+.bxslider-wrap { visibility: hidden ; }
+.bxslider div{display:none;}
+.bxslider div:first-child{display:block;}
+</style>
+
+<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative;"><div class="bxslider" style="width: auto; position: relative;">
+    </div></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+
+<script>
+    $( window ).on( "load", function() {
+	$('.bxslider').bxSlider({	  
+		auto: true,
+		mode: 'fade',
+		captions: true,
+		pager:false,
+		preloadImages: 'all',
+		onSliderLoad: function(){
+			 $(".bxslider-wrap").css("visibility", "visible");
+		}
+	});
+});
+
+</script>
+	</div>
+	<div class="col-12 boxo" style="padding:0;margin-bottom:-1px">
+		<div class="hit_list_box">
+
+				<h2>월간 인기글</h2>
+	
+			<ul class="hit_tabs">
+				<li class="active"><a data-toggle="tab" href="#hittab1-1">01</a></li>
+				<li><a data-toggle="tab" href="#hittab1-2">02</a></li>
+				<li><a data-toggle="tab" href="#hittab1-3">03</a></li>
+			</ul>
+
+			<div class="tab-content" id="hit_con_box">
+				<!-- select *  from g5_content1 where s_date <= '2026-05-20' and e_date >= '2026-05-20'  order by co_order asc  limit 0, 30  -->
+<div id="hittab1-1" class="tab-pane in active">
+	<ul class="hit_list">
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=sellbuy&amp;wr_id=83913"><span class="nums">1</span>⭐콤보 리워드 출시⭐</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=coupang&amp;wr_id=8077"><span class="nums">2</span>쇼핑원청. 원하시는 단가 알려주세요.</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_search_mkt&amp;wr_id=17000"><span class="nums">3</span>웹사이트 상승 완벽해결. 5일 무료 테스트가능.</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;wr_id=84541"><span class="nums">4</span>쇼핑 개발/총판 마니또입니다. 순위 잡아드리겠습니다! …</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=keyword_ad&amp;wr_id=26994"><span class="nums">5</span>❤️콤보❤️</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;wr_id=7853"><span class="nums">6</span>UI제공 개발사 직통 플레이스 배포</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=introduction&amp;wr_id=124223"><span class="nums">7</span>포유 개발사 5월 레퍼런스</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;wr_id=93517"><span class="nums">8</span>삐투삐투삐투삐투삐투삐투삐투삐투삐투삐투삐투삐투</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=coupang&amp;wr_id=30480"><span class="nums">9</span>5월 쿠팡 베이스</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;wr_id=5533"><span class="nums">10</span>[05/19]⚡️스마트스토어 무료 테스트 이벤트⚡️</a> </li>
+	</ul>
+</div>
+<div id="hittab1-2" class="tab-pane">
+	<ul class="hit_list">
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=introduction&amp;wr_id=169309"><span class="nums">11</span>⛔신규 리워드 "콤보"⛔</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=412"><span class="nums">12</span>▶️ 월간 인기글 자리 광고 신청 받습니다</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=introduction&amp;wr_id=164665"><span class="nums">13</span>⌛상위1%셀러의 타이밍, 지금입니다⌛</a> </li>
+			</ul></div>
+		</div>
+	</div>
+	<div class="col-12 boxo" style="padding:0;margin-bottom:-1px">
+		<div class="side_banner_box1">
+		<a href="https://mamentor.co.kr/keyword.php"><img src="/img/side_banner1.jpg"></a>
+		<a href="https://mamentor.co.kr/shopping_ranking"><img src="/img/side_banner2.jpg"></a>
+		</div>
+	</div>
+
+	<div class="col-12 boxo" style="padding:0">
+		<div class="new_list_comm_box">
+			<h3 class="new_list_t">새글</h3>
+			
+<ul class="new_list">
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=offline_mkt&amp;wr_id=15067" class="new_tit">⭐️당근마케팅 단골맺기,후기,동네생활 배포⭐️</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=smartstore&amp;wr_id=116165" class="new_tit">☘️N쇼핑 순위 상승, 결과로 보여드립니다.☘️</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=s_reware&amp;wr_id=32320" class="new_tit">☘️☘️리워드 STAY☘️☘️</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=place_ad&amp;wr_id=37978" class="new_tit"><img src="https://mamentor.co.kr/data/file/place_ad/thumb-2038635522_sqD5EC83_a8672d5672dddfc27e1bdeaba4368a42f0bc35ad_20x20.jpg" alt="" class="thumb" width="20">⛔⛔플레이스 상위노출 / 신규 리워드 “라떼” 진행⛔⛔</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=keyword_ad&amp;wr_id=70225" class="new_tit"><img src="https://mamentor.co.kr/data/file/keyword_ad/thumb-2038635522_PGfmL2Ka_263ab9265b6002a23e7994b94264af83fa5e67c1_20x20.png" alt="" class="thumb" width="20">⛔⛔플레이스 상위노출 / 신규 리워드 “라떼” 진행⛔⛔</a></li>
+</ul>
+		</div>
+		<div style="width:100%;height:1px;border-top:1px solid #eaeaea"></div>
+		<div class="new_list_comm_box">
+			<h3 class="new_comm_t">새 댓글</h3>
+			
+<ul class="new_comm">
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152593#c_152593" class="new_tit">오늘도 화이팅! 잘 할 수 있어요!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152590#c_152590" class="new_tit">오늘도 화이팅! 즐거운 하루 되세요!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152571#c_152571" class="new_tit">오늘도 화이팅! 힘내세요!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152447#c_152447" class="new_tit">오늘 하루도 힘내요! 화이팅!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152357#c_152357" class="new_tit">오늘도 화이팅! 힘내세요!</a></li>
+</ul>
+		</div>
+	</div>
+
+</div>
+
+
+    </div>
+   
+</div>
+
+
+<!-- } 콘텐츠 끝 -->
+
+<div style="position:fixed;bottom:80px;right:20px;">
+<a href="https://open.kakao.com/o/gu1O899" target="_blank"><img src="/right_kakao_PC.png"></a>
+</div>
+
+<!-- 하단 시작 { -->
+<div id="ft">
+    <div class="notice_latest">
+        <div class="notice_box text-left">
+            <h2>공지사항</h2> <span><a href="https://mamentor.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=422"> 마멘토 광고 영역 안내드립니다</a></span>
+        </div>
+    </div>
+
+    <div id="ft_wr">
+        <div id="ft_link">
+            <a href="https://mamentor.co.kr/bbs/content.php?co_id=company">회사소개</a>
+            <a href="https://mamentor.co.kr/bbs/content.php?co_id=privacy">개인정보처리방침</a>
+            <a href="https://mamentor.co.kr/bbs/content.php?co_id=provision">서비스이용약관</a>
+            <a href="https://mamentor.co.kr/?device=mobile">모바일 버전</a>
+        </div>
+		<div style="padding: 20px 0 10px 0;line-height: 22px;">
+			회사명 : 월드바이럴 <span style="padding: 0 10px;"></span>대표 : 김태은 <span style="padding: 0 10px;"></span> 고객센터 : 010-8396-8884<br>
+			사업장주소 : 경기도 파주시 한빛로 70 (야당동) 504동 2001호<br>
+			개인정보취급관리자 : 김태은 <span style="padding: 0 10px;"></span> 이메일 : trymoney3@naver.com<br>
+			사업자등록번호 : 207-08-94463<span style="padding: 0 10px;"></span>
+			통신판매업신고번호 : 제2016-서울강남-02102호
+		</div>
+        <div id="ft_catch"><a href="https://mamentor.co.kr"><span><img src="https://mamentor.co.kr/img/mamentor_logo.png" alt="마멘토 : 유튜브,SNS,블로그 온라인마케팅 커뮤니티"></span>MAMENTOR</a></div>
+        <div id="ft_copy">Copyright © <b>마멘토.</b> All rights reserved.</div>
+    </div>
+    
+    <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+        <script>
+        
+        $(function() {
+            $("#top_btn").on("click", function() {
+                $("html, body").animate({scrollTop:0}, '500');
+                return false;
+            });
+        });
+        </script>
+</div>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+
+<div id="c4g-content-root" class="c4g-widget"></div></body></html>

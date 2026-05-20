@@ -1,0 +1,846 @@
+<html lang="ko"><head>
+<link rel="stylesheet" href="https://kit.fontawesome.com/99f07c98e8.css" crossorigin="anonymous">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
+<link rel="preload" as="style" crossorigin="" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" crossorigin="" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<title>아이보스 - 온라인마케팅 포털</title>
+<link rel="canonical" href="https://www.i-boss.co.kr">
+<link rel="icon" href="/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta property="fb:pages" content="195407467170993">
+<meta property="fb:app_id" name="fb_app_id" content="335902466612714">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="아이보스">
+<meta property="og:title" content="아이보스 - 온라인마케팅 포털">
+<meta property="og:description" content="온라인마케팅 포털 아이보스, 컨설팅, 키워드광고, 블로그, 모바일, SEO, 바이럴광고, 온라인마케팅 교육, 광고대행사">
+<meta property="og:image" content="https://cdn.ibos.kr/images/meta_logo.gif">
+<meta property="og:url" content="https://www.i-boss.co.kr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"> 
+<meta name="description" content="온라인마케팅 포털 아이보스, 컨설팅, 키워드광고, 블로그, 모바일, SEO, 바이럴광고, 온라인마케팅 교육, 광고, 대행사">
+<meta name="keywords" content="온라인마케팅 포털 아이보스, 컨설팅, 키워드광고, 블로그, 모바일, SEO, 바이럴광고, 온라인마케팅 교육, 광고, 대행사">
+<link href="/template/DESIGN_style/iboss_home.css?v=1778812232" rel="stylesheet" type="text/css">
+<link href="/template/DESIGN_style/gnb.css?v=1767496891" rel="stylesheet" type="text/css">
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-998173518&amp;cx=c&amp;gtm=4e65i2h1"></script><script src="https://connect.facebook.net/signals/config/1403511673290661?v=2.9.324&amp;r=stable&amp;domain=www.i-boss.co.kr&amp;hme=af8aa31887db259becaf70277daef60bd8bc35c2df82c2acd4258de27ecac4b5&amp;ex_m=104%2C207%2C155%2C22%2C72%2C73%2C146%2C68%2C67%2C11%2C164%2C90%2C16%2C138%2C127%2C39%2C75%2C78%2C134%2C160%2C166%2C8%2C4%2C5%2C7%2C6%2C3%2C91%2C101%2C167%2C172%2C221%2C62%2C188%2C189%2C55%2C279%2C30%2C74%2C233%2C232%2C231%2C23%2C33%2C103%2C61%2C10%2C63%2C97%2C98%2C99%2C105%2C130%2C31%2C29%2C132%2C133%2C129%2C128%2C156%2C76%2C159%2C157%2C158%2C50%2C60%2C123%2C15%2C163%2C45%2C266%2C267%2C265%2C26%2C27%2C28%2C48%2C147%2C77%2C112%2C18%2C20%2C44%2C40%2C42%2C41%2C83%2C92%2C96%2C110%2C145%2C148%2C46%2C111%2C24%2C21%2C119%2C69%2C36%2C150%2C149%2C151%2C142%2C140%2C25%2C35%2C59%2C109%2C162%2C70%2C17%2C153%2C114%2C81%2C66%2C19%2C85%2C86%2C116%2C84%2C136%2C135%2C139%2C161%2C34%2C281%2C297%2C214%2C203%2C204%2C202%2C300%2C291%2C52%2C215%2C107%2C131%2C80%2C121%2C54%2C47%2C49%2C113%2C120%2C126%2C125%2C58%2C64%2C152%2C115%2C37%2C32%2C53%2C56%2C100%2C165%2C1%2C124%2C14%2C122%2C12%2C2%2C57%2C93%2C65%2C118%2C89%2C88%2C168%2C169%2C94%2C95%2C9%2C102%2C51%2C143%2C87%2C79%2C71%2C117%2C106%2C43%2C144%2C0%2C82%2C137%2C141%2C154%2C38%2C108%2C13%2C170" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-KNFLFBZ1YL&amp;cx=c&amp;gtm=4e65i2h1"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PMFVW7"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js "></script>
+<script src="/include/js/javascript.js?v=1726683974"></script>
+<script src="//cdn.ibos.kr/template/PLUGIN_iboss_display/program/js/jquery-bosstab.js?v=1689757913"></script>
+<script type="text/javascript" src="/template/PLUGIN_iboss_display/program/js/boss_common.js?v=1776819439"></script>
+<script data-ad-client="ca-pub-7010825088562162" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="https://alog.i-boss.co.kr/bl/bl.js?v=1.1.7"></script>
+<script type="text/javascript">
+var dataLayer =  dataLayer || [];
+
+var iboss_is_app='0';
+dataLayer.push({'rip':'125.142.156.8'});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMFVW7');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" async="" src="https://ssl.pstatic.net/melona/libs/gfp-nac-module/synchronizer.js"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/998173518/?random=1779258699427&amp;cv=11&amp;fst=1779258699427&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be65i2h1z871645705za20gzb71645705zd71645705xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616985~115938466~115938469&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.i-boss.co.kr%2Finsiter.php%3Fafter_db_msg%3D%26next_page%3D&amp;ref=https%3A%2F%2Fwww.i-boss.co.kr%2Fmember%2Flogout_process.php%3Fafter_db_msg%3D%26next_page%3D&amp;rcb=15&amp;label=4yvcCPqI-wIQztb72wM&amp;frm=0&amp;tiba=%EC%95%84%EC%9D%B4%EB%B3%B4%EC%8A%A4%20-%20%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%A7%88%EC%BC%80%ED%8C%85%20%ED%8F%AC%ED%84%B8&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1736037892.1779258606&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B148.0.7778.168%7CGoogle%2520Chrome%3B148.0.7778.168%7CNot%252FA)Brand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"></script></head>
+<body><script>
+$(document).ready(function() {
+    // 입력 필드에서 Enter 키 입력 시 동작
+    $('#chkurl').keypress(function(event) {
+      if (event.which === 13) { // Enter 키의 keyCode는 13
+        submitUrl();
+      }
+    });
+  
+    // 버튼 클릭 시 동작
+    $('#site_page_btn').click(function() {
+      submitUrl();
+    });
+  
+    // URL 이동 함수
+    function submitUrl() {
+      var url = $('#chkurl').val();
+      if (url) {
+        var newWindow = window.open('https://www.i-boss.co.kr/ab-mktt_searcher?url=' + encodeURIComponent(url), '_blank');
+        if (newWindow) {
+          newWindow.focus();
+        } else {
+          alert('팝업 차단이 활성화되어 있습니다. 팝업 차단을 해제하고 다시 시도해주세요.');
+        }
+      } else {
+        fn_display_msg("", "URL을 입력해주세요", "", "", "alert", "");
+      }
+    }
+});
+$(document).ready(function(){
+    $("#widgets").css('display', 'grid');
+    $("#preload").remove();
+
+    var divs = $("#widgets > div");
+    for(var i = 0; i < divs.length; i++){
+        var target = Math.floor(Math.random() * divs.length -1) + 1;
+        var target2 = Math.floor(Math.random() * divs.length -1) +1;
+        divs.eq(target).before(divs.eq(target2));
+    }
+});
+</script><header><div class="gnb-container"><div id="topAd" onclick="if(event.target.closest('i, a')) this.style.display='none';"><i class="fa-regular fa-times" onclick="set_cookie('topAd_s148', 'true', '24');"></i><a href="https://www.i-boss.co.kr/ab-5817-462?ref=gnbbn" target="_blank" rel="noopener" onclick="set_cookie('topAd_s148', 'true', '24');" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="띠배너" gtm-ev-action="uuib_MQDIJG3N_2" data-gtm-vis-recent-on-screen1645705_271="455" data-gtm-vis-first-on-screen1645705_271="455" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1">📌 아마존 진출 전략, 무료로 노하우 알려드릴 때 미리 알아두세요!<label>더보기</label></a></div><div id="header"><div class="logo-searchbox"><div id="iboss-logo"><a href="/" title="온라인마케팅 포털, 아이보스" class="header-logo"><img src="https://cdn.ibos.kr/images/iboss_home_logo.svg" height="22" border="0" alt="아이보스"></a></div><div class="LogoSchbox"><form name="frm_search_main" id="frm_search_main" method="get" action="/ab-sch_total_new" enctype="multipart/form-data" onsubmit="return frm_search_main_submit()" data-ajax="false"><div><fieldset><legend>통합검색</legend>
+	<input type="text" name="search_value" value="" class="search_box_input" placeholder="검색"><button type="submit" name="submit_OK"><i class="fa-regular fa-magnifying-glass"></i></button></fieldset></div>
+</form>
+</div></div><div id="sub_hd"><div class="guestNav">
+<a href="/ab-3023">새로운 글</a><a href="/ab-1886">인기글</a><span class="sp"></span><a href="/ab-login">로그인</a><a href="/ab-signup" class="btn-join">회원가입</a></div>
+<div class="s_popup s_pop_alarm notifiLayer" style="display: none;"><div class="bd_list" id="alert_msg"><div class="tit"><strong><i class="fa-light fa-bell"></i>알림</strong><div class="set_func"><span class="bd_R3 btn_alarm_read_all bstip" data-tip="모두 읽음으로 표시" data-pos="b" data-action="read_all"><i class="fa-light fa-envelope-open"></i> 읽음</span></div></div><div class="wrap msg_lst_wrap"><div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div>
+<div class="dummyCell"><label></label><p><span></span><span></span><span class="inline"></span><span class="inline"></span></p></div></div></div></div></div></div>
+<div id="GNB">
+	<ul class="gnbWrap">
+		<li>
+			<a href="/ab-2936" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="커뮤니티">
+				<span class="txt">커뮤니티</span>
+			</a>
+			<dl class="col2">
+				<div>
+					<dd><a href="/ab-1486504" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="자유게시판"><span>자유게시판</span><em class="gnb_btn new">새글</em></a></dd>
+					<dd><a href="/ab-8083" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="회사생활"><span>회사생활</span></a></dd>
+                    <dd><a href="/ab-1486525" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="세미나·컨퍼런스"><span>세미나·컨퍼런스</span><em class="gnb_btn new">새글</em></a></dd>
+                    <dd><a href="/ab-5636" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케터의 서재"><span>마케터의 서재</span></a></dd>
+                    <dd><a href="/ab-8037" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케터 기초지식"><span>마케터 기초지식 🐤</span></a></dd>
+					<dd><a href="/ab-8368" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="익명게시판"><span>익명게시판</span><em class="gnb_btn new">새글</em></a></dd>
+				</div>
+				<div>
+					<dd><a href="/ab-2332" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="출석"><span>출석</span></a></dd>
+                    <dd><a href="/ab-benefits" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="혜택"><span>혜택</span></a></dd>
+					<dd><a href="/ab-74539" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="공지사항"><span>공지사항</span></a></dd>
+					<dd><a href="/ab-2972" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="이벤트"><span>이벤트</span><em class="gnb_btn new">새글</em></a></dd>
+                    <dd><a href="/ab-978" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="가입인사"><span>가입인사</span></a></dd>
+					<dd><a href="/ab-8302" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="아이보스 몰"><span>아이보스 몰</span></a></dd>
+				</div>
+				<div style="display:block; width:100%;"><dd><a href="/ab-8404" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="퇴직연금으로 노후 설계하기"><span>퇴직연금으로 노후 설계하기</span></a></dd></div>
+			</dl>
+		</li>
+		<li>
+			<a href="/ab-6166" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="정보공유">
+				<span class="txt">정보공유</span>
+			</a>
+			<dl class="col8">
+				<div class="wide-wrap">
+					<div>
+						<dt><a href="/ab-6167"><strong>검색마케팅</strong></a></dt>
+						<dd class="bd0"><a href="/ab-74601" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="키워드광고"><span>키워드광고</span></a></dd>
+						<dd><a href="/ab-74613" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="블로그 마케팅"><span>블로그 마케팅</span><em class="gnb_btn new">새글</em></a></dd>
+						<dd><a href="/ab-74631" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="카페 마케팅"><span>카페 마케팅</span></a></dd>
+						<dd><a href="/ab-74625" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="웹문서 마케팅"><span>웹문서 마케팅</span></a></dd>
+						<dd><a href="/ab-6176" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="기타 검색마케팅"><span>기타 검색마케팅</span></a></dd>
+						<dd><a href="/ab-6140?tag=AEO+GEO" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="AEO·GEO"><span>AEO·GEO</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-6168"><strong>SNS마케팅</strong></a></dt>
+                        <dd><a href="/ab-6179" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="SNS마케팅"><span>SNS마케팅</span></a></dd>
+						<dd class="bd0"><a href="/ab-5152" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="페이스북"><span>페이스북</span></a></dd>
+						<dd><a href="/ab-5339" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="인스타그램"><span>인스타그램</span></a></dd>
+                        <dd><a href="/ab-6757" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="유튜브"><span>유튜브</span></a></dd>
+                        <dd><a href="/ab-6140?tag=라이브커머스" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="라이브커머스"><span>라이브커머스</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-6169"><strong>온라인마케팅</strong></a></dt>
+						<dd class="bd0"><a href="/ab-74643" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="배너광고"><span>배너광고</span></a></dd>
+						<dd><a href="/ab-150076" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="모바일 광고"><span>모바일 광고</span></a></dd>
+						<dd><a href="/ab-74649" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="CPA·CPS"><span>CPA·CPS</span></a></dd>
+						<dd><a href="/ab-74655" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="리텐션 마케팅"><span>리텐션 마케팅</span></a></dd>
+						<dd><a href="/ab-6180" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="콘텐츠마케팅"><span>콘텐츠마케팅</span><em class="gnb_btn new">새글</em></a></dd>
+						<dd><a href="/ab-6181" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="기타 온라인마케팅"><span>기타 온라인마케팅</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-6170"><strong>마케팅 일반</strong></a></dt>
+                        <dd class="bd0"><a href="/ab-74583" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 정보"><span>마케팅 정보</span><em class="gnb_btn new">새글</em></a></dd>
+						<dd><a href="/ab-74589" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="오프라인 광고"><span>오프라인 광고</span></a></dd>
+						<dd><a href="/ab-74771" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="GA·데이터분석"><span>GA·데이터분석</span></a></dd>
+						<dd><a href="/ab-74637" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="언론홍보"><span>언론홍보</span></a></dd>
+						<dd><a href="/ab-1486510" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="웹사이트 운영"><span>웹사이트 운영</span></a></dd>
+						<dd><a href="/ab-6481" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 왕초보"><span>마케팅 왕초보</span></a></dd>
+                        <dd><a href="/ab-6140?tag=AI" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="AI"><span>AI</span></a></dd>
+					</div>
+					<div>
+						<dt><a href="/ab-2874"><strong>경영</strong></a></dt>
+						<dd><a href="/ab-2894" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="경영/운영"><span>경영/운영</span></a></dd>
+						<dd><a href="/ab-2201" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="창업 정보"><span>창업 정보</span></a></dd>
+						<dd><a href="/ab-2900" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="특허/법률"><span>특허/법률</span></a></dd>
+						<dd><a href="/ab-74808" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="인사/노무"><span>인사/노무</span></a></dd>
+						<dd><a href="/ab-918" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="세무/회계"><span>세무/회계</span></a></dd>
+                        <dd><a href="/ab-5162" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="쇼핑몰 운영"><span>쇼핑몰 운영</span></a></dd>
+                        <dd><a href="/ab-7055" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="병의원"><span>병의원</span></a></dd>
+					</div>
+					<div>
+						<dd><a href="/ab-6845" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="자료 공유"><span>자료 공유</span></a></dd>
+						<dd><a href="/ab-6883" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="무료 툴 공유"><span>무료 툴 공유</span></a></dd>
+					</div>
+				</div>
+			</dl>
+		</li>
+		<li>
+			<a href="/ab-7214" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="뉴스">
+				<span class="txt">뉴스</span>
+			</a>
+		</li>
+		<li>
+			<a href="/ab-2109" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="질문답변" gtm-ev-visibility="" data-gtm-vis-recent-on-screen1645705_271="458" data-gtm-vis-first-on-screen1645705_271="458" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1">
+				<span class="txt">질문답변</span>
+			</a>
+		</li>
+		<li class="sp"></li>
+		<li>
+			<a href="/ab-1486336" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="대행컨설팅">
+				<span class="txt">대행컨설팅</span>
+			</a>
+			<div class="snb_consult">
+				<div>
+					<a href="/ab-1486336"><strong>대행의뢰</strong></a>
+					<a href="/ab-1957" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="대행의뢰"><span>대행의뢰</span></a>
+					<a href="/ab-7755" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 서비스"><span>마케팅 서비스</span><em class="gnb_btn new">새글</em></a>
+					<a href="/ab-2986" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="바이럴 서비스"><span>바이럴 서비스</span><em class="gnb_btn new">새글</em></a>
+					<a href="/ab-ai_blogger_seeding" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="AI 블로거 시딩"><span>AI 블로거 시딩<em class="gnb_btn new">새글</em></span></a>
+				</div>
+				<div class="flex-column-2">
+					<a href="/ab-partners_list">
+						<strong>아이보스 파트너스</strong>
+					</a>
+					<div class="grid-wrap">
+						<div>
+							<strong><a href="/ab-partners_list?authority=premium">공식 파트너스<i class="fa-solid fa-medal"></i></a></strong>
+							<div>
+								<a href="/ab-6911?ref=partners"><span>케어랩스</span></a>
+								<a href="/ab-7916?ref=partners"><span>콘크리트파머스</span></a>
+								<a href="/ab-7982?ref=partners"><span>엠서치마케팅</span></a>
+							</div>
+						</div>
+						<div>
+						<strong><a href="/ab-partners_list?authority=standard">파트너스<i class="fa-solid fa-circle-star"></i></a></strong>
+							<div>
+								<a href="/ab-partners_list?category=커머스"><span>커머스</span></a><a href="/ab-partners_list?category=검색광고"><span>검색광고</span></a><a href="/ab-partners_list?category=바이럴"><span>바이럴</span></a><a href="/ab-partners_list?category=DB"><span>DB</span></a><a href="/ab-partners_list?category=퍼포먼스"><span>퍼포먼스</span></a><a href="/ab-partners_list?category=글로벌"><span>글로벌</span></a>							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a href="/ab-5151?category_1=sponsor"><strong>상담문의</strong></a>
+					<a href="/ab-7610?ref=gnb" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="광고비 전용 카드"><span>광고비 전용 카드</span></a>
+					<a href="/ab-8336?ref=gnb" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="알뜰폰 요금제"><span>알뜰폰 요금제</span></a>
+					<a href="/ab-5545-84" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="아이보스 매체광고 상담"><span>아이보스 매체광고 상담</span></a>
+					<a href="https://www.ibossedu.co.kr/edu-329064?ref=gnb" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="아이보스 기업교육 상담"><span style="letter-spacing:-0.5px;">아이보스 기업교육 상담</span><em class="gnb_btn new">새글</em></a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="/ab-7553" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="디렉토리">
+				<span class="txt">디렉토리</span>
+			</a>
+            <dl>
+				<dd><a href="/ab-7553" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="대행사"><span>대행사</span></a></dd>
+                <dd><a href="/ab-7635" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 솔루션"><span>마케팅 솔루션</span></a></dd>
+				<dd><a href="/company" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="기업 데이터베이스"><span>기업 데이터베이스</span></a></dd>
+			</dl>
+		</li>
+        <li>
+            <a href="/ab-7654" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="광고상품">
+                <span class="txt">광고상품</span>
+            </a>
+        </li>
+        <li>
+            <a href="/ab-2794" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="채용">
+                <span class="txt">채용</span>
+            </a>
+        </li>
+		<li>
+			<a href="/ab-2984" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="콘텐츠">
+				<span class="txt">콘텐츠</span>
+			</a>
+            <dl class="col2 g_left_conts" style="left:-130px">
+				<div>
+					<dd><a href="/ab-74576" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 기초"><span>마케팅 기초</span></a></dd>
+                    <dd><a href="/ab-6486" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="탐방기"><span>탐방기</span></a></dd>
+                    <dd><a href="/ab-1486348" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="설문조사"><span>설문조사</span></a></dd>
+                    <dd><a href="/ab-word_dic_l" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 사전"><span>마케팅 사전</span></a></dd>
+				</div>
+				<div>
+                    <dd><a href="/ab-5826" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 퀴즈"><span>마케팅 퀴즈</span></a></dd>
+                    <dd><a href="/ab-3207" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 자료실"><span>마케팅 자료실</span><em class="gnb_btn new">새글</em></a></dd>
+                    <dd><a href="/ab-subkey" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="키워드 조합기"><span>키워드 조합기</span></a></dd>
+                    <dd><a href="/ab-marketing_calendar" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="마케팅 캘린더"><span>마케팅 캘린더</span></a></dd>
+					<dd><a href="/ab-mktt_searcher" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="스크립트 분석"><span>스크립트 분석</span></a></dd>
+					<dd><a href="/ab-performance_calc" target="_blank" gtm-ev-click="" gtm-ev-category="gnb-sub" gtm-ev-label="광고 성과 계산기"><span>광고 성과 계산기</span><i class="fa-solid fa-circle-n ico-new"></i></a></dd>
+				</div>
+			</dl>
+		</li>
+		<li>
+			<a href="/ab-74667" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="칼럼">
+				<span class="txt">칼럼</span>
+			</a>
+		</li>
+		<li>
+			<a href="/ab-5151" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="모임">
+				<span class="txt">모임</span>
+			</a>
+		</li>
+		<li>
+			<a href="/ab-5816" class="c-639" gtm-ev-click="" gtm-ev-category="gnb" gtm-ev-label="밋업">
+				<span class="txt">밋업</span>
+			</a>
+		</li>
+		<li class="sp"></li>
+		<li>
+            <a href="https://www.ibossedu.co.kr" target="_blank" class="c-fc6d35">
+    <span class="txt">교육</span>
+</a>
+<div class="gnb_edu_wrap">
+    <div class="gnb_edu_cont">
+        <div class="group_bn">
+            <div class="group_bn_img">
+             <a class="block ibtracid sponsored_banner_N8 overflow-hidden rounded-lg" href="https://www.ibossedu.co.kr/edu-329446?ref=gnbedu" data-id="200x200_201709011828" title="" data-location="GNB교육_200x200" data-subject="교육 원페이지 랜딩" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="GNB교육" gtm-ev-action="200x200_201709011828" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/4d187298cd05994b1a43663f6ad0457f_31146_1.png" width="200" height="200" alt="교육 원페이지 랜딩"></a>            </div>
+        </div>
+        <div class="group_cal">
+            <div class="gnb_edu_cal">
+            
+						<div class="gnb_edu_section">
+							<div class="gnb_edu_title"><h4>오프라인 교육과정</h4><a class="gnb_more" href="https://www.ibossedu.co.kr/edu-329060">더보기</a></div>
+							<div class="gnb_cal_cont">
+								<ul class="online_edu">
+									<li><a href="https://www.ibossedu.co.kr/edu-goods-470" target="_blank"> 메타 뮤즈 마케팅 X 머신러닝 설계</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-469" target="_blank"> 마케터를 위한 AI 바이브코딩 2일 클래스</a></li>
+								</ul>
+							</div>
+						</div>
+                <div class="gnb_edu_section">
+                    <div class="gnb_edu_title"><h4>온라인 교육과정</h4><a class="gnb_more" href="https://www.ibossedu.co.kr/edu-329446">더보기</a></div>
+                    <div class="gnb_cal_cont">
+                        <ul class="online_edu">
+                            <li><a href="https://www.ibossedu.co.kr/edu-goods-412" target="_blank">네이버 쇼핑 라이브 A-Z</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-403" target="_blank">퍼포먼스 마케팅, 브랜딩 실무 전략 DAY1</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-355" target="_blank">구글 애널리틱스 실무 마스터과정 DAY1 + DAY2</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-387" target="_blank">퍼포먼스 마케팅 실전</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-352" target="_blank">구글 GDN 기초 실습</a></li><li><a href="https://www.ibossedu.co.kr/edu-goods-379" target="_blank">잠재 고객을 유입시키는 GFA로 네이버 200% 활용하기</a></li>
+                        </ul>
+                    </div>
+                </div>            </div>
+            <div class="gnb_edu_btn">
+                <ul>
+					<li><a href="https://www.ibossedu.co.kr/edu-329060">오프라인 교육<em class="gnb_btn new">새글</em></a></li>
+                    <li><a href="https://www.ibossedu.co.kr/edu-329446">온라인 교육<em class="gnb_btn new">새글</em></a></li>
+                    <li><a href="https://www.ibossedu.co.kr/edu-329064">기업교육</a></li>
+                    <li><a href="https://www.ibossedu.co.kr/edu-329062">교육후기</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'design_file=home_contents_905.php';
+				var submit_is_ing = 'N';
+				user_level = '99';
+		
+	
+			//-->
+		</script>
+	<!--0.019531011581421, VER20140318-->		</li>
+                <li class="gnb-text-rolling" style="border-color:#630df8; margin-left:auto; max-width:calc(100% - 920px);">
+            <a gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="gnb-text-rolling" gtm-ev-action="uuib_ULI1H5OK" href="https://www.qletter.co.kr/subscribe?ref=gnbad" style="max-width:255px;font-weight:500;color:#630df8;" data-gtm-vis-first-on-screen1645705_271="459" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1"><span class="txt ellipsis-1">공짜로 받아보는 마케...(더보기)</span></a>        </li>
+
+	</ul>
+</div></div></header><div id="home"><div id="container"><div class="layout-column-left"><div class="main-contents"><div class="main-contents-left"><div class="main-bn" data-unit="T_01JD6PXEJZTSY9YB5X6FGMA32E"><a class="block ibtracid sponsored_banner_N1 overflow-hidden rounded-lg" href="https://www.i-boss.co.kr/ab-7610?ref=main&amp;ibfs=FAVYRJ4L" data-id="a27c40276076df34022ca51f6b108d4c2780" title="롯데카드" data-location="메인배너_660x100" data-subject="아이보스" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="메인배너" gtm-ev-action="a27c40276076df34022ca51f6b108d4c2780" iss="t" data-gtm-vis-recent-on-screen1645705_271="460" data-gtm-vis-first-on-screen1645705_271="460" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/4f2618493352fdec60fc58f0984cffce_80353_1.gif" width="660" height="100" alt="롯데카드"></a></div><div class="article-tabs"><div id="article1"><div class="menu"><div class="nav"><ul><li class="_boss_tab_0" style="cursor: pointer;"><span>지금 인기</span></li>
+<li class="_boss_tab_1" style="cursor: pointer;"><span>주간 인기</span></li>
+<li class="_boss_tab_2" style="cursor: pointer;"><span>월간 인기</span></li>
+<li class="_boss_tab_3" style="cursor: pointer;"><span>정보공유</span></li>
+<li class="_boss_tab_4" style="cursor: pointer;"><span>질문답변</span></li>
+<li class="_boss_tab_5" style="cursor: pointer;"><span>바이럴</span></li>
+<li class="_boss_tab_6 tabs_active" style="cursor: pointer;"><span>커뮤니티</span></li>
+<li class="_boss_tab_7" style="cursor: pointer;"><span>여기익게</span></li></ul></div></div><div class="tab_container"><div class="rank _boss_tab_0" style="display: none;">
+<div class="cell">
+<div class="subject-text"><label>자유</label><em>1</em><a href="/ab-1486505-53897" title="블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?" target="_blank"><span class="ellipsis-1">블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?</span></a><span class="cnt_comment">9</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-991604" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">김아파이닥보</span></p><span class="date"><span class="bstip" data-tip="2026.05.17 22:11">05.17</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>2</em><a href="/ab-1486505-53910" title="스마트 스토어 세팅준비" target="_blank"><span class="ellipsis-1">스마트 스토어 세팅준비</span></a><span class="cnt_comment">7</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992232" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">초코마케텅</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 09:36">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>3</em><a href="/ab-6141-70447" title="이 사달이 났지만 블로그 업로드하고 계신 분 계신가요?ㅠ" target="_blank"><span class="ellipsis-1">이 사달이 났지만 블로그 업로드하고 계신 분 계신가요?ㅠ</span></a><span class="cnt_comment">6</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-991627" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">엔젤몽</span></p><span class="date"><span class="bstip" data-tip="2026.05.18 07:44">05.18</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>4</em><a href="/ab-1486505-53900" title="4년만에 아이보스로 복귀!" target="_blank"><span class="ellipsis-1">4년만에 아이보스로 복귀!</span></a><span class="cnt_comment">4</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-991889" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">rdg</span></p><span class="date"><span class="bstip" data-tip="2026.05.18 13:01">05.18</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>5</em><a href="/ab-6141-70423" title="우린 B2B 기업인데 어쩌다보니 숏폼을 찍게 됐어요" target="_blank"><span class="ellipsis-1">우린 B2B 기업인데 어쩌다보니 숏폼을 찍게 됐어요</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-990797" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">큐레터</span></p><span class="date"><span class="bstip" data-tip="2026.05.18 08:30">05.18</span></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><em>6</em><a href="/ab-2110-32571" title="GA4 배우는법" target="_blank"><span class="ellipsis-1">GA4 배우는법</span></a><span class="cnt_comment">3</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-991597" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">커피좋아카페인아</span></p><span class="date"><span class="bstip" data-tip="2026.05.17 20:23">05.17</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>7</em><a href="/ab-6141-70455" title="우리 회사는 AI 검색에 노출되고 있을까? GEO/AEO 체크포인트" target="_blank"><span class="ellipsis-1">우리 회사는 AI 검색에 노출되고 있을까? GEO/AEO 체크포인트</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992048" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">오픈타임</span></p><span class="date"><span class="bstip" data-tip="2026.05.18 01:31">05.18</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>8</em><a href="/ab-1486505-53914" title="이번에 블로그 글 검색하면서 알아냈던 사실" target="_blank"><span class="ellipsis-1">이번에 블로그 글 검색하면서 알아냈던 사실</span></a><span class="cnt_comment">1</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992405" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">rdg</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 11:54">05.19</span></span></div></div>
+<div class="rank _boss_tab_1" style="display: none;">
+<div class="cell">
+<div class="subject-text"><label>자유</label><em>1</em><a href="/ab-1486505-53811" title="고유가 지원금 기준이래요" target="_blank"><span class="ellipsis-1">고유가 지원금 기준이래요</span></a><span class="cnt_comment">13</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-988956" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">오늘그리고내일</span></p><span class="date"><span class="bstip" data-tip="2026.05.11 13:48">05.11</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>2</em><a href="/ab-1486505-53897" title="블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?" target="_blank"><span class="ellipsis-1">블로그 검색노출 보고할 때 시간대별 캡처 증빙까지 요구받는 경우 있나요?</span></a><span class="cnt_comment">9</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-991604" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">김아파이닥보</span></p><span class="date"><span class="bstip" data-tip="2026.05.17 22:11">05.17</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>3</em><a href="/ab-1486505-53840" title="초등학교 화장실을 향기롭게 바꿔준 마케터" target="_blank"><span class="ellipsis-1">초등학교 화장실을 향기롭게 바꿔준 마케터</span></a><span class="cnt_comment">4</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-990356" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">아이보스잡요정</span></p><span class="date"><span class="bstip" data-tip="2026.05.14 10:25">05.14</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>4</em><a href="/ab-1486505-53836" title="첫 포트폴리오 질문있습니다.." target="_blank"><span class="ellipsis-1">첫 포트폴리오 질문있습니다..</span></a><span class="cnt_comment">6</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-990106" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">굥채</span></p><span class="date"><span class="bstip" data-tip="2026.05.13 16:17">05.13</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>5</em><a href="/ab-6141-70374" title="블로그 제목, 노출 잘 되게 작성하는 법은?" target="_blank"><span class="ellipsis-1">블로그 제목, 노출 잘 되게 작성하는 법은?</span></a><span class="cnt_comment">5</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-988952" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">더브릿지</span></p><span class="date"><span class="bstip" data-tip="2026.05.11 13:43">05.11</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>6</em><a href="/ab-1486505-53910" title="스마트 스토어 세팅준비" target="_blank"><span class="ellipsis-1">스마트 스토어 세팅준비</span></a><span class="cnt_comment">7</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992232" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">초코마케텅</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 09:36">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><em>7</em><a href="/ab-1486505-53854" title="개발자 출신으로 마케팅 에이전시 시작했습니다. 커피챗 희망합니다." target="_blank"><span class="ellipsis-1">개발자 출신으로 마케팅 에이전시 시작했습니다. 커피챗 희망합니다.</span></a><span class="cnt_comment">3</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-990595" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">molang</span></p><span class="date"><span class="bstip" data-tip="2026.05.14 15:05">05.14</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>8</em><a href="/ab-6141-70395" title="이제 여기 블로그 게시판은 찾는 분들이 없어지겠네요.." target="_blank"><span class="ellipsis-1">이제 여기 블로그 게시판은 찾는 분들이 없어지겠네요..</span></a><span class="cnt_comment">5</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-989698" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">블로그는사랑이다</span></p><span class="date"><span class="bstip" data-tip="2026.05.12 19:23">05.12</span></span></div></div>
+<div class="rank _boss_tab_2" style="display: none;">
+<div class="cell">
+<div class="subject-text"><label></label><em>1</em><a href="/ab-1486505-53609" title="퇴사할 때 내가 만든 개인 파일 지웠는데 회사한테 고소당할 위기ㅠ" target="_blank"><span class="ellipsis-1">퇴사할 때 내가 만든 개인 파일 지웠는데 회사한테 고소당할 위기ㅠ</span></a><i class="icon-poll fa-solid fa-square-poll-vertical"></i><span class="cnt_comment">19</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-982131" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">숭이숭숭</span></p><span class="date"><span class="bstip" data-tip="2026.04.22 12:16">04.22</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>2</em><a href="/ab-1486505-53811" title="고유가 지원금 기준이래요" target="_blank"><span class="ellipsis-1">고유가 지원금 기준이래요</span></a><span class="cnt_comment">13</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-988956" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">오늘그리고내일</span></p><span class="date"><span class="bstip" data-tip="2026.05.11 13:48">05.11</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>3</em><a href="/ab-1486505-53675" title="팀에 프롬프트 절대 공유 안 해주는 신입 어떡하죠?" target="_blank"><span class="ellipsis-1">팀에 프롬프트 절대 공유 안 해주는 신입 어떡하죠?</span></a><i class="icon-poll fa-solid fa-square-poll-vertical"></i><span class="cnt_comment">29</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-984215" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">숭이숭숭</span></p><span class="date"><span class="bstip" data-tip="2026.04.27 16:37">04.27</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>4</em><a href="/ab-6141-70370" title="20년 검색 마케터가 본 네이버 사태" target="_blank"><span class="ellipsis-1">20년 검색 마케터가 본 네이버 사태</span></a><span class="cnt_comment">14</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-988546" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">석이00</span></p><span class="date"><span class="bstip" data-tip="2026.05.10 08:45">05.10</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>5</em><a href="/ab-1486505-53619" title="GPT로 바로 사용할 수 있는 배너를 만들었어요" target="_blank"><span class="ellipsis-1">GPT로 바로 사용할 수 있는 배너를 만들었어요</span></a><span class="cnt_comment">12</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-982356" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">유리나</span></p><span class="date"><span class="bstip" data-tip="2026.04.22 17:15">04.22</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>6</em><a href="/ab-6141-70332" title="[네이버 스마트스토어 7편] 빅파워 90% 이상이 실수하는 SEO (리워드 쓰기전에 꼭 확인하세요!)" target="_blank"><span class="ellipsis-1">[네이버 스마트스토어 7편] 빅파워 90% 이상이 실수하는 SEO (리워드 쓰기전에 꼭 확인하세요!)</span></a><span class="cnt_comment">16</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-987107" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">썬데이비즈</span></p><span class="date"><span class="bstip" data-tip="2026.05.06 11:00">05.06</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>7</em><a href="/ab-6141-70283" title="[Meta]성과 안 나는 이유 90% 계정 문제 아님! 구조 문제입니다”" target="_blank"><span class="ellipsis-1">[Meta]성과 안 나는 이유 90% 계정 문제 아님! 구조 문제입니다”</span></a><span class="cnt_comment">24</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-984508" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">발할라</span></p><span class="date"><span class="bstip" data-tip="2026.04.28 11:06">04.28</span></span></div><div class="cell">
+<div class="subject-text"><label></label><em>8</em><a href="/ab-1486505-53840" title="초등학교 화장실을 향기롭게 바꿔준 마케터" target="_blank"><span class="ellipsis-1">초등학교 화장실을 향기롭게 바꿔준 마케터</span></a><span class="cnt_comment">4</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-990356" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">아이보스잡요정</span></p><span class="date"><span class="bstip" data-tip="2026.05.14 10:25">05.14</span></span></div></div>
+<div class="_boss_tab_3" style="display: none;">
+<div class="cell">
+<div class="subject-text"><label>자료실</label><a href="/ab-3208-1743" title="2025 전자문서전자거래 분쟁조정 사례집(개인 간 거래, 온라인광고)" target="_blank"><span class="ellipsis-1">2025 전자문서전자거래 분쟁조정 사례집(개인 간 거래, 온라인광고)</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-993115" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">유리나</span></p><span class="date"><strong>14:50</strong></span></div><div class="cell">
+<div class="subject-text"><label>키워드</label><a href="/ab-6141-70488" title="엔티티 SEO, 앞으로의 검색 마케팅에서 꼭 봐야 할 개념" target="_blank"><span class="ellipsis-1">엔티티 SEO, 앞으로의 검색 마케팅에서 꼭 봐야 할 개념</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-993075" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">더브릿지</span></p><span class="date"><strong>13:44</strong></span></div><div class="cell">
+<div class="subject-text"><label>정보</label><a href="/ab-6141-70487" title="문상훈 영화 오늘 개봉! 이 홍보 방법 괜찮은데?" target="_blank"><span class="ellipsis-1">문상훈 영화 오늘 개봉! 이 홍보 방법 괜찮은데?</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992988" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">브랜코스</span></p><span class="date"><strong>11:33</strong></span></div><div class="cell">
+<div class="subject-text"><label>칼럼</label><a href="/ab-74668-5713" title="최근 틱톡 바이럴이 잘 안 터지는 진짜 원인" target="_blank"><span class="ellipsis-1">최근 틱톡 바이럴이 잘 안 터지는 진짜 원인</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992855" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">Gopicky</span></p><span class="date"><strong>09:59</strong></span></div><div class="cell">
+<div class="subject-text"><label>정보</label><a href="/ab-6141-70482" title="바이럴 온라인 마케팅, 이모지로 클릭률을 높이는 작은 차이" target="_blank"><span class="ellipsis-1">바이럴 온라인 마케팅, 이모지로 클릭률을 높이는 작은 차이</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992768" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">비즈하이</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 21:56">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>콘텐츠</label><a href="/ab-6141-70481" title="&quot;우리 제품 좋습니다&quot;로 시작하는 페이지, 리뷰 30개에서 멈추는 이유" target="_blank"><span class="ellipsis-1">"우리 제품 좋습니다"로 시작하는 페이지, 리뷰 30개에서 멈추는 이유</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992745" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">카피셀</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 18:41">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>칼럼</label><a href="/ab-74668-5712" title="AI 주식 투자 서비스가 고객과 신뢰를 쌓는 방법" target="_blank"><span class="ellipsis-1">AI 주식 투자 서비스가 고객과 신뢰를 쌓는 방법</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992701" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">플랜브로</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 17:40">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>콘텐츠</label><a href="/ab-6141-70474" title="화장품건기식 인플루언서 체험단 마케팅 광고 심의 가이드 및 금지어 정리" target="_blank"><span class="ellipsis-1">화장품건기식 인플루언서 체험단 마케팅 광고 심의 가이드 및 금지어 정리</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992515" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">태그바이컴퍼니</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 14:21">05.19</span></span></div></div>
+<div class="_boss_tab_4" style="display: none;">
+<div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32602" title="광고대행 계약 후 환불 분쟁 중인데, 정상가 차감과 관리부실 주장 가능할까요?" target="_blank"><span class="ellipsis-1">광고대행 계약 후 환불 분쟁 중인데, 정상가 차감과 관리부실 주장 가능할까요?</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32602" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">일등만하는거북이</span></p><span class="date"><strong>11:20</strong></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32601" title="네이버검색광고 승인안된 키워드에 노출시키는방법알고싶어요. 사례드리고 방법찾고싶습니다ㅠ" target="_blank"><span class="ellipsis-1">네이버검색광고 승인안된 키워드에 노출시키는방법알고싶어요. 사례드리고 방법찾고싶습니다ㅠ</span></a><span class="cnt_comment">1</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32601" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">엘라이크</span></p><span class="date"><strong>09:46</strong></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32600" title="메타 소재 1개 OR 5개 운영방식" target="_blank"><span class="ellipsis-1">메타 소재 1개 OR 5개 운영방식</span></a><span class="cnt_comment">2</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32600" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">오이오잉</span></p><span class="date"><strong>09:46</strong></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32599" title="플레이스 광고 가격" target="_blank"><span class="ellipsis-1">플레이스 광고 가격</span></a><span class="cnt_comment">2</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32599" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">remaup</span></p><span class="date"><strong>02:22</strong></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32598" title="오퍼월(리워드) 광고 매체사를 알아보고 있습니다." target="_blank"><span class="ellipsis-1">오퍼월(리워드) 광고 매체사를 알아보고 있습니다.</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32598" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">MadYong</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 18:07">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32597" title="미국 메타 광고 세팅" target="_blank"><span class="ellipsis-1">미국 메타 광고 세팅</span></a><span class="cnt_comment">1</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32597" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">ballndor</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 18:03">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32596" title="구글 애즈 광고센터 계속 계정 제한 및 정지가 발생할때 방법이 있을까요?" target="_blank"><span class="ellipsis-1">구글 애즈 광고센터 계속 계정 제한 및 정지가 발생할때 방법이 있을까요?</span></a><span class="cnt_comment">1</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32596" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">wuckws</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 17:35">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>질답</label><a href="/ab-2110-32594" title="네이버 광고 리베이트 어떻게 회계처리하시나요?" target="_blank"><span class="ellipsis-1">네이버 광고 리베이트 어떻게 회계처리하시나요?</span></a><span class="cnt_comment">3</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD2109-32594" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">뒤틀린로아스</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 17:07">05.19</span></span></div></div>
+<div class="_boss_tab_5" style="display: none;">
+<div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70483" title="블로그관련 질문드립니다" target="_blank"><span class="ellipsis-1">블로그관련 질문드립니다</span></a><span class="cnt_comment">1</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70483" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">니아지</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 22:37">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70478" title="0423의 난 참으로 답답합니다" target="_blank"><span class="ellipsis-1">0423의 난 참으로 답답합니다</span></a><span class="cnt_comment">4</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70478" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">뿌뿌빠빠</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 15:40">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70476" title="지금 현재 상황에서 블로그 배포 진행 하시나요?" target="_blank"><span class="ellipsis-1">지금 현재 상황에서 블로그 배포 진행 하시나요?</span></a><span class="cnt_comment">2</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70476" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">라히땅</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 14:41">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70471" title="음 이런 상태면 티스토리가 답일까요?" target="_blank"><span class="ellipsis-1">음 이런 상태면 티스토리가 답일까요?</span></a><span class="cnt_comment">5</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70471" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">라라랄랄랄라</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 11:19">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70469" title="20년차 마케터가 본 네이버 사태 2" target="_blank"><span class="ellipsis-1">20년차 마케터가 본 네이버 사태 2</span></a><span class="cnt_comment">1</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70469" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">석이00</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 10:46">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70464" title="아애 블탭에 반영안되시는 분들있으실까요?" target="_blank"><span class="ellipsis-1">아애 블탭에 반영안되시는 분들있으실까요?</span></a><span class="cnt_comment">3</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70464" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">훈다d</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 08:31">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70462" title="지금 최신순에 뜨는 블들은 뭐고 안뜨는 블들은 뭘까요....." target="_blank"><span class="ellipsis-1">지금 최신순에 뜨는 블들은 뭐고 안뜨는 블들은 뭘까요.....</span></a><span class="cnt_comment">3</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70462" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">눈같은강아지</span></p><span class="date"><span class="bstip" data-tip="2026.05.18 22:09">05.18</span></span></div><div class="cell">
+<div class="subject-text"><label>블로그</label><a href="/ab-6141-70457" title="병원 블로그 어떻게 운영하고 계신가요?" target="_blank"><span class="ellipsis-1">병원 블로그 어떻게 운영하고 계신가요?</span></a><span class="cnt_comment">4</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-BD6140-70457" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">애드웰</span></p><span class="date"><span class="bstip" data-tip="2026.05.18 16:51">05.18</span></span></div></div>
+<div class="_boss_tab_6 container_active" style="display: flex;">
+<div class="cell">
+<div class="subject-text"><label>행사정보</label><a href="/ab-1486526-654" title="[🔵 무료 웨비나] AI 시대, 마케터는 사라질까요? - 마케터가 설계하고 Agent가 실행하는  이커머스 CRM 운영의 미래" target="_blank"><span class="ellipsis-1">[🔵 무료 웨비나] AI 시대, 마케터는 사라질까요? - 마케터가 설계하고 Agent가 실행하는  이커머스 CRM 운영의 미래</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-993152" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">블럭스</span></p><span class="date"><strong>15:29</strong></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><a href="/ab-1486505-53928" title="💐 요즘 유행하는 프롬프트 모아왔어요. 완전한 칭찬 부탁!" target="_blank"><span class="ellipsis-1">💐 요즘 유행하는 프롬프트 모아왔어요. 완전한 칭찬 부탁!</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-993117" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">오다주웠다</span></p><span class="date"><strong>14:38</strong></span></div><div class="cell">
+<div class="subject-text"><label>행사정보</label><a href="/ab-1486526-653" title="✴ [컨퍼런스] One AI, Elevate All - 실질적인 효율과 혁신 만들기 ✴" target="_blank"><span class="ellipsis-1">✴ [컨퍼런스] One AI, Elevate All - 실질적인 효율과 혁신 만들기 ✴</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-993059" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">지디넷코리아</span></p><span class="date"><strong>13:31</strong></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><a href="/ab-1486505-53926" title="뭐 영업좀 해볼까 해서 대행의뢰 게시판좀 찾고있으면" target="_blank"><span class="ellipsis-1">뭐 영업좀 해볼까 해서 대행의뢰 게시판좀 찾고있으면</span></a><span class="cnt_comment">2</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992948" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">kmnam85</span></p><span class="date"><strong>11:10</strong></span></div><div class="cell">
+<div class="subject-text"><label>이벤트</label><a href="/ab-2973-778" title="대학로 최초 남장여자 로코 연극! 어쩌다보니 초대 이벤트" target="_blank"><span class="ellipsis-1">대학로 최초 남장여자 로코 연극! 어쩌다보니 초대 이벤트</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-991980" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">당첨대쓔</span></p><span class="date"><strong>10:00</strong></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><a href="/ab-1486505-53925" title="쇼핑검색광고" target="_blank"><span class="ellipsis-1">쇼핑검색광고</span></a><span class="cnt_comment">3</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992845" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">초코마케텅</span></p><span class="date"><strong>09:46</strong></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><a href="/ab-1486505-53924" title="Who(누구냐) 보다 How(어떻게)" target="_blank"><span class="ellipsis-1">Who(누구냐) 보다 How(어떻게)</span></a><span class="cnt_comment"></span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992840" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">ChRi</span></p><span class="date"><strong>09:43</strong></span></div><div class="cell">
+<div class="subject-text"><label>자유</label><a href="/ab-1486505-53914" title="이번에 블로그 글 검색하면서 알아냈던 사실" target="_blank"><span class="ellipsis-1">이번에 블로그 글 검색하면서 알아냈던 사실</span></a><span class="cnt_comment">1</span></div><p class="mb_writer author" id="ABP-btn-fdmenu-board-instead_union-992405" link="/ab-5108&amp;AJAX=Y" offset="1"><span class="author">rdg</span></p><span class="date"><span class="bstip" data-tip="2026.05.19 11:54">05.19</span></span></div></div>
+<div class="_boss_tab_7" style="display: none;">
+<div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-427" title="아니 대행의뢰 쳐 올렸으면" target="_blank"><span class="ellipsis-1">아니 대행의뢰 쳐 올렸으면</span></a><span class="cnt_comment">2</span></div><span class="date"><strong>11:57</strong></span></div><div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-426" title="지금 뭐하는건지 잘 모르겠어요..." target="_blank"><span class="ellipsis-1">지금 뭐하는건지 잘 모르겠어요...</span></a><span class="cnt_comment"></span></div><span class="date"><strong>09:38</strong></span></div><div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-425" title="체험단 사이트" target="_blank"><span class="ellipsis-1">체험단 사이트</span></a><span class="cnt_comment"></span></div><span class="date"><span class="bstip" data-tip="2026.05.19 09:41">05.19</span></span></div><div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-424" title="이직 고민" target="_blank"><span class="ellipsis-1">이직 고민</span></a><span class="cnt_comment">4</span></div><span class="date"><span class="bstip" data-tip="2026.05.18 13:27">05.18</span></span></div><div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-422" title="통보없이 피이관 시 키워드" target="_blank"><span class="ellipsis-1">통보없이 피이관 시 키워드</span></a><span class="cnt_comment">4</span></div><span class="date"><span class="bstip" data-tip="2026.05.15 13:29">05.15</span></span></div><div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-421" title="어느 한 좋소의 웃긴 연차 공지" target="_blank"><span class="ellipsis-1">어느 한 좋소의 웃긴 연차 공지</span></a><span class="cnt_comment">3</span></div><span class="date"><span class="bstip" data-tip="2026.05.15 13:16">05.15</span></span></div><div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-419" title="진짜 네이버GFA 검수팀 , 통검 관리부서 딱밤한대만 개쎄게 떄리고싶다" target="_blank"><span class="ellipsis-1">진짜 네이버GFA 검수팀 , 통검 관리부서 딱밤한대만 개쎄게 떄리고싶다</span></a><span class="cnt_comment">1</span></div><span class="date"><span class="bstip" data-tip="2026.05.14 17:28">05.14</span></span></div><div class="cell">
+<div class="subject-text"><label>익명</label><a href="/ab-8369-418" title="우와" target="_blank"><span class="ellipsis-1">우와</span></a><span class="cnt_comment">11</span></div><span class="date"><span class="bstip" data-tip="2026.05.14 15:31">05.14</span></span></div></div>
+</div><div class="tab-rotate"><div class="tab-rotate-btn"><span id="article1-prev"><i class="fa-light fa-chevron-left"></i></span><span id="article1-cnt"><span class="current">7</span><span class="sep">/</span> <span class="total">8</span></span><span id="article1-next"><i class="fa-light fa-chevron-right"></i></span></div></div></div>
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'design_file=home_contents_0001.php';
+				var submit_is_ing = 'N';
+				user_level = '99';
+		
+	
+			//-->
+		</script>
+	<!--1.8555109500885, VER20140318--></div></div><div class="main-contents-right"><div class="quiz"><strong>마케팅 퀴즈</strong><p class="ellipsis-3">Q. 고물가 기조가 이어지면서 직장인들이 편의점 도시락 등으로 점심을 해결하는 현상을 일컫는 용어는 무엇일까요?</p><a href="/ab-5826" target="_blank">퀴즈 풀기</a></div><div class="quick-button"><a href="/ab-benefits?ref=main_btn" target="_blank">캐시 혜택받기</a><a href="/ab-2972?ref=main_btn" target="_blank">이벤트 보기</a><a href="/ab-2332?ref=main_btn" target="_blank">출석체크</a><a href="https://www.ibossedu.co.kr?ref=main_btn" target="_blank">마케팅 교육</a><a href="https://www.qletter.co.kr?ref=main_btn" target="_blank">큐레터 구독하기</a></div></div></div><div id="widgets" style="display: grid;"><div class="grid cal"><div><p class="title">오늘의 마케팅 일정을 확인하세요!!<strong>마케팅 캘린더</strong></p><a href="/ab-marketing_calendar" target="_blank">이번 달 일정 모두 보기 <i class="fa-light fa-arrow-right"></i></a></div><div><p class="today">5월 20일</p><p class="list0"><a href="/ab-marketing_calendar" target="_blank" class="text-ellipsis">제79회 칸 영화제</a></p><p class="list1"><a href="/ab-marketing_calendar" target="_blank" class="text-ellipsis">검색광고 마케터 자격증 시험 접수 일자</a></p></div></div><div class="grid keyword"><div><p class="title">세부 키워드를 쉽게 만드는<strong>키워드 조합기</strong></p><ul><li><span></span>키워드1 + 키워드2</li><li><span></span>키워드3 + 키워드4 + 키워드1</li></ul></div><div><div class="kwrap"><span>키워드1</span><span>키워드2</span><span>키워드3</span><span>키워드4</span></div><a href="/ab-subkey" target="_blank">조합하기</a></div></div><div><p class="title">저 사이트는 어떤 서비스를 쓰고 있을까?<strong>마케팅 스크립트 분석</strong></p><div><input type="text" name="chkurl" value="" placeholder="https:// 포함한 전체 URL을 입력하세요" id="chkurl"><span id="site_page_btn">조회</span></div></div><div style="gap: 16px;" class="grid"><div><p class="title">데이터를 입력하면 실시간으로 계산되는<strong>광고 성과 계산기</strong></p><a href="/ab-performance_calc" target="_blank" style="background:#001187;justify-content: center;" class="text-white flex rounded-sm h-32 font-bold font-size-13 rounded-md">계산하기</a></div><div style="width: 100px;height:fit-content" class="bg-slate-100 p-3 gap-1 font-size-12 rounded-md flex-shrink-0"><span class="font-bold" style="color:#001187">총 광고비</span><div class="bg-white p-1 rounded-sm text-right text-slate-400 font-size-11 font-semibold mt-1 mb-1">원</div>
+<span class="font-bold" style="color: #001187;">노출수</span><div class="bg-white p-1 rounded-sm text-right text-slate-400 font-size-11 font-semibold mt-1">회</div></div></div></div><div class="today-article"><h5>오늘 봐야 할 게시글</h5><div class="today-article-wrap"><div class="wrap"><div class="cell"><a href="/ab-1486505-53808?ref=today-article" target="_blank"><div class="thumb bg8"><img src="./design/upload_file/BD1486504/THUMBNAIL_456_340_MFB7H55RLYJPQAFUJERF4W3WCX6I58MKXYR7L0JS_1778453299590664.webp" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">💐 스트로베리나 넌 정말 어디까지 할 거니;;;</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1763354329_94535.jpg"> 오다주웠다<label>·</label>5월 11일</span></a></div><div class="cell"><a href="/ab-74668-5591?ref=today-article" target="_blank"><div class="thumb bg1"><img src="./design/upload_file/BD74667/THUMBNAIL_456_340_O7ZOQG73JX0Z61LPDZAKSZODLWNY27K27D4GPTU4_1774955452905315.webp" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">영상 광고 기획 어렵죠? – 실무에서 쓰는 AI 조합 야매팁 (하편- Grok · 힉스필드 · Deevid AI · Kling)</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1770624013_02340.png"> ssagroup<label>·</label>3월 31일</span></a></div><div class="cell"><a href="/ab-3208-1728?ref=today-article" target="_blank"><div class="thumb bg8"><img src="./design/upload_file/BD3207/THUMBNAIL_456_340_5091c3b0170cb003b4db14799c5c1147_20715_1.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2"> 마케팅 이슈 및 트렌드 동향 리포트 (2026.05)</p><span><img src="https://cdn.ibos.kr/images/main_today-article_profile_01.png"> 골드넥스<label>·</label>5월 8일</span></a></div><div class="cell"><a href="/ab-6141-69917?ref=today-article" target="_blank"><div class="thumb bg7"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260326_qletter_meta.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">CJ제일제당 오세아니아 법인장입니다.</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>3월 26일</span></a></div></div><div class="wrap"><div class="cell"><a href="/ab-6141-70116?ref=today-article" target="_blank"><div class="thumb bg6"><span class="noimg"><em>AI 자동화 암묵지 꼭 챙겨야하는 5가지 이유</em></span></div><p class="ellipsis-2">AI 자동화 암묵지 꼭 챙겨야하는 5가지 이유</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_profile_img_16.png"> 근육돌이<label>·</label>4월 12일</span></a></div><div class="cell"><a href="/ab-2877-17284?ref=today-article" target="_blank"><div class="thumb bg4"><span class="noimg"><em>스마트스토어, 해외 구매대행 판매 정책 변경</em></span></div><p class="ellipsis-2">스마트스토어, 해외 구매대행 판매 정책 변경</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1747695070_83270.jpg"> 뉴스광공<label>·</label>5월 15일</span></a></div><div class="cell"><a href="/ab-6141-70142?ref=today-article" target="_blank"><div class="thumb bg2"><span class="noimg"><em>(우뇌) 우리가 알던 메타의 타겟팅 기법은 멸종했습니다.</em></span></div><p class="ellipsis-2">(우뇌) 우리가 알던 메타의 타겟팅 기법은 멸종했습니다.</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1771904979_43250.jpg"> 우뇌<label>·</label>4월 15일</span></a></div><div class="cell"><a href="/ab-6141-70085?ref=today-article" target="_blank"><div class="thumb bg5"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260413_qletter_meta.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">업무하다가 막힐 때 들여다보는 계정들 공유드려요</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>4월 13일</span></a></div></div><div class="wrap"><div class="cell"><a href="/ab-2877-17286?ref=today-article" target="_blank"><div class="thumb bg6"><img src="./design/upload_file/BD2876/THUMBNAIL_456_340_492a30efcedd5d474204c5665d4d3424_81579_1.png" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">[5월 18일 마케팅 뉴스클리핑] 인스타그램, 무보정 실시간 공유 인스턴츠로 친밀 소통 강화 외</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_profile_img_51.jpg"> 운영보스<label>·</label>5월 18일</span></a></div><div class="cell"><a href="/ab-74668-5590?ref=today-article" target="_blank"><div class="thumb bg0"><img src="./design/upload_file/BD74667/THUMBNAIL_456_340_1d0a3888405e9cd64c757d9a26886122_26060_1.png" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">클릭률을 바꾸는 이모티콘 마케팅</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1768467135_02764.jpeg"> AICX플래티어<label>·</label>3월 31일</span></a></div><div class="cell"><a href="/ab-6141-70148?ref=today-article" target="_blank"><div class="thumb bg8"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260420_qletter_meta.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">요즘 상세페이지 텍스트 길면 진짜 못 읽나요?</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>4월 20일</span></a></div><div class="cell"><a href="/ab-74668-5650?ref=today-article" target="_blank"><div class="thumb bg0"><img src="./design/upload_file/BD74667/THUMBNAIL_456_340_03U0MQ4BWEI42XNC11953M77YACD9HDLXF3U9BWV_1776391422211001.webp" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">사람이 브랜드가 된다. 왜 요즘 마케터들은 브이로그를 찍지? (01)</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1770624013_02340.png"> ssagroup<label>·</label>4월 17일</span></a></div></div><div class="wrap"><div class="cell"><a href="/ab-6141-69872?ref=today-article" target="_blank"><div class="thumb bg2"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260323_qletter_meta_1.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">대표님이 캐릭터 귀엽게 뽑아보라 해서 기깔나게 만들었는데 잘 안 팔리네요</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>3월 23일</span></a></div><div class="cell"><a href="/ab-6141-69578?ref=today-article" target="_blank"><div class="thumb bg8"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260223_qletter_meta.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">인생네컷과 올리브영이 바이럴을 만든 전략 1가지</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>2월 23일</span></a></div><div class="cell"><a href="/ab-1486505-53151?ref=today-article" target="_blank"><div class="thumb bg1"><img src="./design/upload_file/BD1486504/THUMBNAIL_456_340_DFAP2YGSDK7BGKFOJHEK7NXD539H8HDVXSTVN459_1772692314146724.webp" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">💐 예정에 없던 폰트 추천 3탄!!!!!!</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1763354329_94535.jpg"> 오다주웠다<label>·</label>3월 5일</span></a></div><div class="cell"><a href="/ab-6141-70268?ref=today-article" target="_blank"><div class="thumb bg8"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260430_qletter_meta.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">팀장님만 믿을게요</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>4월 30일</span></a></div></div><div class="wrap active"><div class="cell"><a href="/ab-3208-1721?ref=today-article" target="_blank"><div class="thumb bg1"><img src="./design/upload_file/BD3207/THUMBNAIL_456_340_dcf7a02c867478944ce1b7ec9e460c26_21625_1.png" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2"> 메타 운영 TIP 2026년 4월호</p><span><img src="https://cdn.ibos.kr/images/main_today-article_profile_01.png"> Meta<label>·</label>5월 6일</span></a></div><div class="cell"><a href="/ab-74668-5625?ref=today-article" target="_blank"><div class="thumb bg5"><img src="./design/upload_file/BD74667/THUMBNAIL_456_340_cb95b883fd52ac85d1f9bb47bb139c3b_99574_1.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">🤔유튜브가 숏츠에 굳이 이런 광고를 넣는 이유는</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1750606434_1.png"> 굿모닝MY브랜드<label>·</label>4월 12일</span></a></div><div class="cell"><a href="/ab-6141-69639?ref=today-article" target="_blank"><div class="thumb bg9"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260226_qletter_meta.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">아보카도 씨앗에서 금을 캐낸 이야기</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>2월 26일</span></a></div><div class="cell"><a href="/ab-6141-70334?ref=today-article" target="_blank"><div class="thumb bg4"><img src="./design/upload_file/BD6140/THUMBNAIL_456_340_260507_qletter_meta.jpg" border="0" width="456" height="340" class="thumb_img"></div><p class="ellipsis-2">쿠팡에 입점하면 브랜드 가치가 훼손되나요?</p><span><img src="https://cdn.ibos.kr/user_dir/member/THUMBNAIL_40_40_1744262733_66830.jpg"> 큐레터<label>·</label>5월 7일</span></a></div></div></div><div class="pager"><p><i class="fa-light fa-angle-left" data-direction="prev"></i><span class="pager-count"><span id="today-current-cnt">5</span><label>/</label><span id="today-total-cnt">5</span></span><i class="fa-light fa-angle-right" data-direction="next"></i>
+</p></div></div><div class="services-columns"><div><div class="request"><h5>마케팅 대행의뢰<a href="/ab-1959">의뢰하기</a></h5><div class="estimate">
+	<div class="cell">
+	<a href="/ab-1958-86374" title="[협업문의] TV 인포머셜 광고 대행 및 DB 수급 파트너 모집" target="_blank"><span class="text-ellipsis">[협업문의] TV 인포머셜 광고 대행 및 DB 수급 파트너 모집</span></a><div class="info"><label>CPA·CPS</label><label>·</label><label>최소 5,000만원 ~ 최대 1억원</label><p class="deadline">1시간 전</p></div></div><div class="cell">
+<a href="/ab-1958-86373" title="중곡동 네일 플레이스 검색노출 찾습니다." target="_blank"><span class="text-ellipsis">중곡동 네일 플레이스 검색노출 찾습니다.</span></a><div class="info"><label>기타</label><label>·</label><label>최소 30만원 ~ 최대 30만원</label><p class="deadline">1시간 전</p></div></div><div class="cell">
+<a href="/ab-1958-86372" title="대부/ 대출/ 1차콜 실행사/ 퍼미션 완료콜/ 협력업체 찾습니다." target="_blank"><span class="text-ellipsis">대부/ 대출/ 1차콜 실행사/ 퍼미션 완료콜/ 협력업체 찾습니다.</span></a><div class="info"><label>CPA·CPS</label><label>·</label><label>최소 500만원 ~ 최대 1,500만원</label><p class="deadline">3시간 전</p></div></div><div class="cell">
+<a href="/ab-1958-86369" title="장기렌트 CPA 업체 알아봅니다." target="_blank"><span class="text-ellipsis">장기렌트 CPA 업체 알아봅니다.</span></a><div class="info"><label>CPA·CPS</label><label>·</label><label>최소 100만원 ~ 최대 300만원</label><p class="deadline">3시간 전</p></div></div><div class="cell">
+<a href="/ab-1958-86368" title="메타/유튜브/네이버 광고 소재 제작 대행사 문의드립니다." target="_blank"><span class="text-ellipsis">메타/유튜브/네이버 광고 소재 제작 대행사 문의드립니다.</span></a><div class="info"><label>SNS마케팅</label><label>·</label><label>최소 100만원</label><p class="deadline">4시간 전</p></div></div><div class="cell">
+<a href="/ab-1958-86367" title="종합마케팅 광고대행 의뢰합니다 ! 블로그제작 및 관리/SNS관리/바이럴 광고(검색광고, 파워링크광고 등 검색노출) 등" target="_blank"><span class="text-ellipsis">종합마케팅 광고대행 의뢰합니다 ! 블로그제작 및 관리/SNS관리/바이럴 광고...</span></a><div class="info"><label>통합광고대행</label><label>·</label><label> ~ 최대 1,500만원</label><p class="deadline">4시간 전</p></div></div><div class="cell">
+<a href="/ab-1958-86366" title="인터넷 가입 DB 희망" target="_blank"><span class="text-ellipsis">인터넷 가입 DB 희망</span></a><div class="info"><label>CPA·CPS</label><label>·</label><label>최소 200만원 ~ 최대 2,000만원</label><p class="deadline">4시간 전</p></div></div><div class="cell">
+<a href="/ab-1958-86364" title="치과 및 병의원 브랜드 마케팅 대행업체 찾습니다." target="_blank"><span class="text-ellipsis">치과 및 병의원 브랜드 마케팅 대행업체 찾습니다.</span></a><div class="info"><label>통합광고대행</label><label>·</label><label>최소 300만원</label><p class="deadline">4시간 전</p></div></div></div>
+</div><div><h5>아이보스 파트너스<a href="/ab-partners_list" target="_blank">전체보기</a></h5><div><div><div id="partner_list"><div><img src="https://cdn.ibos.kr/images/main_article3_icon_5849.png"><a href="/company/3963?ref=main_article3" target="_blank"><p>성장 중심의 마케팅으로 매출의 차이를</p><strong>콘크리트파머스</strong></a></div><div><img src="https://cdn.ibos.kr/images/main_article3_icon_6911.png"><a href="/company/2932?ref=main_article3" target="_blank"><p>디테일의 차이가 결과의 차이</p><strong>이노앤엠</strong></a></div><div><img src="https://cdn.ibos.kr/images/main_article3_icon_7550.png"><a href="/company/924?ref=main_article3" target="_blank"><p>광고주 니즈에 맞는 최고의 퍼포먼스 에이전시</p><strong>엠서치마케팅</strong></a></div><div><img src="https://cdn.ibos.kr/images/main_article3_icon_7601.png"><a href="/company/5259?ref=main_article3" target="_blank"><p>브랜드와 소비자를 연결하는 바이럴 마케팅 실행사</p><strong>김앤리파트너스</strong></a></div><div><img src="https://cdn.ibos.kr/images/main_article3_icon_7866.png"><a href="/company/779?ref=main_article3" target="_blank"><p>DATA로 증명하는 전문 퍼포먼스 마케터 그룹</p><strong>하이프렌즈</strong></a></div><div><img src="https://cdn.ibos.kr/images/main_article3_icon_7867.png"><a href="/company/4816?ref=main_article3" target="_blank"><p>이커머스 전문 인플루언서 어필리에이트 마케팅</p><strong>퍼셀리</strong></a></div></div></div></div></div><div><h5>지금 채용하는 기업<a href="/ab-2794" target="_blank">전체보기</a></h5><div class="career-wrap">
+	<div>
+<a href="ab-2795-7245" class="ellipsis-1">퍼포먼스 마케팅 경력자를 모집합니다.</a><div class="info"><span class="position">퍼포먼스</span><span>서울 강남구</span><span>경력</span><span>정규직</span><span>2026-5-31</span></div></div><div>
+<a href="ab-2795-7244" class="ellipsis-1">[네이머즈] 영상 PD 채용</a><div class="info"><span class="position">영상</span><span>서울 마포구</span><span>경력</span><span>정규직</span><span>2026-6-30</span></div></div><div>
+<a href="ab-2795-7243" class="ellipsis-1">[네이머즈] 콘텐츠 마케터 채용</a><div class="info"><span class="position">콘텐츠</span><span>서울 마포구</span><span>경력</span><span>정규직</span><span>2026-6-30</span></div></div><div>
+<a href="ab-2795-7242" class="ellipsis-1">강남 피부과 마케팅 사무보조 채용</a><div class="info"><span class="position">콘텐츠</span><span>서울 서초구</span><span>신입·경력</span><span>계약직</span><span>2026-7-18</span></div></div><div>
+<a href="ab-2795-7241" class="ellipsis-1">[버즈앤비] 주니어 AE 채용</a><div class="info"><span class="position">AE</span><span>서울 강남구</span><span>경력</span><span>정규직</span><span>2026-7-17</span></div></div><div>
+<a href="ab-2795-7240" class="ellipsis-1">[버즈앤비] 시니어 AE 채용</a><div class="info"><span class="position">AE</span><span>서울 강남구</span><span>경력</span><span>정규직</span><span>2026-7-17</span></div></div><div>
+<a href="ab-2795-7239" class="ellipsis-1">(주)마티니 아이오 Business Analyst (BA)</a><div class="info"><span class="position">그로스</span><span>서울 서초구</span><span>경력</span><span>정규직</span><span>2026-6-30</span></div></div><div>
+<a href="ab-2795-7238" class="ellipsis-1">[토스] Merchandising Associate (주니어 MD/신입)</a><div class="info"><span class="position">상품기획·MD</span><span>서울 강남구</span><span>신입·경력</span><span>계약직</span><span>2026-5-31</span></div></div></div>
+</div></div><div><div id="directory"><div class="menu"><div class="nav"><ul><li class="_boss_tab_0" style="cursor: pointer;"><span>대행사</span></li>
+<li class="_boss_tab_1 tabs_active" style="cursor: pointer;"><span>마케팅 솔루션</span></li>
+<li class="_boss_tab_2" style="cursor: pointer;"><span>광고상품</span></li></ul></div></div><div class="tab_container"><div class="_boss_tab_0" style="display: none;">
+	<div class="cell"><a href="/ab-7554-131" target="_blank">
+<p><strong class="ellipsis-1">콘텐츠바이럴마케팅 허밍스토리</strong><span class="ellipsis-1">바이럴, 소셜마케팅, 디지털컨텐츠, IMC기획, 뷰티, 자동차 등 국내 BIG브랜드와 진행</span></p></a></div><div class="cell"><a href="/ab-7554-2251" target="_blank">
+<p><strong class="ellipsis-1">사비필름  영상제작업체 </strong><span class="ellipsis-1">브랜드필름, 홍보영상 제작 전문 프로덕션</span></p><img src="https://cdn.ibos.kr/design/upload_file/BD7553/THUMBNAIL_90_90_f42847fd2aeb550b9a318debebb64765_90212_1.png" border="0" width="90" height="90"></a></div><div class="cell"><a href="/ab-7554-1910" target="_blank">
+<p><strong class="ellipsis-1">당신이 원하는 하나의 회사, 블루컴즈</strong><span class="ellipsis-1">일대일 맞춤 퍼스널 마케팅</span></p><img src="https://cdn.ibos.kr/design/upload_file/BD7553/THUMBNAIL_90_90_c858a69e8534924074da88913e7eeb0e_59144_1.jpg" border="0" width="90" height="90"></a></div><div class="cell"><a href="/ab-7554-1776" target="_blank">
+<p><strong class="ellipsis-1">나인투랩</strong><span class="ellipsis-1">함께 노력하여 성공을 이루고 그들의 꿈을 현실로 만들어 나가기 위해 최선을 다하겠습니다. </span></p><img src="https://cdn.ibos.kr/design/upload_file/BD7553/THUMBNAIL_90_90_114ce39f4d293557778c9089b3facd70_16344_1.jpg" border="0" width="90" height="90"></a></div><a class="btn-more" href="/ab-7553" target="_blank">더보기</a></div>
+<div class="_boss_tab_1 container_active" style="display: flex;">
+	<div class="cell"><a href="/ab-7554-2380" target="_blank">
+<p><strong class="ellipsis-1">리서치의 새로운 패러다임</strong><span class="ellipsis-1">자동 음성/영상 인터뷰, 실시간 분석, 다국어 지원 AI 플랫폼</span></p><img src="https://cdn.ibos.kr/design/upload_file/BD7553/THUMBNAIL_90_90_a10f5b27bb02ef5e8e8373dea3343ff7_98859_1.png" border="0" width="90" height="90"></a></div><div class="cell"><a href="/ab-7554-2389" target="_blank">
+<p><strong class="ellipsis-1">이미지 합성 및 창작 AI</strong><span class="ellipsis-1">여러 이미지를 혼합하고 변형하여 새로운 AI 예술 작품을 생성하는 협업 플랫폼</span></p><img src="https://cdn.ibos.kr/design/upload_file/BD7553/THUMBNAIL_90_90_692e9be72bf3d84546d2f1aadd6a95f5_52611_1.gif" border="0" width="90" height="90"></a></div><div class="cell"><a href="/ab-7554-1103" target="_blank">
+<p><strong class="ellipsis-1">BizSpring AIR</strong><span class="ellipsis-1">BizSpring AIR은 광고매체의 성과 데이터를 통합하여 자동화 보고서를 생성합니다.</span></p><img src="https://cdn.ibos.kr/design/upload_file/BD7553/THUMBNAIL_90_90_998dc4363d9b2d9e67b121c983cd67bb_2629_1.jpg" border="0" width="90" height="90"></a></div><div class="cell"><a href="/ab-7554-864" target="_blank">
+<p><strong class="ellipsis-1">하이웍스</strong><span class="ellipsis-1">13만 고객사가 선택한 국내 1위 클라우드 그룹웨어</span></p><img src="https://cdn.ibos.kr/design/upload_file/BD7553/THUMBNAIL_90_90_cdc98791bc532bc74604dd9db649f1a7_86716_1.png" border="0" width="90" height="90"></a></div><a class="btn-more" href="/ab-7635" target="_blank">더보기</a></div>
+<div class="_boss_tab_2" style="display: none;">
+	<div class="cell"><a href="/ab-7554-548" target="_blank">
+	<p><strong class="ellipsis-1">크로스타겟 Programmatic TV</strong><span class="ellipsis-1">크로스타겟 TV는 TV 시청자를 대상으로 프로그래머틱 TV를 통해 시청자 데이터 기반의 개인화 광고를 송출합니다.  &gt; 브랜딩 및 퍼포먼스에 가장 적합한 타겟 오디언스에게 TV 캠페인 진행 &gt; TV / OTT / Mobile 통합 동영상 캠페인 진행  상품종류 - VOD 프리롤 광고 : 프로그램 시청 전 노출로 높은 광고시청 완료율이 특징  - VOD 포스트롤 광고 : 프로그램 시청 후 노출로 낮은 가격, 높은 퍼포먼스가 특징 </span></p><img src="https://cdn.ibos.kr/design/upload_file/BD8235/THUMBNAIL_200_200_9801c57acda4cbf9d9886055bea9cceb_77849_1.png" width="90" height="90" border="0" alt="크로스타겟 Programmatic TV 로고"></a></div><div class="cell"><a href="/ab-7554-1706" target="_blank">
+<p><strong class="ellipsis-1">할인애착 광고상품</strong><span class="ellipsis-1">클라이언트는 온/오프라인의 모든 할인정보를 제공할 수 있고, 소비자는 할인정보를 얻으며 앱테크를 같이 할 수 있는 일석이조의 정보성 플랫폼(어플)입니다.  * 기획전 등 특정 광고 구좌의 경우 클라이언트와 조율하며 광고비를 산출하고 있으며 '포인트 리워드 정보' 영역의 경우 소비자에게 P(포인트)를 제공하는 방식의 광고 구좌로 참여수 보장형으로 진행되고 있습니다. * 현재 2차 대규모 업데이트와 정식 서비스 런칭 기념으로 '조건 없는 할인 정보', '온라인 프로모션 정보', '오프라인 프로모션 정보' 영역을 무료로 제공하고 있습니다. </span></p><img src="https://cdn.ibos.kr/design/upload_file/BD8235/THUMBNAIL_200_200_1044d9ad8b43a541ee55fcfb4c053140_50896_1.jpg" width="90" height="90" border="0" alt="할인애착 광고상품 로고"></a></div><div class="cell"><a href="/ab-7554-534" target="_blank">
+<p><strong class="ellipsis-1">인스타그램 스토리광고</strong><span class="ellipsis-1">매일 Instagram 스토리를 사용하는 5억 명의 사람들에게 더욱 몰입도 높은 비즈니스 스토리를 전달하세요. 어떤 규모의 비즈니스든 Instagram 스토리를 사용하면 비즈니스를 성장시킬 수 있습니다.  스토리 광고는 모바일 화면 전체를 활용하기 때문에 더욱 보기 좋으며 몰입을 방해하는 요인이 적습니다.도달, 동영상 조회, 트래픽, 전환, 앱 설치 또는 브랜드 인지도에 최적화하여 비즈니스 성과를 유도하는 사진과 동영상을 공유하세요.  Instagram 계정만 있으면 누구든지 스토리를 활용할 수 있으며, 전 세계 모든 비즈니스가 Instagram 스토리와 스토리 광고를 사용할 수 있습니다. </span></p><img src="https://cdn.ibos.kr/design/upload_file/BD8235/THUMBNAIL_200_200_baff861aeeb76fc0163919a898402474_61795_1.png" width="90" height="90" border="0" alt="인스타그램 스토리광고 로고"></a></div><div class="cell"><a href="/ab-7554-1430" target="_blank">
+<p><strong class="ellipsis-1">다방 광고 상품 소개서 (26.2Q)</strong><span class="ellipsis-1">매월 300만명이 이용하는 부동산 필수 앱 다방 !                         원룸부터 아파트까지 1-2인 가구 및 젊은 타겟층을 대상으로 다양한 업종의 광고 집행을 추천드립니다 :)</span></p><img src="https://cdn.ibos.kr/design/upload_file/BD8235/THUMBNAIL_200_200_95b95ef8e3c6a44ed974659716d22bf2_12681_1.gif" width="90" height="90" border="0" alt="다방 광고 상품 소개서 (26.2Q) 로고"></a></div><a class="btn-more" href="/ab-7654" target="_blank">더보기</a></div>
+</div></div><div id="mkt-service"><div class="menu"><div class="nav"><ul><li class="tabs_active _boss_tab_0" style="cursor: pointer;"><span>마케팅 서비스</span></li></ul></div></div><div class="tab_container"><div class="BD-pr container_active _boss_tab_0" style="display: flex;">
+	<div class="cell">
+<a class="text-ellipsis" href="/ab-7729-1097" target="_blank">네이버 플레이스 URL로 자영업 클라이언트 홈페이지 5분 완성</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-7729-1096" target="_blank">[무료 광고] 광고비 0원인데 성과 사례 만들 수 있습니다</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-7729-1095" target="_blank">개인회생, 정책자금, 직장인 대출 CPA 안내</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-7729-1094" target="_blank">[하이서울기업협회x아이보스] 콘텐츠 퍼포먼스 마케팅 전문가 과정 강서캠퍼스 8기 모집</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-7729-1087" target="_blank">수임률 높은 개인회생 CPA</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-7729-1079" target="_blank">300여 개의 브랜드가 증명하는 속지 않는 진짜 마케팅</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-7729-1076" target="_blank">광고비를 써도 결과가 불확실하다면, 위픽코퍼레이션을 만나세요</a></div><a class="btn-more" href="/ab-7755" target="_blank">더보기</a></div>
+</div></div><div id="viral-service"><div class="menu"><div class="nav"><ul><li class="tabs_active"><span>바이럴 서비스</span></li></ul></div></div><div class="tab_container"><div class="BD-pr">
+	<div class="cell">
+<a class="text-ellipsis" href="/ab-2987-519250" target="_blank">병원 브랜드 실행 전문 ( 월관리, 건바이건, 배포 )</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-2987-516984" target="_blank">100% 후불제 맘카페 바이럴 실행사 핫딜 최저가 1만원</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-2987-526017" target="_blank">네이버 쿠팡 쇼핑 문의주세요~!!!</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-2987-506688" target="_blank">[최블배포 레퍼런스] 블로그 검색노출, 시스템으로 만든다</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-2987-495576" target="_blank">유튜브 전문 실행사 입니다. PPL 광고 및 인플루언서 연예인행사</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-2987-459954" target="_blank">다들 아는 궁서애드 최블배포/인기글/스마트블록/카페 노출 전문 바이럴 실행사</a></div><div class="cell">
+<a class="text-ellipsis" href="/ab-2987-503986" target="_blank">[리뷰전문 실행사] 리뷰 평점 체험단 TEAM 운영 [리뷰닷컴]</a></div><a class="btn-more" href="/ab-2986" target="_blank">더보기</a></div>
+</div></div><div id="edu-lists"><h5>아이보스 교육<a href="https://www.ibossedu.co.kr" target="_blank">전체보기</a></h5><div id="article2"><div id="BD_edu"><style>
+#BD_edu .edu_title {font-size:17px;font-weight:600;margin-bottom:16px;}
+#BD_edu .onlineEduWrap {gap:16px;}
+#BD_edu .onlineEduWrap a {display:block;width:calc(25% - 12px);box-sizing:border-box;}
+#BD_edu .onlineEduWrap a img {width:100%;height:auto;border-radius:12px;}
+</style><div class="onlineEduWrap"><a href="https://www.ibossedu.co.kr/edu-goods-455?ref=recommendthumbnail" target="_blank" gtm-ev-click="" gtm-ev-category="아이보스메인" gtm-ev-action="https://www.i-boss.co.kr" gtm-ev-label="[오프라인] GA4+GTM 3일 집중 실전반"><img src="https://www.ibossedu.co.kr/design/upload_file/ABS_goods/775f3487853595b9a3540d7263e21acb_88152_1.jpg"></a><a href="https://www.ibossedu.co.kr/edu-goods-468?ref=recommendthumbnail" target="_blank" gtm-ev-click="" gtm-ev-category="아이보스메인" gtm-ev-action="https://www.i-boss.co.kr" gtm-ev-label="[오프라인] 누구나 쉽게! 팔리는 AI 콘텐츠 4시간 완성 클래스"><img src="https://www.ibossedu.co.kr/design/upload_file/ABS_goods/b4fcd0d1e3cbf36568697a948318fe28_421_1.png"></a><a href="https://www.ibossedu.co.kr/edu-goods-470?ref=recommendthumbnail" target="_blank" gtm-ev-click="" gtm-ev-category="아이보스메인" gtm-ev-action="https://www.i-boss.co.kr" gtm-ev-label="[오프라인] 메타 뮤즈 마케팅 X 머신러닝 설계"><img src="https://www.ibossedu.co.kr/design/upload_file/ABS_goods/21ff76b198174b3674aa4bd56b28edc5_86459_1.png"></a><a href="https://www.ibossedu.co.kr/edu-goods-469?ref=recommendthumbnail" target="_blank" gtm-ev-click="" gtm-ev-category="아이보스메인" gtm-ev-action="https://www.i-boss.co.kr" gtm-ev-label="[오프라인] 마케터를 위한 AI 바이브코딩 2일 클래스"><img src="https://www.ibossedu.co.kr/design/upload_file/ABS_goods/2420b8aa927e238a51e52a1bc94d6c9b_30520_1.png"></a></div></div></div><div><h5>BEST 온라인 교육</h5><div class="recmd_list"><a href="https://www.ibossedu.co.kr/edu-goods-418" target="_blank">GA4 초단기 실습 과정<i class="fa-regular fa-angle-right"></i></a>
+<a href="https://www.ibossedu.co.kr/edu-goods-352" target="_blank">구글 Ads 디스플레이 마스터 과정<i class="fa-regular fa-angle-right"></i></a>
+<a href="https://www.ibossedu.co.kr/edu-goods-356" target="_blank">유튜브 마케팅 전략과 광고 세팅 실습<i class="fa-regular fa-angle-right"></i></a>
+<a href="https://www.ibossedu.co.kr/edu-goods-345" target="_blank">네이버 검색광고 기초실습<i class="fa-regular fa-angle-right"></i></a></div></div></div><div><h5>온·오프라인에서 만나요, 아이보스 밋업<a href="/ab-5816" target="_blank">전체보기</a></h5><div class="meetup-wrap">
+		<div class="cell"><a href="/ab-5817-459" title="[Meta] 대행사를 위한 광고 최적화 지수: 클라이언트의 성과 개선을 돕는 방법" target="_blank">
+<label>5월 21일 (목)</label><span class="text-ellipsis">[Meta] 대행사를 위한 광고 최적화 지수: 클라이언트의 성과 개선을 돕는 방...</span></a></div><div class="cell"><a href="/ab-5817-447" title="[하이서울기업협회x아이보스] 브랜드 마케터 실무 트레이닝 양천캠퍼스 2기 모집" target="_blank">
+<label>5월 26일 (화)</label><span class="text-ellipsis">[하이서울기업협회x아이보스] 브랜드 마케터 실무 트레이닝 양천캠퍼스 2기...</span></a></div><div class="cell"><a href="/ab-5817-460" title="[Meta] 성과 모범 사례로 캠페인 성과 극대화하기" target="_blank">
+<label>5월 26일 (화)</label><span class="text-ellipsis">[Meta] 성과 모범 사례로 캠페인 성과 극대화하기</span></a></div><div class="cell"><a href="/ab-5817-462" title="[무료웨비나] 실패 없는 북미 진출 : 시딩으로 완성하는 현지화 전략 공개!" target="_blank">
+<label>5월 27일 (수)</label><span class="text-ellipsis">[무료웨비나] 실패 없는 북미 진출 : 시딩으로 완성하는 현지화 전략 공개!</span></a></div><div class="cell"><a href="/ab-5817-461" title="[하이서울기업협회x아이보스] 콘텐츠 퍼포먼스 마케팅 전문가 과정 8기 모집" target="_blank">
+<label>6월 29일 (월)</label><span class="text-ellipsis">[하이서울기업협회x아이보스] 콘텐츠 퍼포먼스 마케팅 전문가 과정 8기 모...</span></a></div></div>
+</div></div></div>
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'design_file=home_contents_0002.php';
+				var submit_is_ing = 'N';
+				user_level = '99';
+		
+	
+			//-->
+		</script>
+	<!--0.5673930644989, VER20140318--></div><div class="layout-column-right"><div><div><form name="TCSYSTEM_LOGIN_FORM_I29843" id="TCSYSTEM_LOGIN_FORM_I29843" method="post" action="./member/login_process.php" enctype="multipart/form-data" onsubmit="return TCSYSTEM_LOGIN_FORM_I29843_submit()" data-ajax="false"><input type="hidden" name="after_db_script" value="%SELF%"><input type="hidden" name="after_db_msg" value="">
+		<input type="hidden" name="flag" value="i-boss.co.kr">
+		<input type="hidden" name="Q_STRING" value="after_db_msg=&amp;next_page=">
+		<input type="hidden" name="http_referer" value="https://www.i-boss.co.kr/member/logout_process.php?after_db_msg=&amp;next_page=">
+	<input type="hidden" name="VG_live_code" value="6512bd43d9caa6e02c990b0a82652dca"><input type="hidden" name="P_SELF" value="insiter.php"><div id="login-box">
+<div class="accountForGuest">
+<span class="tit">로그인 후 더욱 많은 기능을 이용하세요!</span><a href="/ab-login" id="btnLoginForGeust">아이보스 로그인</a><div class="Btn"><a href="/ab-signup" title="회원가입">회원가입</a><a href="/ab-find_id_pw">계정찾기 </a></div></div>
+	</div>
+</form>
+</div></div><div class="main-side-bn" data-unit="01JDP7WMC70WQ12HQCFGHRG64S"><a class="block ibtracid sponsored_banner_N2 overflow-hidden rounded-lg" href="https://www.ibossedu.co.kr/edu-goods-470?ref=suba" data-id="de31840f91adc8bdfd1c7b5fe0e606a43507" title="메타뮤즈" data-location="서브배너A_360x240" data-subject="아이보스교육" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너A" gtm-ev-action="de31840f91adc8bdfd1c7b5fe0e606a43507" iss="t" data-gtm-vis-first-on-screen1645705_271="461" data-gtm-vis-total-visible-time1645705_271="100" data-gtm-vis-has-fired1645705_271="1"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/a29044e4decdfb6cd76d3680c99e1b26.png" width="360" height="240" alt="메타뮤즈"></a></div><div id="side_4tabs"><div class="menu"><div class="nav"><ul><li class="_boss_tab_0" style="cursor: pointer;"><span>새글</span></li>
+<li class="_boss_tab_1 tabs_active" style="cursor: pointer;"><span>새댓글</span></li></ul></div></div><div class="tab_container"><div class="_boss_tab_0" style="display: none;">
+	<div class="cell num_1"><a href="/ab-1486526-654" target="_blank" title="">
+<img src="https://cdn.ibos.kr/design/upload_file/BD1486525/THUMBNAIL_56_56_YNE1CTWKQXTCG78L8S342ERSEM4QZ66HWQXVHVAN_1779258002130373.webp" border="0" width="56" height="56" alt="[🔵 무료 웨비나] AI 시대, 마케터는 사라질까요? - 마케터가 설계하고 Agent가 실행하는  이커머스 CRM 운영의 미래"><span class="ellipsis-1">[🔵 무료 웨비나] AI 시대, 마케터는 사라질까요? - 마케터가 설계하고 Agent가 실행하는  이커머스 CRM 운영의 미래</span></a></div><div class="cell num_2"><a href="/ab-3208-1743" target="_blank" title="">
+<img src="https://cdn.ibos.kr/design/upload_file/BD3207/THUMBNAIL_56_56_4fbf5a742a8e665711a4b3353767807a_30956_1.jpg" border="0" width="56" height="56" alt="2025 전자문서·전자거래 분쟁조정 사례집(개인 간 거래, 온라인광고)"><span class="ellipsis-1">2025 전자문서전자거래 분쟁조정 사례집(개인 간 거래, 온라인광고)</span></a></div><div class="cell num_3"><a href="/ab-1486505-53928" target="_blank" title="">
+<img src="https://cdn.ibos.kr/design/upload_file/BD1486504/THUMBNAIL_56_56_M3VCS9A0XVXUGH49VJQ0U7452S0YNLHN4N0QE5QM_1779255172965057.webp" border="0" width="56" height="56" alt="💐 요즘 유행하는 프롬프트 모아왔어요. 완전한 칭찬 부탁!"><span class="ellipsis-1">💐 요즘 유행하는 프롬프트 모아왔어요. 완전한 칭찬 부탁!</span></a></div><div class="cell num_4"><a href="/ab-6141-70488" target="_blank" title="">
+<span class="ellipsis-1">엔티티 SEO, 앞으로의 검색 마케팅에서 꼭 봐야 할 개념</span></a></div><div class="cell num_5"><a href="/ab-1486526-653" target="_blank" title="">
+<img src="https://cdn.ibos.kr/design/upload_file/BD1486525/THUMBNAIL_56_56_C9QF1LZDARNT4905G1VRAVRRGSOZP8UWYQ5EB01G_1779242861274605.webp" border="0" width="56" height="56" alt="✴️ [컨퍼런스] One AI, Elevate All - 실질적인 효율과 혁신 만들기 ✴️"><span class="ellipsis-1">✴ [컨퍼런스] One AI, Elevate All - 실질적인 효율과 혁신 만들기 ✴</span></a></div><div class="cell num_6"><a href="/ab-2877-17303" target="_blank" title="">
+<span class="ellipsis-1">유튜브, AI 기반 'Ask YouTube' 공개</span></a></div><div class="cell num_7"><a href="/ab-2877-17302" target="_blank" title="">
+<span class="ellipsis-1">구글, 멀티모달 영상 생성 AI '제미나이 옴니' 공개</span></a></div><div class="cell num_8"><a href="/ab-2877-17301" target="_blank" title="">
+<span class="ellipsis-1">AI Mode가 바꾼 미국 내 검색 방식</span></a></div><div class="cell num_9"><a href="/ab-6141-70487" target="_blank" title="">
+<img src="https://cdn.ibos.kr/design/upload_file/BD6140/THUMBNAIL_56_56_OWY6KK2JFWIURL66QFNEH51J79PXUDPJ05MW3MK9_1779243602770798.webp" border="0" width="56" height="56" alt="문상훈 영화 오늘 개봉! 이 홍보 방법 괜찮은데?"><span class="ellipsis-1">문상훈 영화 오늘 개봉! 이 홍보 방법 괜찮은데?</span></a></div><div class="cell num_10"><a href="/ab-2877-17300" target="_blank" title="">
+<img src="https://cdn.ibos.kr/design/upload_file/BD2876/THUMBNAIL_56_56_ROZT85AC6QDS1LIKW1JNTZKMQJ0ICN9Z1DYX5XYR_1779243981039493.webp" border="0" width="56" height="56" alt="구글, Pomelli 브랜드 콘텐츠와 웹사이트 설계 기능 강화"><span class="ellipsis-1">구글, Pomelli 브랜드 콘텐츠와 웹사이트 설계 기능 강화</span></a></div><div class="cell num_11"><a href="/ab-2110-32602" target="_blank" title="">
+<span class="ellipsis-1">광고대행 계약 후 환불 분쟁 중인데, 정상가 차감과 관리부실 주장 가능할까요?</span></a></div><div class="cell num_12"><a href="/ab-1486505-53926" target="_blank" title="">
+<span class="ellipsis-1">뭐 영업좀 해볼까 해서 대행의뢰 게시판좀 찾고있으면</span><span class="cmt">2</span></a></div><span class="tabs-name-more"><a href="/ab-3023" target="_blank">더보기</a></span></div>
+<div class="_boss_tab_1 container_active" style="display: block;">
+	<div class="cell num_1">
+	<a href="/ab-6141-70462#CmtList_2164901" target="_blank"><span class="ellipsis-1">하나는 하루지나야 제목검색으로 블탭에뜨고 하나는 바로뜨네요. 감이안옴···</span></a></div><div class="cell num_2">
+<a href="/ab-1486505-53855#CmtList_2164900" target="_blank"><span class="ellipsis-1">ㅎㅎ</span></a></div><div class="cell num_3">
+<a href="/ab-1486505-53892#CmtList_2164892" target="_blank"><span class="ellipsis-1">쪽지 주세요 ~</span></a></div><div class="cell num_4">
+<a href="/ab-1486505-53892#CmtList_2164891" target="_blank"><span class="ellipsis-1">쪽지 주세요 ~</span></a></div><div class="cell num_5">
+<a href="/ab-1486505-53892#CmtList_2164890" target="_blank"><span class="ellipsis-1">쪽지 주세요 ~</span></a></div><div class="cell num_6">
+<a href="/ab-2110-30996#CmtList_2164887" target="_blank"><span class="ellipsis-1">어떻게 해결하셨을까요?똑같은 현상입니다.ㅠㅠ미치겠습니다.</span></a></div><div class="cell num_7">
+<a href="/ab-1486505-53892#CmtList_2164886" target="_blank"><span class="ellipsis-1">저도 관심있습니다!</span></a></div><div class="cell num_8">
+<a href="/ab-2110-32437#CmtList_2164883" target="_blank"><span class="ellipsis-1">안녕하세요! 네이버 공식대행사 마케터 입니다. 
+
+마케터의의 선택 조건은···</span></a></div><div class="cell num_9">
+<a href="/ab-2110-32599#CmtList_2164882" target="_blank"><span class="ellipsis-1">1. 플레이스 광고 대행
+네이버 광고 시스템을 통한 광고는 키워드와 목표 ···</span></a></div><div class="cell num_10">
+<a href="/ab-2110-32599#CmtList_2164879" target="_blank"><span class="ellipsis-1">안녕하세요.
+플레이스 광고의 경우 네이버 키워드광고와 동일하게 네이버 ···</span></a></div><div class="cell num_11">
+<a href="/ab-2110-32590#CmtList_2164877" target="_blank"><span class="ellipsis-1">지금 메타에서 광고 유입 측면의 성과를 보고 계신다고 생각하시면 되는데,···</span></a></div><div class="cell num_12">
+<a href="/ab-1486505-53926#CmtList_2164873" target="_blank"><span class="ellipsis-1">ㅋㅋㅋㅋㅋㅋ</span></a></div><span class="tabs-name-more"><a href="/ab-new_cmt" target="_blank">더보기</a></span></div>
+</div><div class="tab-rotate"><div class="tab-rotate-btn"><span id="side_4tabs-cnt"><span class="current">2</span><span class="sep">/</span> <span class="total">2</span></span>
+<span id="side_4tabs-prev">이전</span>
+<span id="side_4tabs-next">다음</span></div></div></div><div id="poll_articles">
+<strong>지금 투표 중<i class="icon-poll fa-solid fa-square-poll-vertical"></i></strong><div class="wrap"><a class="ellipsis-1 on_ticker" href="/ab-1486505-53891" target="_blank"><span class="ellipsis-1">파란색? 빨간색?</span><em>39</em></a></div></div>
+<div class="rounded-lg overflow-hidden" style="margin:10px 0;"><a class="block ibtracid sponsored_banner_N42 overflow-hidden rounded-lg" href="https://www.ibossedu.co.kr/edu-goods-470?ref=subBN" data-id="eb1fac5a76502c1e08c120b2df465b4e3508" title="메타뮤즈" data-location="서브배너B(NEW)_360x120" data-subject="아이보스교육" target="_blank" gtm-ev-visibility="" gtm-ev-click="" gtm-ev-category="banner" gtm-ev-label="서브배너B(NEW)" gtm-ev-action="eb1fac5a76502c1e08c120b2df465b4e3508" iss="t"><img class="hover:scale-1.1 transition-all" src="https://cdn.ibos.kr/design/upload_file/visual_rolling/cda50cc3d2cb2cf823892ff224075d1a.png" width="360" height="120" alt="메타뮤즈"></a></div><div class="gap30"><div id="calendar-list">
+<h5>다가오는 행사일정<a href="/ab-1486525" target="_blank">더보기</a></h5><div class="cal-wrap">
+		<div><a href="/ab-1486526-651" target="_blank">
+<i class="fa-light fa-calendar-lines"></i><div><span>5월 21일</span><p class="ellipsis-1">[🔴 채널톡 웨비나] 까다로운 뷰티 제품 CS, AI가 해결할 수 있을까?</p></div></a></div><div><a href="/ab-1486526-650" target="_blank">
+<i class="fa-light fa-calendar-lines"></i><div><span>5월 27일</span><p class="ellipsis-1">[🔴 무료 웨비나] AI가 바꾼, B2B를 파는 사람과 사는 사람들</p></div></a></div><div><a href="/ab-1486526-654" target="_blank">
+<i class="fa-light fa-calendar-lines"></i><div><span>5월 28일</span><p class="ellipsis-1">[🔵 무료 웨비나] AI 시대, 마케터는 사라질까요? - 마케터가 설계하고 Agent가 실행하는  이커머스 CRM 운영의 미래</p></div></a></div><div><a href="/ab-1486526-652" target="_blank">
+<i class="fa-light fa-calendar-lines"></i><div><span>5월 30일</span><p class="ellipsis-1">[🔥오프라 세미나] 우리 브랜드, 내년에도 살아남아 성장할 수 있을까요?</p></div></a></div><div><a href="/ab-1486526-653" target="_blank">
+<i class="fa-light fa-calendar-lines"></i><div><span>6월 17일</span><p class="ellipsis-1">✴ [컨퍼런스] One AI, Elevate All - 실질적인 효율과 혁신 만들기 ✴</p></div></a></div>	</div>
+</div><div id="iboss-mall">
+</div><div id="recruit"><h5>마케터를 채용하고 있어요!<a href="/ab-2794" target="_blank">더보기</a></h5><div><div class="wrap">
+        <div class="cell">
+            <a href="/ab-2795-7238" target="_blank" class="banner block hover:bg-gray-50 transition-all" data-bd="BD8114" data-sr="181" data-id="uuib_OMICXRK2" gtm-ev-category="recruit-top" gtm-ev-label="비바리퍼블리카" gtm-ev-action="" iss="t">
+                <div class="logo-box">
+                    <img src="https://cdn.ibos.kr/design/upload_file/company/THUMBNAIL_100_100_8c3e06bc814b97bc34ccdf6e2e719934_34903_1.jpg" alt="[토스] Merchandising Associate (주니어 MD/신입) 로고" width="100" height="100">
+                </div>
+                <div class="txt">
+                    <p class="subject ellipsis-2">[토스] Merchandising Associate (주니어 MD/신입)</p>
+                    <span class="company-name">비바리퍼블리카</span>
+                </div>
+            </a>
+        </div>
+        <div class="cell">
+            <a href="/ab-2795-7113" target="_blank" class="banner block hover:bg-gray-50 transition-all" data-bd="BD8114" data-sr="183" data-id="uuib_L4HWZ5R6" gtm-ev-category="recruit-top" gtm-ev-label="EGNIS" gtm-ev-action="" iss="t">
+                <div class="logo-box">
+                    <img src="https://cdn.ibos.kr/design/upload_file/company/THUMBNAIL_100_100_e778f82a7682333e211540f14_1749514314.jpg" alt="[이그니스] 랩노쉬(LABNOSH) 콘텐츠 마케터 로고" width="100" height="100">
+                </div>
+                <div class="txt">
+                    <p class="subject ellipsis-2">[이그니스] 랩노쉬(LABNOSH) 콘텐츠 마케터</p>
+                    <span class="company-name">EGNIS</span>
+                </div>
+            </a>
+        </div>
+        <div class="cell">
+            <a href="/ab-2795-7143" target="_blank" class="banner block hover:bg-gray-50 transition-all" data-bd="BD8114" data-sr="182" data-id="uuib_QXM70R4O" gtm-ev-category="recruit-top" gtm-ev-label="BAT(비에이티)" gtm-ev-action="" iss="t">
+                <div class="logo-box">
+                    <img src="https://cdn.ibos.kr/design/upload_file/company/THUMBNAIL_100_100_e6295bc9d0fc938cf0d008606_4604_1.png" alt="[BAT] 퍼포먼스 마케팅 AM (Account Manager) 로고" width="100" height="100">
+                </div>
+                <div class="txt">
+                    <p class="subject ellipsis-2">[BAT] 퍼포먼스 마케팅 AM (Account Manager)</p>
+                    <span class="company-name">BAT(비에이티)</span>
+                </div>
+            </a>
+        </div>
+        <div class="cell">
+            <a href="/ab-2795-7224" target="_blank" class="banner block hover:bg-gray-50 transition-all" data-bd="BD8114" data-sr="178" data-id="uuib_LZYDQVRS" gtm-ev-category="recruit-top" gtm-ev-label="벨커뮤니케이션즈" gtm-ev-action="" iss="t">
+                <div class="logo-box">
+                    <img src="https://cdn.ibos.kr/design/upload_file/company/THUMBNAIL_100_100_f1efc5b1869806190e2d80d7a_1778492798.png" alt="[종근당그룹사] 벨컴 AE 경력직 채용 로고" width="100" height="100">
+                </div>
+                <div class="txt">
+                    <p class="subject ellipsis-2">[종근당그룹사] 벨컴 AE 경력직 채용</p>
+                    <span class="company-name">벨커뮤니케이션즈</span>
+                </div>
+            </a>
+        </div>
+        <div class="cell">
+            <a href="/ab-2795-7201" target="_blank" class="banner block hover:bg-gray-50 transition-all" data-bd="BD8114" data-sr="179" data-id="uuib_YTP5JFY7" gtm-ev-category="recruit-top" gtm-ev-label="비지오그로스" gtm-ev-action="" iss="t">
+                <div class="logo-box">
+                    <img src="https://cdn.ibos.kr/design/upload_file/company/THUMBNAIL_100_100_8f81447ce5a0baa9d81f1ce92_1777713944.png" alt="[(주) 비지오그로스] 퍼포먼스 마케터 로고" width="100" height="100">
+                </div>
+                <div class="txt">
+                    <p class="subject ellipsis-2">[(주) 비지오그로스] 퍼포먼스 마케터</p>
+                    <span class="company-name">비지오그로스</span>
+                </div>
+            </a>
+        </div></div></div></div><div><div>
+	<div id="LitterMall">
+<h5>이벤트<a href="/ab-2824">더보기</a></h5><div id="LTR_rand">
+			<div class="REP"><a href="/ab-2973-778">
+<div class="img"><img src="https://cdn.ibos.kr/design/upload_file/BD2972/4305ec6b676852431fe4b5caf57c17b5_55267_1.jpg" width="160" height="120" border="0"></div><div class="inner ellipsis-2">대학로 최초 남장여자 로코 연극! 어쩌다보니 초대 이벤트</div></a></div>		</div>
+	</div>
+</div>
+</div>
+
+<div class="dirList"><ul><li><a href="/ab-mktt_searcher"><i class="fa-regular fa-code"></i>스크립트 분석</a></li><li><a href="/ab-marketing_calendar"><i class="fa-regular fa-calendar-lines"></i>마케팅 캘린더</a></li><li><a href="/ab-subkey"><i class="fa-regular fa-keyboard"></i>키워드 조합기</a></li><li><a href="/ab-word_dic_l"><i class="fa-regular fa-book"></i>마케팅 사전</a></li><li><a href="/ab-performance_calc"><i class="fa-regular fa-calculator"></i>성과 계산기</a></li><li><a href="/ab-3207"><i class="fa-regular fa-folder-open"></i>마케팅 자료실</a></li></ul></div></div>
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'design_file=home_contents_0003.php';
+				var submit_is_ing = 'N';
+				user_level = '99';
+		
+	
+			//-->
+		</script>
+	<script>
+// Home Layout Elements Shuffle
+$(document).ready(function() {
+    var parent = $('.gap30');
+    var divs = parent.children('div').not('.dirList');
+
+    divs.sort(function() {
+        return Math.random() - 0.5;
+    });
+
+    divs.each(function() {
+        parent.prepend(this);
+    });
+});
+</script><!--0.40140199661255, VER20140318--></div></div></div><div class="ABA-wrap-box AB-cr"><div class="ABA-container-box"><div id="adrop-popup" data-unit="01JGNFBEWA7NVATY875WKXPJ46"></div><footer><div class="footer1st"><div id="FooterMain" style="clear:both"><div class="footer_ibosslogo"><div class="ibosslogo_cover"><a href="/"><img src="https://cdn.ibos.kr/images/new_logo_home4.png" alt="아이보스 로고"></a></div></div><div class="footer_navbox"><div class="footer-nav"><ul><li><a href="https://i-boss.gitbook.io/iboss_ad" target="_blank">광고</a></li><li><a href="ab-policy">이용약관</a></li><li><a href="https://plip.kr/pcc/55e15c8e-7972-475d-8c59-398337970594/privacy-policy" target="_blank" style="font-weight:600">개인정보 처리방침</a></li><li><a href="https://i-boss.gitbook.io/main/guide" target="_blank">서비스 가이드</a></li><li><a href="https://omdm.i-boss.co.kr" target="_blank">광고분쟁조정</a></li><li><a href="/ab-right_policy">권리침해</a></li><li><a href="/ab-6562">블랙리스트</a></li><li class="cs"><a href="https://i-boss.gitbook.io/main" target="_blank"><span style="font-weight:bold">고객센터</span></a></li></ul></div><div class="footer-info"><ul>
+    <li><span>(주)아이보스</span><span>02-862-7643</span><span>E-mail : help@i-boss.co.kr</span><span>대표 : 신용성</span><span>105-87-01912</span><span>제 2012-서울금천-0373호</span><span>개인정보 관리책임자 : 유리나</span></li>
+    <li><span>서울 금천구 벚꽃로 234, 1202호 (가산동 60-25, 에이스하이엔드타워6차)</span></li>
+</ul></div></div></div><div><button type="button" id="pageTop" title="위로 가기">위로가기</button></div></div></footer></div></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://www.i-boss.co.kr"}]}</script><script>
+function frm_search_main_submit() {
+var frm = $('#frm_search_main')[0];
+if (!frm.search_value.value) {  alert('검색할 내용을 입력해 주세요'); return false; }
+}
+function frm_search_sub_submit(frm) {
+if ($(frm).find('input[name=search_value]').val() == '') {  alert('검색할 내용을 입력해 주세요'); return false; }
+}
+$('#regular_mb_bn .btn_close_bn').click(function(){
+	set_cookie('regular_mb_bn','Y',240);
+	$("#regular_mb_bn").hide();
+});
+// Top 버튼
+$('#pageTop').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'fast');
+        return false; 
+    });
+});
+// 검색 분류
+$('select[name=sch_cat]').bind('change', function(){ $('#frm_search_main').attr({'action': '/ab-'+ $(this).val()});  });
+</script><div id="global_dialog" style="display:none;clear:both;"></div>
+<script src="/template/PLUGIN_iboss_display/program/js/boss_act.js?v=1697579580"></script>
+<script src="https://cdn.ibos.kr/template/PLUGIN_directory/program/js/list_paging_pop.js"></script><script src="/template/PLUGIN_iboss_display/program/js/main_compress.js?v=1737617031"></script>
+<script src="/template/PLUGIN_education/program/jquery.bxslider.min.js?v=1726683999"></script>
+<script src="https://storage.adrop.io/js/adrop-0.1.2.min.js"></script>
+<script>adrop = window.adrop || {}</script>
+<script src="/template/PLUGIN_adrop/js/plugin_adrop.js?v=1736496733"></script>
+
+<img src="https://www.ibossedu.co.kr/template/PLUGIN_autologin/program/img.php?ot=&amp;lt=&amp;_=1779258695.53017600" style="display:none">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.i-boss.co.kr/#organization",
+    "name": "아이보스",
+    "legalName": "주식회사 아이보스",
+    "url": "https://www.i-boss.co.kr",
+    "telephone": "02-862-7643",
+    "email": "help@i-boss.co.kr",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "서울 금천구 벚꽃로 234, 1202호",
+        "addressLocality": "서울",
+        "postalCode": "08513",
+        "addressCountry": "KR"
+    },
+    "sameAs": [
+        "https://www.facebook.com/ibosscokr",
+        "https://www.instagram.com/iboss_official",
+        "https://www.threads.com/@iboss_official",
+        "https://play.google.com/store/apps/details?id=kr.co.i_boss.iboss",
+        "https://apps.apple.com/kr/app/id1440443218"
+    ]
+}
+</script>
+
+		<script type="text/javascript">
+			<!--
+				
+				var _VM_ = 'p';
+				var mobile_device = 'N';
+				var server_query_string = 'after_db_msg=&next_page=';
+				var submit_is_ing = 'N';
+				user_level = '99';
+		
+	
+		function TCSYSTEM_ETC_FORM_I19468_submit(button_type) {
+			errfld = '';
+			form = document.TCSYSTEM_ETC_FORM_I19468;
+			
+	
+			if (errfld != '') {
+				alert('필수입력사항을 채워주세요\n\n\'컬러가 변경된 입력상자\' 가 필수 입력항목 입니다.');
+				$('#loading_img').css('display', 'none');
+				if ((errfld.type === 'text' || errfld.type === 'tel' || errfld.type === 'textarea' || errfld.type === 'select' || errfld.type === 'password') && (errfld.style.display !== 'none')) errfld.focus();
+				errfld = '';
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (typeof(form.T_insiter_join_agree) !== 'undefined' && form.T_insiter_join_agree.value !== 'Y') {
+				alert('안내문을 읽고 동의 하셔야 진행 할 수 있습니다..');
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (submit_is_ing === 'N') {
+				
+				
+				if (form.target == '') submit_is_ing = 'Y';
+				
+			if (button_type === 'text') form.submit();
+			else return true;
+	
+			} else {
+				alert('진행중입니다. 잠시만 기다려주세요');
+				return false;
+			}
+		}
+	
+
+		function TCSYSTEM_LOGIN_FORM_I29843_submit(button_type) {
+			errfld = '';
+			form = document.TCSYSTEM_LOGIN_FORM_I29843;
+			
+	
+			if (typeof(form.user_level) !== 'undefined') {
+				if (submit_radio_check(form, 'user_level') == 0) {
+					alert('회원 분류를 선택하세요');
+					if (button_type === 'text') return;
+					else return false;
+				}
+			}
+		
+				if (chk_obj_input('TCSYSTEM_LOGIN_FORM_I29843', 'user_id', '아이디를 입력해주세요') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+				if (chk_obj_input('TCSYSTEM_LOGIN_FORM_I29843', 'user_passwd', '비밀번호를 입력해주세요') === false) {
+					if (button_type === 'text') return;
+					else return false;
+				}
+			
+			if (errfld != '') {
+				alert('필수입력사항을 채워주세요\n\n\'컬러가 변경된 입력상자\' 가 필수 입력항목 입니다.');
+				$('#loading_img').css('display', 'none');
+				if ((errfld.type === 'text' || errfld.type === 'tel' || errfld.type === 'textarea' || errfld.type === 'select' || errfld.type === 'password') && (errfld.style.display !== 'none')) errfld.focus();
+				errfld = '';
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (typeof(form.T_insiter_join_agree) !== 'undefined' && form.T_insiter_join_agree.value !== 'Y') {
+				alert('안내문을 읽고 동의 하셔야 진행 할 수 있습니다..');
+				if (button_type === 'text') return;
+				else return false;
+			}
+			if (submit_is_ing === 'N') {
+				
+				
+				if (form.target == '') submit_is_ing = 'Y';
+				
+			if (button_type === 'text') form.submit();
+			else return true;
+	
+			} else {
+				alert('진행중입니다. 잠시만 기다려주세요');
+				return false;
+			}
+		}
+	
+
+			//-->
+		</script>
+	
+
+<script id="" text="" charset="" type="text/javascript" src="//wcs.naver.net/wcslog.js"></script><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1403511673290661");fbq("track","PageView");</script>
+</div><script type="text/javascript" id="" charset="">google_tag_manager["rm"]["1645705"](149)&&fbq("track","Search",{search_string:google_tag_manager["rm"]["1645705"](154)});</script>
+
+<script type="text/javascript" id="" charset="">function fbqSearchKeyword(){var a=document.referrer;if(a){var b=document.createElement("a");b.setAttribute("href",a);a=/[\?&](?:q|query)=([^&#]*)/;if((a=b.search.match(a))&&0<a.length)var c=a[1].replace(/\+/gi,"%20");c&&fbq("trackCustom","SearchKeyword",{hostname:b.hostname,keyword:decodeURIComponent(c)})}}fbqSearchKeyword();</script> 
+ 
+
+<script type="text/javascript" id="" charset="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_396fcbe563e7";if(!_nasa)var _nasa={};wcs.inflow();wcs_do(_nasa);</script><div id="c4g-content-root" class="c4g-widget"></div></body></html>

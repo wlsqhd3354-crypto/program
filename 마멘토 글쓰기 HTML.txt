@@ -1,0 +1,1735 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="naver-site-verification" content="b1605a10f1c86573680785fa2e13b8665d6a10dc">
+<meta name="google-site-verification" content="uMIJzKI5GaxnbmRQZzlQUjZHY_FHxejFfxcz_hwMCrs">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="마멘토">
+<meta property="og:title" content="마멘토">
+<meta property="og:description" content="마멘토 : 온라인마케팅 커뮤니티 - 인스타,유튜브,페이스북 ">
+<meta property="og:image" content="https://mamentor.co.kr/mamentor.png">
+<meta property="og:url" content="https://mamentor.co.kr">
+<meta name="description" content="마멘토 : 온라인마케팅 커뮤니티 - 인스타,유튜브,페이스북 ">
+<meta name="keywords" content="마멘토">
+<meta name="naver-site-verification" content="e4026a3a857be705b0c056a973e396f4cc62b32f">
+<link rel="canonical" href="https://mamentor.co.kr">
+
+<title>페이스북 - 쓰기 | 마멘토 : 유튜브,SNS,블로그 온라인마케팅 커뮤니티</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="stylesheet" href="https://mamentor.co.kr/skin/board/mamentor_subject/style.css?ver=171222">
+<link rel="stylesheet" href="https://mamentor.co.kr/theme/basic/skin/outlogin/side/style.css?ver=171222">
+<link rel="stylesheet" href="https://mamentor.co.kr/plugin/srd-pushmsg/style.css?ver=171222">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="마멘토">
+<meta name="application-name" content="마멘토">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://mamentor.co.kr/css/bootstrap.min.css?ver=1779258886">
+<link rel="stylesheet" href="https://mamentor.co.kr/css/bootstrap-select.min.css?ver=1779258886">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+<link rel="stylesheet" href="https://mamentor.co.kr/css/jquery.bxslider.css">
+
+<link rel="stylesheet" href="https://mamentor.co.kr/theme/basic/css/default.css?ver=1779258886">
+<!--[if lte IE 8]>
+<script src="https://mamentor.co.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://mamentor.co.kr";
+var g5_bbs_url   = "https://mamentor.co.kr/bbs";
+var g5_is_member = "1";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "facebook";
+var g5_sca       = "";
+var g5_editor    = "ckeditor4_eyoom";
+var g5_cookie_domain = "";
+</script>
+<script src="https://mamentor.co.kr/js/jquery-1.8.3.min.js"></script>
+<script src="https://mamentor.co.kr/js/jquery.min.js"></script>
+<script src="https://mamentor.co.kr/js/bootstrap.min.js"></script>
+<script src="https://mamentor.co.kr/js/jquery.menu.js?ver=171222"></script>
+<script src="https://mamentor.co.kr/js/common.js?ver=171222"></script>
+<script src="https://mamentor.co.kr/js/wrest.js?ver=171222"></script>
+<script src="https://mamentor.co.kr/js/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="https://mamentor.co.kr/js/font-awesome/css/font-awesome.min.css">
+<style>
+    #bo_v_con {
+        margin: 0 !important;
+        font-size: 0.95rem;
+    }
+</style>
+<style>.cke{visibility:hidden;}</style><script type="text/javascript" src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/config.js?t=IA8F"></script><link rel="stylesheet" type="text/css" href="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/skins/office2013/editor.css?t=IA8F"><script type="text/javascript" src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/lang/ko.js?t=IA8F"></script><script type="text/javascript" src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/styles.js?t=IA8F"></script><script type="text/javascript" src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/uploadwidget/plugin.js?t=IA8F"></script><script type="text/javascript" src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/uploadimage/plugin.js?t=IA8F"></script><link rel="stylesheet" type="text/css" href="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/tableselection/styles/tableselection.css"><script type="text/javascript" src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/uploadwidget/lang/ko.js?t=IA8F"></script></head>
+<body>
+<div id="hd_login_msg">바이럴천재님 로그인 중 <a href="https://mamentor.co.kr/bbs/logout.php">로그아웃</a></div><style>
+#your_level{position:relative;display:inline-block;margin:0 2px}
+#sch_stx{font-weight: 700; border: none !important; outline: none !important; box-shadow: none !important;}
+#sch_stx::placeholder{font-weight: 500; color:#999;}
+</style>
+
+<!-- 상단 시작 { -->
+<div id="hd">
+    <h1 id="hd_h1">페이스북 - 쓰기</h1>
+
+    <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+
+        <div id="tnb">
+        <ul>
+                        <li><a href="https://mamentor.co.kr/bbs/member_confirm.php?url=https://mamentor.co.kr/bbs/register_form.php">정보수정</a></li>
+            <li><a href="https://mamentor.co.kr/bbs/logout.php?url=%2Fbbs%2Fwrite.php%3Fbo_table%3Dfacebook">로그아웃</a></li>
+
+			<li><a href="/buy.php">주문내역</a></li>
+
+			                  </ul>
+    </div>
+    <div id="hd_wrapper">
+
+        <div id="logo">
+            <a href="https://mamentor.co.kr"><span><img src="https://mamentor.co.kr/img/mamentor_logo.png" alt="마멘토 : 유튜브,SNS,블로그 온라인마케팅 커뮤니티"></span>MAMENTOR</a>
+        </div>
+
+        <div class="hd_sch_wr">
+            <fieldset id="pc_search_field">
+                <legend>사이트 내 전체검색</legend>
+
+                <!-- 검색 패널 -->
+                <div class="pc-search-panel" id="pcSearchPanel">
+                    <input type="text" name="stx" id="sch_stx" maxlength="50" placeholder="검색어를 입력해주세요" autocomplete="off" style="font-weight: 700;border: none !important; outline: none !important; box-shadow: none !important;">
+                    <button type="button" id="pc_sch_clear" class="pc-search-clear">×</button>
+                    <button type="button" id="pc_sch_submit" class="pc-search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+
+                <!-- 검색 드롭다운 -->
+                <div class="pc-search-dropdown" id="pcSearchDropdown" style="display: none;">
+                    <!-- 최근 검색어 + 인기 검색어 영역 -->
+                    <div class="pc-search-default-section" id="pcSearchDefaultSection">
+                        <!-- 최근 검색어 -->
+                        <div class="pc-search-recent-section" id="pcSearchRecentSection">
+                            <div class="pc-search-section-header">
+                                <span class="pc-search-section-title">최근 검색어</span>
+                                <button type="button" id="pcSearchRecentClearAll" class="pc-search-clear-all-btn">전체삭제</button>
+                            </div>
+                            <ul class="pc-search-recent-list" id="pcSearchRecentList">
+                                <li class="pc-search-empty">최근 검색 내역이 없습니다.</li>
+                            </ul>
+                            <button type="button" class="pc-search-more-btn" id="pcSearchRecentMoreBtn" style="display: none;">
+                                <span class="more-text">펼쳐서 더보기</span>
+                                <svg class="more-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                                    <path d="M6 9L1 4h10z"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- 인기 검색어 -->
+                        <div class="pc-search-popular-section" id="pcSearchPopularSection">
+                            <div class="pc-search-section-header">
+                                <span class="pc-search-section-title">추천 검색어</span>
+                            </div>
+                            <ul class="pc-search-popular-list" id="pcSearchPopularList">
+                                <li class="pc-search-loading">추천 검색어를 불러오는 중...</li>
+                            </ul>
+                            <button type="button" class="pc-search-more-btn" id="pcSearchPopularMoreBtn" style="display: none;">
+                                <span class="more-text">펼쳐서 더보기</span>
+                                <svg class="more-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                                    <path d="M6 9L1 4h10z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 자동완성 영역 -->
+                    <div class="pc-search-autocomplete-section" id="pcSearchAutocompleteSection" style="display: none;">
+                        <ul class="pc-search-autocomplete-list" id="pcSearchAutocompleteList"></ul>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+<style>
+/* PC 검색 필드 스타일 */
+#pc_search_field {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* PC 검색 패널 스타일 */
+.pc-search-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 24px;
+    padding: 14px 20px;
+    transition: all 0.2s;
+}
+
+.pc-search-panel.focused {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.pc-search-panel input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    padding: 0;
+    color: #333;
+}
+
+.pc-search-panel input::placeholder {
+    color: #999;
+}
+
+.pc-search-clear {
+    background: #ddd;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.pc-search-clear.show {
+    display: flex;
+}
+
+.pc-search-btn {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* PC 검색 드롭다운 */
+.pc-search-dropdown {
+    position: fixed;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    min-height: 400px;
+    max-height: 700px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* 기본 섹션 (최근 검색어 + 인기 검색어) */
+.pc-search-default-section {
+    padding: 15px;
+}
+
+/* 섹션 공통 스타일 */
+.pc-search-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.pc-search-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.pc-search-clear-all-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s;
+}
+
+.pc-search-clear-all-btn:hover {
+    color: #ff4444;
+}
+
+/* 최근 검색어 영역 */
+.pc-search-recent-section {
+    margin-bottom: 20px;
+}
+
+.pc-search-recent-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pc-search-recent-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.pc-search-recent-item:hover {
+    background: #f8f8f8;
+}
+
+.pc-search-recent-keyword {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pc-search-recent-icon {
+    width: 16px;
+    height: 16px;
+    color: #999;
+    flex-shrink: 0;
+}
+
+.pc-search-recent-delete {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+    flex-shrink: 0;
+}
+
+.pc-search-recent-delete:hover {
+    color: #ff4444;
+}
+
+/* 인기 검색어 영역 */
+.pc-search-popular-section {
+    margin-bottom: 0;
+}
+
+.pc-search-popular-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pc-search-popular-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.pc-search-popular-item:hover {
+    background: #f8f8f8;
+}
+
+.pc-search-popular-rank {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff4444;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.pc-search-popular-keyword {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 빈 목록 및 로딩 */
+.pc-search-empty,
+.pc-search-loading {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* 펼쳐서 더보기 버튼 */
+.pc-search-more-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.pc-search-more-btn:hover {
+    background: #f0f0f0;
+    border-color: #d0d0d0;
+}
+
+.pc-search-more-btn .more-icon {
+    transition: transform 0.2s;
+}
+
+.pc-search-more-btn.expanded .more-icon {
+    transform: rotate(180deg);
+}
+
+.pc-search-more-btn.expanded .more-text::before {
+    content: '접기 ';
+}
+
+/* 접힌 상태 (초기 5개만 표시) */
+.pc-search-recent-list.collapsed li:nth-child(n+6),
+.pc-search-popular-list.collapsed li:nth-child(n+6) {
+    display: none;
+}
+
+/* 자동완성 영역 */
+.pc-search-autocomplete-section {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.pc-search-autocomplete-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pc-search-autocomplete-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.2s;
+}
+
+.pc-search-autocomplete-item:hover {
+    background: #f8f8f8;
+}
+
+.pc-search-autocomplete-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.pc-search-autocomplete-text {
+    flex: 1;
+}
+
+.pc-search-autocomplete-keyword {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 3px;
+}
+
+.pc-search-autocomplete-main {
+    font-size: 14px;
+    color: #333;
+}
+
+.pc-search-autocomplete-main .highlight {
+    color: #ff4444;
+    font-weight: 500;
+}
+</style>
+
+<script>
+$(function() {
+    var pcSearchTimeout;
+    var $pcSearchInput = $('#sch_stx');
+    var $pcSearchPanel = $('#pcSearchPanel');
+    var $pcSearchDropdown = $('#pcSearchDropdown');
+    var $pcSearchClear = $('#pc_sch_clear');
+
+    // ========== LocalStorage 관리 함수 ==========
+
+    // 최근 검색어 가져오기
+    function getRecentKeywords() {
+        try {
+            var data = localStorage.getItem('recentSearchKeywords');
+            return data ? JSON.parse(data) : [];
+        } catch (e) {
+            console.error('LocalStorage 읽기 오류:', e);
+            return [];
+        }
+    }
+
+    // 최근 검색어 저장
+    function saveRecentKeyword(keyword) {
+        if (!keyword || keyword.trim() === '') return;
+
+        try {
+            var keywords = getRecentKeywords();
+            var trimmedKeyword = keyword.trim();
+
+            // 중복 제거 (이미 있으면 제거)
+            keywords = keywords.filter(function(item) {
+                return item.keyword !== trimmedKeyword;
+            });
+
+            // 맨 앞에 추가
+            keywords.unshift({
+                keyword: trimmedKeyword,
+                timestamp: Date.now()
+            });
+
+            // 최대 30개까지만 유지
+            if (keywords.length > 30) {
+                keywords = keywords.slice(0, 30);
+            }
+
+            localStorage.setItem('recentSearchKeywords', JSON.stringify(keywords));
+        } catch (e) {
+            console.error('LocalStorage 저장 오류:', e);
+        }
+    }
+
+    // 최근 검색어 개별 삭제
+    function removeRecentKeyword(keyword) {
+        try {
+            var keywords = getRecentKeywords();
+            keywords = keywords.filter(function(item) {
+                return item.keyword !== keyword;
+            });
+            localStorage.setItem('recentSearchKeywords', JSON.stringify(keywords));
+            displayRecentKeywords();
+        } catch (e) {
+            console.error('LocalStorage 삭제 오류:', e);
+        }
+    }
+
+    // 최근 검색어 전체 삭제
+    function clearAllRecentKeywords() {
+        try {
+            localStorage.removeItem('recentSearchKeywords');
+            displayRecentKeywords();
+        } catch (e) {
+            console.error('LocalStorage 전체 삭제 오류:', e);
+        }
+    }
+
+    // ========== 표시 함수 ==========
+
+    // 최근 검색어 표시
+    function displayRecentKeywords() {
+        var keywords = getRecentKeywords();
+        var $list = $('#pcSearchRecentList');
+        var $moreBtn = $('#pcSearchRecentMoreBtn');
+
+        $list.empty();
+
+        if (keywords.length === 0) {
+            $list.html('<li class="pc-search-empty">최근 검색 내역이 없습니다.</li>');
+            $list.removeClass('collapsed');
+            $moreBtn.hide();
+            return;
+        }
+
+        // 초기에는 collapsed 상태로 설정 (5개까지만 표시)
+        if (keywords.length > 5) {
+            $list.addClass('collapsed');
+            $moreBtn.show().removeClass('expanded');
+            $moreBtn.find('.more-text').text('펼쳐서 더보기');
+        } else {
+            $list.removeClass('collapsed');
+            $moreBtn.hide();
+        }
+
+        keywords.forEach(function(item) {
+            var html = '<li class="pc-search-recent-item">';
+            html += '<div class="pc-search-recent-keyword" data-keyword="' + item.keyword + '">';
+            html += '<svg class="pc-search-recent-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">';
+            html += '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>';
+            html += '</svg>';
+            html += '<span>' + item.keyword + '</span>';
+            html += '</div>';
+            html += '<button type="button" class="pc-search-recent-delete" data-keyword="' + item.keyword + '">×</button>';
+            html += '</li>';
+            $list.append(html);
+        });
+    }
+
+    // 인기 검색어 로드 및 표시
+    function loadPopularKeywords() {
+        $.ajax({
+            url: '/popular_keyword_api.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function(res) {
+                var $list = $('#pcSearchPopularList');
+                var $moreBtn = $('#pcSearchPopularMoreBtn');
+
+                $list.empty();
+
+                if (res.success && res.data.length > 0) {
+                    // 초기에는 collapsed 상태로 설정 (5개까지만 표시)
+                    if (res.data.length > 5) {
+                        $list.addClass('collapsed');
+                        $moreBtn.show().removeClass('expanded');
+                        $moreBtn.find('.more-text').text('펼쳐서 더보기');
+                    } else {
+                        $list.removeClass('collapsed');
+                        $moreBtn.hide();
+                    }
+
+                    res.data.forEach(function(item, index) {
+                        var html = '<li class="pc-search-popular-item" data-pk-id="' + item.pk_id + '" data-keyword="' + item.pk_keyword + '" data-link-url="' + (item.pk_link_url || '') + '">';
+                        html += '<span class="pc-search-popular-rank">' + (index + 1) + '</span>';
+                        html += '<span class="pc-search-popular-keyword">' + item.pk_keyword + '</span>';
+                        html += '</li>';
+                        $list.append(html);
+                    });
+                } else {
+                    $list.html('<li class="pc-search-empty">등록된 인기 검색어가 없습니다.</li>');
+                    $list.removeClass('collapsed');
+                    $moreBtn.hide();
+                }
+            },
+            error: function() {
+                $('#pcSearchPopularList').html('<li class="pc-search-empty">인기 검색어를 불러올 수 없습니다.</li>');
+                $('#pcSearchPopularList').removeClass('collapsed');
+                $('#pcSearchPopularMoreBtn').hide();
+            }
+        });
+    }
+
+    // 최근 검색어 + 인기 검색어 로드
+    function loadRecentAndPopularKeywords() {
+        displayRecentKeywords();
+        loadPopularKeywords();
+    }
+
+    // ========== 이벤트 핸들러 ==========
+
+    // 드롭다운 위치 및 크기 계산 함수
+    function updateDropdownPosition() {
+        var panelOffset = $pcSearchPanel.offset();
+        var panelWidth = $pcSearchPanel.outerWidth();
+        var panelHeight = $pcSearchPanel.outerHeight();
+
+        // 60% 더 넓게 (1.6배)
+        var dropdownWidth = panelWidth * 1.6;
+
+        // 중앙 정렬을 위한 left 계산
+        var dropdownLeft = panelOffset.left - ((dropdownWidth - panelWidth) / 2);
+
+        $pcSearchDropdown.css({
+            'top': (panelOffset.top + panelHeight + 8) + 'px',
+            'left': dropdownLeft + 'px',
+            'width': dropdownWidth + 'px'
+        });
+    }
+
+    // 검색창 포커스 시 드롭다운 표시
+    $pcSearchInput.on('focus', function() {
+        $pcSearchPanel.addClass('focused');
+        updateDropdownPosition();
+        $pcSearchDropdown.show();
+        loadRecentAndPopularKeywords();
+    });
+
+    // 검색어 입력 이벤트
+    $pcSearchInput.on('keyup input', function() {
+        clearTimeout(pcSearchTimeout);
+        var keyword = $(this).val().trim();
+
+        // 삭제 버튼 표시/숨김
+        if (keyword.length > 0) {
+            $pcSearchClear.addClass('show');
+        } else {
+            $pcSearchClear.removeClass('show');
+        }
+
+        if (keyword.length === 0) {
+            $('#pcSearchDefaultSection').show();
+            $('#pcSearchAutocompleteSection').hide();
+            return;
+        }
+
+        // 300ms 후 자동완성 API 호출
+        pcSearchTimeout = setTimeout(function() {
+            loadPcAutocomplete(keyword);
+        }, 300);
+    });
+
+    // 검색어 삭제 버튼
+    $pcSearchClear.on('click', function() {
+        $pcSearchInput.val('').focus();
+        $(this).removeClass('show');
+        $('#pcSearchDefaultSection').show();
+        $('#pcSearchAutocompleteSection').hide();
+    });
+
+    // Enter 키로 검색 실행
+    $pcSearchInput.on('keypress', function(e) {
+        if (e.which === 13) {
+            executePcSearch($(this).val().trim());
+        }
+    });
+
+    // 검색 버튼 클릭
+    $('#pc_sch_submit').on('click', function() {
+        executePcSearch($pcSearchInput.val().trim());
+    });
+
+    // 외부 클릭 시 드롭다운 닫기
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.hd_sch_wr').length) {
+            $pcSearchDropdown.hide();
+            $pcSearchPanel.removeClass('focused');
+        }
+    });
+
+    // 윈도우 리사이즈 시 드롭다운 위치 재계산
+    $(window).on('resize', function() {
+        if ($pcSearchDropdown.is(':visible')) {
+            updateDropdownPosition();
+        }
+    });
+
+    // 페이지 스크롤 시 드롭다운 위치 재계산 (유지)
+    $(window).on('scroll', function() {
+        if ($pcSearchDropdown.is(':visible')) {
+            updateDropdownPosition();
+        }
+    });
+
+    // 최근 검색어 전체 삭제 버튼
+    $(document).on('click', '#pcSearchRecentClearAll', function() {
+        if (confirm('최근 검색어를 모두 삭제하시겠습니까?')) {
+            clearAllRecentKeywords();
+        }
+    });
+
+    // 최근 검색어 개별 삭제 버튼
+    $(document).on('click', '.pc-search-recent-delete', function(e) {
+        e.stopPropagation();
+        var keyword = $(this).data('keyword');
+        removeRecentKeyword(keyword);
+    });
+
+    // 최근 검색어 펼쳐서 더보기 버튼
+    $(document).on('click', '#pcSearchRecentMoreBtn', function() {
+        var $list = $('#pcSearchRecentList');
+        var $btn = $(this);
+
+        if ($list.hasClass('collapsed')) {
+            // 펼치기
+            $list.removeClass('collapsed');
+            $btn.addClass('expanded');
+            $btn.find('.more-text').text('접기');
+        } else {
+            // 접기
+            $list.addClass('collapsed');
+            $btn.removeClass('expanded');
+            $btn.find('.more-text').text('펼쳐서 더보기');
+        }
+    });
+
+    // 인기 검색어 펼쳐서 더보기 버튼
+    $(document).on('click', '#pcSearchPopularMoreBtn', function() {
+        var $list = $('#pcSearchPopularList');
+        var $btn = $(this);
+
+        if ($list.hasClass('collapsed')) {
+            // 펼치기
+            $list.removeClass('collapsed');
+            $btn.addClass('expanded');
+            $btn.find('.more-text').text('접기');
+        } else {
+            // 접기
+            $list.addClass('collapsed');
+            $btn.removeClass('expanded');
+            $btn.find('.more-text').text('펼쳐서 더보기');
+        }
+    });
+
+    // 최근 검색어 클릭
+    $(document).on('click', '.pc-search-recent-keyword', function() {
+        var keyword = $(this).data('keyword');
+        executePcSearch(keyword);
+    });
+
+    // 인기 검색어 클릭
+    $(document).on('click', '.pc-search-popular-item', function() {
+        var pk_id = $(this).data('pk-id');
+        var keyword = $(this).data('keyword');
+        var link_url = $(this).data('link-url');
+
+        // 클릭 카운트 업데이트
+        if (pk_id) {
+            $.post('/popular_keyword_click.php', { pk_id: pk_id });
+        }
+
+        // 사용자 정의 URL이 있으면 해당 URL로 이동
+        if (link_url && link_url.trim() !== '') {
+            window.location.href = link_url;
+        } else {
+            // 없으면 검색 실행
+            executePcSearch(keyword);
+        }
+    });
+
+    // 자동완성 로드
+    function loadPcAutocomplete(keyword) {
+        $.ajax({
+            url: '/search_autocomplete_api.php',
+            type: 'GET',
+            dataType: 'json',
+            data: { keyword: keyword },
+            success: function(res) {
+                var list = $('#pcSearchAutocompleteList');
+                list.empty();
+
+                if (res.success && res.data.length > 0) {
+                    $('#pcSearchDefaultSection').hide();
+                    $('#pcSearchAutocompleteSection').show();
+
+                    res.data.forEach(function(item) {
+                        var html = '<li class="pc-search-autocomplete-item" data-keyword="' + item.autocomplete + '">';
+                        html += '<svg class="pc-search-autocomplete-icon" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2">';
+                        html += '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>';
+                        html += '</svg>';
+                        html += '<div class="pc-search-autocomplete-text">';
+                        html += '<div class="pc-search-autocomplete-keyword">검색어: ' + item.keyword + '</div>';
+                        html += '<div class="pc-search-autocomplete-main">' + item.autocomplete + '</div>';
+                        html += '</div>';
+                        html += '</li>';
+                        list.append(html);
+                    });
+                } else {
+                    $('#pcSearchDefaultSection').show();
+                    $('#pcSearchAutocompleteSection').hide();
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('자동완성 API 오류:', error);
+                $('#pcSearchDefaultSection').show();
+                $('#pcSearchAutocompleteSection').hide();
+            }
+        });
+    }
+
+    // 자동완성 항목 클릭
+    $(document).on('click', '.pc-search-autocomplete-item', function() {
+        var keyword = $(this).data('keyword');
+        executePcSearch(keyword);
+    });
+
+    // 검색 실행
+    function executePcSearch(keyword) {
+        if (!keyword || keyword.length < 1) {
+            alert("검색어를 입력하세요.");
+            return false;
+        }
+
+        // 최근 검색어에 저장
+        saveRecentKeyword(keyword);
+
+        var searchUrl = 'https://mamentor.co.kr/bbs/search.php?sfl=wr_subject||wr_content&sop=and&stx=' + encodeURIComponent(keyword);
+        location.href = searchUrl;
+    }
+});
+</script>
+        <style>
+#hd_visit {;float:right;width:200px;margin-top:15px;margin-right:10px;}
+#hd_visit dl {padding:10px 15px;border-radius:5px}
+#hd_visit dl:after {display:block;visibility:hidden;clear:both;content:""}
+#hd_visit dt {float:left;width:35%;padding:0 5px;line-height:23px;height:23px;color:#555}
+#hd_visit dt span{display:inline-block;width:5px;height:5px;border-radius:50%;vertical-align: middle;}
+#hd_visit dd {float:left;;width:65%;padding:0 5px;;text-align:right;text-align:right;font-weight:bold;line-height:23px;height:23px;font-size:0.92em}
+#hd_visit dd strong{display:inline-block;padding:0 5px;border-radius:20px;line-height:15px;color:#fff;}
+</style>
+<section id="hd_visit">
+    <dl>
+        <dt><span class="color_2"></span> 오늘</dt>
+        <dd><strong class="color_2" id="countup1">145,665</strong></dd>
+        <dt><span class="color_1"></span> 어제</dt>
+        <dd><strong class="color_1" id="countup2">191,736</strong></dd>
+    </dl>
+</section>
+
+<script src="https://mamentor.co.kr/js/countUp.min.js"></script>
+<script>
+var options = {
+    useEasing: true, 
+    useGrouping: true, 
+    separator: ',', 
+    decimal: '.', 
+};
+var countup1 = new CountUp('countup1', 0, 145665, 0, 2.5,options);
+countup1.start();
+var countup2 = new CountUp('countup2', 0, 191736, 0, 2.5,options);
+countup2.start();
+</script>
+
+    </div>
+
+    <nav id="gnb">
+        <h2>메인메뉴</h2>
+        <div class="gnb_wrap">
+            <ul id="gnb_1dul">
+                                <li class="gnb_1dli No" style="z-index:999">
+                    <a href="/community" target="_self" class="gnb_1da">커뮤니티</a>
+					                             <ul class="gnb_2dul mn10 ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=notice" target="_self" class="gnb_2da ">공지사항</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=free" target="_self" class="gnb_2da ">자유게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=humor" target="_self" class="gnb_2da ">유머게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=anon" target="_self" class="gnb_2da ">익명게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=registered_person" target="_self" class="gnb_2da ">가입인사</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=QnA" target="_self" class="gnb_2da ">질문답변</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/attendance" target="_self" class="gnb_2da ">출석게시판</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=gallery" target="_self" class="gnb_2da ">사진첩</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=ad_db" target="_self" class="gnb_2da ">광고소재 DB</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli on No" style="z-index:998">
+                    <a href="/subject" target="_self" class="gnb_1da">자유홍보광고</a>
+					                             <ul class="gnb_2dul  nob20">
+					                        <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">쇼핑몰마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore" target="_self" class="snb_3da ">스마트스토어</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware" target="_self" class="snb_3da ">쇼핑리워드</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=coupang" target="_self" class="snb_3da ">쿠팡</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=openmarcket" target="_self" class="snb_3da ">기타오픈마켓</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=closemarcket" target="_self" class="snb_3da ">기타폐쇄몰</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">프로그램</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=program" target="_self" class="snb_3da ">프로그램 판매</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=programbuy" target="_self" class="snb_3da ">프로그램 구매</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">검색마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=keyword_ad" target="_self" class="snb_3da ">키워드광고</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad" target="_self" class="snb_3da ">플레이스리워드</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=autocomplete" target="_self" class="snb_3da ">자완</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=blog_mkt" target="_self" class="snb_3da ">블로그 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=cafe_mkt" target="_self" class="snb_3da ">카페 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_search_mkt" target="_self" class="snb_3da ">기타 검색마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=coin" target="_self" class="snb_3da ">플레이스배포</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">SNS마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=facebook" target="_self" class="snb_3da ">페이스북</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=instagram" target="_self" class="snb_3da ">인스타그램</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=youtube" target="_self" class="snb_3da ">유튜브</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_sns" target="_self" class="snb_3da ">기타 SNS</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">온라인마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=media_mkt" target="_self" class="snb_3da ">언론마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=CPA_CPS" target="_self" class="snb_3da ">CPA/CPS</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=app_mkt" target="_self" class="snb_3da ">앱 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_online_mkt" target="_self" class="snb_3da ">기타 온라인마케팅</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">마케팅일반</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=class" target="_self" class="snb_3da ">마케팅 강좌</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=aietc" target="_self" class="snb_3da ">AI마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=offline_mkt" target="_self" class="snb_3da ">오프라인 마케팅</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=mkt_story" target="_self" class="snb_3da ">마케팅이야기</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=mkt_beginner" target="_self" class="snb_3da ">마케팅 왕초보</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="/bbs/board.php?bo_table=etc_mkt" target="_self" class="snb_3da ">기타</a>
+			</li>
+			</ul>
+				</li>
+
+                                            <li class="gnb_2dli mn20">
+						<a href="#" target="_self" class="gnb_2da mymn">중국마케팅</a>
+			
+<ul class="snb_3dul">
+			<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=xiaohongshu" target="_self" class="snb_3da ">왕홍,샤오홍슈</a>
+			</li>
+						<li class="snb_3dli">
+				<a href="https://mamentor.co.kr/bbs/board.php?bo_table=chinaetc" target="_self" class="snb_3da ">중국마케팅기타</a>
+			</li>
+			</ul>
+				</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:997">
+                    <a href="/bbs/board.php?bo_table=marketing_news" target="_self" class="gnb_1da">마케팅이야기</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=marketing_news" target="_self" class="gnb_2da ">마케팅뉴스</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=tips" target="_self" class="gnb_2da ">마케팅 노하우</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://mamentor.co.kr/bbs/board.php?bo_table=card_news" target="_self" class="gnb_2da ">카드뉴스</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://mamentor.co.kr/bbs/board.php?bo_table=referenceRoom" target="_self" class="gnb_2da ">마케팅자료실</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:996">
+                    <a href="/consulting" target="_self" class="gnb_1da">대행컨설팅</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=introduction" target="_self" class="gnb_2da ">광고대행 소개</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=sellbuy" target="_self" class="gnb_2da ">장터</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=job_opening" target="_self" class="gnb_2da ">채용공고</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=request" target="_self" class="gnb_2da ">대행 견적 요청</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:995">
+                    <a href="/partner" target="_self" class="gnb_1da">협력업체</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="https://likestar.co.kr/product/list.html?cate_no=25" target="_blank" class="gnb_2da ">인스타팔로워작업</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://2pm.co.kr/" target="_blank" class="gnb_2da ">인스타추천게시물</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="https://linkup.co.kr/" target="_blank" class="gnb_2da ">무료 플레이스지수,순위조회,네이버순위조회</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="http://jium.ai/?utm_source=mamentor" target="_blank" class="gnb_2da ">AI글쓰기 지음</a>
+							</li>
+
+                    </ul>
+                </li>
+                                <li class="gnb_1dli No" style="z-index:994">
+                    <a href="https://wolfmarketing.co.kr/" target="_blank" class="gnb_1da">프로그램센터</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:993">
+                    <a href="/keyword" target="_self" class="gnb_1da">N조회수</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:992">
+                    <a href="/shopping_ranking" target="_self" class="gnb_1da">N쇼핑순위</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:991">
+                    <a href="/my_shop_rank.php" target="_self" class="gnb_1da">쇼핑순위[회원]</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:990">
+                    <a href="/bbs/board.php?bo_table=dantalk" target="_self" class="gnb_1da">단톡</a>
+					                 </li>
+                                <li class="gnb_1dli No" style="z-index:989">
+                    <a href="/cn_mkt" target="_self" class="gnb_1da">폐쇄</a>
+					                             <ul class="gnb_2dul ">
+					                        <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=baidu_search_engine" target="_self" class="gnb_2da ">바이두/검색엔진</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=viral_marketing" target="_self" class="gnb_2da ">바이럴마케팅</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=advance_target" target="_self" class="gnb_2da ">게시판이동</a>
+							</li>
+
+                                            <li class="gnb_2dli ">
+						<a href="/bbs/board.php?bo_table=distribution_trade" target="_self" class="gnb_2da ">유통무역</a>
+							</li>
+
+                    </ul>
+                </li>
+                            </ul>
+			</div>
+    </nav>
+    <script>
+
+    $(function(){
+        $(".gnb_menu_btn").click(function(){
+            $("#gnb_all").show();
+        });
+        $(".gnb_close_btn").click(function(){
+            $("#gnb_all").hide();
+        });
+    });
+
+    </script>
+</div>
+<!-- } 상단 끝 -->
+
+
+<!-- 콘텐츠 시작 { -->
+    <div id="container" class="container">
+
+		<div class="col-p-88 box_tb10 ">
+
+<div class="col-p-12 banner" style="display: none;"><!-- acefive chw ace -->
+	</div>
+
+
+				<h2 id="container_title"><span title="페이스북 - 쓰기">페이스북 - 쓰기</span></h2>
+			<!-- skin : mamentor_subject -->
+<section id="bo_w">
+    <h2 class="sound_only">페이스북 - 쓰기</h2>
+
+    <!-- 게시물 작성/수정 시작 { -->
+    <form name="fwrite" id="fwrite" action="https://mamentor.co.kr/bbs/write_update.php" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
+    <input type="hidden" name="uid" value="26052015344646">
+    <input type="hidden" name="w" value="">
+    <input type="hidden" name="bo_table" value="facebook">
+    <input type="hidden" name="wr_id" value="0">
+    <input type="hidden" name="sca" value="">
+    <input type="hidden" name="sfl" value="">
+    <input type="hidden" name="stx" value="">
+    <input type="hidden" name="spt" value="">
+    <input type="hidden" name="sst" value="">
+    <input type="hidden" name="sod" value="">
+    <input type="hidden" name="page" value="">
+    <input type="hidden" value="html1" name="html">	<div style="clear:both;height:20px"></div>
+        <div class="bo_w_select wridte_div">
+        <label for="ca_name" class="sound_only">분류<strong>필수</strong></label>
+        <select name="ca_name" id="ca_name" required="">
+            <option value="">분류를 선택하세요</option>
+            <option value="페이스북">페이스북</option>
+        </select>
+    </div>
+    
+    <div class="bo_w_info write_div">
+    
+    
+        </div>
+
+    
+    
+    <div class="bo_w_tit write_div">
+        <label for="wr_subject" class="sound_only">제목<strong>필수</strong></label>
+        
+        <div id="autosave_wrapper write_div">
+            <input type="text" name="wr_subject" value="" id="wr_subject" required="" class="form-control required" size="50" maxlength="255" placeholder="제목">
+        </div>
+    </div>
+
+<style>
+.input-group div{float:left;margin-right:10px;display:table-cell;}
+.input-group div .form-control{display:inline-block;width:100%;border-radius:3px 3px !important}
+</style>
+
+
+    <div class="write_div">
+        <label for="wr_content" class="sound_only">내용<strong>필수</strong></label>
+        <div class="wr_content ckeditor4_eyoom">
+                        <span class="sound_only">웹에디터 시작</span>
+<script src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/ckeditor.js"></script>
+<script>var g5_editor_url = "https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom";</script>
+<script src="https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/config.js"></script><style>
+        div#cke_1_contents {
+            min-height: 350px;
+        }
+        </style>
+<textarea id="wr_content" name="wr_content" class="ckeditor" maxlength="65536" style="visibility: hidden; display: none;">글 작성시 주제에 맞는 글을 작성해 주세요
+주제에 맞지 않는 글은 통보없이 삭제 될 수 있습니다</textarea><div id="cke_wr_content" class="cke_1 cke cke_reset cke_chrome cke_editor_wr_content cke_ltr cke_browser_webkit" dir="ltr" lang="ko" role="application" aria-labelledby="cke_wr_content_arialbl"><span id="cke_wr_content_arialbl" class="cke_voice_label">리치 텍스트 편집기, wr_content</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; user-select: none;"><span id="cke_10" class="cke_voice_label">에디터 툴바</span><span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_10" onmousedown="return false;"><span id="cke_13" class="cke_toolbar" aria-labelledby="cke_13_label" role="toolbar"><span id="cke_13_label" class="cke_voice_label">1</span><span class="cke_toolbar_start"></span><span id="cke_11" class="cke_combo cke_combo__font cke_combo_off" role="presentation"><span id="cke_11_label" class="cke_combo_label">글꼴</span><a class="cke_combo_button" title="글꼴" tabindex="-1" href="javascript:void('글꼴')" hidefocus="true" role="button" aria-labelledby="cke_11_label" aria-haspopup="listbox" onkeydown="return CKEDITOR.tools.callFunction(3,event,this);" onfocus="return CKEDITOR.tools.callFunction(4,event);" onclick="CKEDITOR.tools.callFunction(2,this);return false;"><span id="cke_11_text" class="cke_combo_text cke_combo_inlinelabel">글꼴</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_12" class="cke_combo cke_combo__fontsize cke_combo_off" role="presentation"><span id="cke_12_label" class="cke_combo_label">크기</span><a class="cke_combo_button" title="글자 크기" tabindex="-1" href="javascript:void('글자 크기')" hidefocus="true" role="button" aria-labelledby="cke_12_label" aria-haspopup="listbox" onkeydown="return CKEDITOR.tools.callFunction(6,event,this);" onfocus="return CKEDITOR.tools.callFunction(7,event);" onclick="CKEDITOR.tools.callFunction(5,this);return false;"><span id="cke_12_text" class="cke_combo_text cke_combo_inlinelabel">크기</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolgroup" role="presentation"><a id="cke_14" class="cke_button cke_button__justifyleft cke_button_off" href="javascript:void('왼쪽 정렬')" title="왼쪽 정렬" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" aria-describedby="cke_14_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(8,event);" onfocus="return CKEDITOR.tools.callFunction(9,event);" onclick="CKEDITOR.tools.callFunction(10,this);return false;"><span class="cke_button_icon cke_button__justifyleft_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -552px;background-size:auto;">&nbsp;</span><span id="cke_14_label" class="cke_button_label cke_button__justifyleft_label" aria-hidden="false">왼쪽 정렬</span><span id="cke_14_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_15" class="cke_button cke_button__justifycenter cke_button_off" href="javascript:void('중앙')" title="중앙" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_15_label" aria-describedby="cke_15_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(11,event);" onfocus="return CKEDITOR.tools.callFunction(12,event);" onclick="CKEDITOR.tools.callFunction(13,this);return false;"><span class="cke_button_icon cke_button__justifycenter_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -528px;background-size:auto;">&nbsp;</span><span id="cke_15_label" class="cke_button_label cke_button__justifycenter_label" aria-hidden="false">중앙</span><span id="cke_15_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_16" class="cke_button cke_button__justifyright cke_button_off" href="javascript:void('오른쪽 정렬')" title="오른쪽 정렬" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_16_label" aria-describedby="cke_16_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(14,event);" onfocus="return CKEDITOR.tools.callFunction(15,event);" onclick="CKEDITOR.tools.callFunction(16,this);return false;"><span class="cke_button_icon cke_button__justifyright_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -576px;background-size:auto;">&nbsp;</span><span id="cke_16_label" class="cke_button_label cke_button__justifyright_label" aria-hidden="false">오른쪽 정렬</span><span id="cke_16_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_17" class="cke_button cke_button__justifyblock cke_button_off" href="javascript:void('양쪽 정렬')" title="양쪽 정렬" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_17_label" aria-describedby="cke_17_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(17,event);" onfocus="return CKEDITOR.tools.callFunction(18,event);" onclick="CKEDITOR.tools.callFunction(19,this);return false;"><span class="cke_button_icon cke_button__justifyblock_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -504px;background-size:auto;">&nbsp;</span><span id="cke_17_label" class="cke_button_label cke_button__justifyblock_label" aria-hidden="false">양쪽 정렬</span><span id="cke_17_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_18" class="cke_button cke_button__bold cke_button_off" href="javascript:void('굵게')" title="굵게 (컨트롤+B)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_18_label" aria-describedby="cke_18_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(20,event);" onfocus="return CKEDITOR.tools.callFunction(21,event);" onclick="CKEDITOR.tools.callFunction(22,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -24px;background-size:auto;">&nbsp;</span><span id="cke_18_label" class="cke_button_label cke_button__bold_label" aria-hidden="false">굵게</span><span id="cke_18_description" class="cke_button_label" aria-hidden="false">키보드 단축키 컨트롤+B</span></a><a id="cke_19" class="cke_button cke_button__italic cke_button_off" href="javascript:void('기울임꼴')" title="기울임꼴 (컨트롤+I)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_19_label" aria-describedby="cke_19_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(23,event);" onfocus="return CKEDITOR.tools.callFunction(24,event);" onclick="CKEDITOR.tools.callFunction(25,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -48px;background-size:auto;">&nbsp;</span><span id="cke_19_label" class="cke_button_label cke_button__italic_label" aria-hidden="false">기울임꼴</span><span id="cke_19_description" class="cke_button_label" aria-hidden="false">키보드 단축키 컨트롤+I</span></a><a id="cke_20" class="cke_button cke_button__underline cke_button_off" href="javascript:void('밑줄')" title="밑줄 (컨트롤+U)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_20_label" aria-describedby="cke_20_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(26,event);" onfocus="return CKEDITOR.tools.callFunction(27,event);" onclick="CKEDITOR.tools.callFunction(28,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -144px;background-size:auto;">&nbsp;</span><span id="cke_20_label" class="cke_button_label cke_button__underline_label" aria-hidden="false">밑줄</span><span id="cke_20_description" class="cke_button_label" aria-hidden="false">키보드 단축키 컨트롤+U</span></a><a id="cke_21" class="cke_button cke_button__strike cke_button_off" href="javascript:void('취소선')" title="취소선" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_21_label" aria-describedby="cke_21_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(29,event);" onfocus="return CKEDITOR.tools.callFunction(30,event);" onclick="CKEDITOR.tools.callFunction(31,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -72px;background-size:auto;">&nbsp;</span><span id="cke_21_label" class="cke_button_label cke_button__strike_label" aria-hidden="false">취소선</span><span id="cke_21_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_22" class="cke_button cke_button__removeformat cke_button_off" href="javascript:void('형식 지우기')" title="형식 지우기" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_22_label" aria-describedby="cke_22_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(32,event);" onfocus="return CKEDITOR.tools.callFunction(33,event);" onclick="CKEDITOR.tools.callFunction(34,this);return false;"><span class="cke_button_icon cke_button__removeformat_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -816px;background-size:auto;">&nbsp;</span><span id="cke_22_label" class="cke_button_label cke_button__removeformat_label" aria-hidden="false">형식 지우기</span><span id="cke_22_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_23" class="cke_toolbar cke_toolbar_last" aria-labelledby="cke_23_label" role="toolbar"><span id="cke_23_label" class="cke_voice_label">2</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_24" class="cke_button cke_button__image cke_button_off" href="javascript:void('이미지')" title="이미지" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_24_label" aria-describedby="cke_24_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(35,event);" onfocus="return CKEDITOR.tools.callFunction(36,event);" onclick="CKEDITOR.tools.callFunction(37,this);return false;"><span class="cke_button_icon cke_button__image_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -384px;background-size:auto;">&nbsp;</span><span id="cke_24_label" class="cke_button_label cke_button__image_label" aria-hidden="false">이미지</span><span id="cke_24_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_25" class="cke_button cke_button__table cke_button_off" href="javascript:void('표')" title="표" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_25_label" aria-describedby="cke_25_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(38,event);" onfocus="return CKEDITOR.tools.callFunction(39,event);" onclick="CKEDITOR.tools.callFunction(40,this);return false;"><span class="cke_button_icon cke_button__table_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -936px;background-size:auto;">&nbsp;</span><span id="cke_25_label" class="cke_button_label cke_button__table_label" aria-hidden="false">표</span><span id="cke_25_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_26" class="cke_button cke_button__textcolor cke_button_off cke_button_expandable" href="javascript:void('글자 색상')" title="글자 색상" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_26_label" aria-describedby="cke_26_description" aria-haspopup="listbox" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(41,event);" onfocus="return CKEDITOR.tools.callFunction(42,event);" onclick="CKEDITOR.tools.callFunction(43,this);return false;" aria-expanded="false"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -360px;background-size:auto;">&nbsp;</span><span id="cke_26_label" class="cke_button_label cke_button__textcolor_label" aria-hidden="false">글자 색상</span><span id="cke_26_description" class="cke_button_label" aria-hidden="false"></span><span class="cke_button_arrow"></span></a><a id="cke_27" class="cke_button cke_button__bgcolor cke_button_off cke_button_expandable" href="javascript:void('배경 색상')" title="배경 색상" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_27_label" aria-describedby="cke_27_description" aria-haspopup="listbox" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(44,event);" onfocus="return CKEDITOR.tools.callFunction(45,event);" onclick="CKEDITOR.tools.callFunction(46,this);return false;" aria-expanded="false"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -336px;background-size:auto;">&nbsp;</span><span id="cke_27_label" class="cke_button_label cke_button__bgcolor_label" aria-hidden="false">배경 색상</span><span id="cke_27_description" class="cke_button_label" aria-hidden="false"></span><span class="cke_button_arrow"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_28" class="cke_button cke_button__numberedlist cke_button_off" href="javascript:void('순서 있는 목록')" title="순서 있는 목록" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_28_label" aria-describedby="cke_28_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(47,event);" onfocus="return CKEDITOR.tools.callFunction(48,event);" onclick="CKEDITOR.tools.callFunction(49,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -768px;background-size:auto;">&nbsp;</span><span id="cke_28_label" class="cke_button_label cke_button__numberedlist_label" aria-hidden="false">순서 있는 목록</span><span id="cke_28_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_29" class="cke_button cke_button__bulletedlist cke_button_off" href="javascript:void('순서 없는 목록')" title="순서 없는 목록" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_29_label" aria-describedby="cke_29_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(50,event);" onfocus="return CKEDITOR.tools.callFunction(51,event);" onclick="CKEDITOR.tools.callFunction(52,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -720px;background-size:auto;">&nbsp;</span><span id="cke_29_label" class="cke_button_label cke_button__bulletedlist_label" aria-hidden="false">순서 없는 목록</span><span id="cke_29_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_30" class="cke_button cke_button__blockquote cke_button_off" href="javascript:void('인용 단락')" title="인용 단락" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_30_label" aria-describedby="cke_30_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(53,event);" onfocus="return CKEDITOR.tools.callFunction(54,event);" onclick="CKEDITOR.tools.callFunction(55,this);return false;"><span class="cke_button_icon cke_button__blockquote_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -168px;background-size:auto;">&nbsp;</span><span id="cke_30_label" class="cke_button_label cke_button__blockquote_label" aria-hidden="false">인용 단락</span><span id="cke_30_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_31" class="cke_button cke_button__link cke_button_off" href="javascript:void('링크 삽입/변경')" title="링크 삽입/변경 (컨트롤+K)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_31_label" aria-describedby="cke_31_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(56,event);" onfocus="return CKEDITOR.tools.callFunction(57,event);" onclick="CKEDITOR.tools.callFunction(58,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -648px;background-size:auto;">&nbsp;</span><span id="cke_31_label" class="cke_button_label cke_button__link_label" aria-hidden="false">링크 삽입/변경</span><span id="cke_31_description" class="cke_button_label" aria-hidden="false">키보드 단축키 컨트롤+K</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_32" class="cke_button cke_button__source cke_button_off" href="javascript:void('소스')" title="소스" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_32_label" aria-describedby="cke_32_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(59,event);" onfocus="return CKEDITOR.tools.callFunction(60,event);" onclick="CKEDITOR.tools.callFunction(61,this);return false;"><span class="cke_button_icon cke_button__source_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -912px;background-size:auto;">&nbsp;</span><span id="cke_32_label" class="cke_button_label cke_button__source_label" aria-hidden="false">소스</span><span id="cke_32_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_33" class="cke_button cke_button__maximize cke_button_off" href="javascript:void('최대화')" title="최대화" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_33_label" aria-describedby="cke_33_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(62,event);" onfocus="return CKEDITOR.tools.callFunction(63,event);" onclick="CKEDITOR.tools.callFunction(64,this);return false;"><span class="cke_button_icon cke_button__maximize_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 -792px;background-size:auto;">&nbsp;</span><span id="cke_33_label" class="cke_button_label cke_button__maximize_label" aria-hidden="false">최대화</span><span id="cke_33_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_34" class="cke_button cke_button__about cke_button_off" href="javascript:void('CKEditor 에 대하여')" title="CKEditor 에 대하여" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_34_label" aria-describedby="cke_34_description" aria-haspopup="false" aria-disabled="false" onkeydown="return CKEDITOR.tools.callFunction(65,event);" onfocus="return CKEDITOR.tools.callFunction(66,event);" onclick="CKEDITOR.tools.callFunction(67,this);return false;"><span class="cke_button_icon cke_button__about_icon" style="background-image:url('https://mamentor.co.kr/plugin/editor/ckeditor4_eyoom/plugins/icons.png?t=IA8F');background-position:0 0px;background-size:auto;">&nbsp;</span><span id="cke_34_label" class="cke_button_label cke_button__about_label" aria-hidden="false">CKEditor 에 대하여</span><span id="cke_34_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_1_contents" class="cke_contents cke_reset" role="presentation" style="height: 200px;"><iframe src="" frameborder="0" class="cke_wysiwyg_frame cke_reset" style="width: 100%; height: 100%;" title="리치 텍스트 편집기, wr_content" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_1_bottom" class="cke_bottom cke_reset_all" role="presentation" style="user-select: none;"><span id="cke_1_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="크기 조절" onmousedown="CKEDITOR.tools.callFunction(1, event)">◢</span><span id="cke_1_path_label" class="cke_voice_label">요소 경로</span><span id="cke_1_path" class="cke_path" role="group" aria-labelledby="cke_1_path_label"><span class="cke_path_empty">&nbsp;</span></span></span></div></div>
+<span class="sound_only">웹 에디터 끝</span>                    </div>
+        
+    </div>
+
+        <div class="bo_w_link write_div">
+        <label for="wr_link1"><i class="fa fa-link" aria-hidden="true"></i><span class="sound_only"> 링크  #1</span></label>
+        <input type="text" name="wr_link1" value="" id="wr_link1" class="frm_input full_input" size="50">
+    </div>
+        <div class="bo_w_link write_div">
+        <label for="wr_link2"><i class="fa fa-link" aria-hidden="true"></i><span class="sound_only"> 링크  #2</span></label>
+        <input type="text" name="wr_link2" value="" id="wr_link2" class="frm_input full_input" size="50">
+    </div>
+    
+        <div class="bo_w_flie write_div">
+        <div class="file_wr write_div">
+            <label for="bf_file_1" class="lb_icon"><i class="fa fa-download" aria-hidden="true"></i><span class="sound_only"> 파일 #1</span></label>
+            <input type="file" name="bf_file[]" id="bf_file_1" title="파일첨부 1 : 용량 1,048,576 바이트 이하만 업로드 가능" class="frm_file ">
+        </div>
+        
+                
+    </div>
+        <div class="bo_w_flie write_div">
+        <div class="file_wr write_div">
+            <label for="bf_file_2" class="lb_icon"><i class="fa fa-download" aria-hidden="true"></i><span class="sound_only"> 파일 #2</span></label>
+            <input type="file" name="bf_file[]" id="bf_file_2" title="파일첨부 2 : 용량 1,048,576 바이트 이하만 업로드 가능" class="frm_file ">
+        </div>
+        
+                
+    </div>
+    
+
+    
+    <div class="btn_confirm ">
+        <input type="submit" value="작성완료" id="btn_submit" accesskey="s" class="btn_submit ">
+        <a href="./board.php?bo_table=facebook" class="btn_cancel ">취소</a>
+    </div>
+    </form>
+
+    <script>
+        function html_auto_br(obj)
+    {
+        if (obj.checked) {
+            result = confirm("자동 줄바꿈을 하시겠습니까?\n\n자동 줄바꿈은 게시물 내용중 줄바뀐 곳을<br>태그로 변환하는 기능입니다.");
+            if (result)
+                obj.value = "html2";
+            else
+                obj.value = "html1";
+        }
+        else
+            obj.value = "";
+    }
+
+    function fwrite_submit(f)
+    {
+        var wr_content_editor_data = CKEDITOR.instances.wr_content.getData();
+if (!wr_content_editor_data) { alert("내용을 입력해 주십시오."); CKEDITOR.instances.wr_content.focus(); return false; }
+if (typeof(f.wr_content)!="undefined") f.wr_content.value = wr_content_editor_data;
+
+        var subject = "";
+        var content = "";
+        $.ajax({
+            url: g5_bbs_url+"/ajax.filter.php",
+            type: "POST",
+            data: {
+                "subject": f.wr_subject.value,
+                "content": f.wr_content.value
+            },
+            dataType: "json",
+            async: false,
+            cache: false,
+            success: function(data, textStatus) {
+                subject = data.subject;
+                content = data.content;
+            }
+        });
+
+        if (subject) {
+            alert("제목에 금지단어('"+subject+"')가 포함되어있습니다");
+            f.wr_subject.focus();
+            return false;
+        }
+
+        if (content) {
+            alert("내용에 금지단어('"+content+"')가 포함되어있습니다");
+            if (typeof(ed_wr_content) != "undefined")
+                ed_wr_content.returnFalse();
+            else
+                f.wr_content.focus();
+            return false;
+        }
+
+        if (document.getElementById("char_count")) {
+            if (char_min > 0 || char_max > 0) {
+                var cnt = parseInt(check_byte("wr_content", "char_count"));
+                if (char_min > 0 && char_min > cnt) {
+                    alert("내용은 "+char_min+"글자 이상 쓰셔야 합니다.");
+                    return false;
+                }
+                else if (char_max > 0 && char_max < cnt) {
+                    alert("내용은 "+char_max+"글자 이하로 쓰셔야 합니다.");
+                    return false;
+                }
+            }
+        }
+
+        
+        document.getElementById("btn_submit").disabled = "disabled";
+
+        return true;
+    }
+
+
+
+
+var sel1 = document.querySelector('#sel1');
+var sel2 = document.querySelector('#sel2');
+var sel3 = document.querySelector('#sel3');
+var sel4 = document.querySelector('#sel4');
+var options2 = sel2.querySelectorAll('option');
+var options22 = sel4.querySelectorAll('option');
+
+function giveSelection(selValue) {
+  sel2.innerHTML = '';
+  $("#sel2").css("display","block"); 
+  for(var i = 0; i < options2.length; i++) {
+    if(options2[i].dataset.option === selValue) {
+      sel2.appendChild(options2[i]);
+    }
+  }
+}
+function giveSelection2(selValue) {
+  sel4.innerHTML = '';
+  for(var i = 0; i < options22.length; i++) {
+    if(options22[i].dataset.option === selValue) {
+      sel4.appendChild(options22[i]);
+    }
+  }
+}
+
+giveSelection(sel1.value);
+giveSelection2(sel3.value);
+
+    </script>
+</section>
+<!-- } 게시물 작성/수정 끝 --></div>
+<div class="col-44 mg10">
+	<div class="col-12 boxo" style="padding:0">
+	<div class="padding:15px 15px;box-sizing:border-box;background-color:blue;display:table-cell">
+		
+<!-- 로그인 후 아웃로그인 시작 { -->
+<section id="ol_after" class="ol2">
+    <header id="ol_after_hd">
+        <h2>나의 회원정보</h2>
+        <span class="profile_img3">
+            <img src="https://mamentor.co.kr/img/no_profile.gif" alt="profile_image">            <a href="https://mamentor.co.kr/bbs/member_confirm.php?url=register_form.php" id="ol_after_info" title="정보수정"><i class="fa fa-cog" aria-hidden="true"></i><span class="sound_only">정보수정</span></a>
+        </span>
+        <strong>
+		바이럴천재님	
+		</strong>           
+
+			<a href="https://mamentor.co.kr/cash_charge.php" class="win_point_charge">충전</a>
+			<a href="https://mamentor.co.kr/bbs/point.php" target="_blank" id="ol_after_pt" class="win_point">59,042 포인트</a>
+
+        <a href="https://mamentor.co.kr/bbs/logout.php?url=%2Fbbs%2Fwrite.php%3Fbo_table%3Dfacebook" id="ol_after_logout" class="btn_b04">로그아웃</a>
+         <a href="https://mamentor.co.kr/bbs/new.php?view=w&amp;mb_id=sma9528" class="btn_b04">내글보기</a>
+          <a href="https://mamentor.co.kr/bbs/new.php?view=w" class="btn_b04">전체글보기</a>
+   </header>
+    <ul id="ol_after_private">
+        <li>
+            <a href="https://mamentor.co.kr/bbs/memo.php" target="_blank" id="ol_after_memo" class="win_memo"><span class="sound_only">안 읽은 </span>쪽지</a>
+        </li>
+        <li>
+		<ul>
+<li id="ol_arm" style="width:100%">알림 <span class="tnb_nb nb_nb_new arm0" id="arm_cnt">0</span><dl></dl>	
+<dl id="dd_arm" style="display: none;"></dl>	
+</li>
+</ul>
+<script>
+//알림글을 ajax로 불러온다
+function ajax_msgload () {
+	$.post(
+		g5_url+"/plugin/srd-pushmsg/ajax.list_pushmsg.php",
+		{},
+		function(data) {
+			$('#dd_arm').html('');
+			$('#dd_arm').append(data);
+				$('#arm_cnt').html($('#msg_count').val());	
+		}
+	);					
+}
+
+//해당글을 읽음처리이후 링크이동
+function msg_link (msg_link, msg_type, msg_id){	
+	var blank = false;
+	if (msg_type == 'memo') {
+		blank = true;
+	}
+	$.post(
+		g5_url+"/plugin/srd-pushmsg/ajax.read_pushmsg.php",
+	{   
+		'g_ids':msg_id
+	},
+		function(data) {
+			if(blank){
+				win_memo( msg_link );
+			} else {
+				document.location.href = msg_link;						
+			}
+		}
+	);	
+}
+
+//선택글 삭제 (목록에서 삭제이기 때문에 읽음표시로 처리됨)
+function msg_del (msg_id){	
+	$.post(
+		g5_url+"/plugin/srd-pushmsg/ajax.read_pushmsg.php",
+	{   
+		'g_ids':msg_id
+	},
+		function(data) {
+			ajax_msgload();
+			$("#dd_arm").css("z-index:100000");			
+			$("#dd_arm").show();			
+		}
+	);	
+}
+
+(function($){		
+	$("#ol_arm").on("click",function(e){
+		var show = $("#dd_arm").css('display');
+		if (show == 'none') {
+			$("#dd_arm").css("z-index:100000");
+			ajax_msgload();
+			$("#dd_arm").show();
+		} else {
+			$("#dd_arm").hide();
+		}
+	});
+})(jQuery);
+</script> 
+        </li>
+        <li>
+            <a href="https://mamentor.co.kr/bbs/scrap.php" target="_blank" id="ol_after_scrap" class="win_scrap">스크랩</a>
+        </li>
+</ul>
+
+</section>
+
+<script>
+// 탈퇴의 경우 아래 코드를 연동하시면 됩니다.
+function member_leave()
+{
+    if (confirm("정말 회원에서 탈퇴 하시겠습니까?"))
+        location.href = "https://mamentor.co.kr/bbs/member_confirm.php?url=member_leave.php";
+}
+</script>
+
+
+<!-- } 로그인 후 아웃로그인 끝 -->
+		</div>
+	</div>
+
+	<div class="col-12 sidebanner">
+			
+<a href="https://mamentor.co.kr/bbs/bannerhit.php?bn_id=717&amp;url=https%3A%2F%2Ft.me%2FBADA60" target="_blank"><img src="https://mamentor.co.kr/data/banner/717" width="400" alt=""></a>
+	</div>
+
+	<div class="col-12 boxo" style="padding:0;margin-bottom:-1px">
+		<script src="/js/jquery.bxslider.min.js"></script>
+		<style>
+.bxslider-wrap { visibility: hidden ; }
+.bxslider div{display:none;}
+.bxslider div:first-child{display:block;}
+</style>
+
+<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative;"><div class="bxslider" style="width: auto; position: relative;">
+    </div></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+
+<script>
+    $( window ).on( "load", function() {
+	$('.bxslider').bxSlider({	  
+		auto: true,
+		mode: 'fade',
+		captions: true,
+		pager:false,
+		preloadImages: 'all',
+		onSliderLoad: function(){
+			 $(".bxslider-wrap").css("visibility", "visible");
+		}
+	});
+});
+
+</script>
+	</div>
+	<div class="col-12 boxo" style="padding:0;margin-bottom:-1px">
+		<div class="hit_list_box">
+
+				<h2>월간 인기글</h2>
+	
+			<ul class="hit_tabs">
+				<li class="active"><a data-toggle="tab" href="#hittab1-1">01</a></li>
+				<li><a data-toggle="tab" href="#hittab1-2">02</a></li>
+				<li><a data-toggle="tab" href="#hittab1-3">03</a></li>
+			</ul>
+
+			<div class="tab-content" id="hit_con_box">
+				<!-- select *  from g5_content1 where s_date <= '2026-05-20' and e_date >= '2026-05-20'  order by co_order asc  limit 0, 30  -->
+<div id="hittab1-1" class="tab-pane in active">
+	<ul class="hit_list">
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=sellbuy&amp;wr_id=83913"><span class="nums">1</span>⭐콤보 리워드 출시⭐</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=coupang&amp;wr_id=8077"><span class="nums">2</span>쇼핑원청. 원하시는 단가 알려주세요.</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=etc_search_mkt&amp;wr_id=17000"><span class="nums">3</span>웹사이트 상승 완벽해결. 5일 무료 테스트가능.</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;wr_id=84541"><span class="nums">4</span>쇼핑 개발/총판 마니또입니다. 순위 잡아드리겠습니다! …</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=keyword_ad&amp;wr_id=26994"><span class="nums">5</span>❤️콤보❤️</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=place_ad&amp;wr_id=7853"><span class="nums">6</span>UI제공 개발사 직통 플레이스 배포</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=introduction&amp;wr_id=124223"><span class="nums">7</span>포유 개발사 5월 레퍼런스</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=smartstore&amp;wr_id=93517"><span class="nums">8</span>삐투삐투삐투삐투삐투삐투삐투삐투삐투삐투삐투삐투</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=coupang&amp;wr_id=30480"><span class="nums">9</span>5월 쿠팡 베이스</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=s_reware&amp;wr_id=5533"><span class="nums">10</span>[05/19]⚡️스마트스토어 무료 테스트 이벤트⚡️</a> </li>
+	</ul>
+</div>
+<div id="hittab1-2" class="tab-pane">
+	<ul class="hit_list">
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=introduction&amp;wr_id=169309"><span class="nums">11</span>⛔신규 리워드 "콤보"⛔</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=412"><span class="nums">12</span>▶️ 월간 인기글 자리 광고 신청 받습니다</a> </li>
+    <li><a href="https://mamentor.co.kr/bbs/board.php?bo_table=introduction&amp;wr_id=164665"><span class="nums">13</span>⌛상위1%셀러의 타이밍, 지금입니다⌛</a> </li>
+			</ul></div>
+		</div>
+	</div>
+	<div class="col-12 boxo" style="padding:0;margin-bottom:-1px">
+		<div class="side_banner_box1">
+		<a href="https://mamentor.co.kr/keyword.php"><img src="/img/side_banner1.jpg"></a>
+		<a href="https://mamentor.co.kr/shopping_ranking"><img src="/img/side_banner2.jpg"></a>
+		</div>
+	</div>
+
+	<div class="col-12 boxo" style="padding:0">
+		<div class="new_list_comm_box">
+			<h3 class="new_list_t">새글</h3>
+			
+<ul class="new_list">
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=offline_mkt&amp;wr_id=15067" class="new_tit">⭐️당근마케팅 단골맺기,후기,동네생활 배포⭐️</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=smartstore&amp;wr_id=116165" class="new_tit">☘️N쇼핑 순위 상승, 결과로 보여드립니다.☘️</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=s_reware&amp;wr_id=32320" class="new_tit">☘️☘️리워드 STAY☘️☘️</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=place_ad&amp;wr_id=37978" class="new_tit"><img src="https://mamentor.co.kr/data/file/place_ad/thumb-2038635522_sqD5EC83_a8672d5672dddfc27e1bdeaba4368a42f0bc35ad_20x20.jpg" alt="" class="thumb" width="20">⛔⛔플레이스 상위노출 / 신규 리워드 “라떼” 진행⛔⛔</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=keyword_ad&amp;wr_id=70225" class="new_tit"><img src="https://mamentor.co.kr/data/file/keyword_ad/thumb-2038635522_PGfmL2Ka_263ab9265b6002a23e7994b94264af83fa5e67c1_20x20.png" alt="" class="thumb" width="20">⛔⛔플레이스 상위노출 / 신규 리워드 “라떼” 진행⛔⛔</a></li>
+</ul>
+		</div>
+		<div style="width:100%;height:1px;border-top:1px solid #eaeaea"></div>
+		<div class="new_list_comm_box">
+			<h3 class="new_comm_t">새 댓글</h3>
+			
+<ul class="new_comm">
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152593#c_152593" class="new_tit">오늘도 화이팅! 잘 할 수 있어요!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152590#c_152590" class="new_tit">오늘도 화이팅! 즐거운 하루 되세요!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152571#c_152571" class="new_tit">오늘도 화이팅! 힘내세요!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152447#c_152447" class="new_tit">오늘 하루도 힘내요! 화이팅!</a></li>
+    <li><span class="dot"></span> <a href="/bbs/board.php?bo_table=free&amp;wr_id=152357#c_152357" class="new_tit">오늘도 화이팅! 힘내세요!</a></li>
+</ul>
+		</div>
+	</div>
+
+</div>
+
+    </div>
+   
+</div>
+
+
+<!-- } 콘텐츠 끝 -->
+
+<div style="position:fixed;bottom:80px;right:20px;">
+<a href="https://open.kakao.com/o/gu1O899" target="_blank"><img src="/right_kakao_PC.png"></a>
+</div>
+
+<!-- 하단 시작 { -->
+<div id="ft">
+    <div class="notice_latest">
+        <div class="notice_box text-left">
+            <h2>공지사항</h2> <span><a href="https://mamentor.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=422"> 마멘토 광고 영역 안내드립니다</a></span>
+        </div>
+    </div>
+
+    <div id="ft_wr">
+        <div id="ft_link">
+            <a href="https://mamentor.co.kr/bbs/content.php?co_id=company">회사소개</a>
+            <a href="https://mamentor.co.kr/bbs/content.php?co_id=privacy">개인정보처리방침</a>
+            <a href="https://mamentor.co.kr/bbs/content.php?co_id=provision">서비스이용약관</a>
+            <a href="https://mamentor.co.kr/?device=mobile">모바일 버전</a>
+        </div>
+		<div style="padding: 20px 0 10px 0;line-height: 22px;">
+			회사명 : 월드바이럴 <span style="padding: 0 10px;"></span>대표 : 김태은 <span style="padding: 0 10px;"></span> 고객센터 : 010-8396-8884<br>
+			사업장주소 : 경기도 파주시 한빛로 70 (야당동) 504동 2001호<br>
+			개인정보취급관리자 : 김태은 <span style="padding: 0 10px;"></span> 이메일 : trymoney3@naver.com<br>
+			사업자등록번호 : 207-08-94463<span style="padding: 0 10px;"></span>
+			통신판매업신고번호 : 제2016-서울강남-02102호
+		</div>
+        <div id="ft_catch"><a href="https://mamentor.co.kr"><span><img src="https://mamentor.co.kr/img/mamentor_logo.png" alt="마멘토 : 유튜브,SNS,블로그 온라인마케팅 커뮤니티"></span>MAMENTOR</a></div>
+        <div id="ft_copy">Copyright © <b>마멘토.</b> All rights reserved.</div>
+    </div>
+    
+    <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+        <script>
+        
+        $(function() {
+            $("#top_btn").on("click", function() {
+                $("html, body").animate({scrollTop:0}, '500');
+                return false;
+            });
+        });
+        </script>
+</div>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+<script>
+	if($("#ca_name").val()){
+		
+	}else{
+		$("#ca_name option:eq(1)").prop("selected", true);
+	}
+</script>
+<div id="c4g-content-root" class="c4g-widget"></div></body></html>

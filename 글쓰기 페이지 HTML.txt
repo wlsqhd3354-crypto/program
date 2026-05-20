@@ -1,0 +1,1094 @@
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" xml:lang="ko" lang="ko"><head>
+<meta charset="euc-kr">
+<meta http-equiv="Imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all,index,follow">
+<meta name="distribution" content="global">
+<meta name="author" content="::셀클럽 SellClub::-비즈니스 마케팅 정보 포털 커뮤니티">
+<meta name="description" content="온라인 비즈니스 운영자들이 만들어가는 공간으로 관련정보 및 운영노하우를 함께 나누는 열린 커뮤니티입니다.">
+<meta name="Keywords" content="벼룩시장 &gt; 대행합니다 &gt; 글쓰기,인터넷마케팅 그리고 온라인마케팅의 무료 강좌 홍보프로그램제공. 마케팅/창업/부업/알바/유통무역 커뮤니티.,">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="벼룩시장 &gt; 대행합니다 &gt; 글쓰기">
+<meta property="og:description" content="온라인 비즈니스 운영자들이 만들어가는 공간으로 관련정보 및 운영노하우를 함께 나누는 열린 커뮤니티입니다. ">
+<meta property="og:url" content="http://www.sellclub.kr/community/bbs/write.php?bo_table=maket_5_3">
+<meta property="og:site_name" content="::셀클럽 SellClub::-비즈니스 마케팅 정보 포털 커뮤니티">
+<meta property="og:image" content="https://sellfree.cdn1.cafe24.com/img/og_image.jpg"> 
+<meta property="og:locale" content="ko_KR">
+<meta name="google-site-verification" content="NonmiP7Qh_G3tKmmTpm90yg0JHDVBLfzWQDEcnGJEsw">
+<meta name="msvalidate.01" content="144A504F4C96D9CA0AFF55B7ECAF927D">
+<meta name="naver-site-verification" content="12d61a40e92bb950098ebf6afa5a1a7ac0cb8ba3">
+
+<title>셀클럽-벼룩시장 &gt; 대행합니다 &gt; 글쓰기</title>
+<link rel="canonical" href="http://www.sellclub.kr/community/bbs/write.php?bo_table=maket_5_3">
+<link rel="stylesheet" href="../style.css" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="image_src" href="https://sellfree.cdn1.cafe24.com/img/og_image.jpg">
+<script type="text/javascript">
+var list=["..","bbs","img","http://sellclub.kr/community","1","2","","maket_5_3","","euc-kr",".sellclub.kr"];
+</script><script src="../js/head.sub.js"></script><script language="javascript" src="../js/common.js"></script><script language="javascript" src="../js/ajax_nohack.js"></script><script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script><script language="javascript" src="../js/IE9_fix_for_imagesLoaded_plugin_issue.js"></script></head>
+
+ 
+
+
+
+ 
+
+
+<body style="overflow-x:auto;overflot-y:auto" topmargin="0" leftmargin="0">
+
+<a name="g4_head"></a>
+
+<!-- 출처 복사되게 하기위한 코드 시작 -->
+<script language="JavaScript">
+<!--
+function copy_play()
+{
+if (window.event)
+{
+window.event.returnValue = true;
+window.setTimeout('capy_plus()', 25);
+}
+}
+function capy_plus()
+{
+if (window.clipboardData)
+{
+var txt = window.clipboardData.getData('Text');
+var homeUrl = 'http://sellclub.co.kr'; 
+var retUrl = document.URL; 
+txt = txt +'\n\n\n\n출처: 셀클럽 - '+homeUrl  ;
+//txt = txt +'\n상세출처: ' +retUrl;
+//txt = txt +'\n출처가 나와있지않은 글은 출처가 불분명하여 등록하지못하였습니다. '
+//txt = txt +'\n저작자, 글의 출처에서 수정및 삭제,수정 요청하시면 바로수정하겠습니다.'
+txt = txt +'\n다른곳에서 이용할시에는 꼭 출처를 같이 복사이용 바랍니다.'
+var result = window.clipboardData.setData('Text', txt);
+}
+}
+//-->
+</script>
+<!-- 출처 복사되게 하기위한 코드 끝 -->
+
+<div id="Line_top">
+<table width="983" cellpadding="0" cellspacing="0" style="border-collapse:collapse;" align="center">
+<tbody><tr>
+<!-- 서브 탑 메뉴 시작-->
+<td align="left" style="vertical-align:top; padding-top:5px;">
+          <table border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+		    <td align="left" class="fltoplink" style="padding-top:3px;">
+			<span class="sec">|</span>
+			<a href="../talk/" target="_self">셀럽人토크</a>
+			<span class="sec">|</span>
+            <a href="../knowhow/" target="_self">노하우센터</a>
+			<span class="sec">|</span>
+			<a href="../site/" target="_self">마케팅센터</a>
+            <span class="sec">|</span>
+			<a href="../info/" target="_self">정보센터</a>
+			<span class="sec">|</span>
+			<a href="../study/" target="_self">교육센터</a>
+			<span class="sec">|</span>
+			<a href="../photo/" target="_self">휴식센터</a>
+			<span class="sec">|</span>
+			<a href="../deal/" target="_self"><b>벼룩시장</b></a>&nbsp;
+			<a href="../file/" target="_self"><b>자료실</b></a>&nbsp;
+            <a href="../gblog/" target="_self"><b>블로그</b></a>&nbsp;
+			<span class="sec">|</span>
+			<a href="../bbs/memo_mypage.php" target="_self" style="color:#118DC8;"><b>마이페이지</b></a>
+			<span class="sec">|</span>
+			<a href="../support/" target="_self">고객센터</a>
+			<span class="sec">|</span>
+			<a href="../bbs/new.php" target="_self"><img src="../img/top_allnew.gif" align="top"></a>&nbsp;
+			<a href="https://www.facebook.com/sellclub.kr" target="_blank"><img src="https://sellfree.cdn1.cafe24.com/img/IconFacebook.gif" align="top"></a>
+			<span class="sec">|</span>
+			</td>
+          </tr>
+          </tbody></table>
+</td>
+<!-- <td align="right" span style="position: relative; bottom: 0.2em; padding-top:5px;">
+<div style="width:210">
+<div style="float:left; vertical-align:top; padding-top:3px;">셀클럽:</div>
+<div style="float:right" class="fb-like" data-href="https://www.facebook.com/sellclub.kr" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div> 
+</td>-->
+</tr>
+</tbody></table>
+</div>
+
+<table width="983" cellpadding="0" cellspacing="0" style="border-collapse:collapse;" align="center">
+<tbody><tr>
+  <td width="165" align="right"><!-- 서브 탑 메뉴 시작-->
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td align="left" height="60" width="165" style="padding-top:4px;">
+				<a href=".." target="_self" style="padding-bottom:7px;"><img src="https://sellfree.cdn1.cafe24.com/img/logo_sub.gif"></a>
+				</td>
+      </tr>
+    </tbody></table>
+  </td>
+  <td align="left">
+<!-- 검색창 -->
+<table width="255" height="30" cellpadding="0" cellspacing="0" border="0">
+<form name="fsearchbox" method="get" action="javascript:fsearchbox_submit(document.fsearchbox);"></form>
+	<tbody><tr>
+		<td width="255" height="6" colspan="2"></td>
+	</tr>
+	<tr>
+		<td width="200" align="left" style="padding-left:10px;">
+<input type="text" name="q" style="border:4px solid #FF8D0C; background:#ffffff; font-size:12px; padding-left:5px; padding-top:2px; height:20px; width:250px; height:27px;" class="scinput" value=""></td>
+		<td width="55" style="padding-left:3px; padding-bottom:1px;">
+<input type="image" src="https://sellfree.cdn1.cafe24.com/img/btn_search3.gif" border="0" align="absmiddle" onfocus="this.blur()"></td>
+	</tr>
+        
+
+<script language="JavaScript">
+document.onload = document.fsearchbox.q.focus();
+function fsearchbox_submit(f)
+{
+    if (f.q.value == '')
+    {
+        alert("검색어를 입력하세요.");
+        f.q.select();
+        f.q.focus();
+        return;
+    }
+
+    f.action = "https://sellclub.kr/community/search/search.php";
+    f.submit();
+}
+</script>
+
+</tbody></table>
+<!-- 검색창끝 -->
+</td>
+<td align="right" style="padding:3px;">
+<!-- 우측상단배너-468-60 -->
+<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-0948404768998318" data-ad-slot="9605054188"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</td>
+</tr></tbody></table>
+<style type="text/css">
+.s1_sub_line {color:#ffffff;font-size:12px;}
+.s1_sub_on {text-decoration:none;font-weight:bold;color:#ffffff;font-size:13px; font-family:굴림,돋움;}
+.s1_sub_off {text-decoration:none;font-weight:bold;color:#ffffff;font-size:13px; font-family:굴림,돋움;}
+.sub_msg {color:#ffffff;font-size:12px;}
+</style>
+
+<script language="JavaScript" src="../js/scroll.js"></script>
+
+<div id="top_box">
+	<div id="top_box_2">
+		<div id="top_list_2_1">
+<div id="board_menu_line" style="background-color:#fb610d;">
+<table width="983" border="0" height="43" cellspacing="0" cellpadding="0" align="center" valign="bottom">
+	<tbody><tr>
+        <td width="983" valign="bottom">
+<table width="983" height="35" cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr height="35">
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_off.gif" width="122" height="35" align="center" onclick="location='../deal/'"><span class="s1_sub_off">벼룩시장</span></td>
+		<td width="1"></td>
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_off.gif" width="122" height="35" align="center" onclick="location='../bbs/board.php?bo_table=maket_5_1'"><span class="s1_sub_off">사고/팔기</span></td>
+		<td width="1"></td>
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_on.gif" width="122" height="35" align="center" onclick="location='../bbs/board.php?bo_table=maket_5_3'"><span class="s1_sub_on">대행합니다</span></td>
+		<td width="1"></td>
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_off.gif" width="122" height="35" align="center" onclick="location='../bbs/board.php?bo_table=request_maket'"><span class="s1_sub_off">의뢰합니다</span></td>
+		<td width="1"></td>
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_off.gif" width="122" height="35" align="center" onclick="location='../bbs/board.php?bo_table=maket_5_2'"><span class="s1_sub_off">투자/제휴/구인</span></td>
+		<td width="1"></td>
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_off.gif" width="122" height="35" align="center" onclick="location='../bbs/board.php?bo_table=trade_item'"><span class="s1_sub_off">영업/유통/창업</span></td>
+		<td width="1"></td>
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_off.gif" width="122" height="35" align="center" onclick="location='../bbs/board.php?bo_table=free_ad'"><span class="s1_sub_off">자유홍보/광고</span></td>
+		<td width="1"></td>
+		<td style="cursor:pointer;cursor:hand;" background="https://sellfree.cdn1.cafe24.com/group/img/deal_icon_sub_tab_.gif" width="122" height="35" align="center"></td>
+	</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<script language="JavaScript">
+function chkMsg()
+{
+    alert("로그인 후 이용하세요.");
+    document.location.href="../bbs/login.php?url=http://sellclub.kr/community%2Fcommunity%2Fbbs%2Fwrite.php%3Fbo_table%3Dmaket_5_3";
+}
+</script>
+
+<div id="top_menu_line">
+<table width="983" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr>
+		<td width="308" height="25" style="padding-left:15px;">
+<style>
+.login_input { border:1px solid #CCCCCC; height:18px; width:75px;} 
+</style>
+<!-- 로그인 후 외부로그인 시작 -->
+
+<table width="770" border="0" cellspacing="0" cellpadding="0">
+<tbody><tr height="20">
+        <td width="100" height="25"><table width="115" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="30"><img src="https://sellfree.cdn1.cafe24.com/img/l2/07.gif" title="글:0 / 댓글:0 / 포인트:26,487점"></td><td width="3"></td><td width="80"><table width="80" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><font style="font-size:9px;">Level. 27</font></td><td align="right"><font style="font-size:9px;">48%</font></td></tr></tbody></table><table width="80" border="0" cellspacing="0" cellpadding="0" background="https://sellfree.cdn1.cafe24.com/img/exp_bar.gif"><tbody><tr height="1"><td rowspan="3" width="1"></td><td width="77"></td><td rowspan="3" width="2"></td></tr><tr height="6"><td><img src="https://sellfree.cdn1.cafe24.com/img/exp_in.gif" width="48%" height="6"></td></tr><tr height="2"><td></td></tr></tbody></table></td></tr></tbody></table></td>
+        <td width="110" height="25">&nbsp;<span class="member"> 
+<strong>바이럴천재s</strong></span></td>
+		<td width="12" height="25"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/memo.gif" width="12" height="12" border="0" align="absmiddle"></td>
+		<td style="padding:0 10 0 5" width="59" height="25"><a href="javascript:win_memo_mypage();"><!-- <a href="../bbs/memo.php?kind=recv" target="_self"> -->쪽지7통</a></td>
+		<td width="12" align="center" height="25"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/point.gif" width="12" height="11" border="0" align="absmiddle"></td>
+		<td style="padding:0 0 0 5" width="110" height="25"><a href="javascript:win_point_mypage();">P 26,487점</a>&nbsp;<a href="../bbs/board.php?bo_table=centerpoint2&amp;wr_id=11" target="_blank">[충전]</a></td>
+        <td width="320" style="padding-top:0; padding-right:10; padding-bottom:0; padding-left:5;" height="25" align="right">
+            <table width="320" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr height="20">
+                    <td width="57"><a href="../bbs/logout.php"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/logout.gif" border="0"></a></td>
+                    <td width="57"><a href="../bbs/memo_mypage.php?kind=register"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/modify.gif" border="0" width="55" height="18"></a></td>
+                    <td width="53" align="right"><a href="../bbs/memo_ds.php?kind=total"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/b_my.gif" border="0" width="53" height="18" align="bottom"></a></td>
+					<td width="42"><a href="../bbs/memo_ds.php?kind=scrap"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/scrap.gif" height="18" width="41" border="0"></a></td>
+                    <td width="49" align="right"><a href="../bbs/memo_mypage.php?kind=online"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/friend_my.gif" border="0" width="53" height="18" align="bottom"></a></td>
+					<td width="58"><!-- <a href="../bbs/memo_ds.php?kind=total"><img src="https://sellfree.cdn1.cafe24.com/skin/outlogin/top/img/allnew.gif" border="0"></a> --></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+<script language="JavaScript">
+// 탈퇴의 경우 아래 코드를 연동하시면 됩니다.
+function member_leave() 
+{
+    if (confirm("정말 회원에서 탈퇴 하시겠습니까?")) 
+            location.href = "../bbs/member_confirm.php?url=member_leave.php";
+}
+</script>
+<!-- 로그인 후 외부로그인 끝 -->
+
+</td>
+		<td width="660" height="25" align="right" style="padding-right:10px;">
+<span class="sub_top">
+<div>
+<select class="quick_move" onchange="quick_move(this.value)">
+<option value="">즐겨찾는 게시판 바로가기</option>
+<option value="">-------------------------</option>
+<option value="">-------------------------</option>
+<option value="menu-edit">바로가기 편집</option>
+</select>
+</div>
+
+<script language="Javascript">
+function quick_move(bo_table)
+{
+    if (!bo_table) return;
+    if (bo_table == 'menu-edit') {
+        popup_window("../bbs/my_menu_edit.php", "my_menu_edit", "width=350, height=400, scrollbars=1");
+        return;
+    }
+    if (bo_table == 'mypage') {
+        location.href = "../customer/mypage.php";
+        return;
+    }
+    location.href = "../bbs/board.php?bo_table=" + bo_table;
+}
+</script>
+<!-- 바로가기 편집끝-->
+
+
+</span></td>
+	</tr>
+</tbody></table>
+</div>
+<table width="983" border="0" cellspacing="0" cellpadding="0" align="center" valign="top">
+    <tbody><tr>
+		<td bgcolor="#efefef" width="135" valign="top" rowspan="2">
+<style type="text/css">
+#left_top {width:135px;height:45px;}
+#left_body {width:135px;background-color:#ffffff;}
+#left_down {width:135px;height:4px;line-height:4px;}
+#left_list1 {width:110px;height:22px;text-align:left;}
+#left_list2 {width:120px;height:20px;text-align:left;}
+#left_list3 {width:135px;height:5px;line-height:5px;background-color:#ffffff;}
+#left_line {width:123px;height:3px;line-height:3px;margin-top:10px;margin-bottom:10px;border-top:1px solid #EEEEEE;}
+
+.title {font-weight:bold;font-size:12px;color:#064893;}
+.list1 {font-weight:bold;font-size:12px;color:#fb610d;}
+.list2 {font-size:12px;color:#333333;}
+</style>
+
+
+<div id="left_top"><img src="../deal/bo_2/img/icon_title.gif" width="135" height="45" border="0"></div>
+
+<div id="left_body">
+<table width="135" cellpadding="0" cellspacing="0" border="0">
+	<tbody><tr>
+		<td width="1" bgcolor="#fb610d"></td>
+		<td width="1" bgcolor="#EFD9AF"></td>
+		<td width="131" align="center" valign="top">
+<div style="width:123px;height:10px;font-size:1px;"></div>
+<div id="left_list1" class="title">대행/의뢰</div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=홍보/마케팅"><span class="list2">홍보/마케팅</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=프로그램/솔루션"><span class="list2">프로그램/솔루션</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=교육/강의"><span class="list2">교육/강의</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=IT/개발/보수"><span class="list2">IT/개발/보수</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=디자인/그래픽"><span class="list2">디자인/그래픽</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=유통/무역/생산"><span class="list2">유통/무역/생산</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=입점/제휴/섭외"><span class="list2">입점/제휴/섭외</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=운영/관리"><span class="list2">운영/관리</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=컨텐츠/제작물"><span class="list2">컨텐츠/제작물</span></a></div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_5_3&amp;sca=컨설팅/상담"><span class="list2">컨설팅/상담</span></a></div>
+<div style="width:123px;height:10px;font-size:1px;"></div>
+<div id="left_list1" class="title">신고/피해/대책위</div>
+<div id="left_list2">ㆍ<a href="../bbs/board.php?bo_table=maket_declare"><span class="list2">공동대책게시판</span></a></div>
+<div style="width:123px;height:10px;font-size:1px;"></div>
+		</td><td width="1" bgcolor="#fb610d"></td>
+	</tr>
+</tbody></table></div>
+
+<div id="left_down"><img src="../deal/bo_2/img/icon_down.gif" width="135" height="4" border="0"></div>
+
+<div id="left_list3">&nbsp;</div>
+
+<style type="text/css">
+#left_body2 {width:135px;background-color:#ffffff;text-align:center;} 
+</style>
+<div id="left_list3">&nbsp;</div>
+
+<div id="left_body2">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<!-- 	<tr><td height=10></td></tr> -->
+		<tbody><tr> 
+		<td align="center">
+        <div style="width:135px; height:65px;"><a href="../plugin/ad-pay/click.php?or_id=1681" rel="nofollow" target="_blank" class="adpay-"><img src="../data/ad-pay/1794399708_1a68df05_-_6-ezgif.com-resize.gif" width="135" height="65" title="카오문자 문의하기 - "></a></div>
+		</td>
+	</tr>
+	<tr><td height="5"></td></tr>
+		<tr> 
+		<td align="center">
+        <div style="width:135px; height:65px;"><a href="../plugin/ad-pay/click.php?or_id=1680" rel="nofollow" target="_blank" class="adpay-"><img src="../data/ad-pay/3547763708_6b9815f8_C3D6C1BE.gif" width="135" height="65" title="1% 트레이더 모임 - "></a></div>
+		</td>
+	</tr>
+	<tr><td height="5"></td></tr>
+		<tr> 
+		<td align="center">
+        <div style="width:135px; height:65px;"><a href="../plugin/ad-pay/click.php?or_id=1682" rel="nofollow" target="_blank" class="adpay-"><img src="../data/ad-pay/2950634317_573a0e4e_db_banner_135x65_stronger.gif" width="135" height="65" title="dbclick24.com - "></a></div>
+		</td>
+	</tr>
+	<tr><td height="5"></td></tr>
+	</tbody></table>
+
+</div>
+
+<div id="left_body2">
+<table width="135" border="0" cellspacing="0" cellpadding="0"> 
+<tbody><tr>
+	<td bgcolor="#eaeaea" align="center" style="ABLE-LAYOUT:fixed; border:solid 1 #cfcfcf; padding-left:5px; padding-right:5px;">
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td bgcolor="#eaeaea" height="10" align="left" style="padding-top:3px; border-bottom:solid 1 #cfcfcf;"><img src="https://sellfree.cdn1.cafe24.com/img/top.gif"></td>
+			</tr>
+						<tr>
+				<td bgcolor="#FFFFFF" style="padding:4px 0px 2px 5px; font-size:11px; border-bottom:solid 1 #f5f5f5;"><a href="https://www.facebook.com/sellclub.kr" target="_blank">·셀클럽- <img src="https://sellfree.cdn1.cafe24.com/img/IconFacebook.gif" align="absmiddle" style="padding-bottom:3px;"></a></td>
+			</tr>
+						<tr>
+				<td bgcolor="#FFFFFF" style="padding:4px 0px 2px 5px; font-size:11px; border-bottom:solid 1 #f5f5f5;"><a href="http://sellfree.co.kr" target="_blank">·셀프리-도매B2B</a></td>
+			</tr>
+			<tr>
+				<td bgcolor="#FFFFFF" style="padding:4px 0px 2px 5px; font-size:11px; border-bottom:solid 1 #f5f5f5;"><a href="http://sellogger.com" target="_blank">·셀로거-메타허브</a></td>
+			</tr>
+			<tr>
+				<td bgcolor="#FFFFFF" style="padding:4px 0px 2px 5px; font-size:11px; border-bottom:solid 1 #f5f5f5;"><a href="http://sellerteam.co.kr" target="_blank">·셀러팀-유통특판</a></td>
+			</tr>
+			<tr>
+				<td bgcolor="#FFFFFF" style="padding:4px 0px 2px 5px; font-size:11px; border-bottom:solid 1 #cfcfcf;"><a href="http://sellspot.co.kr" target="_blank">·셀스팟-유통정보</a></td>
+			</tr>
+			<tr>
+				<td bgcolor="#eaeaea" height="7" align="left" style="border-top:solid 1 #cfcfcf;"></td>
+			</tr>
+</tbody></table>
+</td>
+  </tr>
+</tbody></table>
+</div>
+
+<div id="left_body2" style="background-color:#EFEFEF;padding:5px 0px;">
+<a href="../bbs/board.php?bo_table=adpay"><img src="https://sellfree.cdn1.cafe24.com/img/pointad.gif"></a>
+</div></td>
+        <td width="13" height="34" rowspan="2"></td>
+		<td width="835" valign="top">
+
+<!-- TextArea 복사될때 copy_play 부르기 -->
+<div id="contents_area" oncopy="copy_play();"><link rel="stylesheet" type="text/css" href="../skin/board/4989_board02/bstyle.css">
+
+<!-- [참고] 옵션필드 --//--> 
+
+ 
+<!-- [참고] 옵션필드 --//-->
+
+
+<script language="JavaScript">
+// 글자수 제한
+var char_min = parseInt(0); // 최소
+var char_max = parseInt(0); // 최대
+</script>
+
+<!-- 김선용 2005.4 - FF(불여우) 에서는 innerHTML 사용시 폼이 <table> 아래에 있으면 인식하지 못합니다. -->
+<form name="fwrite" method="post" onsubmit="return fwrite_submit(this);" enctype="multipart/form-data" style="margin:0px;">
+
+<input type="hidden" name="null"><!-- 삭제하지 마십시오. -->
+<!----------- { 레이아웃 테이블 시작 } ------------------------------------------//-->
+<table width="835" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td align="center">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<input type="hidden" name="w" value="">
+<input type="hidden" name="bo_table" value="maket_5_3">
+<input type="hidden" name="wr_id" value="">
+<input type="hidden" name="sfl" value="">
+<input type="hidden" name="stx" value="">
+<input type="hidden" name="spt" value="">
+<input type="hidden" name="sst" value="">
+<input type="hidden" name="sod" value="">
+<input type="hidden" name="page" value="">
+</table>
+
+<!--######### 등록자 정보 ##########--//-->
+<table width="100%" align="center" cellpadding="5" cellspacing="0" border="0" style="border:1px solid #cccccc">
+<colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+</colgroup><colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+
+
+</colgroup><tbody><tr height="28">
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;등록자</td>
+    <td style="padding-left:5px;">바이럴천재s</td>
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;이메일</td>
+    <td style="padding-left:5px;">sma9528@naver.com</td>
+
+</tr>
+<tr><td colspan="4" height="1" bgcolor="#CCCCCC"></td></tr>
+
+
+
+
+
+
+<tr height="28">
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;전화번호</td>
+    <td style="padding-left:5px;">
+	 <select name="ext5_00" class="ed" required="" itemname="전화번호" style="background-image: url(&quot;../js/wrest.gif&quot;); background-position: right top; background-repeat: no-repeat;">
+		<option value="02">02</option>
+		<option value="031">031</option>
+		<option value="032">032</option>
+		<option value="033">033</option>
+		<option value="041">041</option>
+		<option value="042">042</option>
+		<option value="043">043</option>
+		<option value="051">051</option>
+		<option value="052">052</option>
+		<option value="053">053</option>
+		<option value="054">054</option>
+		<option value="055">055</option>
+		<option value="061">061</option>
+        <option value="062">062</option>
+        <option value="063">063</option>
+        <option value="064">064</option>
+		<option value="070">070</option>
+		<option value="0505">0505</option>
+      </select> - 
+      <input name="ext5_01" class="ed" value="" type="text" size="4" maxlength="4" onkeydown="onlyNumber(this);" itemname="일반전화 두번째자리">  - 
+      <input name="ext5_02" class="ed" value="" type="text" size="4" maxlength="4" onkeydown="onlyNumber(this);" itemname="일반전화 세번째자리">
+	</td>
+
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;핸드폰</td>
+    <td style="padding-left:5px;">
+	 <select name="ext5_03" class="ed" required="" itemname="핸드폰" style="background-image: url(&quot;../js/wrest.gif&quot;); background-position: right top; background-repeat: no-repeat;">
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="016">016</option>
+        <option value="017">017</option>
+        <option value="018">018</option>
+        <option value="019">019</option>
+      </select> - 
+      <input name="ext5_04" class="ed" value="" type="text" size="4" maxlength="4" onkeydown="onlyNumber(this);" itemname="핸드폰 두번째자리">  - 
+      <input name="ext5_05" class="ed" value="" type="text" size="4" maxlength="4" onkeydown="onlyNumber(this);" itemname="핸드폰 세번째자리">
+	</td>
+
+</tr>
+</tbody></table>
+<!--######### 등록자 정보 끝 ##########--//-->
+
+
+<table width="100%"><tbody><tr><td></td></tr></tbody></table>
+
+
+
+<!--######### 등록자정보 ##########--//-->
+<table width="100%" align="center" cellpadding="5" cellspacing="0" border="0" style="border:1px solid #cccccc">
+<colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+</colgroup><colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+
+
+<!---------------- 여유필드{게시물형태 옵션). 스크립터추가됨. --------------------------------------------//-->
+
+</colgroup><tbody><tr height="28">
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;게시물형태<br>&nbsp;&nbsp;&nbsp;(회원옵션)</td>
+    <td colspan="3" style="padding-left:5px;">
+
+
+	<!--####### 우선출력 {급매물 선택시, '공지'형태로 전환 (아래 스크립터 참조) #########--//-->
+
+	
+    <table width="100%" border="0" cellspacing="0" cellpadding="1">
+     <!--// 일반형태 --//-->
+	 <tbody><tr><td>
+		<input type="radio" name="wr_1" value="3" checked="" onclick="chk(document.fwrite.notice)"> 기본등록
+	 </td><td>
+		<font color="#999999">일반 기본글쓰기 등록 (포인트 -1,500 차감) </font>
+	 </td></tr>
+	<!--// 굵게표시 --//-->
+	 <tr><td>
+		<input type="radio" name="wr_1" value="2" onclick="chk(document.fwrite.notice)"> <b>굵게표시</b>
+	 </td><td>
+		<font color="#999999">옵션: 게시물 <b>제목을 굵게표시</b> (포인트 -500 추가차감)</font>
+	 </td></tr>
+	 <!--// 추천매물 --//-->
+	 <tr><td>
+		<input type="radio" name="wr_1" value="1" onclick="chk(document.fwrite.notice)"> <font color="#FF9900"><b>급등표시</b></font>
+	 </td><td>
+		<img src="../skin/board/4989_board02/img/icon_level01.gif" width="15" height="15" align="absmiddle">
+		<font color="#999999">아이콘과 게시물이 <font color="#FF9900"><b>눈에띄는 색상</b></font>으로 표시 옵션(포인트 -1,000 추가차감)</font>
+	 </td></tr>
+	 <!--// 최상단등록--//--> 
+	 <tr><td width="80">
+		<input type="radio" name="wr_1" value="0" onclick="chk(document.fwrite.notice)"> <font color="#009900"><b>추천등록</b></font>
+	 </td><td>
+		<img src="../skin/board/4989_board02/img/icon_level02.gif" width="15" height="15" align="absmiddle">
+		<font color="#999999">아이콘,<font color="#009900"><b>눈에띄는 색상</b></font>, <b>게시판 최상단 7</b>일간 노출홍보. (최상단 공지: -150,000 추가차감)</font>
+	 </td></tr>
+	 <tr><td style="padding-top:8px;" colspan="2">
+		<b>*필독</b> - 제목에 특수문자사용, 카테고리에 맞지 않는 글작성, 공지사항을 위배한 글쓰기시 삭제 및 이용제한되실 수 있습니다.
+	 </td></tr>
+	 	 <!--// 급매물--//--> 
+	     </tbody></table>
+
+	<!--####### 우선출력 끝 ##############################################################--//-->
+
+	</td>
+</tr>
+<tr><td colspan="4" height="1" bgcolor="#CCCCCC"></td></tr>
+
+<!---------------- 여유필드{게시물형태 옵션) 끝 ------------------------------------------//-->
+
+
+<tr height="28">
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;카테고리</td>
+    <td colspan="3" style="padding-left:5px;">
+
+		<select name="ca_name" required="" itemname="카테고리" style="background-image: url(&quot;../js/wrest.gif&quot;); background-position: right top; background-repeat: no-repeat;">
+		<option value="">선택하세요</option><option value="홍보/마케팅">홍보/마케팅</option>
+<option value="프로그램/솔루션">프로그램/솔루션</option>
+<option value="교육/강의">교육/강의</option>
+<option value="IT/개발/보수">IT/개발/보수</option>
+<option value="디자인/그래픽">디자인/그래픽</option>
+<option value="유통/무역/생산">유통/무역/생산</option>
+<option value="입점/제휴/섭외">입점/제휴/섭외</option>
+<option value="운영/관리">운영/관리</option>
+<option value="컨텐츠/제작물">컨텐츠/제작물</option>
+<option value="컨설팅/상담">컨설팅/상담</option>
+		</select>
+
+	&nbsp;&nbsp;+&nbsp;<span color="#666666">거래상황</span>&nbsp;
+		<select name="wr_9" class="box" required="" itemname="거래상황" style="background-image: url(&quot;../js/wrest.gif&quot;); background-position: right top; background-repeat: no-repeat;">
+        <option value="on">거래가능</option>
+        <option value="off">거래종료</option>
+		</select>
+
+	</td>
+</tr>
+<tr><td colspan="4" height="1" bgcolor="#CCCCCC"></td></tr>
+
+
+<tr height="28">
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;등록분류</td>
+    <td colspan="3" style="padding-left:5px; padding-right:5px;">
+
+		<select name="ext6_00" class="box" required="" itemname="등록분류" style="background-image: url(&quot;../js/wrest.gif&quot;); background-position: right top; background-repeat: no-repeat;">
+			<option selected="" value="">등록분류</option>
+			<option value="대행합니다">대행합니다</option>
+			<!-- <option value='대행원해요'   >대행원해요</option> -->
+			<!-- <option value='의뢰합니다'   >의뢰합니다</option> -->  
+			<option value="의뢰받아요">의뢰받아요</option>
+		</select>
+
+	&nbsp;<span color="#666666">거래방식</span>&nbsp;
+	<input class="ed" style="width:200; ime-mode:active" name="ext6_01" value="" maxlength="20" itemname="거래방식">
+	&nbsp;<font color="#999999">ex) 쪽지연락, 연락처로문의, 메신져연락, 미팅...</font>
+
+	</td>
+</tr>
+</tbody></table>
+<!--######### 정보 끝 ##########--//-->
+
+
+<table width="100%" height="11"><tbody><tr><td></td></tr></tbody></table>
+
+
+<!--######### 상세정보및 기타 #######--//-->
+<table width="100%" align="center" cellpadding="5" cellspacing="0" border="0" style="border:1px solid #cccccc">
+<colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+</colgroup><colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+
+</colgroup><tbody><tr height="28">
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;제목글</td>
+    <td colspan="3" style="padding-left:5px; padding-right:5px;">
+		<input class="ed" style="width: 100%; background-image: url(&quot;../js/wrest.gif&quot;); background-position: right top; background-repeat: no-repeat;" name="wr_subject" itemname="제목글" required="" value="" hangulalphanumerica="">
+	</td>
+</tr>
+<tr><td colspan="4" height="1" bgcolor="#CCCCCC"></td></tr>
+
+<tr height="28">
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;글쓰기 옵션</td>
+    <td colspan="3" style="padding-left:5px;">   
+                        <!-- <INPUT type=checkbox value="mail" name="mail" checked>답변메일받기&nbsp; --></td>
+</tr> 
+<tr><td colspan="4" height="1" bgcolor="#CCCCCC"></td></tr>
+
+
+<tr>
+    <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;추가정보 및<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기타소개</td>
+    <td colspan="3" style="padding:5px;">
+	          <table width="100%" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td width="50%" align="left" valign="bottom">
+                <span style="CURSOR: pointer;" onclick="textarea_decrease('wr_content', 10);"><img src="../skin/board/4989_board02/img/up.gif" width="16" height="16"></span>
+                <span style="CURSOR: pointer;" onclick="textarea_original('wr_content', 5);"><img src="../skin/board/4989_board02/img/start.gif" width="16" height="16"></span>
+                <span style="CURSOR: pointer;" onclick="textarea_increase('wr_content', 10);"><img src="../skin/board/4989_board02/img/down.gif" width="16" height="16"></span></td>
+            <td width="50%" align="right"></td>
+        </tr>
+        </tbody></table>
+        <textarea id="wr_content" name="wr_content" class="tx" style="width: 100%; word-break: break-all; background-image: url(&quot;../js/wrest.gif&quot;); background-position: right top; background-repeat: no-repeat; font-size: 12px;" rows="15" itemname="내용" required=""></textarea>
+        		</td>
+</tr>
+<tr><td colspan="4" height="1" bgcolor="#CCCCCC"></td></tr>
+
+
+<tr>
+     <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;관련링크 #1</td>
+   	 <td colspan="3" style="padding-left:5px;">
+		<input type="text" class="ed" size="100" name="wr_link1" value="" itemname="링크 #1">
+	 </td>
+</tr>
+<tr>
+     <td class="b_tit2 b_bg2" style="padding-left:8px;">+&nbsp;관련링크 #2</td>
+   	 <td colspan="3" style="padding-left:5px;">
+		<input type="text" class="ed" size="100" name="wr_link2" value="" itemname="링크 #2">
+	 </td>
+</tr>
+
+
+<tr><td colspan="4" height="1" bgcolor="#CCCCCC"></td></tr>
+<tr height="28">
+    <td class="b_tit2 b_bg2">
+
+		<table cellpadding="0" cellspacing="0">
+		<tbody><tr><td class="b_tit2 b_bg2" style="padding-left:3px;">
+		+&nbsp;사진등록 
+		<span onclick="add_file();" style="cursor:pointer;"><img src="../skin/board/4989_board02/img/down.gif" width="16" height="16" align="absmiddle"></span>
+		<span onclick="del_file();" style="cursor:pointer;"><img src="../skin/board/4989_board02/img/up.gif" width="16" height="16" align="absmiddle"></span>
+		</td></tr></tbody></table>
+	</td>
+    <td colspan="3" style="padding-left:5px;">
+	
+	<table id="variableFiles" cellpadding="0" cellspacing="0"><tbody><tr><td><input type="file" class="ed" size="32" name="bf_file[]" title="파일 용량 1,048,576 바이트 이하만 업로드 가능"></td></tr></tbody></table>        <script language="JavaScript">
+        function add_file(delete_code)
+        {
+            var objTbl;
+            var objRow;
+            var objCell;
+            if (document.getElementById)
+                objTbl = document.getElementById("variableFiles");
+            else
+                objTbl = document.all["variableFiles"];
+
+            objRow = objTbl.insertRow(objTbl.rows.length);
+            objCell = objRow.insertCell(0);
+
+            objCell.innerHTML = "<input type='file' class=ed size=32 name='bf_file[]' title='파일 용량 1,048,576 바이트 이하만 업로드 가능'>";
+            if (delete_code)
+                objCell.innerHTML += delete_code;
+            else
+            {
+                                ;
+            }
+        }
+
+        add_file('');
+
+        function del_file()
+        {
+            // file_length 이하로는 필드가 삭제되지 않아야 합니다.
+            var file_length = 0;
+            var objTbl = document.getElementById("variableFiles");
+            if (objTbl.rows.length - 1 > file_length)
+                objTbl.deleteRow(objTbl.rows.length - 1);
+        }
+        </script>※ 사진 추가등록시 왼쪽 ↓ 아이콘을 누르시면 추가등록하실수 있습니다.</td>
+</tr>
+<!---------- {여유필드.wr_2 사용 // 파일업로드가 가능할 경우만 나타남} 
+<tr><td colspan=4 height="1" bgcolor='#CCCCCC'></td></tr>
+<tr height="28">
+    <td class='b_tit2 b_bg2' style='padding-left:8px;'>+&nbsp;이미지뷰 설정</td>
+    <td colspan=3 style='padding-left:5px;'>
+	
+	 <select name='wr_2' class="box">
+        <option value='1' >기본설정</option>
+        <option value='2' >2개씩보기</option>
+        <option value='3' >3개씩보기</option>
+        <option value='4' >4개씩보기</option>
+      </select>	
+	&nbsp;* 여러개의 이미지를 등록할 경우에만 설정하세요
+	</td>
+</tr>
+<!---------- {여유필드 사용 끝} ---------------//--->
+<input type="hidden" name="wr_2" value="1"> <!-- 위에것 사용안하니까 오류나서 강제로 집어넣음 사용하려면 주석제거 -->
+</tbody></table>
+
+<table width="100%"><tbody><tr><td></td></tr></tbody></table>
+
+<table width="100%" align="center" cellpadding="5" cellspacing="0" border="0" style="border:1px solid #cccccc">
+<colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+</colgroup><colgroup width="15%" nowrap="">
+</colgroup><colgroup width="">
+
+
+</colgroup></table>
+<br>
+
+  <!-- 버튼 table --//-->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<td width="100%" align="center" valign="top">
+        <input type="image" id="btn_submit" src="../skin/board/4989_board02/img/ok_btn.gif" border="0" accesskey="s">&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./board.php?bo_table=maket_5_3"><img id="btn_list" src="../skin/board/4989_board02/img/list_btn.gif" border="0"></a></td>
+	</tr>
+  </tbody></table>
+<!--######### 상세정보및 기타 끝 #######--//-->
+
+<!----------- { 레이아웃 테이블 아래. 끝 } ------------------------------------------//-->
+</td></tr></tbody></table>
+</form>
+
+
+<!---- 숫자만 입력받는 스크립터 --//-->
+
+<script type="text/javascript"> var md5_norobot_key = ''; </script>
+<script type="text/javascript" src="../js/prototype.js"></script>
+<script type="text/javascript">
+function onlyNumber(objtext1){
+var inText = objtext1.value;
+var ret;
+
+for (var i = 0; i < inText.length; i++) {
+ret = inText.charCodeAt(i);
+if (!((ret > 47) && (ret < 58))) {
+alert("숫자만을 입력하세요");
+objtext1.value = "";
+objtext1.focus();
+return false;
+}
+}
+if (objtext1.value.length==6) {
+document.form1.RNI_idnum2.focus() ;
+}
+return true;
+}
+
+
+function imageClick() {
+    var url = "../bbs/kcaptcha_session.php";
+    var para = "";
+    var myAjax = new Ajax.Request(
+        url, 
+        {
+            method: 'post', 
+            asynchronous: true,
+            parameters: para, 
+            onComplete: imageClickResult
+        });
+}
+
+function chk() 
+{ 
+//var c = document.getElementsByName('notice')[0]; 
+//if (c.checked) { 
+//var r = document.getElementsByName('wr_1'); 
+//for(var i=0; i<r.length; i++) { 
+//r[i].checked = false; 
+//r[i].disabled = false; 
+//		} 
+//	} 
+}
+
+function imageClickResult(req) { 
+    var result = req.responseText;
+    var img = document.createElement("IMG");
+    img.setAttribute("src", "../bbs/kcaptcha_image.php?t=" + (new Date).getTime());
+    document.getElementById('kcaptcha_image').src = img.getAttribute('src');
+
+    md5_norobot_key = result;
+}
+
+
+
+with (document.fwrite) {
+    if (typeof(wr_name) != "undefined")
+        wr_name.focus();
+    else if (typeof(wr_subject) != "undefined")
+        wr_subject.focus();
+    else if (typeof(wr_content) != "undefined")
+        wr_content.focus();
+	else if (typeof(ext6_00) != "undefined")
+        ext6_00.focus();
+
+    if (typeof(ca_name) != "undefined") 
+        if (w.value == "u") 
+            ca_name.value = ""; 
+        else if (sca.value != "")  
+            ca_name.value = ""; 
+}
+
+function html_auto_br(obj)
+{
+    if (obj.checked) {
+        result = confirm("자동 줄바꿈을 하시겠습니까?\n\n자동 줄바꿈은 게시물 내용중 줄바뀐 곳을<br>태그로 변환하는 기능입니다.");
+        if (result)
+            obj.value = "html2";
+        else
+            obj.value = "html1";
+    }
+    else
+        obj.value = "";
+}
+
+function fwrite_submit(f)
+{
+    /*
+    var s = "";
+    if (s = word_filter_check(f.wr_subject.value)) {
+        alert("제목에 금지단어('"+s+"')가 포함되어있습니다");
+        return false;
+    }
+
+    if (s = word_filter_check(f.wr_content.value)) {
+        alert("내용에 금지단어('"+s+"')가 포함되어있습니다");
+        return false;
+    }
+    */
+
+    if (document.getElementById('char_count')) {
+        if (char_min > 0 || char_max > 0) {
+            var cnt = parseInt(document.getElementById('char_count').innerHTML);
+            if (char_min > 0 && char_min > cnt) {
+                alert("내용은 "+char_min+"글자 이상 쓰셔야 합니다.");
+                return false;
+            } 
+            else if (char_max > 0 && char_max < cnt) {
+                alert("내용은 "+char_max+"글자 이하로 쓰셔야 합니다.");
+                return false;
+            }
+        }
+    }
+
+    
+    if (document.getElementById('tx_wr_content')) {
+        if (!ed_wr_content.outputBodyText()) { 
+            alert('내용을 입력하십시오.'); 
+            ed_wr_content.returnFalse();
+            return false;
+        }
+    }
+
+
+    document.getElementById('btn_submit').disabled = true;
+    document.getElementById('btn_list').disabled = true;
+
+    f.action = './write_update.php';    
+    return true;
+}
+</script>
+
+<script language="JavaScript" src="../js/board.js"></script>
+<script language="JavaScript"> window.onload=function() { drawFont(); } </script><script type="text/javascript"> var g4_cf_filter = '                                                                                                    '; </script>
+<script type="text/javascript" src="../js/filter.js"></script>
+<br>		</div></td>
+	</tr>
+	<tr>
+        <td width="835" valign="top">
+				</td>
+	</tr>
+</tbody></table>
+
+
+<script language="JavaScript">
+var win= null;
+function NewWindow(mypage,myname,w,h,scroll){
+  var winl = (screen.width-w)/2;
+  var wint = (screen.height-h)/2;
+  var settings  ='height='+h+',';
+      settings +='width='+w+',';
+      settings +='top='+wint+',';
+      settings +='left='+winl+',';
+      settings +='scrollbars='+scroll+',';
+      settings +='resizable=yes';
+	  settings +='center=yes';
+  win=window.open(mypage,myname,settings);
+  if(parseInt(navigator.appVersion) >= 4){win.window.focus();}
+}
+
+function MovePosition() { 
+  var wndWidth = parseInt(document.body.clientWidth); 
+
+  // 페에지 로딩시 포지션 
+  qLayer.style.top = 177; 
+  qLayer.style.left = (document.body.clientWidth/2)+498; //중심으로 부터의 수평거리
+  qLayer.style.visibility = "visible"; 
+
+  // initializing UI update timer 
+  //CheckUIElements(); 
+  return true; 
+} 
+</script>
+
+<div style="width: 120px; position: absolute; top: 177px; z-index: 1; left: 1450.5px; visibility: visible;" id="qLayer" name="qLayer">  
+
+ 
+
+
+<div style="float:left;text-align:left;padding-top:5px;">
+<div style="width:120px; height:500px;"><a href="../plugin/ad-pay/click.php?or_id=1677" rel="nofollow" target="_blank" class="adpay-"><img src="../data/ad-pay/2042457539_4adbe9a4_B9E8B3CA1.jpg" width="120" height="500" title="개화 - 개화"></a></div>
+</div>
+
+<div style="float:left;text-align:left;padding-top:5px;">
+<div style="width:120px; height:500px;"><a href="../plugin/ad-pay/click.php?or_id=1679" rel="nofollow" target="_blank" class="adpay-"><img src="../data/ad-pay/2669311950_c6e10c40_44.jpg" width="120" height="500" title="sunpay24.com - "></a></div>
+</div>
+
+ <div style="text-align:center; margin-top:5px;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="middle">
+	<tbody><tr>
+	<td bgcolor="#eaeaea" height="30" align="center" style="padding-top:5px; border-bottom:solid 1 #cfcfcf;">
+	<a href="../bbs/board.php?bo_table=adpay"><img src="https://sellfree.cdn1.cafe24.com/img/pointad.gif"></a>
+	</td>
+	</tr>
+  </tbody></table>
+ </div>
+
+</div>
+<script language="JavaScript">MovePosition();</script>
+
+
+<div id="copy_line1">
+<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;" align="center">
+<tbody><tr>
+  <td>
+    <table width="983" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td align="center" valign="top">
+		 <div id="partners_box" style="clear:both;">
+		<a href="http://sellogger.com" target="_blank"><img src="https://sellfree.cdn1.cafe24.com/images/family/bottom_sellogger.gif" alt="셀로거" align="absmiddle"></a>
+			<a href="http://sellfree.co.kr" target="_blank"><img src="https://sellfree.cdn1.cafe24.com/images/family/bottom_sellfree.gif" alt="셀프리" align="absmiddle"></a>
+			<a href="http://sellspot.co.kr" target="_blank"><img src="https://sellfree.cdn1.cafe24.com/images/family/bottom_sellspot.gif" alt="셀스팟" align="absmiddle"></a>
+			<a href="http://sellerteam.co.kr" target="_blank"><img src="https://sellfree.cdn1.cafe24.com/images/family/bottom_sellerteam.gif" alt="셀러팀" align="absmiddle"></a>
+						<a href="http://sellclub.co.kr" target="_blank"><img src="https://sellfree.cdn1.cafe24.com/images/family/bottom_sellclub.gif" alt="셀클럽" align="absmiddle"></a>
+			          </div>
+		</td>
+      </tr>
+    </tbody></table>
+</td></tr></tbody></table>
+</div>
+
+
+<div id="copy_line2">
+<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;" align="center">
+<tbody><tr>
+  <td>
+    <table width="983" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td align="center">
+<div style="width:983px;margin:0 auto;padding:0 auto;">
+<div id="service_box">
+	<div id="service_box_1">
+		<div id="service_list_1">
+		
+		<a href="../bbs/board.php?bo_table=center1_1"><span class="service_list"><b>이용문의</b></span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../bbs/board.php?bo_table=support_bo_1"><span class="service_list">이용안내</span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../bbs/board.php?bo_table=sp_4"><span class="service_list">이용약관</span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../bbs/board.php?bo_table=sp_5"><span class="service_list"><font color="#0066CC">개인정보취급방침</font></span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../bbs/board.php?bo_table=sp_6"><span class="service_list">책임의한계와법적고지</span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../bbs/board.php?bo_table=sp_7"><span class="service_list">이메일주소무단수집거부</span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../bbs/write.php?bo_table=homepage"><span class="service_list">홈페이지일반등록</span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="http://seller.co.kr" target="_blank"><span class="service_list">회사소개</span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../support/"><span class="service_list">고객센터</span></a>&nbsp;<span class="service_line">|</span>&nbsp;<a href="../m/bbs/board.php?bo_table=maket_5_3&amp;wr_id=&amp;from=pc"><span class="service_list">모바일버젼이동</span></a>		</div>
+	</div>
+</div>
+
+<!-- <div id="service_box">
+	<div id="service_box_1">
+		<div id="service_list_1">상호:셀러/ 사업자등록번호: 134-21-13900 / <a href="../bbs/board.php?bo_table=center1_1"><span class="service_list"><b>이용문의게시판</b></span></a> 
+</div>
+	</div>
+</div> -->
+
+
+<div id="copy_box" style="padding-bottom:25px;">
+	<div id="copy_box_1">
+		<div id="copy_list_1">힘이되는커뮤니티~ 함께만들어가는 커뮤니티~ 정보와 온기가 넘치는 당신의 최고의 파트너 셀클럽		&nbsp;<span class="service_line">|</span>&nbsp;상호:셀러/ 사업자등록번호: 134-21-13900 / <a href="../bbs/board.php?bo_table=center1_1"><span class="service_list"><b>이용문의게시판</b></span></a>
+		<!-- <a href="http://www.prchecker.info/" title="Free Page Rank Tool" target="_blank"><img src="http://pr.prchecker.info/getpr.php?codex=aHR0cDovL2NvbW11bml0eS5zZWxsZnJlZS5jby5rcg==&tag=3" alt="Free Page Rank Tool" align="absmiddle" style="border:0;" /></a> -->
+		<!-- <img src="https://sellfree.cdn1.cafe24.com/main/copy.jpg" width="377" height="21" border="0"> -->
+		        </div>
+	</div>
+</div>
+</div>
+		</td>
+      </tr>
+    </tbody></table>
+</td></tr></tbody></table>
+</div>
+
+
+<script language="JavaScript">
+if(typeof document.compatMode!='undefined'&&document.compatMode!='BackCompat') {
+        csFixedRBCalc="_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);}";
+} else {
+        csFixedRBCalc="_top:expression(document.body.scrollTop+document.body.clientHeight-this.clientHeight);_left:expression(document.body.scrollLeft + document.body.clientWidth - offsetWidth);}";
+}
+
+var floating_bottomFixed  ='#floating_bottom { position:fixed;_position:absolute;bottom:0px;right:0px; z-index:500; width:100%; height:33px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; background:#FAFAFA;' + csFixedRBCalc;
+
+document.write( '<STYLE TYPE="text/css">'+floating_bottomFixed+'</STYLE>');
+document.write( '<div id=floating_bottom>' );
+document.write( '<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FAFAFA">' );
+document.write( '<tr><td height="1" align="center" bgcolor="FC923A"></td></tr>' );
+document.write( '<tr><td align="center">' );
+document.write( '<table width="983" border="0" cellpadding="0" cellspacing="0" bgcolor="#FAFAFA"><tr><td height="30" align="left" width="98"><a href="../bbs/board.php?bo_table=adpay" target="_self"><img src="https://sellfree.cdn1.cafe24.com/img/pointad.gif"></a></td><td height="30" width="295"><img src="https://sellfree.cdn1.cafe24.com/img/dot_ic.gif"><a href="../plugin/ad-pay/click.php?or_id=12" rel="nofollow" target="_blank" style="padding-left:3px;"><b>포인트로 셀클럽 전체페이지에 광고하세요.</b></a></td><td height="30" width="295"><img src="https://sellfree.cdn1.cafe24.com/img/dot_ic.gif"><a href="../plugin/ad-pay/click.php?pr_id=1" rel="nofollow" target="_blank" style="padding-left:3px;"><b></b></a></td><td height="30" width="295"><img src="https://sellfree.cdn1.cafe24.com/img/dot_ic.gif"><a href="../plugin/ad-pay/click.php?pr_id=1" rel="nofollow" target="_blank" style="padding-left:3px;"><b></b></a></td></tr></table>' );
+document.write( '</td></tr>' );
+document.write( '<tr><td height="5" align="center"></td></tr>' );
+document.write( '</table>' );
+document.write( '</DIV>' );
+</script><style type="text/css">#floating_bottom { position:fixed;_position:absolute;bottom:0px;right:0px; z-index:500; width:100%; height:33px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; background:#FAFAFA;_top:expression(document.body.scrollTop+document.body.clientHeight-this.clientHeight);_left:expression(document.body.scrollLeft + document.body.clientWidth - offsetWidth);}</style><div id="floating_bottom"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FAFAFA"><tbody><tr><td height="1" align="center" bgcolor="FC923A"></td></tr><tr><td align="center"><table width="983" border="0" cellpadding="0" cellspacing="0" bgcolor="#FAFAFA"><tbody><tr><td height="30" align="left" width="98"><a href="../bbs/board.php?bo_table=adpay" target="_self"><img src="https://sellfree.cdn1.cafe24.com/img/pointad.gif"></a></td><td height="30" width="295"><img src="https://sellfree.cdn1.cafe24.com/img/dot_ic.gif"><a href="../plugin/ad-pay/click.php?or_id=12" rel="nofollow" target="_blank" style="padding-left:3px;"><b>포인트로 셀클럽 전체페이지에 광고하세요.</b></a></td><td height="30" width="295"><img src="https://sellfree.cdn1.cafe24.com/img/dot_ic.gif"><a href="../plugin/ad-pay/click.php?pr_id=1" rel="nofollow" target="_blank" style="padding-left:3px;"><b></b></a></td><td height="30" width="295"><img src="https://sellfree.cdn1.cafe24.com/img/dot_ic.gif"><a href="../plugin/ad-pay/click.php?pr_id=1" rel="nofollow" target="_blank" style="padding-left:3px;"><b></b></a></td></tr></tbody></table></td></tr><tr><td height="5" align="center"></td></tr></tbody></table></div>
+
+</div>
+
+<!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0948404768998318" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/wrest_tucmun.js"></script>
+
+
+<!-- 새창 대신 사용하는 iframe -->
+<iframe width="0" height="0" name="hiddenframe" style="display:none;"></iframe>
+
+
+</div></div><div id="c4g-content-root" class="c4g-widget"></div></body></html>
