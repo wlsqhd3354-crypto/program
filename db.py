@@ -147,7 +147,7 @@ def upsert_lead(lead: Lead) -> int:
     now = datetime.now().isoformat(timespec="seconds")
     with get_db() as conn:
         existing = conn.execute(
-            "SELECT id, status FROM leads WHERE post_url = ?", (lead.post_url,)
+            "SELECT id, status, found_at FROM leads WHERE post_url = ?", (lead.post_url,)
         ).fetchone()
         if existing:
             # 본문/연락처/매칭키워드 등 새로 발견한 정보가 있으면 갱신
@@ -171,6 +171,10 @@ def upsert_lead(lead: Lead) -> int:
                     existing["id"],
                 ),
             )
+            lead.id = existing["id"]
+            lead.status = existing["status"]
+            lead.found_at = existing["found_at"] or ""
+            lead.updated_at = now
             return existing["id"]
         cur = conn.execute(
             """INSERT INTO leads
@@ -192,6 +196,9 @@ def upsert_lead(lead: Lead) -> int:
                 now, now,
             ),
         )
+        lead.id = cur.lastrowid
+        lead.found_at = now
+        lead.updated_at = now
         return cur.lastrowid
 
 

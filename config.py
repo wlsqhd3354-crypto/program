@@ -1,6 +1,6 @@
 """전역 설정값. 시트 URL, 셀클럽 URL 등."""
 
-APP_VERSION = "1.2.1"
+APP_VERSION = "1.2.2"
 UPDATE_INFO_URL = "https://github.com/wlsqhd3354-crypto/program/releases/latest/download/version.json"
 
 GSHEET_ID = "1yThLpfi7r0ApHWSV6Qj6lou8Uq5Zy__jpLEdAXekXIQ"

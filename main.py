@@ -930,17 +930,33 @@ class MainApp(ctk.CTk):
         self._cr_refresh()
 
     def _cr_append_row(self, L):
+        L = get_lead(L.id) or L
+        site = self.cr_filter_site.get()
+        status = self.cr_filter_status.get()
+        if site != "전체" and L.site != site:
+            return
+        if status != "전체" and L.status != status:
+            return
         # 실시간 추가: 중복 방지 (id 기준)
         for iid in self.cr_tree.get_children():
             if self.cr_tree.set(iid, "id") == str(L.id):
+                self.cr_tree.item(iid, values=(
+                    L.id, L.site, L.status, L.title[:80], L.company,
+                    ", ".join((L.kakao_ids or []) + (L.open_chats or []))[:60],
+                    ", ".join(L.phones or []),
+                    ", ".join(L.emails or [])[:50],
+                    L.found_at[:16] if L.found_at else "",
+                ))
+                self.cr_tree.see(iid)
                 return
-        self.cr_tree.insert("", "end", values=(
+        iid = self.cr_tree.insert("", "end", values=(
             L.id, L.site, L.status, L.title[:80], L.company,
             ", ".join((L.kakao_ids or []) + (L.open_chats or []))[:60],
             ", ".join(L.phones or []),
             ", ".join(L.emails or [])[:50],
             L.found_at[:16] if L.found_at else "",
         ))
+        self.cr_tree.see(iid)
 
     def _cr_refresh(self):
         for iid in self.cr_tree.get_children():
