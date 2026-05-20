@@ -16,7 +16,7 @@ from typing import Callable, Optional
 
 from base import BoardClient
 from config import SELLCLUB_BASE
-from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords
+from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords, should_stop
 from db import Lead, upsert_lead
 from extractor import (
     ContactInfo, extract_contacts, html_to_text,
@@ -165,11 +165,17 @@ class SellClubCrawler(BaseCrawler):
         new_count = 0
 
         for spec in boards:
+            if should_stop(cfg):
+                on_log("[셀클럽] 중지 요청 감지")
+                break
             bo, sca = self._split_board_spec(spec)
             empty_streak = 0
             label = f"{bo}/{sca}" if sca else bo
             on_log(f"[셀클럽] 게시판 '{label}' 수집 시작 ({cfg.pages_per_board}페이지)")
             for page in range(1, cfg.pages_per_board + 1):
+                if should_stop(cfg):
+                    on_log("[셀클럽] 중지 요청 감지")
+                    break
                 url = self._list_url(bo, page, sca)
                 try:
                     html = self._get_text(url)
@@ -189,6 +195,9 @@ class SellClubCrawler(BaseCrawler):
                 # 키워드 매칭 (제목)
                 page_new = 0
                 for it in items:
+                    if should_stop(cfg):
+                        on_log("[셀클럽] 중지 요청 감지")
+                        break
                     matched = matches_keywords(it["title"], cfg.keywords, cfg.keyword_op)
                     if cfg.keywords and cfg.match_in == "title" and not matched:
                         continue
@@ -197,7 +206,9 @@ class SellClubCrawler(BaseCrawler):
                     detail = {}
                     if cfg.fetch_detail:
                         try:
-                            sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max)
+                            sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max, cfg.stop_event)
+                            if should_stop(cfg):
+                                break
                             d_html = self._get_text(it["url"])
                             detail = self._parse_detail(d_html)
                         except Exception as e:
@@ -239,6 +250,8 @@ class SellClubCrawler(BaseCrawler):
                     if on_lead:
                         on_lead(lead)
 
+                if should_stop(cfg):
+                    break
                 if page_new == 0:
                     empty_streak += 1
                     if empty_streak >= cfg.deep_stop_pages:
@@ -248,7 +261,7 @@ class SellClubCrawler(BaseCrawler):
                     empty_streak = 0
 
                 # 페이지 간 딜레이
-                sleep_jitter(cfg.page_delay_min, cfg.page_delay_max)
+                sleep_jitter(cfg.page_delay_min, cfg.page_delay_max, cfg.stop_event)
 
         on_log(f"[셀클럽] 수집 완료. 누적 신규/갱신 {new_count}건")
         return new_count

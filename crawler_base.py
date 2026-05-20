@@ -6,6 +6,7 @@ import random
 import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
+from threading import Event
 from typing import Iterable
 
 from db import Lead
@@ -24,13 +25,25 @@ class CrawlConfig:
     fetch_detail: bool = True           # 상세 페이지 GET 여부 (False면 목록 정보만)
     match_in: str = "title_or_body"     # "title" | "title_or_body"
     keyword_op: str = "or"              # "or" | "and"
+    stop_event: Event | None = None     # GUI 중지 버튼에서 전달되는 종료 신호
 
 
-def sleep_jitter(lo: float, hi: float):
+def should_stop(cfg: CrawlConfig) -> bool:
+    return bool(cfg.stop_event and cfg.stop_event.is_set())
+
+
+def sleep_jitter(lo: float, hi: float, stop_event: Event | None = None):
+    delay = 0.0
     if hi > lo:
-        time.sleep(random.uniform(lo, hi))
+        delay = random.uniform(lo, hi)
     elif lo > 0:
-        time.sleep(lo)
+        delay = lo
+    if delay <= 0:
+        return
+    if stop_event:
+        stop_event.wait(delay)
+    else:
+        time.sleep(delay)
 
 
 def matches_keywords(text: str, keywords: list[str], op: str = "or") -> list[str]:
@@ -38,7 +51,13 @@ def matches_keywords(text: str, keywords: list[str], op: str = "or") -> list[str
     if not keywords:
         return []  # 키워드 없음 = 매칭 검사 안 함 (전체 수집은 호출측에서 결정)
     lower = text.lower()
-    hits = [k for k in keywords if k.lower() in lower]
+    compact = "".join(lower.split())
+    hits = []
+    for k in keywords:
+        key = k.lower()
+        key_compact = "".join(key.split())
+        if key in lower or (key_compact and key_compact in compact):
+            hits.append(k)
     if op == "and":
         return hits if len(hits) == len(keywords) else []
     return hits

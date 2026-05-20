@@ -57,6 +57,7 @@ class CrawlJob:
                 cfg = self.cfg_per_site.get(site)
                 if not cfg:
                     self.on_log(f"[{site}] 설정 없음 - 건너뜀"); continue
+                cfg.stop_event = self._stop
                 self.on_log(f"━━ {site} 크롤링 시작 ━━")
                 try:
                     n = cr.crawl(cfg, on_log=self.on_log, on_lead=self.on_lead)

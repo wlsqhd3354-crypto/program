@@ -11,7 +11,7 @@ from __future__ import annotations
 import re
 from typing import Callable, Optional
 
-from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords
+from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords, should_stop
 from db import Lead, upsert_lead
 from extractor import (
     ContactInfo, extract_contacts, html_to_text, merge_contacts,
@@ -119,9 +119,15 @@ class MamentorCrawler(BaseCrawler):
         new_count = 0
 
         for bo in boards:
+            if should_stop(cfg):
+                on_log("[마멘토] 중지 요청 감지")
+                break
             empty_streak = 0
             on_log(f"[마멘토] 게시판 '{bo}' 수집 시작 ({cfg.pages_per_board}페이지)")
             for page in range(1, cfg.pages_per_board + 1):
+                if should_stop(cfg):
+                    on_log("[마멘토] 중지 요청 감지")
+                    break
                 url = self._list_url(bo, page)
                 try:
                     html = self._get(url)
@@ -140,6 +146,9 @@ class MamentorCrawler(BaseCrawler):
 
                 page_new = 0
                 for it in items:
+                    if should_stop(cfg):
+                        on_log("[마멘토] 중지 요청 감지")
+                        break
                     matched = matches_keywords(it["title"], cfg.keywords, cfg.keyword_op)
                     if cfg.keywords and cfg.match_in == "title" and not matched:
                         continue
@@ -147,7 +156,9 @@ class MamentorCrawler(BaseCrawler):
                     detail = {}
                     if cfg.fetch_detail:
                         try:
-                            sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max)
+                            sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max, cfg.stop_event)
+                            if should_stop(cfg):
+                                break
                             detail = self._parse_detail(self._get(it["url"]))
                         except Exception as e:
                             on_log(f"  상세 {it['wr_id']} 실패: {e}")
@@ -186,6 +197,8 @@ class MamentorCrawler(BaseCrawler):
                     if on_lead:
                         on_lead(lead)
 
+                if should_stop(cfg):
+                    break
                 if page_new == 0:
                     empty_streak += 1
                     if empty_streak >= cfg.deep_stop_pages:
@@ -194,7 +207,7 @@ class MamentorCrawler(BaseCrawler):
                 else:
                     empty_streak = 0
 
-                sleep_jitter(cfg.page_delay_min, cfg.page_delay_max)
+                sleep_jitter(cfg.page_delay_min, cfg.page_delay_max, cfg.stop_event)
 
         on_log(f"[마멘토] 수집 완료. 누적 신규/갱신 {new_count}건")
         return new_count

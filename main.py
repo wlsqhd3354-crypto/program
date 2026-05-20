@@ -302,8 +302,9 @@ class MainApp(ctk.CTk):
 
         self.cr_mm_enabled = ctk.CTkCheckBox(site, text="마멘토 게시판:"); self.cr_mm_enabled.select()
         self.cr_mm_enabled.grid(row=1, column=0, padx=8, pady=4, sticky="w")
-        mm_options = ["(전체)"] + [f"{k} ({v})" for k, v in mamentor.FREE_AD_BOARDS.items()]
+        mm_options = ["(마멘토 탭 선택값)", "(전체)"] + [f"{k} ({v})" for k, v in mamentor.FREE_AD_BOARDS.items()]
         self.cr_mm_board = ctk.CTkOptionMenu(site, values=mm_options, width=260)
+        self.cr_mm_board.set("(마멘토 탭 선택값)")
         self.cr_mm_board.grid(row=1, column=1, padx=4)
 
         self.cr_ib_enabled = ctk.CTkCheckBox(site, text="아이보스 (BD2986 바이럴서비스, 카테고리)"); self.cr_ib_enabled.select()
@@ -883,7 +884,12 @@ class MainApp(ctk.CTk):
             if not self.mamentor_client or not self.mamentor_client.logged_in:
                 messagebox.showwarning("마멘토", "마멘토 탭에서 먼저 로그인하세요"); return
             mm_choice = self.cr_mm_board.get()
-            mm_boards = list(mamentor.FREE_AD_BOARDS.keys()) if mm_choice.startswith("(전체)") else [mm_choice.split(" ")[0]]
+            if mm_choice.startswith("(마멘토"):
+                mm_boards = [self.mm_board.get().split(" ")[0]]
+            elif mm_choice.startswith("(전체)"):
+                mm_boards = list(mamentor.FREE_AD_BOARDS.keys())
+            else:
+                mm_boards = [mm_choice.split(" ")[0]]
             crawlers.append(MamentorCrawler(self.mamentor_client))
             cfg_map["mamentor"] = CrawlConfig(boards=mm_boards, **common)
 
@@ -917,6 +923,7 @@ class MainApp(ctk.CTk):
     def _cr_stop(self):
         if self.crawl_job and self.crawl_job.is_running():
             self.crawl_job.stop()
+            self._log("크롤링 중지 요청 전송...")
 
     def _cr_done(self, counts: dict):
         self.cr_start_btn.configure(state="normal"); self.cr_stop_btn.configure(state="disabled")
