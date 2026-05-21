@@ -14,7 +14,7 @@ from tkinter import messagebox, filedialog
 
 import auth
 import updater
-from content import load_messages, list_images, Rotator
+from content import load_messages, list_images, Rotator, Post
 from paths import resource_path
 from base import BoardClient
 import sellclub
@@ -155,14 +155,18 @@ class MainApp(ctk.CTk):
         ctrl.pack(fill="x", padx=12, pady=6)
         ctk.CTkLabel(ctrl, text="반복 횟수").grid(row=0, column=0, padx=6)
         self.repeat_count = ctk.CTkEntry(ctrl, width=80); self.repeat_count.insert(0, str(DEFAULT_REPEAT_COUNT)); self.repeat_count.grid(row=0, column=1)
-        ctk.CTkLabel(ctrl, text="간격(초)").grid(row=0, column=2, padx=6)
-        self.interval = ctk.CTkEntry(ctrl, width=80); self.interval.insert(0, str(DEFAULT_INTERVAL_SEC)); self.interval.grid(row=0, column=3)
-        ctk.CTkLabel(ctrl, text="±랜덤(초)").grid(row=0, column=4, padx=6)
-        self.jitter = ctk.CTkEntry(ctrl, width=80); self.jitter.insert(0, "0"); self.jitter.grid(row=0, column=5)
+        ctk.CTkLabel(ctrl, text="간격").grid(row=0, column=2, padx=6)
+        self.interval = ctk.CTkEntry(ctrl, width=70); self.interval.insert(0, str(max(1, DEFAULT_INTERVAL_SEC // 60))); self.interval.grid(row=0, column=3)
+        self.interval_unit = ctk.CTkOptionMenu(ctrl, values=["초", "분", "시간"], width=70); self.interval_unit.set("분")
+        self.interval_unit.grid(row=0, column=4, padx=(4, 8))
+        ctk.CTkLabel(ctrl, text="±랜덤").grid(row=0, column=5, padx=6)
+        self.jitter = ctk.CTkEntry(ctrl, width=70); self.jitter.insert(0, "0"); self.jitter.grid(row=0, column=6)
+        self.jitter_unit = ctk.CTkOptionMenu(ctrl, values=["초", "분", "시간"], width=70); self.jitter_unit.set("초")
+        self.jitter_unit.grid(row=0, column=7, padx=(4, 8))
         self.start_btn = ctk.CTkButton(ctrl, text="발송 시작", width=100, command=self._start_job)
-        self.start_btn.grid(row=0, column=6, padx=10)
+        self.start_btn.grid(row=0, column=8, padx=10)
         self.stop_btn = ctk.CTkButton(ctrl, text="중지", width=80, fg_color="#9c2c2c", state="disabled", command=self._stop_job)
-        self.stop_btn.grid(row=0, column=7, padx=4)
+        self.stop_btn.grid(row=0, column=9, padx=4)
         ctk.CTkLabel(ctrl, text="단독 발송").grid(row=1, column=0, padx=6, pady=(6, 2), sticky="e")
         self.start_sc_only_btn = ctk.CTkButton(ctrl, text="셀클럽만", width=90, command=lambda: self._start_job({"sellclub"}))
         self.start_sc_only_btn.grid(row=1, column=1, padx=4, pady=(6, 2), sticky="w")
@@ -436,7 +440,7 @@ class MainApp(ctk.CTk):
         ctk.CTkButton(editor, text="메시지 폴더", width=100, command=self._open_messages_dir).grid(row=2, column=4, padx=4, pady=(4, 8), sticky="w")
         ctk.CTkButton(editor, text="이미지 폴더", width=100, command=self._open_images_dir).grid(row=2, column=5, padx=4, pady=(4, 8), sticky="w")
 
-        ctk.CTkLabel(parent, text="\n발송 방식: 한 라운드에 활성화된 모든 사이트에 같은 글+이미지 동시 게시\n간격은 모든 사이트 공통, 아이보스만 일일 2회 도달 시 자동 건너뜀",
+        ctk.CTkLabel(parent, text="\n발송 방식: 공통 탭 제목/본문 입력칸이 있으면 그 내용이 우선 발송됨\n입력칸이 비어 있을 때만 messages 폴더의 .txt를 순서/랜덤 로테이션\n간격은 모든 사이트 공통, 아이보스만 일일 2회 도달 시 자동 건너뜀",
                      text_color="#aaa", font=("Pretendard", 11)).grid(row=3, column=0, columnspan=7, padx=10, pady=6, sticky="w")
 
         sched = ctk.CTkFrame(parent)
@@ -447,19 +451,23 @@ class MainApp(ctk.CTk):
         self.auto_post_min = ctk.CTkEntry(sched, width=70)
         self.auto_post_min.insert(0, "120")
         self.auto_post_min.grid(row=0, column=2, padx=4)
-        ctk.CTkLabel(sched, text="분마다").grid(row=0, column=3, padx=4)
+        self.auto_post_unit = ctk.CTkOptionMenu(sched, values=["분", "시간"], width=70); self.auto_post_unit.set("분")
+        self.auto_post_unit.grid(row=0, column=3, padx=(0, 4))
+        ctk.CTkLabel(sched, text="마다").grid(row=0, column=4, padx=(0, 8))
         self.auto_crawl_enabled = ctk.CTkCheckBox(sched, text="크롤링")
-        self.auto_crawl_enabled.grid(row=0, column=4, padx=12)
+        self.auto_crawl_enabled.grid(row=0, column=5, padx=12)
         self.auto_crawl_min = ctk.CTkEntry(sched, width=70)
         self.auto_crawl_min.insert(0, "60")
-        self.auto_crawl_min.grid(row=0, column=5, padx=4)
-        ctk.CTkLabel(sched, text="분마다").grid(row=0, column=6, padx=4)
+        self.auto_crawl_min.grid(row=0, column=6, padx=4)
+        self.auto_crawl_unit = ctk.CTkOptionMenu(sched, values=["분", "시간"], width=70); self.auto_crawl_unit.set("분")
+        self.auto_crawl_unit.grid(row=0, column=7, padx=(0, 4))
+        ctk.CTkLabel(sched, text="마다").grid(row=0, column=8, padx=(0, 8))
         self.auto_start_btn = ctk.CTkButton(sched, text="스케줄 시작", width=110, command=self._auto_start)
-        self.auto_start_btn.grid(row=0, column=7, padx=8)
+        self.auto_start_btn.grid(row=0, column=9, padx=8)
         self.auto_stop_btn = ctk.CTkButton(sched, text="스케줄 중지", width=110, fg_color="#9c2c2c", state="disabled", command=self._auto_stop)
-        self.auto_stop_btn.grid(row=0, column=8, padx=4)
+        self.auto_stop_btn.grid(row=0, column=10, padx=4)
         self.auto_status = ctk.CTkLabel(sched, text="중지됨", text_color="#888")
-        self.auto_status.grid(row=0, column=9, padx=8, sticky="w")
+        self.auto_status.grid(row=0, column=11, padx=8, sticky="w")
         ctk.CTkLabel(sched, text="자동 발송 횟수").grid(row=1, column=0, padx=8, pady=(0, 8), sticky="w")
         ctk.CTkLabel(sched, text="셀클럽").grid(row=1, column=1, padx=(6, 2), pady=(0, 8), sticky="e")
         self.auto_sc_count = ctk.CTkEntry(sched, width=54)
@@ -473,7 +481,7 @@ class MainApp(ctk.CTk):
         self.auto_ib_count = ctk.CTkEntry(sched, width=54)
         self.auto_ib_count.insert(0, "2")
         self.auto_ib_count.grid(row=1, column=6, padx=(0, 8), pady=(0, 8))
-        ctk.CTkLabel(sched, text="0이면 제외, 아이보스는 일일 2회 제한 적용", text_color="#aaa", font=("Pretendard", 10)).grid(row=1, column=7, columnspan=3, padx=8, pady=(0, 8), sticky="w")
+        ctk.CTkLabel(sched, text="0이면 제외, 아이보스는 일일 2회 제한 적용", text_color="#aaa", font=("Pretendard", 10)).grid(row=1, column=7, columnspan=5, padx=8, pady=(0, 8), sticky="w")
 
     # ---------- 저장/로드 ----------
     def _load_saved(self):
@@ -514,6 +522,38 @@ class MainApp(ctk.CTk):
         m = load_messages(); i = list_images()
         self.msg_count.configure(text=f"메시지: {len(m)}건")
         self.img_count.configure(text=f"이미지: {len(i)}건")
+
+    def _editor_post(self) -> Post | None:
+        title = self.msg_title_entry.get().strip()
+        body = self.msg_body_box.get("1.0", "end").strip()
+        if title and body:
+            return Post(title=title, body=body, images=[])
+        if title or body:
+            raise ValueError("공통 탭 제목/본문을 둘 다 입력하거나, 둘 다 비워주세요.")
+        return None
+
+    def _load_posts_for_job(self) -> tuple[list[Post], str]:
+        editor_post = self._editor_post()
+        if editor_post:
+            return [editor_post], "공통 탭 입력칸"
+        posts = load_messages()
+        if not posts:
+            raise ValueError(f"{MESSAGES_DIR}/ 에 .txt 추가하거나 공통 탭 제목/본문을 입력하세요.")
+        return posts, f"{MESSAGES_DIR} 폴더 {len(posts)}건"
+
+    def _seconds_from_entry(self, entry, unit_widget, *, min_seconds: int = 5) -> int:
+        unit = unit_widget.get()
+        multiplier = {"초": 1, "분": 60, "시간": 3600}.get(unit, 1)
+        return max(min_seconds, int(float(entry.get()) * multiplier))
+
+    def _format_seconds(self, seconds: int) -> str:
+        if seconds <= 0:
+            return "0초"
+        if seconds % 3600 == 0:
+            return f"{seconds // 3600}시간"
+        if seconds % 60 == 0:
+            return f"{seconds // 60}분"
+        return f"{seconds}초"
 
     def _save_message_from_editor(self):
         title = self.msg_title_entry.get().strip()
@@ -628,10 +668,10 @@ class MainApp(ctk.CTk):
                 messagebox.showwarning("자동 스케줄", "사이트별 발송 횟수를 하나 이상 1 이상으로 입력하세요.")
                 return
         try:
-            post_sec = max(60, int(float(self.auto_post_min.get()) * 60))
-            crawl_sec = max(60, int(float(self.auto_crawl_min.get()) * 60))
+            post_sec = self._seconds_from_entry(self.auto_post_min, self.auto_post_unit, min_seconds=60)
+            crawl_sec = self._seconds_from_entry(self.auto_crawl_min, self.auto_crawl_unit, min_seconds=60)
         except ValueError:
-            messagebox.showerror("자동 스케줄", "간격은 숫자(분)로 입력하세요.")
+            messagebox.showerror("자동 스케줄", "간격은 숫자로 입력하세요.")
             return
 
         self.auto_scheduler_stop.clear()
@@ -645,7 +685,7 @@ class MainApp(ctk.CTk):
         self.auto_stop_btn.configure(state="normal")
         self.auto_status.configure(text="실행 중", text_color="#81c784")
         target_label = ", ".join(f"{k} {v}회" for k, v in post_counts.items() if v > 0) if post_counts else "-"
-        self._log(f"[자동 스케줄] 시작: 발송={post_enabled}({post_sec//60}분마다/{target_label}), 크롤링={crawl_enabled}({crawl_sec//60}분마다)")
+        self._log(f"[자동 스케줄] 시작: 발송={post_enabled}({self._format_seconds(post_sec)}마다/{target_label}), 크롤링={crawl_enabled}({self._format_seconds(crawl_sec)}마다)")
 
     def _auto_stop(self):
         self.auto_scheduler_stop.set()
@@ -839,10 +879,11 @@ class MainApp(ctk.CTk):
         if not plans:
             messagebox.showwarning("사이트 선택", "최소 1개 사이트를 선택해야 합니다"); return False
 
-        # 콘텐츠
-        posts = load_messages()
-        if not posts:
-            messagebox.showwarning("메시지 없음", f"{MESSAGES_DIR}/ 에 .txt 추가하세요 (첫 줄=제목)"); return False
+        # 콘텐츠: 공통 탭 입력칸이 있으면 우선 사용, 비어 있으면 messages 폴더 로테이션 사용.
+        try:
+            posts, post_source = self._load_posts_for_job()
+        except ValueError as e:
+            messagebox.showwarning("메시지 없음", str(e)); return False
         images = list_images()
         try:
             attach = int(self.img_attach.get())
@@ -854,10 +895,12 @@ class MainApp(ctk.CTk):
             messagebox.showerror("오류", str(e)); return False
 
         try:
+            interval_sec = self._seconds_from_entry(self.interval, self.interval_unit, min_seconds=5)
+            jitter_sec = self._seconds_from_entry(self.jitter, self.jitter_unit, min_seconds=0)
             cfg = JobConfig(
                 repeat_count=max(1, int(repeat_count if repeat_count is not None else self.repeat_count.get())),
-                interval_sec=max(5, int(self.interval.get())),
-                jitter_sec=max(0, int(self.jitter.get())),
+                interval_sec=interval_sec,
+                jitter_sec=jitter_sec,
             )
         except ValueError:
             messagebox.showerror("입력", "반복횟수/간격은 숫자"); return False
@@ -876,8 +919,9 @@ class MainApp(ctk.CTk):
         self.job = PostingJob(bot, rotator, cfg, on_log=self._log)
         self.job.start()
         self._set_post_buttons_state("disabled"); self.stop_btn.configure(state="normal")
-        self._log(f"━━━ 발송 시작: {cfg.repeat_count}라운드, {cfg.interval_sec}±{cfg.jitter_sec}초 ━━━")
+        self._log(f"━━━ 발송 시작: {cfg.repeat_count}라운드, {self._format_seconds(cfg.interval_sec)} ± {self._format_seconds(cfg.jitter_sec)} ━━━")
         self._log(f"활성 사이트: {', '.join(plans.keys())}")
+        self._log(f"콘텐츠 출처: {post_source}")
         self.after(1000, self._poll_job)
         return True
 

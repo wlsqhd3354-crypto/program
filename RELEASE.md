@@ -23,7 +23,7 @@ dist\SellClubBot.exe
 Create a new release tag such as:
 
 ```text
-v1.3.1
+v1.3.3
 ```
 
 Upload these files as release assets:
@@ -39,9 +39,9 @@ Use this format:
 
 ```json
 {
-  "version": "1.3.1",
-  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.1/SellClubBot.exe",
-  "notes": "영업크롤러 테이블 가시성 개선, 카톡/오픈챗 분리, 전화 우선 정렬",
+  "version": "1.3.3",
+  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.3/SellClubBot.exe",
+  "notes": "공통 탭 입력칸 우선 발송, 반복발송 간격 초/분/시간 단위 선택",
   "sha256": "",
   "force": false
 }
