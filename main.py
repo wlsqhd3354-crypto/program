@@ -114,7 +114,8 @@ class MainApp(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("자동발송기 - 셀클럽/마멘토/아이보스 통합")
-        self.geometry("1120x840")
+        self.geometry("1220x900")
+        self.minsize(1100, 760)
 
         self.sellclub_client: sellclub.SellClubClient | None = None
         self.mamentor_client: mamentor.MamentorClient | None = None
@@ -135,8 +136,8 @@ class MainApp(ctk.CTk):
     # ---------- UI 구축 ----------
     def _build_ui(self):
         # 탭뷰: 사이트별 설정
-        self.tabs = ctk.CTkTabview(self, height=520)
-        self.tabs.pack(fill="x", padx=12, pady=(12, 6))
+        self.tabs = ctk.CTkTabview(self, height=640)
+        self.tabs.pack(fill="both", expand=True, padx=12, pady=(12, 6))
         self.tabs.add("셀클럽")
         self.tabs.add("마멘토")
         self.tabs.add("아이보스")
@@ -172,10 +173,10 @@ class MainApp(ctk.CTk):
 
         # 로그
         log_frame = ctk.CTkFrame(self)
-        log_frame.pack(fill="both", expand=True, padx=12, pady=(6, 12))
+        log_frame.pack(fill="x", padx=12, pady=(6, 12))
         ctk.CTkLabel(log_frame, text="로그", font=("Pretendard", 12, "bold")).pack(anchor="w", padx=10, pady=(6, 0))
-        self.log = ctk.CTkTextbox(log_frame, font=("Consolas", 11))
-        self.log.pack(fill="both", expand=True, padx=10, pady=8)
+        self.log = ctk.CTkTextbox(log_frame, font=("Consolas", 11), height=110)
+        self.log.pack(fill="x", padx=10, pady=8)
 
     def _build_sellclub_tab(self, parent):
         self.sc_enabled = ctk.CTkCheckBox(parent, text="셀클럽 활성화"); self.sc_enabled.select()
@@ -334,6 +335,8 @@ class MainApp(ctk.CTk):
         self.cr_stats_label.grid(row=0, column=7, padx=10)
         ctk.CTkButton(ctrl, text="중복메모 열기", width=120, command=self._cr_open_duplicate_memo).grid(row=1, column=0, padx=4, pady=(6, 2))
         ctk.CTkButton(ctrl, text="선택 중복처리", width=120, command=self._cr_mark_selected_duplicate).grid(row=1, column=1, padx=4, pady=(6, 2))
+        self.cr_phone_first = ctk.CTkCheckBox(ctrl, text="전화 보유 우선", command=self._cr_refresh)
+        self.cr_phone_first.grid(row=1, column=2, padx=8, pady=(6, 2), sticky="w")
 
         dashboard = ctk.CTkFrame(parent)
         dashboard.pack(fill="x", padx=10, pady=(0, 6))
@@ -366,20 +369,28 @@ class MainApp(ctk.CTk):
             pass
         style.configure("Treeview", background="#2b2b2b", foreground="#fff", fieldbackground="#2b2b2b", rowheight=24)
         style.map("Treeview", background=[("selected", "#1f6aa5")])
-        cols = ("id", "priority", "status", "site", "title", "contact", "phone", "email", "next", "dup", "found")
+        table_frame.grid_rowconfigure(0, weight=1)
+        table_frame.grid_columnconfigure(0, weight=1)
+        cols = ("id", "priority", "status", "site", "title", "kakao", "openchat", "phone", "email", "next", "dup", "found")
         self.cr_tree = ttk.Treeview(table_frame, columns=cols, show="headings", selectmode="browse")
-        widths = {"id": 48, "priority": 62, "status": 78, "site": 70, "title": 300,
-                  "contact": 170, "phone": 120, "email": 170, "next": 95, "dup": 70, "found": 125}
+        widths = {"id": 48, "priority": 58, "status": 75, "site": 70, "title": 320,
+                  "kakao": 130, "openchat": 260, "phone": 125, "email": 220,
+                  "next": 95, "dup": 70, "found": 125}
         headers = {"id": "ID", "priority": "우선", "status": "상태", "site": "사이트", "title": "제목",
-                   "contact": "카톡/오픈챗", "phone": "전화", "email": "이메일", "next": "다음액션",
+                   "kakao": "카톡", "openchat": "오픈챗", "phone": "전화", "email": "이메일", "next": "다음액션",
                    "dup": "중복", "found": "수집"}
         for c in cols:
-            self.cr_tree.heading(c, text=headers[c])
-            self.cr_tree.column(c, width=widths[c], anchor="w")
+            if c == "phone":
+                self.cr_tree.heading(c, text=headers[c], command=self._cr_sort_phone_first)
+            else:
+                self.cr_tree.heading(c, text=headers[c])
+            self.cr_tree.column(c, width=widths[c], minwidth=widths[c], anchor="w", stretch=False)
         vs = ttk.Scrollbar(table_frame, orient="vertical", command=self.cr_tree.yview)
-        self.cr_tree.configure(yscrollcommand=vs.set)
-        self.cr_tree.pack(side="left", fill="both", expand=True)
-        vs.pack(side="right", fill="y")
+        hs = ttk.Scrollbar(table_frame, orient="horizontal", command=self.cr_tree.xview)
+        self.cr_tree.configure(yscrollcommand=vs.set, xscrollcommand=hs.set)
+        self.cr_tree.grid(row=0, column=0, sticky="nsew")
+        vs.grid(row=0, column=1, sticky="ns")
+        hs.grid(row=1, column=0, sticky="ew")
         self.cr_tree.bind("<Double-1>", self._cr_open_detail)
         self.cr_tree.bind("<<TreeviewSelect>>", self._cr_preview_selected)
 
@@ -391,7 +402,7 @@ class MainApp(ctk.CTk):
         self.cr_preview_title.grid(row=0, column=0, padx=10, pady=(8, 2), sticky="ew")
         self.cr_preview_meta = ctk.CTkLabel(preview, text="", anchor="w", text_color="#b5b5b5")
         self.cr_preview_meta.grid(row=1, column=0, padx=10, sticky="ew")
-        self.cr_preview_body = ctk.CTkTextbox(preview, height=74)
+        self.cr_preview_body = ctk.CTkTextbox(preview, height=155)
         self.cr_preview_body.grid(row=2, column=0, padx=10, pady=(4, 10), sticky="ew")
         self.cr_preview_body.insert("0.0", "본문/메모 미리보기")
         self.cr_preview_body.configure(state="disabled")
@@ -971,6 +982,22 @@ class MainApp(ctk.CTk):
     def _cr_contact_text(self, L):
         return ", ".join((L.kakao_ids or []) + (L.open_chats or []))
 
+    def _cr_kakao_text(self, L):
+        return ", ".join(L.kakao_ids or [])
+
+    def _cr_openchat_text(self, L):
+        return ", ".join(L.open_chats or [])
+
+    def _cr_phone_first_enabled(self):
+        return hasattr(self, "cr_phone_first") and bool(self.cr_phone_first.get())
+
+    def _cr_sort_phone_first(self):
+        if self._cr_phone_first_enabled():
+            self.cr_phone_first.deselect()
+        else:
+            self.cr_phone_first.select()
+        self._cr_refresh()
+
     def _cr_duplicate_label(self, L):
         if L.duplicate_of:
             return f"#{L.duplicate_of}"
@@ -985,9 +1012,10 @@ class MainApp(ctk.CTk):
             L.status,
             L.site,
             (L.title or "")[:80],
-            self._cr_contact_text(L)[:60],
+            self._cr_kakao_text(L)[:45],
+            self._cr_openchat_text(L)[:90],
             ", ".join(L.phones or [])[:40],
-            ", ".join(L.emails or [])[:50],
+            ", ".join(L.emails or [])[:70],
             (L.next_action_at or "")[:10],
             self._cr_duplicate_label(L),
             L.found_at[:16] if L.found_at else "",
@@ -1023,10 +1051,13 @@ class MainApp(ctk.CTk):
         for iid in self.cr_tree.get_children():
             if self.cr_tree.set(iid, "id") == str(L.id):
                 self.cr_tree.item(iid, values=self._cr_row_values(L))
+                if self._cr_phone_first_enabled() and L.phones:
+                    self.cr_tree.move(iid, "", 0)
                 self.cr_tree.see(iid)
                 self._cr_preview_selected()
                 return
-        iid = self.cr_tree.insert("", "end", values=self._cr_row_values(L))
+        index = 0 if self._cr_phone_first_enabled() and L.phones else "end"
+        iid = self.cr_tree.insert("", index, values=self._cr_row_values(L))
         self.cr_tree.see(iid)
 
     def _cr_refresh(self):
@@ -1034,10 +1065,14 @@ class MainApp(ctk.CTk):
             self.cr_tree.delete(iid)
         site = self.cr_filter_site.get()
         status = self.cr_filter_status.get()
+        order = "found_at DESC"
+        if self._cr_phone_first_enabled():
+            order = "CASE WHEN COALESCE(phones, '') <> '' THEN 0 ELSE 1 END, found_at DESC"
         leads = get_leads(
             site=None if site == "전체" else site,
             status=None if status == "전체" else status,
             limit=1000,
+            order=order,
         )
         for L in leads:
             self.cr_tree.insert("", "end", values=self._cr_row_values(L))
@@ -1066,8 +1101,10 @@ class MainApp(ctk.CTk):
             contacts.append("전화 " + ", ".join(L.phones))
         if L.emails:
             contacts.append("메일 " + ", ".join(L.emails))
-        if L.kakao_ids or L.open_chats:
-            contacts.append("카톡 " + self._cr_contact_text(L))
+        if L.kakao_ids:
+            contacts.append("카톡 " + self._cr_kakao_text(L))
+        if L.open_chats:
+            contacts.append("오픈챗 " + self._cr_openchat_text(L))
         dup = f" · 중복 {self._cr_duplicate_label(L)}" if self._cr_duplicate_label(L) else ""
         self.cr_preview_title.configure(text=f"[{L.site}] {title}")
         self.cr_preview_meta.configure(
