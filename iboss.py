@@ -6,15 +6,13 @@
 특이사항:
 - 본문 에디터가 Summernote (HTML)임. comment_1 필드에 HTML 본문 + is_html=Y.
 - 동적 CSRF 토큰 VG_live_code 가 /ab-2988 페이지마다 새로 발급됨 → 매번 파싱.
-- 이미지: Summernote 의 base64 data URL 임베드 방식 사용 (브라우저에서 이미지를
-  복사-붙여넣기 하는 것과 동일). 별도 업로드 엔드포인트 불필요.
+- 이미지: Summernote 이미지 업로드 엔드포인트로 먼저 업로드한 뒤 본문에 이미지 URL 삽입.
 - 일일 2회 제한은 MultiBot 레벨에서 관리.
 """
 
 from __future__ import annotations
 
 import re
-import base64
 import mimetypes
 import os
 import html as html_lib
@@ -27,13 +25,14 @@ import requests
 from base import BoardClient, WriteResult
 from config import USER_AGENT
 
-# 본문에 임베드할 이미지 1개당 권장 최대 크기 (1MB) — 너무 크면 본문 길이 초과
-MAX_EMBED_IMAGE_BYTES = 1_048_576
+# 아이보스 Summernote 이미지 업로드 스크립트 기준 1회 총 20MB 제한.
+MAX_UPLOAD_IMAGE_BYTES = 20 * 1024 * 1024
 
 IBOSS_BASE = "https://www.i-boss.co.kr"
 LOGIN_POST_URL = f"{IBOSS_BASE}/member/login_process.php"
 WRITE_GET_URL = f"{IBOSS_BASE}/ab-2988"             # 바이럴 서비스 글쓰기 페이지
 WRITE_POST_URL = f"{IBOSS_BASE}/board/article_write.php"
+IMAGE_UPLOAD_URL = f"{IBOSS_BASE}/tools/editor/SummerEditor/imageUpload/upload.php"
 BOARD_ID = "BD2986"                                  # 바이럴 서비스 게시판 ID
 
 # 카테고리 (구분) 코드
@@ -66,7 +65,7 @@ class WriteOptions:
 
 class IBossClient(BoardClient):
     site_name = "iboss"
-    supports_images = True  # base64 data URL 임베드 방식
+    supports_images = True
 
     def __init__(self, timeout: int = 20):
         super().__init__()
@@ -158,6 +157,60 @@ class IBossClient(BoardClient):
 
         return hidden
 
+    def _upload_images(self, image_paths: list[str]) -> list[str]:
+        valid_paths = [path for path in image_paths if os.path.isfile(path)]
+        if not valid_paths:
+            return []
+        total_size = sum(os.path.getsize(path) for path in valid_paths)
+        if total_size > MAX_UPLOAD_IMAGE_BYTES:
+            raise IBossError("아이보스 이미지는 1회 합계 20MB 이하만 업로드할 수 있습니다.")
+
+        files = []
+        opened = []
+        try:
+            for path in valid_paths:
+                mime = mimetypes.guess_type(path)[0] or "application/octet-stream"
+                f = open(path, "rb")
+                opened.append(f)
+                files.append(("imageUpload[]", (os.path.basename(path), f, mime)))
+
+            resp = self.session.post(
+                IMAGE_UPLOAD_URL,
+                files=files,
+                headers={
+                    "Referer": WRITE_GET_URL,
+                    "Origin": IBOSS_BASE,
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Accept": "application/json, text/javascript, */*; q=0.01",
+                },
+                timeout=max(self.timeout, 60),
+            )
+        finally:
+            for f in opened:
+                try:
+                    f.close()
+                except OSError:
+                    pass
+
+        if resp.status_code >= 400:
+            raise IBossError(f"이미지 업로드 실패: HTTP {resp.status_code}")
+
+        try:
+            data = resp.json()
+        except ValueError as e:
+            raise IBossError("이미지 업로드 응답 파싱 실패") from e
+
+        if str(data.get("code")) != "1":
+            msg = data.get("msg") or data.get("message") or "이미지 업로드 실패"
+            raise IBossError(str(msg))
+
+        urls: list[str] = []
+        for item in data.get("files", []) or []:
+            url = item.get("newUrl") or item.get("url") or item.get("sFileURL")
+            if url:
+                urls.append(urljoin(IBOSS_BASE, str(url)))
+        return urls
+
     def write_post(
         self,
         title: str,
@@ -183,22 +236,14 @@ class IBossClient(BoardClient):
         # 2) 본문을 HTML 로 변환 (Summernote 는 HTML 으로 받음). 줄바꿈은 <br>.
         body_html = html_lib.escape(content).replace("\n", "<br>")
 
-        # 2-1) 이미지를 base64 data URL 로 본문 끝에 임베드
-        #     (브라우저에서 이미지 복사-붙여넣기와 동일한 방식)
+        # 2-1) 이미지는 Summernote 업로드 API로 올린 뒤 본문 끝에 URL 이미지로 삽입.
         image_paths = list(images or [])
-        embedded = []
-        for path in image_paths:
-            if not os.path.isfile(path):
-                continue
-            size = os.path.getsize(path)
-            if size > MAX_EMBED_IMAGE_BYTES:
-                # 너무 크면 건너뜀 (본문 길이 초과 위험)
-                continue
-            mime = mimetypes.guess_type(path)[0] or "image/jpeg"
-            with open(path, "rb") as f:
-                b64 = base64.b64encode(f.read()).decode("ascii")
-            embedded.append(f'<p><img src="data:{mime};base64,{b64}" /></p>')
-        if embedded:
+        uploaded_urls = self._upload_images(image_paths)
+        if uploaded_urls:
+            embedded = [
+                f'<p><img src="{html_lib.escape(url, quote=True)}" /></p>'
+                for url in uploaded_urls
+            ]
             body_html = body_html + "<p><br></p>" + "".join(embedded)
 
         # 3) multipart 필드 구성

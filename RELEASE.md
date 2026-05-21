@@ -23,7 +23,7 @@ dist\SellClubBot.exe
 Create a new release tag such as:
 
 ```text
-v1.3.3
+v1.3.4
 ```
 
 Upload these files as release assets:
@@ -39,9 +39,9 @@ Use this format:
 
 ```json
 {
-  "version": "1.3.3",
-  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.3/SellClubBot.exe",
-  "notes": "공통 탭 입력칸 우선 발송, 반복발송 간격 초/분/시간 단위 선택",
+  "version": "1.3.4",
+  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.4/SellClubBot.exe",
+  "notes": "아이보스 이미지 업로드 방식을 에디터 업로드 API로 수정",
   "sha256": "",
   "force": false
 }

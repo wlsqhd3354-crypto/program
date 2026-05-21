@@ -275,7 +275,7 @@ class MainApp(ctk.CTk):
         ctk.CTkLabel(parent, text="카카오톡").grid(row=4, column=2, padx=10, sticky="e")
         self.ib_kakao = ctk.CTkEntry(parent, width=180); self.ib_kakao.grid(row=4, column=3, sticky="w")
 
-        note = ctk.CTkLabel(parent, text="※ 이미지는 base64로 본문에 임베드 (브라우저 복사-붙여넣기와 동일 방식). 1MB 초과 이미지는 자동 제외.",
+        note = ctk.CTkLabel(parent, text="※ 이미지는 아이보스 에디터 업로드 방식으로 본문에 삽입됩니다. 1회 합계 20MB 이하 권장.",
                             text_color="#81c784", font=("Pretendard", 10))
         note.grid(row=5, column=0, columnspan=6, padx=10, pady=10, sticky="w")
 
