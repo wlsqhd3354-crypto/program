@@ -13,8 +13,8 @@ from paths import resource_path
 HEADERS = [
     "ID", "사이트", "게시판", "카테고리", "제목", "회사명",
     "카톡ID", "오픈채팅", "전화", "이메일",
-    "작성자", "게시일", "상태", "매칭키워드",
-    "접촉횟수", "마지막접촉", "마지막결과", "메모",
+    "작성자", "게시일", "상태", "우선순위", "다음액션", "리드메모", "중복키", "중복원본", "매칭키워드",
+    "접촉횟수", "마지막접촉", "마지막결과", "접촉메모",
     "본문요약", "본문전체", "글URL",
 ]
 
@@ -59,6 +59,11 @@ def export_leads(out_path: str | None = None, site: str | None = None,
             L.writer,
             L.posted_at,
             L.status,
+            L.priority,
+            L.next_action_at,
+            L.memo,
+            L.duplicate_key,
+            L.duplicate_of or "",
             ", ".join(L.matched_keywords),
             len(contacts),
             last.attempted_at if last else "",
@@ -72,7 +77,7 @@ def export_leads(out_path: str | None = None, site: str | None = None,
             ws.cell(row=i, column=c, value=val)
 
     # 컬럼 너비 조정
-    widths = [6, 10, 12, 14, 40, 18, 24, 32, 18, 28, 16, 16, 10, 18, 8, 18, 10, 28, 60, 80, 60]
+    widths = [6, 10, 12, 14, 40, 18, 24, 32, 18, 28, 16, 16, 10, 10, 14, 28, 24, 10, 18, 8, 18, 10, 28, 60, 80, 60]
     for idx, w in enumerate(widths, start=1):
         ws.column_dimensions[chr(64 + idx) if idx <= 26 else "A" + chr(64 + idx - 26)].width = w
 

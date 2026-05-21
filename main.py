@@ -33,8 +33,9 @@ from config import (
 # 영업 크롤러
 from db import (
     init_db as crawler_init_db,
-    get_leads, get_lead, update_status, add_contact, get_contacts, stats as crawler_stats,
-    Contact, STATUS_OPTIONS, CHANNEL_OPTIONS, RESULT_OPTIONS,
+    get_leads, get_lead, update_status, update_lead_crm, add_contact, get_contacts, stats as crawler_stats,
+    append_duplicate_memo, ensure_duplicate_memo_file, primary_duplicate_value,
+    Contact, STATUS_OPTIONS, PRIORITY_OPTIONS, CHANNEL_OPTIONS, RESULT_OPTIONS,
 )
 from crawler_base import CrawlConfig
 from sellclub_crawler import SellClubCrawler, SELLCLUB_CRAWL_CATEGORIES
@@ -113,7 +114,7 @@ class MainApp(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("자동발송기 - 셀클럽/마멘토/아이보스 통합")
-        self.geometry("960x780")
+        self.geometry("1120x840")
 
         self.sellclub_client: sellclub.SellClubClient | None = None
         self.mamentor_client: mamentor.MamentorClient | None = None
@@ -134,7 +135,7 @@ class MainApp(ctk.CTk):
     # ---------- UI 구축 ----------
     def _build_ui(self):
         # 탭뷰: 사이트별 설정
-        self.tabs = ctk.CTkTabview(self, height=440)
+        self.tabs = ctk.CTkTabview(self, height=520)
         self.tabs.pack(fill="x", padx=12, pady=(12, 6))
         self.tabs.add("셀클럽")
         self.tabs.add("마멘토")
@@ -331,6 +332,28 @@ class MainApp(ctk.CTk):
         self.cr_filter_status.grid(row=0, column=6, padx=4)
         self.cr_stats_label = ctk.CTkLabel(ctrl, text="총 0건")
         self.cr_stats_label.grid(row=0, column=7, padx=10)
+        ctk.CTkButton(ctrl, text="중복메모 열기", width=120, command=self._cr_open_duplicate_memo).grid(row=1, column=0, padx=4, pady=(6, 2))
+        ctk.CTkButton(ctrl, text="선택 중복처리", width=120, command=self._cr_mark_selected_duplicate).grid(row=1, column=1, padx=4, pady=(6, 2))
+
+        dashboard = ctk.CTkFrame(parent)
+        dashboard.pack(fill="x", padx=10, pady=(0, 6))
+        self.cr_cards = {}
+        for idx, (key, label) in enumerate([
+            ("total", "전체 리드"),
+            ("contactable", "연락처 있음"),
+            ("uncontacted", "미접촉"),
+            ("waiting", "응답대기"),
+            ("contract", "계약"),
+            ("duplicate", "중복"),
+            ("due", "오늘 액션"),
+        ]):
+            card = ctk.CTkFrame(dashboard)
+            card.grid(row=0, column=idx, padx=4, pady=6, sticky="nsew")
+            dashboard.grid_columnconfigure(idx, weight=1)
+            ctk.CTkLabel(card, text=label, text_color="#b5b5b5", font=("Pretendard", 10)).pack(anchor="w", padx=8, pady=(6, 0))
+            value = ctk.CTkLabel(card, text="0", font=("Pretendard", 18, "bold"))
+            value.pack(anchor="w", padx=8, pady=(0, 6))
+            self.cr_cards[key] = value
 
         # 리드 목록 (TreeView from tk)
         from tkinter import ttk
@@ -343,12 +366,13 @@ class MainApp(ctk.CTk):
             pass
         style.configure("Treeview", background="#2b2b2b", foreground="#fff", fieldbackground="#2b2b2b", rowheight=24)
         style.map("Treeview", background=[("selected", "#1f6aa5")])
-        cols = ("id", "site", "status", "title", "company", "kakao", "phone", "email", "found")
+        cols = ("id", "priority", "status", "site", "title", "contact", "phone", "email", "next", "dup", "found")
         self.cr_tree = ttk.Treeview(table_frame, columns=cols, show="headings", selectmode="browse")
-        widths = {"id": 50, "site": 70, "status": 75, "title": 320, "company": 140,
-                  "kakao": 160, "phone": 110, "email": 180, "found": 130}
-        headers = {"id": "ID", "site": "사이트", "status": "상태", "title": "제목", "company": "회사",
-                   "kakao": "카톡/오픈챗", "phone": "전화", "email": "이메일", "found": "수집"}
+        widths = {"id": 48, "priority": 62, "status": 78, "site": 70, "title": 300,
+                  "contact": 170, "phone": 120, "email": 170, "next": 95, "dup": 70, "found": 125}
+        headers = {"id": "ID", "priority": "우선", "status": "상태", "site": "사이트", "title": "제목",
+                   "contact": "카톡/오픈챗", "phone": "전화", "email": "이메일", "next": "다음액션",
+                   "dup": "중복", "found": "수집"}
         for c in cols:
             self.cr_tree.heading(c, text=headers[c])
             self.cr_tree.column(c, width=widths[c], anchor="w")
@@ -357,6 +381,21 @@ class MainApp(ctk.CTk):
         self.cr_tree.pack(side="left", fill="both", expand=True)
         vs.pack(side="right", fill="y")
         self.cr_tree.bind("<Double-1>", self._cr_open_detail)
+        self.cr_tree.bind("<<TreeviewSelect>>", self._cr_preview_selected)
+
+        preview = ctk.CTkFrame(parent)
+        preview.pack(fill="x", padx=10, pady=(0, 8))
+        preview.grid_columnconfigure(0, weight=1)
+        self.cr_preview_title = ctk.CTkLabel(preview, text="리드를 선택하면 상세 요약이 여기에 표시됩니다.", anchor="w",
+                                             font=("Pretendard", 12, "bold"))
+        self.cr_preview_title.grid(row=0, column=0, padx=10, pady=(8, 2), sticky="ew")
+        self.cr_preview_meta = ctk.CTkLabel(preview, text="", anchor="w", text_color="#b5b5b5")
+        self.cr_preview_meta.grid(row=1, column=0, padx=10, sticky="ew")
+        self.cr_preview_body = ctk.CTkTextbox(preview, height=74)
+        self.cr_preview_body.grid(row=2, column=0, padx=10, pady=(4, 10), sticky="ew")
+        self.cr_preview_body.insert("0.0", "본문/메모 미리보기")
+        self.cr_preview_body.configure(state="disabled")
+        self.after(100, self._cr_refresh)
 
     def _build_common_tab(self, parent):
         parent.grid_columnconfigure(0, weight=1)
@@ -929,8 +968,51 @@ class MainApp(ctk.CTk):
         self.cr_start_btn.configure(state="normal"); self.cr_stop_btn.configure(state="disabled")
         self._cr_refresh()
 
+    def _cr_contact_text(self, L):
+        return ", ".join((L.kakao_ids or []) + (L.open_chats or []))
+
+    def _cr_duplicate_label(self, L):
+        if L.duplicate_of:
+            return f"#{L.duplicate_of}"
+        if L.duplicate_key:
+            return "메모" if L.duplicate_key.startswith("memo:") else "중복"
+        return ""
+
+    def _cr_row_values(self, L):
+        return (
+            L.id,
+            L.priority or "보통",
+            L.status,
+            L.site,
+            (L.title or "")[:80],
+            self._cr_contact_text(L)[:60],
+            ", ".join(L.phones or [])[:40],
+            ", ".join(L.emails or [])[:50],
+            (L.next_action_at or "")[:10],
+            self._cr_duplicate_label(L),
+            L.found_at[:16] if L.found_at else "",
+        )
+
+    def _cr_update_dashboard(self):
+        s = crawler_stats()
+        by_status = s.get("by_status", {})
+        values = {
+            "total": s.get("total", 0),
+            "contactable": s.get("contactable", 0),
+            "uncontacted": by_status.get("미접촉", 0),
+            "waiting": by_status.get("응답대기", 0),
+            "contract": by_status.get("계약", 0),
+            "duplicate": s.get("duplicates", 0),
+            "due": s.get("due", 0),
+        }
+        for key, value in values.items():
+            if hasattr(self, "cr_cards") and key in self.cr_cards:
+                self.cr_cards[key].configure(text=str(value))
+        self.cr_stats_label.configure(text=f"총 {s['total']}건 · 연락처 {s.get('contactable', 0)}건 · 중복 {s.get('duplicates', 0)}건")
+
     def _cr_append_row(self, L):
         L = get_lead(L.id) or L
+        self._cr_update_dashboard()
         site = self.cr_filter_site.get()
         status = self.cr_filter_status.get()
         if site != "전체" and L.site != site:
@@ -940,22 +1022,11 @@ class MainApp(ctk.CTk):
         # 실시간 추가: 중복 방지 (id 기준)
         for iid in self.cr_tree.get_children():
             if self.cr_tree.set(iid, "id") == str(L.id):
-                self.cr_tree.item(iid, values=(
-                    L.id, L.site, L.status, L.title[:80], L.company,
-                    ", ".join((L.kakao_ids or []) + (L.open_chats or []))[:60],
-                    ", ".join(L.phones or []),
-                    ", ".join(L.emails or [])[:50],
-                    L.found_at[:16] if L.found_at else "",
-                ))
+                self.cr_tree.item(iid, values=self._cr_row_values(L))
                 self.cr_tree.see(iid)
+                self._cr_preview_selected()
                 return
-        iid = self.cr_tree.insert("", "end", values=(
-            L.id, L.site, L.status, L.title[:80], L.company,
-            ", ".join((L.kakao_ids or []) + (L.open_chats or []))[:60],
-            ", ".join(L.phones or []),
-            ", ".join(L.emails or [])[:50],
-            L.found_at[:16] if L.found_at else "",
-        ))
+        iid = self.cr_tree.insert("", "end", values=self._cr_row_values(L))
         self.cr_tree.see(iid)
 
     def _cr_refresh(self):
@@ -969,15 +1040,71 @@ class MainApp(ctk.CTk):
             limit=1000,
         )
         for L in leads:
-            self.cr_tree.insert("", "end", values=(
-                L.id, L.site, L.status, L.title[:80], L.company,
-                ", ".join((L.kakao_ids or []) + (L.open_chats or []))[:60],
-                ", ".join(L.phones or []),
-                ", ".join(L.emails or [])[:50],
-                L.found_at[:16] if L.found_at else "",
-            ))
-        s = crawler_stats()
-        self.cr_stats_label.configure(text=f"총 {s['total']}건 · {s['by_site']} · {s['by_status']}")
+            self.cr_tree.insert("", "end", values=self._cr_row_values(L))
+        self._cr_update_dashboard()
+        self._cr_preview_selected()
+
+    def _cr_preview_selected(self, event=None):
+        if not hasattr(self, "cr_preview_body"):
+            return
+        sel = self.cr_tree.selection()
+        if not sel:
+            self.cr_preview_title.configure(text="리드를 선택하면 상세 요약이 여기에 표시됩니다.")
+            self.cr_preview_meta.configure(text="")
+            self.cr_preview_body.configure(state="normal")
+            self.cr_preview_body.delete("0.0", "end")
+            self.cr_preview_body.insert("0.0", "본문/메모 미리보기")
+            self.cr_preview_body.configure(state="disabled")
+            return
+        lead_id = int(self.cr_tree.set(sel[0], "id"))
+        L = get_lead(lead_id)
+        if not L:
+            return
+        title = L.title or "(제목 없음)"
+        contacts = []
+        if L.phones:
+            contacts.append("전화 " + ", ".join(L.phones))
+        if L.emails:
+            contacts.append("메일 " + ", ".join(L.emails))
+        if L.kakao_ids or L.open_chats:
+            contacts.append("카톡 " + self._cr_contact_text(L))
+        dup = f" · 중복 {self._cr_duplicate_label(L)}" if self._cr_duplicate_label(L) else ""
+        self.cr_preview_title.configure(text=f"[{L.site}] {title}")
+        self.cr_preview_meta.configure(
+            text=f"{L.status} · 우선순위 {L.priority or '보통'} · 다음액션 {L.next_action_at or '-'} · {' / '.join(contacts) or '연락처 없음'}{dup}"
+        )
+        body = L.memo.strip() or L.body_text.strip() or L.body_excerpt.strip() or "(본문/메모 없음)"
+        self.cr_preview_body.configure(state="normal")
+        self.cr_preview_body.delete("0.0", "end")
+        self.cr_preview_body.insert("0.0", body[:1200])
+        self.cr_preview_body.configure(state="disabled")
+
+    def _cr_open_duplicate_memo(self):
+        path = ensure_duplicate_memo_file()
+        try:
+            os.startfile(path)
+        except Exception as e:
+            messagebox.showerror("중복메모", str(e))
+            return
+        self._log(f"중복 메모장 열림: {path}")
+
+    def _cr_mark_selected_duplicate(self):
+        sel = self.cr_tree.selection()
+        if not sel:
+            messagebox.showwarning("중복처리", "먼저 리드를 선택해주세요.")
+            return
+        lead_id = int(self.cr_tree.set(sel[0], "id"))
+        L = get_lead(lead_id)
+        if not L:
+            return
+        value = primary_duplicate_value(L)
+        if not value:
+            messagebox.showwarning("중복처리", "중복 기준으로 저장할 값이 없습니다.")
+            return
+        append_duplicate_memo(value)
+        update_lead_crm(lead_id, status="중복", duplicate_key=f"memo:{value}")
+        self._log(f"중복 처리: #{lead_id} 기준값 '{value}'")
+        self._cr_refresh()
 
     def _cr_export(self):
         try:
@@ -998,27 +1125,50 @@ class MainApp(ctk.CTk):
 
 
 class LeadDetailDialog(ctk.CTkToplevel):
-    """리드 상세 + 접촉이력 + 상태 변경."""
+    """리드 상세 + CRM 메모 + 접촉이력."""
 
     def __init__(self, parent, lead, on_change=None):
         super().__init__(parent)
         self.lead = lead
         self.on_change = on_change
         self.title(f"[{lead.site}] {lead.title[:50]}")
-        self.geometry("720x600")
+        self.geometry("860x720")
 
-        info = ctk.CTkScrollableFrame(self, height=260)
-        info.pack(fill="x", padx=10, pady=10)
+        summary = ctk.CTkFrame(self)
+        summary.pack(fill="x", padx=10, pady=(10, 6))
+        summary.grid_columnconfigure(1, weight=1)
+        ctk.CTkLabel(summary, text="리드", font=("Pretendard", 14, "bold")).grid(row=0, column=0, padx=8, pady=(8, 2), sticky="w")
+        ctk.CTkLabel(summary, text=lead.title or "(제목 없음)", anchor="w", wraplength=650).grid(row=0, column=1, columnspan=5, padx=8, pady=(8, 2), sticky="ew")
+        ctk.CTkLabel(summary, text=f"{lead.site} · {lead.board or '-'} · {lead.category or '-'}", text_color="#b5b5b5").grid(row=1, column=1, columnspan=5, padx=8, pady=(0, 8), sticky="w")
+
+        crm = ctk.CTkFrame(self)
+        crm.pack(fill="x", padx=10, pady=4)
+        crm.grid_columnconfigure(7, weight=1)
+        ctk.CTkLabel(crm, text="상태").grid(row=0, column=0, padx=(8, 4), pady=8)
+        self.status_var = ctk.CTkOptionMenu(crm, values=STATUS_OPTIONS, width=110); self.status_var.set(lead.status)
+        self.status_var.grid(row=0, column=1, padx=4)
+        ctk.CTkLabel(crm, text="우선순위").grid(row=0, column=2, padx=(12, 4))
+        self.priority_var = ctk.CTkOptionMenu(crm, values=PRIORITY_OPTIONS, width=90); self.priority_var.set(lead.priority or "보통")
+        self.priority_var.grid(row=0, column=3, padx=4)
+        ctk.CTkLabel(crm, text="다음액션").grid(row=0, column=4, padx=(12, 4))
+        self.next_action_entry = ctk.CTkEntry(crm, width=120, placeholder_text="YYYY-MM-DD")
+        self.next_action_entry.insert(0, lead.next_action_at or "")
+        self.next_action_entry.grid(row=0, column=5, padx=4)
+        ctk.CTkButton(crm, text="CRM 저장", width=100, command=self._save_crm).grid(row=0, column=6, padx=8)
+        ctk.CTkButton(crm, text="중복처리", width=90, command=self._mark_duplicate).grid(row=0, column=7, padx=4, sticky="w")
+
+        self.memo_box = ctk.CTkTextbox(self, height=70)
+        self.memo_box.pack(fill="x", padx=10, pady=(4, 8))
+        self.memo_box.insert("0.0", lead.memo or "")
+
+        info = ctk.CTkScrollableFrame(self, height=170)
+        info.pack(fill="x", padx=10, pady=4)
 
         def row(label, value):
-            f = ctk.CTkFrame(info, fg_color="transparent"); f.pack(fill="x", pady=2)
-            ctk.CTkLabel(f, text=label, width=100, anchor="e").pack(side="left", padx=6)
-            ctk.CTkLabel(f, text=str(value), anchor="w", wraplength=560, justify="left").pack(side="left", padx=4)
+            f = ctk.CTkFrame(info, fg_color="transparent"); f.pack(fill="x", pady=1)
+            ctk.CTkLabel(f, text=label, width=95, anchor="e").pack(side="left", padx=6)
+            ctk.CTkLabel(f, text=self._fmt(value), anchor="w", wraplength=690, justify="left").pack(side="left", padx=4)
 
-        row("사이트", lead.site)
-        row("게시판", lead.board)
-        row("카테고리", lead.category)
-        row("제목", lead.title)
         row("회사", lead.company)
         row("카톡 ID", ", ".join(lead.kakao_ids))
         row("오픈채팅", ", ".join(lead.open_chats))
@@ -1027,43 +1177,72 @@ class LeadDetailDialog(ctk.CTkToplevel):
         row("작성자", lead.writer)
         row("게시일", lead.posted_at)
         row("매칭키워드", ", ".join(lead.matched_keywords))
+        row("중복", f"{lead.duplicate_key} / 원본 #{lead.duplicate_of}" if lead.duplicate_key or lead.duplicate_of else "")
         row("URL", lead.post_url)
-        row("본문", lead.body_text or lead.body_excerpt or "(상세 미수집)")
 
-        # 상태 변경
-        status_frame = ctk.CTkFrame(self); status_frame.pack(fill="x", padx=10, pady=4)
-        ctk.CTkLabel(status_frame, text="상태").pack(side="left", padx=6)
-        self.status_var = ctk.CTkOptionMenu(status_frame, values=STATUS_OPTIONS); self.status_var.set(lead.status)
-        self.status_var.pack(side="left", padx=4)
-        ctk.CTkButton(status_frame, text="상태 저장", width=100, command=self._save_status).pack(side="left", padx=4)
+        ctk.CTkLabel(self, text="본문", font=("Pretendard", 13, "bold")).pack(anchor="w", padx=10, pady=(6, 2))
+        self.body_box = ctk.CTkTextbox(self, height=130)
+        self.body_box.pack(fill="x", padx=10, pady=(0, 8))
+        self.body_box.insert("0.0", lead.body_text or lead.body_excerpt or "(상세 미수집)")
+        self.body_box.configure(state="disabled")
 
-        # 접촉 이력 입력
         contact_frame = ctk.CTkFrame(self); contact_frame.pack(fill="x", padx=10, pady=4)
-        ctk.CTkLabel(contact_frame, text="채널").grid(row=0, column=0, padx=4)
+        ctk.CTkLabel(contact_frame, text="채널").grid(row=0, column=0, padx=4, pady=8)
         self.ct_channel = ctk.CTkOptionMenu(contact_frame, values=CHANNEL_OPTIONS, width=110); self.ct_channel.grid(row=0, column=1)
         ctk.CTkLabel(contact_frame, text="결과").grid(row=0, column=2, padx=4)
         self.ct_result = ctk.CTkOptionMenu(contact_frame, values=RESULT_OPTIONS, width=110); self.ct_result.grid(row=0, column=3)
-        ctk.CTkLabel(contact_frame, text="메모").grid(row=0, column=4, padx=4)
-        self.ct_note = ctk.CTkEntry(contact_frame, width=260); self.ct_note.grid(row=0, column=5)
+        ctk.CTkLabel(contact_frame, text="접촉메모").grid(row=0, column=4, padx=4)
+        self.ct_note = ctk.CTkEntry(contact_frame, width=300); self.ct_note.grid(row=0, column=5)
         ctk.CTkButton(contact_frame, text="접촉 기록 추가", width=140, command=self._add_contact).grid(row=0, column=6, padx=8)
 
-        # 접촉 이력 목록
         hist = ctk.CTkLabel(self, text="접촉 이력", font=("Pretendard", 13, "bold"))
-        hist.pack(anchor="w", padx=10)
-        self.hist_box = ctk.CTkTextbox(self, height=180)
+        hist.pack(anchor="w", padx=10, pady=(4, 0))
+        self.hist_box = ctk.CTkTextbox(self, height=150)
         self.hist_box.pack(fill="both", expand=True, padx=10, pady=(0, 10))
         self._refresh_history()
 
+    def _fmt(self, value):
+        if value is None:
+            return "(없음)"
+        value = str(value).strip()
+        return value if value else "(없음)"
+
     def _refresh_history(self):
         self.hist_box.delete("0.0", "end")
-        for c in get_contacts(self.lead.id):
+        contacts = get_contacts(self.lead.id)
+        for c in contacts:
             self.hist_box.insert("end", f"[{c.attempted_at}] {c.channel} → {c.result}  {c.note or ''}\n")
+        if not contacts:
+            self.hist_box.insert("end", "아직 접촉 이력이 없습니다.\n")
 
     def _save_status(self):
-        update_status(self.lead.id, self.status_var.get())
+        self._save_crm()
+
+    def _save_crm(self):
+        update_lead_crm(
+            self.lead.id,
+            status=self.status_var.get(),
+            priority=self.priority_var.get(),
+            next_action_at=self.next_action_entry.get().strip(),
+            memo=self.memo_box.get("0.0", "end").strip(),
+        )
+        self.lead = get_lead(self.lead.id) or self.lead
         if self.on_change:
             self.on_change()
-        messagebox.showinfo("저장됨", "상태가 업데이트되었습니다.")
+        messagebox.showinfo("저장됨", "CRM 정보가 저장되었습니다.")
+
+    def _mark_duplicate(self):
+        value = primary_duplicate_value(self.lead)
+        if not value:
+            messagebox.showwarning("중복처리", "중복 기준으로 저장할 값이 없습니다.")
+            return
+        append_duplicate_memo(value)
+        update_lead_crm(self.lead.id, status="중복", duplicate_key=f"memo:{value}")
+        self.lead = get_lead(self.lead.id) or self.lead
+        self.status_var.set(self.lead.status)
+        if self.on_change:
+            self.on_change()
+        messagebox.showinfo("중복처리", f"중복 메모장에 저장했습니다:\n{value}")
 
     def _add_contact(self):
         c = Contact(
@@ -1075,6 +1254,8 @@ class LeadDetailDialog(ctk.CTkToplevel):
         )
         add_contact(c)
         self.ct_note.delete(0, "end")
+        self.lead = get_lead(self.lead.id) or self.lead
+        self.status_var.set(self.lead.status)
         self._refresh_history()
         if self.on_change:
             self.on_change()

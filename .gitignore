@@ -8,6 +8,8 @@ dist/
 settings.json
 daily_state.json
 leads.db
+duplicate_memo.txt
+leads_*.xlsx
 *.db-journal
 *.sqlite
 *.sqlite3
