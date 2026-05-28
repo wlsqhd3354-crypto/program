@@ -49,7 +49,7 @@ jobs:
           $data = [ordered]@{
             version = $version
             download_url = $downloadUrl
-            notes = "영업 크롤러 삭제 기능, 단가 추출, 키워드 매칭 개선"
+            notes = "영업 크롤러 전체 수집 범위 수정"
             sha256 = $sha
             force = $false
           }
@@ -66,4 +66,4 @@ jobs:
             "dist\version.json" `
             --repo "${{ github.repository }}" `
             --title "${{ github.ref_name }}" `
-            --notes "영업 크롤러 삭제 기능, 단가 추출, 키워드 매칭 개선"
+            --notes "영업 크롤러 전체 수집 범위 수정"

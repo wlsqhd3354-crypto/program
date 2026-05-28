@@ -304,21 +304,24 @@ class MainApp(ctk.CTk):
 
         self.cr_sc_enabled = ctk.CTkCheckBox(site, text="셀클럽 (maket_5_3 대행합니다)"); self.cr_sc_enabled.select()
         self.cr_sc_enabled.grid(row=0, column=0, padx=8, pady=4, sticky="w")
-        sc_options = ["(전체+카테고리별)", "(전체)"] + SELLCLUB_CRAWL_CATEGORIES
+        sc_options = ["전체", "통합목록만"] + SELLCLUB_CRAWL_CATEGORIES
         self.cr_sc_scope = ctk.CTkOptionMenu(site, values=sc_options, width=220)
+        self.cr_sc_scope.set("전체")
         self.cr_sc_scope.grid(row=0, column=1, padx=4)
 
         self.cr_mm_enabled = ctk.CTkCheckBox(site, text="마멘토 게시판:"); self.cr_mm_enabled.select()
         self.cr_mm_enabled.grid(row=1, column=0, padx=8, pady=4, sticky="w")
-        mm_options = ["(마멘토 탭 선택값)", "(전체)"] + [f"{k} ({v})" for k, v in mamentor.FREE_AD_BOARDS.items()]
+        mm_options = ["전체", "선택 게시판만"] + [f"{k} ({v})" for k, v in mamentor.FREE_AD_BOARDS.items()]
         self.cr_mm_board = ctk.CTkOptionMenu(site, values=mm_options, width=260)
-        self.cr_mm_board.set("(마멘토 탭 선택값)")
+        self.cr_mm_board.set("전체")
         self.cr_mm_board.grid(row=1, column=1, padx=4)
 
         self.cr_ib_enabled = ctk.CTkCheckBox(site, text="아이보스 (BD2986 바이럴서비스, 카테고리)"); self.cr_ib_enabled.select()
         self.cr_ib_enabled.grid(row=2, column=0, padx=8, pady=4, sticky="w")
-        ib_options = ["(전체+카테고리별)", "(전체)"] + [f"{k} - {v}" for k, v in iboss.CATEGORY_OPTIONS.items()]
-        self.cr_ib_cat = ctk.CTkOptionMenu(site, values=ib_options, width=180); self.cr_ib_cat.grid(row=2, column=1, padx=4)
+        ib_options = ["전체", "통합목록만"] + [f"{k} - {v}" for k, v in iboss.CATEGORY_OPTIONS.items()]
+        self.cr_ib_cat = ctk.CTkOptionMenu(site, values=ib_options, width=180)
+        self.cr_ib_cat.set("전체")
+        self.cr_ib_cat.grid(row=2, column=1, padx=4)
 
         # 컨트롤 버튼
         ctrl = ctk.CTkFrame(parent)
@@ -971,12 +974,13 @@ class MainApp(ctk.CTk):
             if not self.sellclub_client or not self.sellclub_client.logged_in:
                 messagebox.showwarning("셀클럽", "셀클럽 탭에서 먼저 로그인하세요"); return
             sc_scope = self.cr_sc_scope.get()
-            if sc_scope.startswith("(전체+"):
+            if sc_scope in ("전체", "(전체+카테고리별)"):
                 sc_boards = ["maket_5_3"] + [f"maket_5_3::{cat}" for cat in SELLCLUB_CRAWL_CATEGORIES]
-            elif sc_scope.startswith("(전체)"):
+            elif sc_scope in ("통합목록만", "(전체)"):
                 sc_boards = ["maket_5_3"]
             else:
                 sc_boards = [f"maket_5_3::{sc_scope}"]
+            self._log(f"[셀클럽] 수집범위: {sc_scope} / 대상 {len(sc_boards)}개")
             crawlers.append(SellClubCrawler(self.sellclub_client))
             cfg_map["sellclub"] = CrawlConfig(boards=sc_boards, **common)
 
@@ -984,12 +988,13 @@ class MainApp(ctk.CTk):
             if not self.mamentor_client or not self.mamentor_client.logged_in:
                 messagebox.showwarning("마멘토", "마멘토 탭에서 먼저 로그인하세요"); return
             mm_choice = self.cr_mm_board.get()
-            if mm_choice.startswith("(마멘토"):
-                mm_boards = [self.mm_board.get().split(" ")[0]]
-            elif mm_choice.startswith("(전체)"):
+            if mm_choice in ("전체", "(전체)"):
                 mm_boards = list(mamentor.FREE_AD_BOARDS.keys())
+            elif mm_choice in ("선택 게시판만", "(마멘토 탭 선택값)"):
+                mm_boards = [self.mm_board.get().split(" ")[0]]
             else:
                 mm_boards = [mm_choice.split(" ")[0]]
+            self._log(f"[마멘토] 수집범위: {mm_choice} / 대상 {len(mm_boards)}개")
             crawlers.append(MamentorCrawler(self.mamentor_client))
             cfg_map["mamentor"] = CrawlConfig(boards=mm_boards, **common)
 
@@ -997,12 +1002,14 @@ class MainApp(ctk.CTk):
             if not self.iboss_client or not self.iboss_client.logged_in:
                 messagebox.showwarning("아이보스", "아이보스 탭에서 먼저 로그인하세요"); return
             cat = self.cr_ib_cat.get()
-            if cat.startswith("(전체+"):
+            if cat in ("전체", "(전체+카테고리별)"):
                 ib_boards = [""] + list(iboss.CATEGORY_OPTIONS.keys())
-            elif cat.startswith("(전체)"):
+            elif cat in ("통합목록만", "(전체)"):
                 ib_boards = []
             else:
                 ib_boards = [cat.split(" ")[0]]
+            ib_target_count = len(ib_boards) if ib_boards else 1
+            self._log(f"[아이보스] 수집범위: {cat} / 대상 {ib_target_count}개")
             crawlers.append(IBossCrawler(self.iboss_client))
             cfg_map["iboss"] = CrawlConfig(boards=ib_boards, **common)
 
