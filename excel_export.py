@@ -7,12 +7,13 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 
 from db import get_leads, get_contacts, Lead
+from extractor import format_price
 from paths import resource_path
 
 
 HEADERS = [
     "ID", "사이트", "게시판", "카테고리", "제목", "회사명",
-    "카톡ID", "오픈채팅", "전화", "이메일",
+    "최저단가", "단가근거", "카톡ID", "오픈채팅", "전화", "이메일",
     "작성자", "게시일", "상태", "우선순위", "다음액션", "리드메모", "중복키", "중복원본", "매칭키워드",
     "접촉횟수", "마지막접촉", "마지막결과", "접촉메모",
     "본문요약", "본문전체", "글URL",
@@ -52,6 +53,8 @@ def export_leads(out_path: str | None = None, site: str | None = None,
             L.category,
             L.title,
             L.company,
+            format_price(L.min_price),
+            L.price_text,
             ", ".join(L.kakao_ids),
             ", ".join(L.open_chats),
             ", ".join(L.phones),
@@ -77,7 +80,7 @@ def export_leads(out_path: str | None = None, site: str | None = None,
             ws.cell(row=i, column=c, value=val)
 
     # 컬럼 너비 조정
-    widths = [6, 10, 12, 14, 40, 18, 24, 32, 18, 28, 16, 16, 10, 10, 14, 28, 24, 10, 18, 8, 18, 10, 28, 60, 80, 60]
+    widths = [6, 10, 12, 14, 40, 18, 12, 50, 24, 32, 18, 28, 16, 16, 10, 10, 14, 28, 24, 10, 18, 8, 18, 10, 28, 60, 80, 60]
     for idx, w in enumerate(widths, start=1):
         ws.column_dimensions[chr(64 + idx) if idx <= 26 else "A" + chr(64 + idx - 26)].width = w
 

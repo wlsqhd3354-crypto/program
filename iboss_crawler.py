@@ -15,7 +15,7 @@ from typing import Callable, Optional
 from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords, should_stop
 from db import Lead, upsert_lead
 from extractor import (
-    ContactInfo, extract_contacts, html_to_text, merge_contacts, normalize_phone,
+    ContactInfo, extract_contacts, html_to_text, merge_contacts, normalize_phone, extract_min_price,
 )
 from iboss import IBossClient, IBOSS_BASE, BOARD_ID
 
@@ -204,13 +204,15 @@ class IBossCrawler(BaseCrawler):
                     contact: ContactInfo = detail.get("contact") or ContactInfo()
                     body = detail.get("body", "")
                     excerpt = (body[:200] + "...") if len(body) > 200 else body
+                    title = detail.get("title") or it["title"]
+                    min_price, price_text = extract_min_price(f"{title}\n{body}", cfg.keywords)
 
                     lead = Lead(
                         site=self.site_name,
                         post_url=it["url"],
                         board=BOARD_ID,
                         category=cat,
-                        title=detail.get("title") or it["title"],
+                        title=title,
                         body_excerpt=excerpt,
                         body_text=body,
                         writer=detail.get("writer", ""),
@@ -220,6 +222,8 @@ class IBossCrawler(BaseCrawler):
                         phones=contact.phones,
                         emails=contact.emails,
                         company=contact.company,
+                        min_price=min_price,
+                        price_text=price_text,
                         matched_keywords=matched if cfg.keywords else [],
                     )
                     lead_id = upsert_lead(lead)

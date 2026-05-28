@@ -1,7 +1,7 @@
 {
-  "version": "1.3.4",
-  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.4/SellClubBot.exe",
-  "notes": "아이보스 이미지 업로드 방식을 에디터 업로드 API로 수정",
+  "version": "1.3.5",
+  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.5/SellClubBot.exe",
+  "notes": "영업 크롤러 삭제 기능, 단가 추출, 키워드 매칭 개선",
   "sha256": "",
   "force": false
 }

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import random
+import re
 import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
@@ -10,6 +11,14 @@ from threading import Event
 from typing import Iterable
 
 from db import Lead
+
+RELAXED_KEYWORD_TERMS = [
+    "구글", "google", "네이버", "naver", "카카오", "kakao", "쿠팡", "coupang",
+    "배민", "인스타", "instagram", "유튜브", "youtube", "플레이스", "지도", "맵",
+    "리뷰", "review", "영수증", "방문자", "블로그", "카페", "자동완성", "검색노출",
+    "최저가", "최저", "단가", "가격",
+]
+RELAXED_INTENT_TERMS = {"최저가", "최저", "단가", "가격"}
 
 
 @dataclass
@@ -56,11 +65,35 @@ def matches_keywords(text: str, keywords: list[str], op: str = "or") -> list[str
     for k in keywords:
         key = k.lower()
         key_compact = "".join(key.split())
-        if key in lower or (key_compact and key_compact in compact):
+        if key in lower or (key_compact and key_compact in compact) or _relaxed_keyword_match(compact, key_compact):
             hits.append(k)
     if op == "and":
         return hits if len(hits) == len(keywords) else []
     return hits
+
+
+def _relaxed_keyword_match(compact_text: str, compact_key: str) -> bool:
+    """붙여 쓴 검색어가 실제 게시글의 중간 단어를 포함해도 잡히게 보정."""
+    if not compact_key or len(compact_key) < 4:
+        return False
+    found = sorted(
+        {(compact_key.find(term), term) for term in RELAXED_KEYWORD_TERMS if term in compact_key},
+        key=lambda item: (item[0], -len(item[1])),
+    )
+    terms = []
+    used_positions = set()
+    for pos, term in found:
+        if pos in used_positions:
+            continue
+        used_positions.add(pos)
+        terms.append(term)
+    service_terms = [term for term in terms if term not in RELAXED_INTENT_TERMS]
+    if len(service_terms) >= 2:
+        terms = service_terms
+    if len(terms) < 2:
+        return False
+    pattern = ".{0,12}".join(re.escape(term) for term in terms)
+    return bool(re.search(pattern, compact_text))
 
 
 class BaseCrawler(ABC):

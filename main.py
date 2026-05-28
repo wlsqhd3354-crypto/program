@@ -32,11 +32,12 @@ from config import (
 
 # 영업 크롤러
 from db import (
-    init_db as crawler_init_db,
+    init_db as crawler_init_db, delete_leads,
     get_leads, get_lead, update_status, update_lead_crm, add_contact, get_contacts, stats as crawler_stats,
     append_duplicate_memo, ensure_duplicate_memo_file, primary_duplicate_value,
     Contact, STATUS_OPTIONS, PRIORITY_OPTIONS, CHANNEL_OPTIONS, RESULT_OPTIONS,
 )
+from extractor import format_price
 from crawler_base import CrawlConfig
 from sellclub_crawler import SellClubCrawler, SELLCLUB_CRAWL_CATEGORIES
 from mamentor_crawler import MamentorCrawler
@@ -125,6 +126,7 @@ class MainApp(ctk.CTk):
         # 크롤러 잡 & DB
         crawler_init_db()
         self.crawl_job: CrawlJob | None = None
+        self.cr_content_first_col = ""
         self.auto_scheduler_stop = threading.Event()
         self.auto_scheduler_thread: threading.Thread | None = None
 
@@ -339,8 +341,10 @@ class MainApp(ctk.CTk):
         self.cr_stats_label.grid(row=0, column=7, padx=10)
         ctk.CTkButton(ctrl, text="중복메모 열기", width=120, command=self._cr_open_duplicate_memo).grid(row=1, column=0, padx=4, pady=(6, 2))
         ctk.CTkButton(ctrl, text="선택 중복처리", width=120, command=self._cr_mark_selected_duplicate).grid(row=1, column=1, padx=4, pady=(6, 2))
-        self.cr_phone_first = ctk.CTkCheckBox(ctrl, text="전화 보유 우선", command=self._cr_refresh)
+        self.cr_phone_first = ctk.CTkCheckBox(ctrl, text="전화 보유 우선", command=self._cr_toggle_phone_first)
         self.cr_phone_first.grid(row=1, column=2, padx=8, pady=(6, 2), sticky="w")
+        ctk.CTkButton(ctrl, text="선택 삭제", width=100, fg_color="#8a3030", command=self._cr_delete_selected).grid(row=1, column=3, padx=4, pady=(6, 2))
+        ctk.CTkButton(ctrl, text="목록 삭제", width=100, fg_color="#6f2d2d", command=self._cr_delete_visible).grid(row=1, column=4, padx=4, pady=(6, 2))
 
         dashboard = ctk.CTkFrame(parent)
         dashboard.pack(fill="x", padx=10, pady=(0, 6))
@@ -375,17 +379,19 @@ class MainApp(ctk.CTk):
         style.map("Treeview", background=[("selected", "#1f6aa5")])
         table_frame.grid_rowconfigure(0, weight=1)
         table_frame.grid_columnconfigure(0, weight=1)
-        cols = ("id", "priority", "status", "site", "title", "kakao", "openchat", "phone", "email", "next", "dup", "found")
-        self.cr_tree = ttk.Treeview(table_frame, columns=cols, show="headings", selectmode="browse")
+        cols = ("id", "priority", "status", "site", "title", "price", "kakao", "openchat", "phone", "email", "next", "dup", "found")
+        self.cr_tree = ttk.Treeview(table_frame, columns=cols, show="headings", selectmode="extended")
         widths = {"id": 48, "priority": 58, "status": 75, "site": 70, "title": 320,
+                  "price": 95,
                   "kakao": 130, "openchat": 260, "phone": 125, "email": 220,
                   "next": 95, "dup": 70, "found": 125}
         headers = {"id": "ID", "priority": "우선", "status": "상태", "site": "사이트", "title": "제목",
+                   "price": "최저단가",
                    "kakao": "카톡", "openchat": "오픈챗", "phone": "전화", "email": "이메일", "next": "다음액션",
                    "dup": "중복", "found": "수집"}
         for c in cols:
-            if c == "phone":
-                self.cr_tree.heading(c, text=headers[c], command=self._cr_sort_phone_first)
+            if c in ("price", "kakao", "openchat", "phone", "email"):
+                self.cr_tree.heading(c, text=headers[c], command=lambda col=c: self._cr_sort_content_first(col))
             else:
                 self.cr_tree.heading(c, text=headers[c])
             self.cr_tree.column(c, width=widths[c], minwidth=widths[c], anchor="w", stretch=False)
@@ -1033,14 +1039,63 @@ class MainApp(ctk.CTk):
         return ", ".join(L.open_chats or [])
 
     def _cr_phone_first_enabled(self):
-        return hasattr(self, "cr_phone_first") and bool(self.cr_phone_first.get())
+        return self.cr_content_first_col == "phone" or (
+            hasattr(self, "cr_phone_first") and bool(self.cr_phone_first.get())
+        )
+
+    def _cr_toggle_phone_first(self):
+        self.cr_content_first_col = "phone" if self.cr_phone_first.get() else ""
+        self._cr_refresh()
+
+    def _cr_sort_content_first(self, col: str):
+        if self.cr_content_first_col == col:
+            self.cr_content_first_col = ""
+        else:
+            self.cr_content_first_col = col
+        if hasattr(self, "cr_phone_first"):
+            if self.cr_content_first_col == "phone":
+                self.cr_phone_first.select()
+            else:
+                self.cr_phone_first.deselect()
+        self._cr_refresh()
 
     def _cr_sort_phone_first(self):
-        if self._cr_phone_first_enabled():
+        if self.cr_content_first_col == "phone":
+            self.cr_content_first_col = ""
             self.cr_phone_first.deselect()
         else:
+            self.cr_content_first_col = "phone"
             self.cr_phone_first.select()
         self._cr_refresh()
+
+    def _cr_sort_order(self) -> str:
+        col = self.cr_content_first_col
+        field_map = {
+            "kakao": "kakao_ids",
+            "openchat": "open_chats",
+            "phone": "phones",
+            "email": "emails",
+        }
+        if col == "price":
+            return "CASE WHEN min_price IS NOT NULL THEN 0 ELSE 1 END, min_price ASC, found_at DESC"
+        if col in field_map:
+            field = field_map[col]
+            return f"CASE WHEN COALESCE({field}, '') <> '' THEN 0 ELSE 1 END, found_at DESC"
+        return "found_at DESC"
+
+    def _cr_lead_has_sort_value(self, L) -> bool:
+        col = self.cr_content_first_col
+        if col == "price":
+            return L.min_price is not None
+        if col == "kakao":
+            return bool(L.kakao_ids)
+        if col == "openchat":
+            return bool(L.open_chats)
+        if col == "phone":
+            return bool(L.phones)
+        if col == "email":
+            return bool(L.emails)
+        return False
 
     def _cr_duplicate_label(self, L):
         if L.duplicate_of:
@@ -1056,6 +1111,7 @@ class MainApp(ctk.CTk):
             L.status,
             L.site,
             (L.title or "")[:80],
+            format_price(L.min_price),
             self._cr_kakao_text(L)[:45],
             self._cr_openchat_text(L)[:90],
             ", ".join(L.phones or [])[:40],
@@ -1095,12 +1151,12 @@ class MainApp(ctk.CTk):
         for iid in self.cr_tree.get_children():
             if self.cr_tree.set(iid, "id") == str(L.id):
                 self.cr_tree.item(iid, values=self._cr_row_values(L))
-                if self._cr_phone_first_enabled() and L.phones:
+                if self._cr_lead_has_sort_value(L):
                     self.cr_tree.move(iid, "", 0)
                 self.cr_tree.see(iid)
                 self._cr_preview_selected()
                 return
-        index = 0 if self._cr_phone_first_enabled() and L.phones else "end"
+        index = 0 if self._cr_lead_has_sort_value(L) else "end"
         iid = self.cr_tree.insert("", index, values=self._cr_row_values(L))
         self.cr_tree.see(iid)
 
@@ -1109,9 +1165,7 @@ class MainApp(ctk.CTk):
             self.cr_tree.delete(iid)
         site = self.cr_filter_site.get()
         status = self.cr_filter_status.get()
-        order = "found_at DESC"
-        if self._cr_phone_first_enabled():
-            order = "CASE WHEN COALESCE(phones, '') <> '' THEN 0 ELSE 1 END, found_at DESC"
+        order = self._cr_sort_order()
         leads = get_leads(
             site=None if site == "전체" else site,
             status=None if status == "전체" else status,
@@ -1150,9 +1204,10 @@ class MainApp(ctk.CTk):
         if L.open_chats:
             contacts.append("오픈챗 " + self._cr_openchat_text(L))
         dup = f" · 중복 {self._cr_duplicate_label(L)}" if self._cr_duplicate_label(L) else ""
+        price = f" · 최저단가 {format_price(L.min_price)}" if L.min_price else ""
         self.cr_preview_title.configure(text=f"[{L.site}] {title}")
         self.cr_preview_meta.configure(
-            text=f"{L.status} · 우선순위 {L.priority or '보통'} · 다음액션 {L.next_action_at or '-'} · {' / '.join(contacts) or '연락처 없음'}{dup}"
+            text=f"{L.status} · 우선순위 {L.priority or '보통'} · 다음액션 {L.next_action_at or '-'} · {' / '.join(contacts) or '연락처 없음'}{price}{dup}"
         )
         body = L.memo.strip() or L.body_text.strip() or L.body_excerpt.strip() or "(본문/메모 없음)"
         self.cr_preview_body.configure(state="normal")
@@ -1185,6 +1240,41 @@ class MainApp(ctk.CTk):
         append_duplicate_memo(value)
         update_lead_crm(lead_id, status="중복", duplicate_key=f"memo:{value}")
         self._log(f"중복 처리: #{lead_id} 기준값 '{value}'")
+        self._cr_refresh()
+
+    def _cr_job_running(self) -> bool:
+        return bool(self.crawl_job and self.crawl_job.is_running())
+
+    def _cr_delete_selected(self):
+        if self._cr_job_running():
+            messagebox.showwarning("삭제", "크롤링 중에는 삭제할 수 없습니다.")
+            return
+        sel = self.cr_tree.selection()
+        if not sel:
+            messagebox.showwarning("삭제", "삭제할 리드를 선택해주세요.")
+            return
+        ids = [int(self.cr_tree.set(iid, "id")) for iid in sel]
+        if not messagebox.askyesno("선택 삭제", f"선택한 리드 {len(ids)}건을 삭제할까요?"):
+            return
+        deleted = delete_leads(ids)
+        self._log(f"리드 삭제: 선택 {deleted}건")
+        self._cr_refresh()
+
+    def _cr_delete_visible(self):
+        if self._cr_job_running():
+            messagebox.showwarning("삭제", "크롤링 중에는 삭제할 수 없습니다.")
+            return
+        ids = [int(self.cr_tree.set(iid, "id")) for iid in self.cr_tree.get_children()]
+        if not ids:
+            messagebox.showwarning("삭제", "현재 목록에 삭제할 리드가 없습니다.")
+            return
+        site = self.cr_filter_site.get()
+        status = self.cr_filter_status.get()
+        scope = f"사이트={site}, 상태={status}"
+        if not messagebox.askyesno("목록 삭제", f"현재 표시된 리드 {len(ids)}건을 삭제할까요?\n({scope})"):
+            return
+        deleted = delete_leads(ids)
+        self._log(f"리드 삭제: 현재 목록 {deleted}건")
         self._cr_refresh()
 
     def _cr_export(self):
@@ -1251,6 +1341,8 @@ class LeadDetailDialog(ctk.CTkToplevel):
             ctk.CTkLabel(f, text=self._fmt(value), anchor="w", wraplength=690, justify="left").pack(side="left", padx=4)
 
         row("회사", lead.company)
+        row("최저단가", format_price(lead.min_price))
+        row("단가근거", lead.price_text)
         row("카톡 ID", ", ".join(lead.kakao_ids))
         row("오픈채팅", ", ".join(lead.open_chats))
         row("전화", ", ".join(lead.phones))

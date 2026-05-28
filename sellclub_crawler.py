@@ -20,7 +20,7 @@ from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keyword
 from db import Lead, upsert_lead
 from extractor import (
     ContactInfo, extract_contacts, html_to_text,
-    decode_b64_email, merge_contacts,
+    decode_b64_email, merge_contacts, extract_min_price,
 )
 from sellclub import SellClubClient
 
@@ -225,6 +225,7 @@ class SellClubCrawler(BaseCrawler):
                     contact: ContactInfo = detail.get("contact") or ContactInfo()
                     body = detail.get("body", "")
                     excerpt = (body[:200] + "...") if len(body) > 200 else body
+                    min_price, price_text = extract_min_price(f"{it['title']}\n{body}", cfg.keywords)
 
                     lead = Lead(
                         site=self.site_name,
@@ -241,6 +242,8 @@ class SellClubCrawler(BaseCrawler):
                         phones=contact.phones,
                         emails=contact.emails,
                         company=contact.company,
+                        min_price=min_price,
+                        price_text=price_text,
                         matched_keywords=matched if cfg.keywords else [],
                     )
                     lead_id = upsert_lead(lead)

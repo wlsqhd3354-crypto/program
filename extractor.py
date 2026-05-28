@@ -41,6 +41,14 @@ class ContactInfo:
         return self.emails[0] if self.emails else ""
 
 
+@dataclass
+class PriceHit:
+    amount: int
+    raw: str
+    context: str
+    start: int
+
+
 # ────────── 정규식 패턴들 ──────────
 
 # 전화/핸드폰: 010-1234-5678, 02-123-4567, 010 1234 5678, 01012345678
@@ -61,6 +69,11 @@ EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 
 # 카카오 오픈채팅 링크: https://open.kakao.com/o/XXXXX
 OPENCHAT_RE = re.compile(r"https?://open\.kakao\.com/o/[A-Za-z0-9]+")
+
+# 단가: 100원, 1,000원, 0.5만원, 1천원 등
+PRICE_RE = re.compile(
+    r"(?<![0-9])(?P<number>\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)\s*(?P<unit>만\s*원|만원|천\s*원|천원|원)"
+)
 
 # 카톡 ID 표기들. 키워드 + 구분자 + ID
 # 예: 카톡:abc123, 카카오톡 abc123, kt: abc, 카톡ID abc123, 오픈톡 abc123
@@ -123,6 +136,128 @@ KAKAO_BLOCKLIST = {
     "naver", "gmail", "nate", "daum", "hanmail", "yahoo", "kakao",
     "open", "talk", "test", "example", "kakaotalk", "facebook",
 }
+
+PRICE_KEYWORD_TERMS = [
+    "구글", "google", "네이버", "naver", "카카오", "kakao", "쿠팡", "coupang",
+    "배민", "인스타", "instagram", "유튜브", "youtube", "플레이스", "지도", "맵",
+    "리뷰", "review", "영수증", "방문자", "블로그", "카페", "자동완성", "검색노출",
+]
+PRICE_NOISE_TERMS = {"최저가", "최저", "단가", "가격", "저렴", "대행", "진행"}
+GENERIC_PRICE_TERMS = {"리뷰", "review"}
+
+
+def _compact(value: str) -> str:
+    return re.sub(r"\s+", "", value or "").lower()
+
+
+def _price_amount(number: str, unit: str) -> int:
+    value = float(number.replace(",", ""))
+    unit = unit.replace(" ", "")
+    if unit.startswith("만"):
+        value *= 10_000
+    elif unit.startswith("천"):
+        value *= 1_000
+    return int(round(value))
+
+
+def _price_context(text: str, start: int, end: int, radius: int = 80) -> str:
+    line_start = max(text.rfind("\n", 0, start), text.rfind("\r", 0, start)) + 1
+    next_lf = text.find("\n", end)
+    next_cr = text.find("\r", end)
+    line_end_candidates = [pos for pos in (next_lf, next_cr) if pos != -1]
+    line_end = min(line_end_candidates) if line_end_candidates else len(text)
+    line = re.sub(r"\s+", " ", text[line_start:line_end]).strip()
+    if line and len(line) <= 160:
+        compact_line = _compact(line)
+        has_service_term = any(term in compact_line for term in PRICE_KEYWORD_TERMS)
+        if not has_service_term and line_start > 0:
+            prev_end = max(0, line_start - 1)
+            prev_start = max(text.rfind("\n", 0, prev_end), text.rfind("\r", 0, prev_end)) + 1
+            prev_line = re.sub(r"\s+", " ", text[prev_start:prev_end]).strip()
+            if prev_line and len(prev_line) <= 120:
+                return f"{prev_line} {line}".strip()
+        return line
+
+    left = max(0, start - radius)
+    right = min(len(text), end + radius)
+    return re.sub(r"\s+", " ", text[left:right]).strip()
+
+
+def _keyword_terms_for_price(keywords: list[str] | None) -> list[str]:
+    terms: list[str] = []
+    for keyword in keywords or []:
+        compact = _compact(keyword)
+        if not compact:
+            continue
+        for term in PRICE_KEYWORD_TERMS:
+            if term in compact and term not in terms:
+                terms.append(term)
+        if not terms and compact not in PRICE_NOISE_TERMS and len(compact) >= 2:
+            terms.append(compact)
+    return terms
+
+
+def _price_keyword_score(text: str, hit: PriceHit, terms: list[str]) -> int:
+    compact_context = _compact(hit.context)
+    context_score = sum(1 for term in terms if term in compact_context)
+    proximity_score = 0
+    lower_text = text.lower()
+    for term in terms:
+        if term in GENERIC_PRICE_TERMS:
+            continue
+        positions = [m.start() for m in re.finditer(re.escape(term), lower_text)]
+        if not positions:
+            continue
+        distance = min(abs(pos - hit.start) for pos in positions)
+        if distance <= 120:
+            proximity_score += 120 - distance
+    return context_score * 10 + proximity_score
+
+
+def extract_price_hits(text: str) -> list[PriceHit]:
+    """본문에서 원화 단가 후보를 모두 추출."""
+    hits: list[PriceHit] = []
+    if not text:
+        return hits
+    for m in PRICE_RE.finditer(text):
+        try:
+            amount = _price_amount(m.group("number"), m.group("unit"))
+        except ValueError:
+            continue
+        if amount <= 0 or amount > 100_000_000:
+            continue
+        raw = m.group(0).strip()
+        hits.append(
+            PriceHit(
+                amount=amount,
+                raw=raw,
+                context=_price_context(text, m.start(), m.end()),
+                start=m.start(),
+            )
+        )
+    return hits
+
+
+def extract_min_price(text: str, keywords: list[str] | None = None) -> tuple[int | None, str]:
+    """키워드 주변 단가를 우선 보고, 없으면 본문 전체 최저 단가를 반환."""
+    hits = extract_price_hits(text)
+    if not hits:
+        return None, ""
+
+    terms = _keyword_terms_for_price(keywords)
+    selected = hits
+    if terms:
+        scored = [(_price_keyword_score(text, hit, terms), hit) for hit in hits]
+        best_score = max(score for score, _ in scored)
+        if best_score > 0:
+            selected = [hit for score, hit in scored if score == best_score]
+
+    best = min(selected, key=lambda hit: hit.amount)
+    return best.amount, best.context
+
+
+def format_price(amount: int | None) -> str:
+    return f"{amount:,}원" if amount else ""
 
 
 def extract_contacts(body_text: str) -> ContactInfo:

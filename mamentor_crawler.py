@@ -14,7 +14,7 @@ from typing import Callable, Optional
 from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords, should_stop
 from db import Lead, upsert_lead
 from extractor import (
-    ContactInfo, extract_contacts, html_to_text, merge_contacts,
+    ContactInfo, extract_contacts, html_to_text, merge_contacts, extract_min_price,
 )
 from mamentor import MamentorClient, MAMENTOR_BASE
 
@@ -173,12 +173,14 @@ class MamentorCrawler(BaseCrawler):
                     contact: ContactInfo = detail.get("contact") or ContactInfo()
                     body = detail.get("body", "")
                     excerpt = (body[:200] + "...") if len(body) > 200 else body
+                    title = detail.get("title") or it["title"]
+                    min_price, price_text = extract_min_price(f"{title}\n{body}", cfg.keywords)
 
                     lead = Lead(
                         site=self.site_name,
                         post_url=it["url"],
                         board=bo,
-                        title=detail.get("title") or it["title"],
+                        title=title,
                         body_excerpt=excerpt,
                         body_text=body,
                         writer=detail.get("writer", ""),
@@ -188,6 +190,8 @@ class MamentorCrawler(BaseCrawler):
                         phones=contact.phones,
                         emails=contact.emails,
                         company=contact.company,
+                        min_price=min_price,
+                        price_text=price_text,
                         matched_keywords=matched if cfg.keywords else [],
                     )
                     lead_id = upsert_lead(lead)

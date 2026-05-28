@@ -37,6 +37,8 @@ CREATE TABLE IF NOT EXISTS leads (
     phones       TEXT,                          -- 쉼표 구분
     emails       TEXT,                          -- 쉼표 구분
     company      TEXT,
+    min_price    INTEGER,                       -- 본문에서 추출한 최저 단가
+    price_text   TEXT,                          -- 최저 단가가 나온 주변 문맥
     status       TEXT NOT NULL DEFAULT '미접촉', -- 미접촉 / 시도중 / 응답대기 / 거절 / 계약 / 실패
     memo         TEXT,
     priority     TEXT NOT NULL DEFAULT '보통',
@@ -87,6 +89,8 @@ class Lead:
     phones: list[str] = field(default_factory=list)
     emails: list[str] = field(default_factory=list)
     company: str = ""
+    min_price: Optional[int] = None
+    price_text: str = ""
     status: str = "미접촉"
     memo: str = ""
     priority: str = "보통"
@@ -118,6 +122,8 @@ class Lead:
             phones=row["phones"].split(",") if row["phones"] else [],
             emails=row["emails"].split(",") if row["emails"] else [],
             company=row["company"] or "",
+            min_price=row["min_price"] if "min_price" in keys and row["min_price"] is not None else None,
+            price_text=row["price_text"] if "price_text" in keys and row["price_text"] else "",
             status=row["status"],
             memo=row["memo"] if "memo" in keys and row["memo"] else "",
             priority=row["priority"] if "priority" in keys and row["priority"] else "보통",
@@ -164,6 +170,8 @@ def init_db():
             "next_action_at": "ALTER TABLE leads ADD COLUMN next_action_at TEXT",
             "duplicate_key": "ALTER TABLE leads ADD COLUMN duplicate_key TEXT",
             "duplicate_of": "ALTER TABLE leads ADD COLUMN duplicate_of INTEGER",
+            "min_price": "ALTER TABLE leads ADD COLUMN min_price INTEGER",
+            "price_text": "ALTER TABLE leads ADD COLUMN price_text TEXT",
         }
         for col, sql in migrations.items():
             if col not in cols:
@@ -171,6 +179,7 @@ def init_db():
         conn.execute("CREATE INDEX IF NOT EXISTS idx_leads_priority ON leads(priority)")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_leads_next_action ON leads(next_action_at)")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_leads_duplicate_of ON leads(duplicate_of)")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_leads_min_price ON leads(min_price)")
 
 
 def duplicate_memo_path() -> str:
@@ -327,7 +336,7 @@ def upsert_lead(lead: Lead) -> int:
                 """UPDATE leads SET
                     title = ?, body_excerpt = ?, body_text = ?, writer = ?, posted_at = ?,
                     kakao_ids = ?, open_chats = ?, phones = ?, emails = ?, company = ?,
-                    category = ?, matched_keywords = ?, updated_at = ?
+                    min_price = ?, price_text = ?, category = ?, matched_keywords = ?, updated_at = ?
                    WHERE id = ?""",
                 (
                     lead.title or None, lead.body_excerpt or None, lead.body_text or None,
@@ -337,6 +346,8 @@ def upsert_lead(lead: Lead) -> int:
                     ",".join(lead.phones) or None,
                     ",".join(lead.emails) or None,
                     lead.company or None,
+                    lead.min_price,
+                    lead.price_text or None,
                     lead.category or None,
                     ",".join(lead.matched_keywords) or None,
                     now,
@@ -363,9 +374,9 @@ def upsert_lead(lead: Lead) -> int:
         cur = conn.execute(
             """INSERT INTO leads
                (site, post_url, board, category, title, body_excerpt, body_text, writer, posted_at,
-                kakao_ids, open_chats, phones, emails, company, status, memo, priority,
+                kakao_ids, open_chats, phones, emails, company, min_price, price_text, status, memo, priority,
                 next_action_at, duplicate_key, duplicate_of, matched_keywords, found_at, updated_at)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 lead.site, lead.post_url, lead.board or None, lead.category or None,
                 lead.title or None, lead.body_excerpt or None, lead.body_text or None,
@@ -375,6 +386,8 @@ def upsert_lead(lead: Lead) -> int:
                 ",".join(lead.phones) or None,
                 ",".join(lead.emails) or None,
                 lead.company or None,
+                lead.min_price,
+                lead.price_text or None,
                 lead.status,
                 lead.memo or None,
                 lead.priority or "보통",
@@ -407,9 +420,9 @@ def get_leads(
     if keyword:
         where.append(
             """(title LIKE ? OR body_excerpt LIKE ? OR body_text LIKE ? OR company LIKE ?
-                OR memo LIKE ? OR phones LIKE ? OR emails LIKE ? OR kakao_ids LIKE ? OR open_chats LIKE ?)"""
+                OR price_text LIKE ? OR memo LIKE ? OR phones LIKE ? OR emails LIKE ? OR kakao_ids LIKE ? OR open_chats LIKE ?)"""
         )
-        kw = f"%{keyword}%"; params.extend([kw, kw, kw, kw, kw, kw, kw, kw, kw])
+        kw = f"%{keyword}%"; params.extend([kw, kw, kw, kw, kw, kw, kw, kw, kw, kw])
     if where:
         sql += " WHERE " + " AND ".join(where)
     sql += f" ORDER BY {order} LIMIT ?"
@@ -423,6 +436,16 @@ def get_lead(lead_id: int) -> Optional[Lead]:
     with get_db() as conn:
         row = conn.execute("SELECT * FROM leads WHERE id = ?", (lead_id,)).fetchone()
         return Lead.from_row(row) if row else None
+
+
+def delete_leads(lead_ids: list[int]) -> int:
+    ids = [int(x) for x in lead_ids if x]
+    if not ids:
+        return 0
+    placeholders = ",".join("?" for _ in ids)
+    with get_db() as conn:
+        cur = conn.execute(f"DELETE FROM leads WHERE id IN ({placeholders})", ids)
+        return cur.rowcount if cur.rowcount is not None else 0
 
 
 def update_status(lead_id: int, status: str):
