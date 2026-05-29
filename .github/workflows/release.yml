@@ -49,7 +49,7 @@ jobs:
           $data = [ordered]@{
             version = $version
             download_url = $downloadUrl
-            notes = "업데이트 확인 로그와 앱 버전 표시 추가"
+            notes = "로그인창 업데이트 확인 추가"
             sha256 = $sha
             force = $false
           }
@@ -66,4 +66,4 @@ jobs:
             "dist\version.json" `
             --repo "${{ github.repository }}" `
             --title "${{ github.ref_name }}" `
-            --notes "업데이트 확인 로그와 앱 버전 표시 추가"
+            --notes "로그인창 업데이트 확인 추가"

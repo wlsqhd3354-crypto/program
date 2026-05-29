@@ -76,14 +76,15 @@ class LoginWindow(ctk.CTk):
     """프로그램 사용 권한 인증."""
     def __init__(self):
         super().__init__()
-        self.title("로그인")
+        self.title(f"로그인 v{APP_VERSION}")
         self.geometry("360x240")
         self.resizable(False, False)
         self.authenticated = False
+        self.update_checked = False
         settings = load_settings()
 
         ctk.CTkLabel(self, text="자동발송기 (셀클럽+마멘토+아이보스)", font=("Pretendard", 15, "bold")).pack(pady=(20, 4))
-        ctk.CTkLabel(self, text="등록된 사용자만 이용 가능", font=("Pretendard", 10), text_color="#888").pack()
+        ctk.CTkLabel(self, text=f"등록된 사용자만 이용 가능 · v{APP_VERSION}", font=("Pretendard", 10), text_color="#888").pack()
         self.id_entry = ctk.CTkEntry(self, placeholder_text="아이디", width=240)
         self.id_entry.pack(pady=(16, 6))
         self.id_entry.insert(0, settings.get("user_id", ""))
@@ -94,6 +95,41 @@ class LoginWindow(ctk.CTk):
         ctk.CTkButton(self, text="로그인", width=240, command=self._login).pack(pady=6)
         self.id_entry.focus()
         self.bind("<Return>", lambda _: self._login())
+        self.after(800, self._check_update_async)
+
+    def _check_update_async(self):
+        def worker():
+            try:
+                info = updater.check_for_update()
+            except Exception as e:
+                self.after(0, lambda: self.status.configure(text=f"업데이트 확인 실패: {e}", text_color="#d4a657"))
+                return
+            self.update_checked = True
+            if info:
+                self.after(0, lambda: self._prompt_update(info))
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _prompt_update(self, info: updater.UpdateInfo):
+        notes = f"\n\n{info.notes}" if info.notes else ""
+        ok = messagebox.askyesno(
+            "업데이트",
+            f"새 버전이 있습니다.\n현재 버전: {APP_VERSION}\n최신 버전: {info.version}{notes}\n\n지금 업데이트할까요?",
+        )
+        if not ok:
+            return
+        try:
+            self.status.configure(text=f"{info.version} 다운로드 중...", text_color="#888")
+            self.update()
+            downloaded = updater.download_update(info)
+            if getattr(sys, "frozen", False):
+                self.status.configure(text="업데이트 적용 후 재시작합니다.", text_color="#81c784")
+                self.update()
+                updater.install_and_restart(downloaded)
+            else:
+                messagebox.showinfo("업데이트", f"개발 실행 상태라 자동 교체는 생략했습니다.\n다운로드: {downloaded}")
+        except Exception as e:
+            messagebox.showerror("업데이트 실패", str(e))
 
     def _login(self):
         uid, pw = self.id_entry.get().strip(), self.pw_entry.get().strip()
@@ -112,7 +148,7 @@ class LoginWindow(ctk.CTk):
 
 
 class MainApp(ctk.CTk):
-    def __init__(self):
+    def __init__(self, skip_update_check: bool = False):
         super().__init__()
         self.title(f"자동발송기 - 셀클럽/마멘토/아이보스 통합 v{APP_VERSION}")
         self.geometry("1220x900")
@@ -133,7 +169,8 @@ class MainApp(ctk.CTk):
         self._build_ui()
         self._load_saved()
         self._refresh_resources()
-        self.after(800, self._check_update_async)
+        if not skip_update_check:
+            self.after(800, self._check_update_async)
 
     # ---------- UI 구축 ----------
     def _build_ui(self):
@@ -1449,7 +1486,7 @@ def main():
     login = LoginWindow(); login.mainloop()
     if not login.authenticated:
         sys.exit(0)
-    MainApp().mainloop()
+    MainApp(skip_update_check=login.update_checked).mainloop()
 
 
 if __name__ == "__main__":
