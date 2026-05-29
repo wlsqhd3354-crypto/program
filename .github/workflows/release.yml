@@ -44,16 +44,19 @@ jobs:
         run: |
           $tag = "${{ github.ref_name }}"
           $version = $tag.TrimStart("v")
+          $releaseInfo = Get-Content "release_version.example.json" -Raw | ConvertFrom-Json
           $sha = (Get-FileHash -Algorithm SHA256 "dist\SellClubBot.exe").Hash.ToLower()
           $downloadUrl = "https://github.com/${{ github.repository }}/releases/download/$tag/SellClubBot.exe"
+          $notes = [string]$releaseInfo.notes
           $data = [ordered]@{
             version = $version
             download_url = $downloadUrl
-            notes = "로그인창 업데이트 확인 추가"
+            notes = $notes
             sha256 = $sha
             force = $false
           }
           $data | ConvertTo-Json | Out-File -FilePath "dist\version.json" -Encoding utf8
+          $notes | Out-File -FilePath "dist\release_notes.txt" -Encoding utf8
           Get-Content "dist\version.json"
 
       - name: Publish GitHub Release
@@ -66,4 +69,4 @@ jobs:
             "dist\version.json" `
             --repo "${{ github.repository }}" `
             --title "${{ github.ref_name }}" `
-            --notes "로그인창 업데이트 확인 추가"
+            --notes-file "dist\release_notes.txt"

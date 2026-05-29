@@ -82,13 +82,14 @@ class PostingJob:
                 round_ok = 0
                 round_fail = 0
                 for name, res in results.items():
+                    label = self.bot.plan_label(name)
                     if res.ok:
                         round_ok += 1
                         url = f" → {res.posted_url}" if res.posted_url else ""
-                        self.on_log(f"  [{name}] OK ({res.message}){url}")
+                        self.on_log(f"  [{label}] OK ({res.message}){url}")
                     else:
                         round_fail += 1
-                        self.on_log(f"  [{name}] FAIL: {res.message}")
+                        self.on_log(f"  [{label}] FAIL: {res.message}")
 
                 self._sent += round_ok
                 self._failed += round_fail

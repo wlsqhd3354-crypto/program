@@ -224,6 +224,7 @@ class MainApp(ctk.CTk):
     def _build_sellclub_tab(self, parent):
         self.sc_enabled = ctk.CTkCheckBox(parent, text="셀클럽 활성화"); self.sc_enabled.select()
         self.sc_enabled.grid(row=0, column=0, columnspan=2, padx=10, pady=(10, 4), sticky="w")
+        parent.grid_columnconfigure(1, weight=1)
 
         ctk.CTkLabel(parent, text="아이디").grid(row=1, column=0, padx=10, pady=4, sticky="e")
         self.sc_id = ctk.CTkEntry(parent, width=200); self.sc_id.grid(row=1, column=1, sticky="w")
@@ -232,29 +233,42 @@ class MainApp(ctk.CTk):
         self.sc_login_btn = ctk.CTkButton(parent, text="로그인", width=80, command=self._sc_login); self.sc_login_btn.grid(row=1, column=4, padx=10)
         self.sc_status = ctk.CTkLabel(parent, text="미접속", text_color="#888"); self.sc_status.grid(row=1, column=5, sticky="w")
 
-        ctk.CTkLabel(parent, text="카테고리").grid(row=2, column=0, padx=10, pady=4, sticky="e")
-        self.sc_category = ctk.CTkOptionMenu(parent, values=[
-            "홍보/마케팅", "프로그램/솔루션", "교육/강의", "IT/개발/보수",
-            "디자인/그래픽", "유통/무역/생산", "입점/제휴/섭외",
-            "운영/관리", "컨텐츠/제작물", "컨설팅/상담",
-        ]); self.sc_category.grid(row=2, column=1, sticky="w")
+        target = ctk.CTkFrame(parent)
+        target.grid(row=2, column=0, columnspan=6, padx=10, pady=(10, 4), sticky="ew")
+        target.grid_columnconfigure(4, weight=1)
+        ctk.CTkLabel(target, text="발송 대상", font=("Pretendard", 12, "bold")).grid(row=0, column=0, padx=8, pady=8, sticky="w")
+        self.sc_paid_enabled = ctk.CTkCheckBox(target, text="유료: 대행합니다")
+        self.sc_paid_enabled.select()
+        self.sc_paid_enabled.grid(row=0, column=1, padx=8, pady=8, sticky="w")
+        self.sc_free_enabled = ctk.CTkCheckBox(target, text="무료: 자유홍보/광고")
+        self.sc_free_enabled.grid(row=0, column=2, padx=8, pady=8, sticky="w")
+        self.sc_content_enabled = ctk.CTkCheckBox(target, text="콘텐츠형")
+        self.sc_content_enabled.grid(row=0, column=3, padx=8, pady=8, sticky="w")
 
-        ctk.CTkLabel(parent, text="등록분류").grid(row=2, column=2, padx=10, sticky="e")
-        self.sc_reg = ctk.CTkOptionMenu(parent, values=["대행합니다", "의뢰받아요"]); self.sc_reg.grid(row=2, column=3, sticky="w")
-
-        ctk.CTkLabel(parent, text="거래상황").grid(row=3, column=0, padx=10, pady=4, sticky="e")
-        self.sc_dealstatus = ctk.CTkOptionMenu(parent, values=["on", "off"]); self.sc_dealstatus.grid(row=3, column=1, sticky="w")
-
-        ctk.CTkLabel(parent, text="거래방식").grid(row=3, column=2, padx=10, sticky="e")
-        self.sc_dealmethod = ctk.CTkEntry(parent, width=200); self.sc_dealmethod.insert(0, "쪽지연락"); self.sc_dealmethod.grid(row=3, column=3, sticky="w")
-
-        ctk.CTkLabel(parent, text="게시물형태").grid(row=4, column=0, padx=10, pady=4, sticky="e")
-        self.sc_posttype = ctk.CTkOptionMenu(parent, values=[
+        paid = ctk.CTkFrame(parent)
+        paid.grid(row=3, column=0, columnspan=6, padx=10, pady=4, sticky="ew")
+        ctk.CTkLabel(paid, text="유료 게시글", font=("Pretendard", 12, "bold")).grid(row=0, column=0, padx=8, pady=8, sticky="w")
+        ctk.CTkLabel(paid, text="카테고리").grid(row=1, column=0, padx=8, pady=4, sticky="e")
+        self.sc_category = ctk.CTkOptionMenu(paid, values=sellclub.PAID_CATEGORIES, width=180)
+        self.sc_category.grid(row=1, column=1, sticky="w")
+        ctk.CTkLabel(paid, text="등록분류").grid(row=1, column=2, padx=10, sticky="e")
+        self.sc_reg = ctk.CTkOptionMenu(paid, values=["대행합니다", "의뢰받아요"], width=140)
+        self.sc_reg.grid(row=1, column=3, sticky="w")
+        ctk.CTkLabel(paid, text="거래상황").grid(row=2, column=0, padx=8, pady=4, sticky="e")
+        self.sc_dealstatus = ctk.CTkOptionMenu(paid, values=["on", "off"], width=110)
+        self.sc_dealstatus.grid(row=2, column=1, sticky="w")
+        ctk.CTkLabel(paid, text="거래방식").grid(row=2, column=2, padx=10, sticky="e")
+        self.sc_dealmethod = ctk.CTkEntry(paid, width=180)
+        self.sc_dealmethod.insert(0, "쪽지연락")
+        self.sc_dealmethod.grid(row=2, column=3, sticky="w")
+        ctk.CTkLabel(paid, text="게시물형태").grid(row=3, column=0, padx=8, pady=4, sticky="e")
+        self.sc_posttype = ctk.CTkOptionMenu(paid, values=[
             "3 (기본 -1500P)", "2 (굵게 -2000P)", "1 (급등 -2500P)", "0 (추천 -151500P)",
-        ]); self.sc_posttype.grid(row=4, column=1, sticky="w")
+        ], width=180)
+        self.sc_posttype.grid(row=3, column=1, sticky="w")
 
-        pf = ctk.CTkFrame(parent, fg_color="transparent")
-        pf.grid(row=5, column=0, columnspan=6, padx=10, pady=4, sticky="w")
+        pf = ctk.CTkFrame(paid, fg_color="transparent")
+        pf.grid(row=4, column=0, columnspan=5, padx=8, pady=4, sticky="w")
         ctk.CTkLabel(pf, text="전화").pack(side="left")
         self.sc_phone_area = ctk.CTkOptionMenu(pf, values=["02","031","032","033","041","042","043","051","052","053","054","055","061","062","063","064","070","0505"], width=80); self.sc_phone_area.pack(side="left", padx=4)
         self.sc_phone_mid = ctk.CTkEntry(pf, width=60); self.sc_phone_mid.pack(side="left", padx=2)
@@ -265,6 +279,34 @@ class MainApp(ctk.CTk):
         self.sc_mobile_mid = ctk.CTkEntry(pf, width=60); self.sc_mobile_mid.pack(side="left", padx=2)
         ctk.CTkLabel(pf, text="-").pack(side="left")
         self.sc_mobile_end = ctk.CTkEntry(pf, width=60); self.sc_mobile_end.pack(side="left", padx=2)
+
+        free = ctk.CTkFrame(parent)
+        free.grid(row=4, column=0, columnspan=6, padx=10, pady=4, sticky="ew")
+        ctk.CTkLabel(free, text="무료 게시글", font=("Pretendard", 12, "bold")).grid(row=0, column=0, padx=8, pady=8, sticky="w")
+        ctk.CTkLabel(free, text="게시판").grid(row=1, column=0, padx=8, pady=4, sticky="e")
+        ctk.CTkLabel(free, text="자유홍보/광고", text_color="#81c784").grid(row=1, column=1, padx=4, sticky="w")
+        ctk.CTkLabel(free, text="카테고리").grid(row=1, column=2, padx=10, sticky="e")
+        self.sc_free_category = ctk.CTkOptionMenu(free, values=sellclub.FREE_AD_CATEGORIES, width=160)
+        self.sc_free_category.set("마케팅관련")
+        self.sc_free_category.grid(row=1, column=3, sticky="w")
+        ctk.CTkLabel(free, text="키워드").grid(row=2, column=0, padx=8, pady=4, sticky="e")
+        self.sc_free_keywords = ctk.CTkEntry(free, width=360, placeholder_text="쉼표로 구분, 비워도 등록 가능")
+        self.sc_free_keywords.grid(row=2, column=1, columnspan=3, sticky="w")
+        ctk.CTkLabel(free, text="동일 내용 연속등록/카테고리 불일치/금지 업종은 삭제될 수 있습니다.", text_color="#d4a657", font=("Pretendard", 10)).grid(row=3, column=1, columnspan=4, padx=4, pady=(0, 8), sticky="w")
+
+        content = ctk.CTkFrame(parent)
+        content.grid(row=5, column=0, columnspan=6, padx=10, pady=4, sticky="ew")
+        ctk.CTkLabel(content, text="정보글/콘텐츠형", font=("Pretendard", 12, "bold")).grid(row=0, column=0, padx=8, pady=8, sticky="w")
+        board_values = [f"{k} ({v})" for k, v in sellclub.CONTENT_BOARDS.items()]
+        self.sc_content_board = ctk.CTkOptionMenu(content, values=board_values, width=210, command=self._on_sc_content_board_changed)
+        self.sc_content_board.set("no_1_1 (마케팅노하우)")
+        self.sc_content_board.grid(row=1, column=1, padx=4, sticky="w")
+        ctk.CTkLabel(content, text="게시판").grid(row=1, column=0, padx=8, pady=4, sticky="e")
+        ctk.CTkLabel(content, text="카테고리").grid(row=1, column=2, padx=10, sticky="e")
+        self.sc_content_category = ctk.CTkOptionMenu(content, values=sellclub.CONTENT_CATEGORIES["no_1_1"], width=160)
+        self.sc_content_category.set("마케팅전략")
+        self.sc_content_category.grid(row=1, column=3, sticky="w")
+        ctk.CTkLabel(content, text="콘텐츠형은 정보글처럼 작성하는 용도입니다. 체험단정보는 기본 신청기간이 자동 입력됩니다.", text_color="#aaa", font=("Pretendard", 10)).grid(row=2, column=1, columnspan=4, padx=4, pady=(0, 8), sticky="w")
 
     def _build_mamentor_tab(self, parent):
         self.mm_enabled = ctk.CTkCheckBox(parent, text="마멘토 활성화"); self.mm_enabled.select()
@@ -285,6 +327,12 @@ class MainApp(ctk.CTk):
         ctk.CTkLabel(parent, text="카테고리(ca_name)").grid(row=3, column=0, padx=10, pady=4, sticky="e")
         self.mm_caname = ctk.CTkEntry(parent, width=200, placeholder_text="비우면 게시판명 사용")
         self.mm_caname.grid(row=3, column=1, sticky="w")
+
+    def _on_sc_content_board_changed(self, value: str | None = None):
+        board = (value or self.sc_content_board.get()).split(" ")[0]
+        categories = sellclub.CONTENT_CATEGORIES.get(board, ["마케팅전략"])
+        self.sc_content_category.configure(values=categories)
+        self.sc_content_category.set(categories[0])
 
     def _build_iboss_tab(self, parent):
         self.ib_enabled = ctk.CTkCheckBox(parent, text="아이보스 활성화 (일일 2회 자동제한)"); self.ib_enabled.select()
@@ -515,19 +563,27 @@ class MainApp(ctk.CTk):
         self.auto_status = ctk.CTkLabel(sched, text="중지됨", text_color="#888")
         self.auto_status.grid(row=0, column=11, padx=8, sticky="w")
         ctk.CTkLabel(sched, text="자동 발송 횟수").grid(row=1, column=0, padx=8, pady=(0, 8), sticky="w")
-        ctk.CTkLabel(sched, text="셀클럽").grid(row=1, column=1, padx=(6, 2), pady=(0, 8), sticky="e")
-        self.auto_sc_count = ctk.CTkEntry(sched, width=54)
-        self.auto_sc_count.insert(0, "10")
-        self.auto_sc_count.grid(row=1, column=2, padx=(0, 8), pady=(0, 8))
-        ctk.CTkLabel(sched, text="마멘토").grid(row=1, column=3, padx=(6, 2), pady=(0, 8), sticky="e")
+        ctk.CTkLabel(sched, text="셀클럽 유료").grid(row=1, column=1, padx=(6, 2), pady=(0, 8), sticky="e")
+        self.auto_sc_paid_count = ctk.CTkEntry(sched, width=48)
+        self.auto_sc_paid_count.insert(0, "10")
+        self.auto_sc_paid_count.grid(row=1, column=2, padx=(0, 6), pady=(0, 8))
+        ctk.CTkLabel(sched, text="무료").grid(row=1, column=3, padx=(4, 2), pady=(0, 8), sticky="e")
+        self.auto_sc_free_count = ctk.CTkEntry(sched, width=48)
+        self.auto_sc_free_count.insert(0, "0")
+        self.auto_sc_free_count.grid(row=1, column=4, padx=(0, 6), pady=(0, 8))
+        ctk.CTkLabel(sched, text="콘텐츠").grid(row=1, column=5, padx=(4, 2), pady=(0, 8), sticky="e")
+        self.auto_sc_content_count = ctk.CTkEntry(sched, width=48)
+        self.auto_sc_content_count.insert(0, "0")
+        self.auto_sc_content_count.grid(row=1, column=6, padx=(0, 6), pady=(0, 8))
+        ctk.CTkLabel(sched, text="마멘토").grid(row=1, column=7, padx=(6, 2), pady=(0, 8), sticky="e")
         self.auto_mm_count = ctk.CTkEntry(sched, width=54)
         self.auto_mm_count.insert(0, "10")
-        self.auto_mm_count.grid(row=1, column=4, padx=(0, 8), pady=(0, 8))
-        ctk.CTkLabel(sched, text="아이보스").grid(row=1, column=5, padx=(6, 2), pady=(0, 8), sticky="e")
+        self.auto_mm_count.grid(row=1, column=8, padx=(0, 8), pady=(0, 8))
+        ctk.CTkLabel(sched, text="아이보스").grid(row=1, column=9, padx=(6, 2), pady=(0, 8), sticky="e")
         self.auto_ib_count = ctk.CTkEntry(sched, width=54)
         self.auto_ib_count.insert(0, "2")
-        self.auto_ib_count.grid(row=1, column=6, padx=(0, 8), pady=(0, 8))
-        ctk.CTkLabel(sched, text="0이면 제외, 아이보스는 일일 2회 제한 적용", text_color="#aaa", font=("Pretendard", 10)).grid(row=1, column=7, columnspan=5, padx=8, pady=(0, 8), sticky="w")
+        self.auto_ib_count.grid(row=1, column=10, padx=(0, 8), pady=(0, 8))
+        ctk.CTkLabel(sched, text="0이면 제외", text_color="#aaa", font=("Pretendard", 10)).grid(row=1, column=11, padx=8, pady=(0, 8), sticky="w")
 
     # ---------- 저장/로드 ----------
     def _load_saved(self):
@@ -543,6 +599,24 @@ class MainApp(ctk.CTk):
             self.sc_mobile_mid.insert(0, s["sc_mobile_mid"])
         if s.get("sc_mobile_end"):
             self.sc_mobile_end.insert(0, s["sc_mobile_end"])
+        if not s.get("sc_paid_enabled", True):
+            self.sc_paid_enabled.deselect()
+        if s.get("sc_free_enabled", False):
+            self.sc_free_enabled.select()
+        if s.get("sc_content_enabled", False):
+            self.sc_content_enabled.select()
+        if s.get("sc_free_category") in sellclub.FREE_AD_CATEGORIES:
+            self.sc_free_category.set(s["sc_free_category"])
+        if s.get("sc_free_keywords"):
+            self.sc_free_keywords.insert(0, s["sc_free_keywords"])
+        if s.get("sc_content_board") in sellclub.CONTENT_BOARDS:
+            board_label = f"{s['sc_content_board']} ({sellclub.CONTENT_BOARDS[s['sc_content_board']]})"
+            self.sc_content_board.set(board_label)
+            self._on_sc_content_board_changed(board_label)
+        if s.get("sc_content_category"):
+            board = self.sc_content_board.get().split(" ")[0]
+            if s["sc_content_category"] in sellclub.CONTENT_CATEGORIES.get(board, []):
+                self.sc_content_category.set(s["sc_content_category"])
         if s.get("ib_company"):
             self.ib_company.insert(0, s["ib_company"])
         if s.get("ib_contact"):
@@ -695,6 +769,17 @@ class MainApp(ctk.CTk):
         except Exception as e:
             messagebox.showerror("업데이트 실패", str(e))
 
+    def _target_label(self, name: str) -> str:
+        labels = {
+            "sellclub": "셀클럽",
+            "sellclub_paid": "셀클럽 유료",
+            "sellclub_free": "셀클럽 무료",
+            "sellclub_content": "셀클럽 콘텐츠",
+            "mamentor": "마멘토",
+            "iboss": "아이보스",
+        }
+        return labels.get(name, name)
+
     def _auto_start(self):
         if self.auto_scheduler_thread and self.auto_scheduler_thread.is_alive():
             return
@@ -707,7 +792,9 @@ class MainApp(ctk.CTk):
         if post_enabled:
             try:
                 post_counts = {
-                    "sellclub": max(0, int(self.auto_sc_count.get() or 0)),
+                    "sellclub_paid": max(0, int(self.auto_sc_paid_count.get() or 0)),
+                    "sellclub_free": max(0, int(self.auto_sc_free_count.get() or 0)),
+                    "sellclub_content": max(0, int(self.auto_sc_content_count.get() or 0)),
                     "mamentor": max(0, int(self.auto_mm_count.get() or 0)),
                     "iboss": max(0, int(self.auto_ib_count.get() or 0)),
                 }
@@ -734,7 +821,7 @@ class MainApp(ctk.CTk):
         self.auto_start_btn.configure(state="disabled")
         self.auto_stop_btn.configure(state="normal")
         self.auto_status.configure(text="실행 중", text_color="#81c784")
-        target_label = ", ".join(f"{k} {v}회" for k, v in post_counts.items() if v > 0) if post_counts else "-"
+        target_label = ", ".join(f"{self._target_label(k)} {v}회" for k, v in post_counts.items() if v > 0) if post_counts else "-"
         self._log(f"[자동 스케줄] 시작: 발송={post_enabled}({self._format_seconds(post_sec)}마다/{target_label}), 크롤링={crawl_enabled}({self._format_seconds(crawl_sec)}마다)")
 
     def _auto_stop(self):
@@ -780,12 +867,13 @@ class MainApp(ctk.CTk):
         if self.crawl_job and self.crawl_job.is_running():
             self._log("[자동 스케줄] 발송 건너뜀: 크롤링 중")
             return
-        self._log(f"[자동 스케줄] 발송 시작: {', '.join(post_sites) if post_sites else '활성 사이트'}")
+        label = ", ".join(self._target_label(name) for name in post_sites) if post_sites else "활성 사이트"
+        self._log(f"[자동 스케줄] 발송 시작: {label}")
         started = self._start_job(set(post_sites) if post_sites else None, repeat_count=1)
         if started and remaining is not None:
             for name in post_sites:
                 remaining[name] = max(0, remaining.get(name, 0) - 1)
-            rest = ", ".join(f"{k} {v}회" for k, v in remaining.items() if v > 0) or "없음"
+            rest = ", ".join(f"{self._target_label(k)} {v}회" for k, v in remaining.items() if v > 0) or "없음"
             self._log(f"[자동 스케줄] 남은 발송 횟수: {rest}")
 
     def _auto_try_start_crawl(self):
@@ -857,6 +945,9 @@ class MainApp(ctk.CTk):
     def _collect_sc_options(self):
         pt = self.sc_posttype.get().split(" ")[0]
         return sellclub.WriteOptions(
+            board_table=sellclub.SELLCLUB_PAID_BOARD,
+            mode="paid",
+            label="셀클럽 유료",
             category=self.sc_category.get(),
             deal_status=self.sc_dealstatus.get(),
             reg_class=self.sc_reg.get(),
@@ -869,6 +960,57 @@ class MainApp(ctk.CTk):
             mobile_mid=self.sc_mobile_mid.get().strip(),
             mobile_end=self.sc_mobile_end.get().strip(),
         )
+
+    def _collect_sc_destinations(self, target_keys: set[str] | None = None):
+        destinations: list[tuple[str, str, sellclub.WriteOptions]] = []
+        paid_opts = self._collect_sc_options()
+        use_widgets = target_keys is None or "sellclub" in target_keys
+
+        def include(key: str, widget) -> bool:
+            return bool(widget.get()) if use_widgets else key in target_keys
+
+        if include("sellclub_paid", self.sc_paid_enabled):
+            destinations.append(("sellclub_paid", "셀클럽 유료", paid_opts))
+
+        if include("sellclub_free", self.sc_free_enabled):
+            destinations.append((
+                "sellclub_free",
+                "셀클럽 무료",
+                sellclub.WriteOptions(
+                    board_table=sellclub.SELLCLUB_FREE_BOARD,
+                    mode="free_ad",
+                    label="셀클럽 무료",
+                    category=self.sc_free_category.get(),
+                    keywords=self.sc_free_keywords.get().strip(),
+                    link1=paid_opts.link1,
+                    link2=paid_opts.link2,
+                ),
+            ))
+
+        if include("sellclub_content", self.sc_content_enabled):
+            board = self.sc_content_board.get().split(" ")[0]
+            board_label = sellclub.CONTENT_BOARDS.get(board, board)
+            destinations.append((
+                "sellclub_content",
+                f"셀클럽 콘텐츠({board_label})",
+                sellclub.WriteOptions(
+                    board_table=board,
+                    mode="content",
+                    label=f"셀클럽 콘텐츠({board_label})",
+                    category=self.sc_content_category.get(),
+                    deal_method=paid_opts.deal_method,
+                    phone_area=paid_opts.phone_area,
+                    phone_mid=paid_opts.phone_mid,
+                    phone_end=paid_opts.phone_end,
+                    mobile_area=paid_opts.mobile_area,
+                    mobile_mid=paid_opts.mobile_mid,
+                    mobile_end=paid_opts.mobile_end,
+                    link1=paid_opts.link1,
+                    link2=paid_opts.link2,
+                ),
+            ))
+
+        return destinations
 
     def _collect_mm_options(self):
         bo_table = self.mm_board.get().split(" ")[0]
@@ -901,15 +1043,29 @@ class MainApp(ctk.CTk):
         plans: dict[str, SitePlan] = {}
 
         def selected(site: str, checkbox) -> bool:
+            if target_sites is not None and site == "sellclub":
+                return "sellclub" in target_sites or any(name.startswith("sellclub_") for name in target_sites)
             return site in target_sites if target_sites is not None else bool(checkbox.get())
 
         if selected("sellclub", self.sc_enabled):
             if not self.sellclub_client or not self.sellclub_client.logged_in:
                 messagebox.showwarning("셀클럽", "셀클럽 로그인이 필요합니다 (탭에서 로그인)"); return False
-            opts = self._collect_sc_options()
-            if not (opts.mobile_mid and opts.mobile_end):
+            sc_target_keys = target_sites if target_sites is not None else None
+            sc_destinations = self._collect_sc_destinations(sc_target_keys)
+            if not sc_destinations:
+                messagebox.showwarning("셀클럽", "셀클럽 발송 대상을 하나 이상 선택하세요."); return False
+            paid_opts = next((opts for key, label, opts in sc_destinations if key == "sellclub_paid"), None)
+            if paid_opts and not (paid_opts.mobile_mid and paid_opts.mobile_end):
                 messagebox.showwarning("셀클럽", "핸드폰 번호 모두 입력 (필수 항목)"); return False
-            plans["sellclub"] = SitePlan(enabled=True, client=self.sellclub_client, options=opts, daily_limit=DEFAULT_DAILY_LIMITS["sellclub"], image_supported=True)
+            for key, label, opts in sc_destinations:
+                plans[key] = SitePlan(
+                    enabled=True,
+                    client=self.sellclub_client,
+                    options=opts,
+                    daily_limit=None,
+                    image_supported=True,
+                    label=label,
+                )
 
         if selected("mamentor", self.mm_enabled):
             if not self.mamentor_client or not self.mamentor_client.logged_in:
@@ -957,9 +1113,22 @@ class MainApp(ctk.CTk):
 
         # 셀클럽/아이보스 필드 저장
         s = load_settings()
-        if "sellclub" in plans:
-            sco = plans["sellclub"].options
-            s.update({"sc_phone_mid": sco.phone_mid, "sc_phone_end": sco.phone_end, "sc_mobile_mid": sco.mobile_mid, "sc_mobile_end": sco.mobile_end})
+        sc_plan = next((plan for key, plan in plans.items() if key.startswith("sellclub_")), None)
+        if sc_plan:
+            sco = self._collect_sc_options()
+            s.update({
+                "sc_phone_mid": sco.phone_mid,
+                "sc_phone_end": sco.phone_end,
+                "sc_mobile_mid": sco.mobile_mid,
+                "sc_mobile_end": sco.mobile_end,
+                "sc_paid_enabled": bool(self.sc_paid_enabled.get()),
+                "sc_free_enabled": bool(self.sc_free_enabled.get()),
+                "sc_content_enabled": bool(self.sc_content_enabled.get()),
+                "sc_free_category": self.sc_free_category.get(),
+                "sc_free_keywords": self.sc_free_keywords.get().strip(),
+                "sc_content_board": self.sc_content_board.get().split(" ")[0],
+                "sc_content_category": self.sc_content_category.get(),
+            })
         if "iboss" in plans:
             ibo = plans["iboss"].options
             s.update({"ib_company": ibo.company_name, "ib_contact": ibo.contact_name, "ib_phone": ibo.phone, "ib_email": ibo.email, "ib_kakao": ibo.kakao})
@@ -970,7 +1139,7 @@ class MainApp(ctk.CTk):
         self.job.start()
         self._set_post_buttons_state("disabled"); self.stop_btn.configure(state="normal")
         self._log(f"━━━ 발송 시작: {cfg.repeat_count}라운드, {self._format_seconds(cfg.interval_sec)} ± {self._format_seconds(cfg.jitter_sec)} ━━━")
-        self._log(f"활성 사이트: {', '.join(plans.keys())}")
+        self._log(f"활성 사이트: {', '.join(plan.label or key for key, plan in plans.items())}")
         self._log(f"콘텐츠 출처: {post_source}")
         self.after(1000, self._poll_job)
         return True

@@ -33,6 +33,7 @@ class SitePlan:
     options: object = None       # 사이트별 WriteOptions
     daily_limit: int | None = None  # None=무제한
     image_supported: bool = True
+    label: str = ""
 
 
 def _load_state() -> dict:
@@ -91,6 +92,10 @@ class MultiBot:
                 return False, f"일일 한도 도달 ({done}/{plan.daily_limit})"
         return True, "ok"
 
+    def plan_label(self, name: str) -> str:
+        plan = self.plans.get(name)
+        return (plan.label if plan and plan.label else name)
+
     def post_round(
         self,
         title: str,
@@ -127,9 +132,9 @@ class MultiBot:
         parts = []
         for name, plan in self.plans.items():
             if not plan.enabled:
-                parts.append(f"{name}: OFF")
+                parts.append(f"{self.plan_label(name)}: OFF")
                 continue
             cnt = self._today_count(name)
             lim = plan.daily_limit if plan.daily_limit is not None else "∞"
-            parts.append(f"{name}: {cnt}/{lim}")
+            parts.append(f"{self.plan_label(name)}: {cnt}/{lim}")
         return " | ".join(parts)

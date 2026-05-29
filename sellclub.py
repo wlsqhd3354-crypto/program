@@ -12,8 +12,9 @@ from __future__ import annotations
 import os
 import re
 import mimetypes
-from dataclasses import dataclass, field
-from urllib.parse import quote, urljoin
+from dataclasses import dataclass
+from datetime import date, timedelta
+from urllib.parse import urljoin
 from typing import Iterable
 
 import requests
@@ -26,9 +27,45 @@ from config import (
 )
 
 LOGIN_POST_URL = f"{SELLCLUB_BASE}/community/bbs/login_check2.php?login=1"
-WRITE_GET_URL = f"{SELLCLUB_BASE}/community/bbs/write.php?bo_table={SELLCLUB_BOARD}"
 WRITE_POST_URL = f"{SELLCLUB_BASE}/community/bbs/write_update.php"
 SITE_ENC = "euc-kr"
+
+SELLCLUB_PAID_BOARD = "maket_5_3"
+SELLCLUB_FREE_BOARD = "free_ad"
+
+PAID_CATEGORIES = [
+    "홍보/마케팅", "프로그램/솔루션", "교육/강의", "IT/개발/보수",
+    "디자인/그래픽", "유통/무역/생산", "입점/제휴/섭외",
+    "운영/관리", "컨텐츠/제작물", "컨설팅/상담",
+]
+
+FREE_AD_CATEGORIES = [
+    "마케팅관련", "프로그램툴", "구인구직", "컨텐츠제작", "IT제작개발",
+    "디자인그래픽", "투자동업", "협업제휴", "부업창업관련", "유통관련",
+    "쇼핑몰관련", "이벤트행사", "보험금융관련", "정보교육관련", "세무법률",
+    "컨설팅상담", "업체소개", "카페소개", "블로그소개", "유튜브소개", "SNS소개",
+]
+
+CONTENT_BOARDS = {
+    "no_1_1": "마케팅노하우",
+    "freetalk": "통합자유토크",
+    "review": "체험단정보",
+}
+
+CONTENT_CATEGORIES = {
+    "no_1_1": [
+        "마케팅전략", "무료마케팅", "유료마케팅", "포털사이트", "웹검색최적화",
+        "블로그", "카페", "이메일", "제휴", "언론", "로그분석", "유의사항",
+        "마케팅용어", "트랜드/통계",
+    ],
+    "freetalk": [
+        "마케팅", "정보나눔", "경험나눔", "노하우나눔", "블로그", "카페",
+        "SNS", "웹문서", "유튜브", "사이트", "쇼핑몰", "오픈마켓",
+        "유통무역", "수익모델", "창업벤쳐", "제작개발", "솔루션,툴",
+        "토론논의", "협업동업", "소개/모임", "자유토크",
+    ],
+    "review": ["이벤트/기타", "뷰티", "패션", "생활", "여행", "방문", "식품", "기기", "문화", "서포터"],
+}
 
 
 class SellClubError(Exception):
@@ -38,6 +75,9 @@ class SellClubError(Exception):
 @dataclass
 class WriteOptions:
     """글쓰기 시 폼 필드. 한 번 설정해두면 매 게시물에 재사용."""
+    board_table: str = SELLCLUB_PAID_BOARD
+    mode: str = "paid"                    # paid / free_ad / content
+    label: str = "셀클럽 유료"
     category: str = "홍보/마케팅"        # ca_name (필수)
     deal_status: str = "on"              # wr_9 (on=거래가능, off=거래종료)
     reg_class: str = "대행합니다"        # ext6_00 (대행합니다 / 의뢰받아요)
@@ -51,11 +91,21 @@ class WriteOptions:
     mobile_end: str = ""                 # ext5_05
     link1: str = ""
     link2: str = ""
+    keywords: str = ""                   # free_ad wr_10
+    review_contact: str = ""             # review wr_10
+    review_start_date: str = ""          # YYYYMMDD
+    review_end_date: str = ""            # YYYYMMDD
+    review_announce_date: str = ""       # YYYYMMDD
+    review_recruit_count: str = "0"
 
 
 def _enc(value: str) -> bytes:
     """폼 필드 문자열을 EUC-KR 바이트로 인코딩 (사이트 charset에 맞춤)."""
     return value.encode(SITE_ENC, errors="replace")
+
+
+def _write_get_url(board_table: str) -> str:
+    return f"{SELLCLUB_BASE}/community/bbs/write.php?bo_table={board_table}"
 
 
 class SellClubClient(BoardClient):
@@ -158,36 +208,16 @@ class SellClubClient(BoardClient):
         if not self.logged_in:
             raise SellClubError("먼저 login() 호출 필요")
 
+        board_table = options.board_table or SELLCLUB_BOARD
+        write_get_url = _write_get_url(board_table)
+
         # write.php 페이지를 먼저 GET (referer & 세션 갱신)
         try:
-            self.session.get(WRITE_GET_URL, timeout=self.timeout)
+            self.session.get(write_get_url, timeout=self.timeout)
         except Exception:
             pass
 
-        # 폼 필드 구성
-        fields: list[tuple[str, bytes]] = [
-            ("w", b""),
-            ("bo_table", _enc(SELLCLUB_BOARD)),
-            ("wr_id", b""),
-            ("sfl", b""), ("stx", b""), ("spt", b""),
-            ("sst", b""), ("sod", b""), ("page", b""),
-            ("wr_1", _enc(options.post_type)),
-            ("ca_name", _enc(options.category)),
-            ("wr_9", _enc(options.deal_status)),
-            ("ext6_00", _enc(options.reg_class)),
-            ("ext6_01", _enc(options.deal_method)),
-            ("ext5_00", _enc(options.phone_area)),
-            ("ext5_01", _enc(options.phone_mid)),
-            ("ext5_02", _enc(options.phone_end)),
-            ("ext5_03", _enc(options.mobile_area)),
-            ("ext5_04", _enc(options.mobile_mid)),
-            ("ext5_05", _enc(options.mobile_end)),
-            ("wr_subject", _enc(title)),
-            ("wr_content", _enc(content)),
-            ("wr_link1", _enc(options.link1)),
-            ("wr_link2", _enc(options.link2)),
-            ("wr_2", b"1"),
-        ]
+        fields = self._build_fields(title, content, options)
 
         # multipart 빌드 — requests에 files 로 텍스트 필드도 같이 보내면
         # multipart/form-data 로 자동 생성됨. 인코딩 문제로 직접 처리.
@@ -216,7 +246,7 @@ class SellClubClient(BoardClient):
                 multipart.append(("bf_file[]", (fname, data, mime)))
 
         headers = {
-            "Referer": WRITE_GET_URL,
+            "Referer": write_get_url,
         }
 
         resp = self.session.post(
@@ -248,3 +278,114 @@ class SellClubClient(BoardClient):
 
         # 그 외엔 일단 성공으로 보고하되 메시지 첨부
         return WriteResult(True, resp.status_code, resp.url, "응답 확인 필요")
+
+    def _common_fields(self, board_table: str, *, html: bool = False, sca: bool = False) -> list[tuple[str, bytes]]:
+        fields = [
+            ("w", b""),
+            ("bo_table", _enc(board_table)),
+            ("wr_id", b""),
+        ]
+        if sca:
+            fields.append(("sca", b""))
+        fields.extend([
+            ("sfl", b""), ("stx", b""), ("spt", b""),
+            ("sst", b""), ("sod", b""), ("page", b""),
+        ])
+        if html:
+            fields.append(("html", _enc("html1")))
+        return fields
+
+    def _build_fields(self, title: str, content: str, options: WriteOptions) -> list[tuple[str, bytes]]:
+        mode = options.mode
+        board_table = options.board_table or SELLCLUB_PAID_BOARD
+        if mode == "free_ad" or board_table == SELLCLUB_FREE_BOARD:
+            return self._free_ad_fields(title, content, options)
+        if mode == "content" or board_table in CONTENT_BOARDS:
+            if board_table == "review":
+                return self._review_fields(title, content, options)
+            return self._simple_content_fields(title, content, options)
+        return self._paid_fields(title, content, options)
+
+    def _paid_fields(self, title: str, content: str, options: WriteOptions) -> list[tuple[str, bytes]]:
+        board_table = options.board_table or SELLCLUB_PAID_BOARD
+        fields = self._common_fields(board_table)
+        fields.extend([
+            ("wr_1", _enc(options.post_type)),
+            ("ca_name", _enc(options.category)),
+            ("wr_9", _enc(options.deal_status)),
+            ("ext6_00", _enc(options.reg_class)),
+            ("ext6_01", _enc(options.deal_method)),
+            ("ext5_00", _enc(options.phone_area)),
+            ("ext5_01", _enc(options.phone_mid)),
+            ("ext5_02", _enc(options.phone_end)),
+            ("ext5_03", _enc(options.mobile_area)),
+            ("ext5_04", _enc(options.mobile_mid)),
+            ("ext5_05", _enc(options.mobile_end)),
+            ("wr_subject", _enc(title)),
+            ("wr_content", _enc(content)),
+            ("wr_link1", _enc(options.link1)),
+            ("wr_link2", _enc(options.link2)),
+            ("wr_2", b"1"),
+        ])
+        return fields
+
+    def _free_ad_fields(self, title: str, content: str, options: WriteOptions) -> list[tuple[str, bytes]]:
+        fields = self._common_fields(SELLCLUB_FREE_BOARD, html=True, sca=True)
+        fields.extend([
+            ("ca_name", _enc(options.category or "마케팅관련")),
+            ("wr_subject", _enc(title)),
+            ("wr_content", _enc(content)),
+            ("wr_10", _enc(options.keywords)),
+            ("wr_trackback", b""),
+        ])
+        return fields
+
+    def _simple_content_fields(self, title: str, content: str, options: WriteOptions) -> list[tuple[str, bytes]]:
+        board_table = options.board_table
+        fields = self._common_fields(board_table, html=True, sca=True)
+        if board_table == "freetalk":
+            fields.append(("wr_2", b""))
+        fields.extend([
+            ("ca_name", _enc(options.category)),
+            ("wr_subject", _enc(title)),
+            ("wr_content", _enc(content)),
+        ])
+        if board_table == "freetalk":
+            fields.append(("wr_trackback", b""))
+        return fields
+
+    def _review_fields(self, title: str, content: str, options: WriteOptions) -> list[tuple[str, bytes]]:
+        today = date.today()
+        start = options.review_start_date or today.strftime("%Y%m%d")
+        end = options.review_end_date or (today + timedelta(days=7)).strftime("%Y%m%d")
+        announce = options.review_announce_date or (today + timedelta(days=8)).strftime("%Y%m%d")
+        contact = options.review_contact or self._format_contact(options) or options.deal_method
+
+        fields = self._common_fields("review", html=True, sca=True)
+        fields.extend([
+            ("wr_9", _enc("checked")),
+            ("ca_name", _enc(options.category or "이벤트/기타")),
+            ("wr_subject", _enc(title)),
+            ("wr_1", _enc(start)),
+            ("wr_2", _enc("0")),
+            ("wr_3", _enc(end)),
+            ("wr_4", _enc("23")),
+            ("wr_7", _enc(announce)),
+            ("wr_8", _enc("10")),
+            ("wr_10", _enc(contact)),
+            ("wr_5", _enc(options.review_recruit_count or "0")),
+            ("wr_content", _enc(content)),
+            ("wr_link1", _enc(options.link1)),
+            ("wr_link2", _enc(options.link2)),
+            ("wr_6", b""),
+            ("wr_trackback", b""),
+        ])
+        return fields
+
+    @staticmethod
+    def _format_contact(options: WriteOptions) -> str:
+        if options.mobile_mid and options.mobile_end:
+            return f"{options.mobile_area}-{options.mobile_mid}-{options.mobile_end}"
+        if options.phone_mid and options.phone_end:
+            return f"{options.phone_area}-{options.phone_mid}-{options.phone_end}"
+        return ""
