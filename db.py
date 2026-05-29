@@ -180,6 +180,32 @@ def init_db():
         conn.execute("CREATE INDEX IF NOT EXISTS idx_leads_next_action ON leads(next_action_at)")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_leads_duplicate_of ON leads(duplicate_of)")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_leads_min_price ON leads(min_price)")
+        _backfill_missing_prices(conn)
+
+
+def _backfill_missing_prices(conn: sqlite3.Connection):
+    try:
+        from extractor import extract_min_price
+    except Exception:
+        return
+    rows = conn.execute(
+        """SELECT id, title, body_text, body_excerpt, matched_keywords
+           FROM leads
+           WHERE min_price IS NULL"""
+    ).fetchall()
+    for row in rows:
+        keywords = _split_csv(row["matched_keywords"])
+        text = "\n".join(
+            part
+            for part in [row["title"] or "", row["body_text"] or "", row["body_excerpt"] or ""]
+            if part
+        )
+        amount, context = extract_min_price(text, keywords)
+        if amount:
+            conn.execute(
+                "UPDATE leads SET min_price = ?, price_text = ? WHERE id = ?",
+                (amount, context or None, row["id"]),
+            )
 
 
 def duplicate_memo_path() -> str:

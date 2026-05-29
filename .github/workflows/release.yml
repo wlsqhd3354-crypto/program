@@ -49,7 +49,7 @@ jobs:
           $data = [ordered]@{
             version = $version
             download_url = $downloadUrl
-            notes = "영업 크롤러 전체 수집 범위 수정"
+            notes = "최저단가 표시와 기존 데이터 단가 재계산 보정"
             sha256 = $sha
             force = $false
           }
@@ -66,4 +66,4 @@ jobs:
             "dist\version.json" `
             --repo "${{ github.repository }}" `
             --title "${{ github.ref_name }}" `
-            --notes "영업 크롤러 전체 수집 범위 수정"
+            --notes "최저단가 표시와 기존 데이터 단가 재계산 보정"

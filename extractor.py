@@ -256,8 +256,8 @@ def extract_min_price(text: str, keywords: list[str] | None = None) -> tuple[int
     return best.amount, best.context
 
 
-def format_price(amount: int | None) -> str:
-    return f"{amount:,}원" if amount else ""
+def format_price(amount: int | None, empty: str = "") -> str:
+    return f"{amount:,}원" if amount else empty
 
 
 def extract_contacts(body_text: str) -> ContactInfo:

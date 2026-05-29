@@ -1118,7 +1118,7 @@ class MainApp(ctk.CTk):
             L.status,
             L.site,
             (L.title or "")[:80],
-            format_price(L.min_price),
+            format_price(L.min_price, "-"),
             self._cr_kakao_text(L)[:45],
             self._cr_openchat_text(L)[:90],
             ", ".join(L.phones or [])[:40],
@@ -1211,7 +1211,7 @@ class MainApp(ctk.CTk):
         if L.open_chats:
             contacts.append("오픈챗 " + self._cr_openchat_text(L))
         dup = f" · 중복 {self._cr_duplicate_label(L)}" if self._cr_duplicate_label(L) else ""
-        price = f" · 최저단가 {format_price(L.min_price)}" if L.min_price else ""
+        price = f" · 최저단가 {format_price(L.min_price)}" if L.min_price else " · 최저단가 -"
         self.cr_preview_title.configure(text=f"[{L.site}] {title}")
         self.cr_preview_meta.configure(
             text=f"{L.status} · 우선순위 {L.priority or '보통'} · 다음액션 {L.next_action_at or '-'} · {' / '.join(contacts) or '연락처 없음'}{price}{dup}"
@@ -1348,7 +1348,7 @@ class LeadDetailDialog(ctk.CTkToplevel):
             ctk.CTkLabel(f, text=self._fmt(value), anchor="w", wraplength=690, justify="left").pack(side="left", padx=4)
 
         row("회사", lead.company)
-        row("최저단가", format_price(lead.min_price))
+        row("최저단가", format_price(lead.min_price, "-"))
         row("단가근거", lead.price_text)
         row("카톡 ID", ", ".join(lead.kakao_ids))
         row("오픈채팅", ", ".join(lead.open_chats))
