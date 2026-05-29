@@ -114,7 +114,7 @@ class LoginWindow(ctk.CTk):
 class MainApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("자동발송기 - 셀클럽/마멘토/아이보스 통합")
+        self.title(f"자동발송기 - 셀클럽/마멘토/아이보스 통합 v{APP_VERSION}")
         self.geometry("1220x900")
         self.minsize(1100, 760)
 
@@ -626,12 +626,16 @@ class MainApp(ctk.CTk):
 
     def _check_update_async(self):
         def worker():
+            self.after(0, lambda: self._log(f"[업데이트] 현재 버전 {APP_VERSION}, 최신 버전 확인 중..."))
             try:
                 info = updater.check_for_update()
-            except Exception:
+            except Exception as e:
+                self.after(0, lambda: self._log(f"[업데이트] 확인 실패: {e}"))
                 return
             if info:
                 self.after(0, lambda: self._prompt_update(info))
+            else:
+                self.after(0, lambda: self._log("[업데이트] 최신 버전입니다."))
 
         threading.Thread(target=worker, daemon=True).start()
 
