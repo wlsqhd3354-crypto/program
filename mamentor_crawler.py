@@ -10,19 +10,16 @@ from __future__ import annotations
 
 import re
 from typing import Callable, Optional
+from urllib.parse import parse_qs, urljoin, urlparse
+
+from bs4 import BeautifulSoup
 
 from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords, should_stop
 from db import Lead, upsert_lead
 from extractor import (
-    ContactInfo, extract_contacts, html_to_text, merge_contacts, extract_min_price,
+    ContactInfo, extract_contacts, html_to_text, extract_min_price,
 )
 from mamentor import MamentorClient, MAMENTOR_BASE
-
-# 목록의 글 링크: /bbs/board.php?bo_table=XXX&amp;wr_id=YYY&amp;page=N
-LIST_LINK_RE = re.compile(
-    r'<a\s+href=["\']https?://mamentor\.co\.kr/bbs/board\.php\?bo_table=([a-zA-Z0-9_]+)&(?:amp;)?wr_id=(\d+)[^"\']*["\']>\s*([^<][^<]*?)\s*</a>',
-    re.IGNORECASE,
-)
 
 # 상세: 제목
 TITLE_RE = re.compile(
@@ -37,12 +34,6 @@ DATE_RE = re.compile(
 WRITER_RE = re.compile(
     r'<a\s+href=["\']https?://mamentor\.co\.kr/bbs/profile\.php\?mb_id=([^"\']+)["\']\s+class=["\']sv_member["\'][^>]*>(?:<[^>]+>)*\s*([^<\s][^<]*?)\s*</a>',
 )
-# 상세: 본문 div (id=bo_v_con 안의 내용. 중첩 div 가 있어 비-탐욕적 + lookahead 로 종료점 잡기)
-BODY_RE = re.compile(
-    r'<div\s+id=["\']bo_v_con["\'][^>]*>(.*?)(?:<!-- 본문 내용 끝|</section>\s*<section\s+id=["\']bo_v_act|<aside|<footer)',
-    re.DOTALL | re.IGNORECASE,
-)
-
 
 class MamentorCrawler(BaseCrawler):
     site_name = "mamentor"
@@ -67,14 +58,22 @@ class MamentorCrawler(BaseCrawler):
         """목록에서 (bo, wr_id, title) 추출. bo_filter 와 같은 게시판만."""
         seen = set()
         items = []
-        for m in LIST_LINK_RE.finditer(html):
-            bo, wr_id, title = m.group(1), m.group(2), m.group(3)
+        soup = BeautifulSoup(html, "html.parser")
+        for a in soup.select('a[href*="board.php"][href*="wr_id="]'):
+            if self._is_sidebar_link(a):
+                continue
+            href = urljoin(MAMENTOR_BASE, a.get("href", ""))
+            parsed = urlparse(href)
+            qs = parse_qs(parsed.query)
+            bo = (qs.get("bo_table") or [""])[0]
+            wr_id = (qs.get("wr_id") or [""])[0]
             if bo != bo_filter:
                 continue
-            if wr_id in seen:
+            if not wr_id or wr_id in seen:
                 continue
             seen.add(wr_id)
             # 제목에서 댓글 count 등 노이즈 제거 (목록의 a 안에 댓글 [n] span 들어가있음)
+            title = a.get("title") or a.get_text(" ", strip=True)
             title = re.sub(r"\s+", " ", title).strip()
             if not title:
                 continue
@@ -85,6 +84,20 @@ class MamentorCrawler(BaseCrawler):
                 "url": self._detail_url(bo, wr_id),
             })
         return items
+
+    @staticmethod
+    def _is_sidebar_link(anchor) -> bool:
+        """인기글/최신글 사이드 영역 링크는 게시판 목록으로 보지 않는다."""
+        blocked_ids = {"hit_con_box", "ol_after", "side_4tabs"}
+        blocked_classes = {"hit_list", "new_articles", "latest_wr", "side_4tabs"}
+        for parent in anchor.parents:
+            parent_id = parent.get("id")
+            if parent_id in blocked_ids:
+                return True
+            classes = set(parent.get("class") or [])
+            if classes & blocked_classes:
+                return True
+        return False
 
     def _parse_detail(self, html: str) -> dict:
         data = {"title": "", "writer": "", "posted_at": "", "body": "", "contact": ContactInfo()}
@@ -101,9 +114,10 @@ class MamentorCrawler(BaseCrawler):
         if wm:
             data["writer"] = f"{wm.group(2).strip()} ({wm.group(1)})"
 
-        bm = BODY_RE.search(html)
-        if bm:
-            body_text = html_to_text(bm.group(1))
+        soup = BeautifulSoup(html, "html.parser")
+        body_node = soup.find(id="bo_v_con")
+        if body_node:
+            body_text = html_to_text(str(body_node))
             data["body"] = body_text
             data["contact"] = extract_contacts(body_text)
 

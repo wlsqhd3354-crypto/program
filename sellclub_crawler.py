@@ -11,10 +11,10 @@ from __future__ import annotations
 
 import re
 from datetime import datetime
-from urllib.parse import urljoin, urlparse, parse_qs
 from typing import Callable, Optional
 
-from base import BoardClient
+from bs4 import BeautifulSoup
+
 from config import SELLCLUB_BASE
 from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords, should_stop
 from db import Lead, upsert_lead
@@ -48,12 +48,6 @@ LIST_LINK_RE = re.compile(
 # 상세에서 작성자 정보 (mb_id, 닉네임, base64 이메일)
 WRITER_RE = re.compile(
     r"showSideView\(this,\s*'([^']+)',\s*'([^']+)',\s*'([^']*)'",
-)
-
-# 상세 본문 영역
-CONTENT_RE = re.compile(
-    r"<span id=['\"]ContentsView['\"][^>]*>(.*?)</span>",
-    re.DOTALL | re.IGNORECASE,
 )
 
 # 카테고리 표시: [홍보/마케팅] 처럼 본문 위에 표시
@@ -142,9 +136,10 @@ class SellClubCrawler(BaseCrawler):
             data["posted_at"] = pm.group(1).strip()
 
         # 본문
-        bm = CONTENT_RE.search(html)
-        if bm:
-            body_html = bm.group(1)
+        soup = BeautifulSoup(html, "html.parser")
+        body_node = soup.find(id="ContentsView")
+        if body_node:
+            body_html = str(body_node)
             body_text = html_to_text(body_html)
             data["body"] = body_text
             data["contact"] = extract_contacts(body_text)

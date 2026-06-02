@@ -12,18 +12,14 @@ from __future__ import annotations
 import re
 from typing import Callable, Optional
 
+from bs4 import BeautifulSoup
+
 from crawler_base import BaseCrawler, CrawlConfig, sleep_jitter, matches_keywords, should_stop
 from db import Lead, upsert_lead
 from extractor import (
     ContactInfo, extract_contacts, html_to_text, merge_contacts, normalize_phone, extract_min_price,
 )
 from iboss import IBossClient, IBOSS_BASE, BOARD_ID
-
-# 목록 글 링크: /ab-2987-{serial}
-LIST_LINK_RE = re.compile(
-    r'<a\s+href=["\']/ab-2987-(\d+)["\'][^>]*title=["\']([^"\']+)["\']',
-    re.IGNORECASE,
-)
 
 # 상세 제목
 TITLE_RE = re.compile(
@@ -38,17 +34,6 @@ DATE_RE = re.compile(
 WRITER_RE = re.compile(
     r'<span[^>]*class=["\']user_tit["\'][^>]*>\s*([^<]+?)\s*</span>'
 )
-# contact 테이블 한 row: <th>레이블</th><td>...<p>값</p>...</td> (값이 비어있을 수도)
-META_ROW_RE = re.compile(
-    r'<th[^>]*>\s*([^<]+?)\s*</th>\s*<td[^>]*>\s*(?:<p>\s*([^<]*)\s*</p>)?\s*</td>',
-    re.IGNORECASE,
-)
-# 본문
-BODY_RE = re.compile(
-    r'<div\s+[^>]*class=["\'][^"\']*ABA-article-contents[^"\']*["\'][^>]*>(.*?)</div>\s*<!--',
-    re.DOTALL | re.IGNORECASE,
-)
-
 
 class IBossCrawler(BaseCrawler):
     site_name = "iboss"
@@ -75,20 +60,49 @@ class IBossCrawler(BaseCrawler):
     def _parse_list(self, html: str) -> list[dict]:
         seen = set()
         items = []
-        for m in LIST_LINK_RE.finditer(html):
-            serial = m.group(1); title = m.group(2)
+        soup = BeautifulSoup(html, "html.parser")
+        scope = soup.find(
+            lambda tag: tag.name == "form"
+            and "TCBOARD_BD2986_LIST" in (tag.get("id") or tag.get("name") or "")
+        ) or soup
+        for a in scope.select('a[href*="ab-2987-"]'):
+            if not a.find_parent(class_="mb_subject") or self._is_sidebar_link(a):
+                continue
+            href = a.get("href", "")
+            m = re.search(r"ab-2987-(\d+)", href)
+            if not m:
+                continue
+            serial = m.group(1)
             if serial in seen:
                 continue
             seen.add(serial)
+            title = a.get("title") or a.get_text(" ", strip=True)
+            title = re.sub(r"\s+", " ", title).strip()
+            if not title:
+                continue
             items.append({
                 "serial": serial,
-                "title": title.strip(),
+                "title": title,
                 "url": self._detail_url(serial),
             })
         return items
 
+    @staticmethod
+    def _is_sidebar_link(anchor) -> bool:
+        blocked_ids = {"side_4tabs"}
+        blocked_classes = {"new_articles", "latest_wr", "side_4tabs"}
+        for parent in anchor.parents:
+            parent_id = parent.get("id")
+            if parent_id in blocked_ids:
+                return True
+            classes = set(parent.get("class") or [])
+            if classes & blocked_classes:
+                return True
+        return False
+
     def _parse_detail(self, html: str) -> dict:
         data = {"title": "", "writer": "", "posted_at": "", "body": "", "contact": ContactInfo()}
+        soup = BeautifulSoup(html, "html.parser")
 
         tm = TITLE_RE.search(html)
         if tm:
@@ -102,14 +116,20 @@ class IBossCrawler(BaseCrawler):
         if wm:
             data["writer"] = wm.group(1).strip()
 
-        # 메타 테이블 (contact) 한 번에 다 추출
+        # 메타 테이블 (contact) 한 번에 다 추출. 사이드바/하단 테이블이 섞이지 않도록
+        # 상세의 contact 테이블만 대상으로 삼는다.
         meta = {}
-        for m in META_ROW_RE.finditer(html):
-            label = m.group(1).strip().replace(" ", "")
-            value = (m.group(2) or "").strip()
-            if not value:
-                continue
-            meta[label] = value
+        contact_table = soup.find("table", class_="contact")
+        if contact_table:
+            for row in contact_table.find_all("tr"):
+                cells = row.find_all(["th", "td"], recursive=False)
+                for idx, cell in enumerate(cells[:-1]):
+                    if cell.name != "th" or cells[idx + 1].name != "td":
+                        continue
+                    label = cell.get_text(" ", strip=True).replace(" ", "")
+                    value = cells[idx + 1].get_text(" ", strip=True)
+                    if value:
+                        meta[label] = value
 
         info = ContactInfo()
         if "업체명" in meta:
@@ -127,9 +147,11 @@ class IBossCrawler(BaseCrawler):
         # 네이트온은 별도 필드 없어서 카톡ID에 라벨로 합치지 않고 무시 (필요시 확장)
 
         # 본문에서도 추가 추출 (테이블에 없는 경우 보완)
-        bm = BODY_RE.search(html)
-        if bm:
-            body_text = html_to_text(bm.group(1))
+        body_node = soup.find(
+            lambda tag: tag.name == "div" and "ABA-article-contents" in (tag.get("class") or [])
+        )
+        if body_node:
+            body_text = html_to_text(str(body_node))
             data["body"] = body_text
             body_info = extract_contacts(body_text)
             info = merge_contacts(info, body_info)
