@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import re
 from typing import Callable, Optional
+from urllib.parse import urlencode
 
 from bs4 import BeautifulSoup
 
@@ -44,7 +45,27 @@ class IBossCrawler(BaseCrawler):
         self.client = client
         self.session = client.session
 
-    def _list_url(self, page: int, category_1: str = "") -> str:
+    def _list_url(
+        self,
+        page: int,
+        category_1: str = "",
+        keyword: str = "",
+        search_item: str = "",
+    ) -> str:
+        if keyword:
+            params = {
+                "design_file": "2986.php",
+                "board": BOARD_ID,
+                "search_item": search_item or "subject",
+                "search_value": keyword,
+                "submit_OK": "검색",
+            }
+            if page > 1:
+                params["PB_1388626082"] = page
+            if category_1:
+                params["category_1"] = category_1
+            return f"{IBOSS_BASE}/ab-2986?{urlencode(params)}"
+
         u = f"{IBOSS_BASE}/ab-2986?page={page}"
         if category_1:
             u += f"&category_1={category_1}"
@@ -86,6 +107,12 @@ class IBossCrawler(BaseCrawler):
                 "url": self._detail_url(serial),
             })
         return items
+
+    @staticmethod
+    def _search_items(cfg: CrawlConfig) -> list[str]:
+        if cfg.match_in == "title":
+            return ["subject"]
+        return ["subject", "comment_text_1"]
 
     @staticmethod
     def _is_sidebar_link(anchor) -> bool:
@@ -169,103 +196,113 @@ class IBossCrawler(BaseCrawler):
         # cfg.boards 가 비었으면 전체, 값이 있으면 카테고리 코드들로 처리
         categories = cfg.boards or [""]   # "" = 전체
         new_count = 0
+        seen_urls: set[str] = set()
 
         for cat in categories:
             if should_stop(cfg):
                 on_log("[아이보스] 중지 요청 감지")
                 break
             label = cat or "전체"
-            on_log(f"[아이보스] 카테고리 '{label}' 수집 시작 ({cfg.pages_per_board}페이지)")
-            empty_streak = 0
-            for page in range(1, cfg.pages_per_board + 1):
-                if should_stop(cfg):
-                    on_log("[아이보스] 중지 요청 감지")
-                    break
-                url = self._list_url(page, cat)
-                try:
-                    html = self._get(url)
-                except Exception as e:
-                    on_log(f"  페이지 {page} GET 실패: {e}")
-                    continue
-
-                items = self._parse_list(html)
-                on_log(f"  페이지 {page}: 목록 {len(items)}건")
-                if not items:
-                    empty_streak += 1
-                    if empty_streak >= cfg.deep_stop_pages:
-                        on_log(f"  빈 페이지 {empty_streak}회 → 조기 종료")
-                        break
-                    continue
-
-                page_new = 0
-                for it in items:
-                    if should_stop(cfg):
-                        on_log("[아이보스] 중지 요청 감지")
-                        break
-                    matched = matches_keywords(it["title"], cfg.keywords, cfg.keyword_op)
-                    if cfg.keywords and cfg.match_in == "title" and not matched:
-                        continue
-
-                    detail = {}
-                    if cfg.fetch_detail:
+            search_terms = cfg.keywords or [""]
+            search_items = self._search_items(cfg) if cfg.keywords else [""]
+            for keyword in search_terms:
+                for search_item in search_items:
+                    empty_streak = 0
+                    suffix = f" / 키워드 '{keyword}'" if keyword else ""
+                    on_log(f"[아이보스] 카테고리 '{label}' 수집 시작{suffix} ({cfg.pages_per_board}페이지)")
+                    for page in range(1, cfg.pages_per_board + 1):
+                        if should_stop(cfg):
+                            on_log("[아이보스] 중지 요청 감지")
+                            break
+                        url = self._list_url(page, cat, keyword, search_item)
                         try:
-                            sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max, cfg.stop_event)
-                            if should_stop(cfg):
-                                break
-                            detail = self._parse_detail(self._get(it["url"]))
+                            html = self._get(url)
                         except Exception as e:
-                            on_log(f"  상세 {it['serial']} 실패: {e}")
-                            detail = {}
-
-                    if cfg.keywords and cfg.match_in == "title_or_body":
-                        combined = it["title"] + " " + (detail.get("body") or "")
-                        matched = matches_keywords(combined, cfg.keywords, cfg.keyword_op)
-                        if not matched:
+                            on_log(f"  페이지 {page} GET 실패: {e}")
                             continue
 
-                    contact: ContactInfo = detail.get("contact") or ContactInfo()
-                    body = detail.get("body", "")
-                    excerpt = (body[:200] + "...") if len(body) > 200 else body
-                    title = detail.get("title") or it["title"]
-                    min_price, price_text = extract_min_price(f"{title}\n{body}", cfg.keywords)
+                        items = self._parse_list(html)
+                        on_log(f"  페이지 {page}: 목록 {len(items)}건")
+                        if not items:
+                            empty_streak += 1
+                            if empty_streak >= cfg.deep_stop_pages:
+                                on_log(f"  빈 페이지 {empty_streak}회 → 조기 종료")
+                                break
+                            continue
 
-                    lead = Lead(
-                        site=self.site_name,
-                        post_url=it["url"],
-                        board=BOARD_ID,
-                        category=cat,
-                        title=title,
-                        body_excerpt=excerpt,
-                        body_text=body,
-                        writer=detail.get("writer", ""),
-                        posted_at=detail.get("posted_at", ""),
-                        kakao_ids=contact.kakao_ids,
-                        open_chats=contact.open_chat_urls,
-                        phones=contact.phones,
-                        emails=contact.emails,
-                        company=contact.company,
-                        min_price=min_price,
-                        price_text=price_text,
-                        matched_keywords=matched if cfg.keywords else [],
-                    )
-                    lead_id = upsert_lead(lead)
-                    lead.id = lead_id
-                    new_count += 1
-                    page_new += 1
-                    if on_lead:
-                        on_lead(lead)
+                        page_new = 0
+                        active_keywords = [keyword] if keyword else cfg.keywords
+                        for it in items:
+                            if should_stop(cfg):
+                                on_log("[아이보스] 중지 요청 감지")
+                                break
+                            if it["url"] in seen_urls:
+                                continue
+                            matched = matches_keywords(it["title"], active_keywords, "or")
+                            if cfg.keywords and cfg.match_in == "title" and not matched:
+                                continue
 
-                if should_stop(cfg):
-                    break
-                if page_new == 0:
-                    empty_streak += 1
-                    if empty_streak >= cfg.deep_stop_pages:
-                        on_log(f"  연속 매칭 0회 {empty_streak}페이지 → 조기 종료")
-                        break
-                else:
-                    empty_streak = 0
+                            detail = {}
+                            if cfg.fetch_detail:
+                                try:
+                                    sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max, cfg.stop_event)
+                                    if should_stop(cfg):
+                                        break
+                                    detail = self._parse_detail(self._get(it["url"]))
+                                except Exception as e:
+                                    on_log(f"  상세 {it['serial']} 실패: {e}")
+                                    detail = {}
 
-                sleep_jitter(cfg.page_delay_min, cfg.page_delay_max, cfg.stop_event)
+                            if cfg.keywords and cfg.match_in == "title_or_body":
+                                combined = it["title"] + " " + (detail.get("body") or "")
+                                matched = matches_keywords(combined, active_keywords, "or")
+                                if not matched:
+                                    continue
+
+                            contact: ContactInfo = detail.get("contact") or ContactInfo()
+                            body = detail.get("body", "")
+                            excerpt = (body[:200] + "...") if len(body) > 200 else body
+                            title = detail.get("title") or it["title"]
+                            min_price, price_text = extract_min_price(f"{title}\n{body}", cfg.keywords)
+
+                            lead = Lead(
+                                site=self.site_name,
+                                post_url=it["url"],
+                                board=BOARD_ID,
+                                category=cat,
+                                title=title,
+                                body_excerpt=excerpt,
+                                body_text=body,
+                                writer=detail.get("writer", ""),
+                                posted_at=detail.get("posted_at", ""),
+                                kakao_ids=contact.kakao_ids,
+                                open_chats=contact.open_chat_urls,
+                                phones=contact.phones,
+                                emails=contact.emails,
+                                company=contact.company,
+                                min_price=min_price,
+                                price_text=price_text,
+                                matched_keywords=matched if cfg.keywords else [],
+                            )
+                            lead_id = upsert_lead(lead)
+                            lead.id = lead_id
+                            seen_urls.add(it["url"])
+                            new_count += 1
+                            page_new += 1
+                            if on_lead:
+                                on_lead(lead)
+
+                        if should_stop(cfg):
+                            break
+                        if page_new == 0:
+                            empty_streak += 1
+                            if empty_streak >= cfg.deep_stop_pages:
+                                on_log(f"  연속 매칭 0회 {empty_streak}페이지 → 조기 종료")
+                                break
+                        else:
+                            empty_streak = 0
+
+                        sleep_jitter(cfg.page_delay_min, cfg.page_delay_max, cfg.stop_event)
 
         on_log(f"[아이보스] 수집 완료. 누적 신규/갱신 {new_count}건")
         return new_count

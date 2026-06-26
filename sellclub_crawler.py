@@ -12,6 +12,7 @@ from __future__ import annotations
 import re
 from datetime import datetime
 from typing import Callable, Optional
+from urllib.parse import parse_qs, quote, quote_from_bytes, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -68,11 +69,13 @@ class SellClubCrawler(BaseCrawler):
         self.client = client
         self.session = client.session  # 로그인된 세션 재사용
 
-    def _list_url(self, bo_table: str, page: int, sca: str = "") -> str:
+    def _list_url(self, bo_table: str, page: int, sca: str = "", keyword: str = "", search_field: str = "") -> str:
         u = f"{SELLCLUB_BASE}/community/bbs/board.php?bo_table={bo_table}&page={page}"
         if sca:
-            from urllib.parse import quote
             u += f"&sca={quote(sca, safe='')}"
+        if keyword:
+            stx = quote_from_bytes(keyword.encode(SITE_ENC, errors="replace"))
+            u += f"&sfl={quote(search_field or 'wr_subject', safe='')}&stx={stx}&sop=and"
         return u
 
     def _detail_url(self, bo_table: str, wr_id: str) -> str:
@@ -93,17 +96,42 @@ class SellClubCrawler(BaseCrawler):
         """목록 HTML 에서 (wr_id, title, url) 리스트 추출."""
         seen = set()
         out = []
-        for m in LIST_LINK_RE.finditer(html):
-            wr_id, title = m.group(1), m.group(2)
+        soup = BeautifulSoup(html, "html.parser")
+        search_mode = bool(
+            soup.find("input", attrs={"name": "stx", "value": re.compile(r".+")})
+        )
+        for a in soup.find_all("a", href=re.compile(r"board\.php\?.*wr_id=")):
+            raw_href = a.get("href", "")
+            if search_mode and "stx=" not in raw_href:
+                continue
+            href = urljoin(f"{SELLCLUB_BASE}/community/bbs/board.php", raw_href)
+            parsed = urlparse(href)
+            qs = parse_qs(parsed.query)
+            bo = (qs.get("bo_table") or [""])[0]
+            wr_id = (qs.get("wr_id") or [""])[0]
+            if bo != bo_table:
+                continue
+            if not wr_id:
+                continue
             if wr_id in seen:
                 continue
             seen.add(wr_id)
+            title = a.get("title") or a.get_text(" ", strip=True)
+            title = re.sub(r"\s+", " ", title).strip()
+            if not title:
+                continue
             out.append({
                 "wr_id": wr_id,
-                "title": title.strip(),
+                "title": title,
                 "url": self._detail_url(bo_table, wr_id),
             })
         return out
+
+    @staticmethod
+    def _search_fields(cfg: CrawlConfig) -> list[str]:
+        if cfg.match_in == "title":
+            return ["wr_subject"]
+        return ["wr_subject", "wr_content"]
 
     def _parse_detail(self, html: str) -> dict:
         """상세 HTML 에서 작성자/카테고리/본문/게시일 + 연락처 추출."""
@@ -158,108 +186,114 @@ class SellClubCrawler(BaseCrawler):
     ) -> int:
         boards = cfg.boards or ["maket_5_3"]
         new_count = 0
+        seen_urls: set[str] = set()
 
         for spec in boards:
             if should_stop(cfg):
                 on_log("[셀클럽] 중지 요청 감지")
                 break
             bo, sca = self._split_board_spec(spec)
-            empty_streak = 0
             label = f"{bo}/{sca}" if sca else bo
-            on_log(f"[셀클럽] 게시판 '{label}' 수집 시작 ({cfg.pages_per_board}페이지)")
-            for page in range(1, cfg.pages_per_board + 1):
-                if should_stop(cfg):
-                    on_log("[셀클럽] 중지 요청 감지")
-                    break
-                url = self._list_url(bo, page, sca)
-                try:
-                    html = self._get_text(url)
-                except Exception as e:
-                    on_log(f"  페이지 {page} GET 실패: {e}")
-                    continue
-
-                items = self._parse_list(html, bo)
-                on_log(f"  페이지 {page}: 목록 {len(items)}건")
-                if not items:
-                    empty_streak += 1
-                    if empty_streak >= cfg.deep_stop_pages:
-                        on_log(f"  연속 빈 페이지 {empty_streak}회 → 조기 종료")
-                        break
-                    continue
-
-                # 키워드 매칭 (제목)
-                page_new = 0
-                for it in items:
-                    if should_stop(cfg):
-                        on_log("[셀클럽] 중지 요청 감지")
-                        break
-                    matched = matches_keywords(it["title"], cfg.keywords, cfg.keyword_op)
-                    if cfg.keywords and cfg.match_in == "title" and not matched:
-                        continue
-
-                    # 상세 GET (선택)
-                    detail = {}
-                    if cfg.fetch_detail:
+            search_terms = cfg.keywords or [""]
+            search_fields = self._search_fields(cfg) if cfg.keywords else [""]
+            for keyword in search_terms:
+                for search_field in search_fields:
+                    empty_streak = 0
+                    suffix = f" / 키워드 '{keyword}'" if keyword else ""
+                    on_log(f"[셀클럽] 게시판 '{label}' 수집 시작{suffix} ({cfg.pages_per_board}페이지)")
+                    for page in range(1, cfg.pages_per_board + 1):
+                        if should_stop(cfg):
+                            on_log("[셀클럽] 중지 요청 감지")
+                            break
+                        url = self._list_url(bo, page, sca, keyword, search_field)
                         try:
-                            sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max, cfg.stop_event)
-                            if should_stop(cfg):
-                                break
-                            d_html = self._get_text(it["url"])
-                            detail = self._parse_detail(d_html)
+                            html = self._get_text(url)
                         except Exception as e:
-                            on_log(f"  상세 {it['wr_id']} 실패: {e}")
-                            detail = {}
-
-                    # 키워드를 본문에서도 검사
-                    if cfg.keywords and cfg.match_in == "title_or_body":
-                        combined = it["title"] + " " + (detail.get("body") or "")
-                        matched = matches_keywords(combined, cfg.keywords, cfg.keyword_op)
-                        if not matched:
+                            on_log(f"  페이지 {page} GET 실패: {e}")
                             continue
 
-                    contact: ContactInfo = detail.get("contact") or ContactInfo()
-                    body = detail.get("body", "")
-                    excerpt = (body[:200] + "...") if len(body) > 200 else body
-                    min_price, price_text = extract_min_price(f"{it['title']}\n{body}", cfg.keywords)
+                        items = self._parse_list(html, bo)
+                        on_log(f"  페이지 {page}: 목록 {len(items)}건")
+                        if not items:
+                            empty_streak += 1
+                            if empty_streak >= cfg.deep_stop_pages:
+                                on_log(f"  연속 빈 페이지 {empty_streak}회 → 조기 종료")
+                                break
+                            continue
 
-                    lead = Lead(
-                        site=self.site_name,
-                        post_url=it["url"],
-                        board=bo,
-                        category=detail.get("category", "") or sca,
-                        title=it["title"],
-                        body_excerpt=excerpt,
-                        body_text=body,
-                        writer=detail.get("writer", ""),
-                        posted_at=detail.get("posted_at", ""),
-                        kakao_ids=contact.kakao_ids,
-                        open_chats=contact.open_chat_urls,
-                        phones=contact.phones,
-                        emails=contact.emails,
-                        company=contact.company,
-                        min_price=min_price,
-                        price_text=price_text,
-                        matched_keywords=matched if cfg.keywords else [],
-                    )
-                    lead_id = upsert_lead(lead)
-                    lead.id = lead_id
-                    new_count += 1
-                    page_new += 1
-                    if on_lead:
-                        on_lead(lead)
+                        page_new = 0
+                        active_keywords = [keyword] if keyword else cfg.keywords
+                        for it in items:
+                            if should_stop(cfg):
+                                on_log("[셀클럽] 중지 요청 감지")
+                                break
+                            if it["url"] in seen_urls:
+                                continue
+                            matched = matches_keywords(it["title"], active_keywords, "or")
+                            if cfg.keywords and cfg.match_in == "title" and not matched:
+                                continue
 
-                if should_stop(cfg):
-                    break
-                if page_new == 0:
-                    empty_streak += 1
-                    if empty_streak >= cfg.deep_stop_pages:
-                        on_log(f"  연속 매칭 0회 {empty_streak}페이지 → 조기 종료")
-                        break
-                else:
-                    empty_streak = 0
+                            detail = {}
+                            if cfg.fetch_detail:
+                                try:
+                                    sleep_jitter(cfg.detail_delay_min, cfg.detail_delay_max, cfg.stop_event)
+                                    if should_stop(cfg):
+                                        break
+                                    d_html = self._get_text(it["url"])
+                                    detail = self._parse_detail(d_html)
+                                except Exception as e:
+                                    on_log(f"  상세 {it['wr_id']} 실패: {e}")
+                                    detail = {}
 
-                # 페이지 간 딜레이
-                sleep_jitter(cfg.page_delay_min, cfg.page_delay_max, cfg.stop_event)
+                            if cfg.keywords and cfg.match_in == "title_or_body":
+                                combined = it["title"] + " " + (detail.get("body") or "")
+                                matched = matches_keywords(combined, active_keywords, "or")
+                                if not matched:
+                                    continue
+
+                            contact: ContactInfo = detail.get("contact") or ContactInfo()
+                            body = detail.get("body", "")
+                            excerpt = (body[:200] + "...") if len(body) > 200 else body
+                            min_price, price_text = extract_min_price(f"{it['title']}\n{body}", cfg.keywords)
+
+                            lead = Lead(
+                                site=self.site_name,
+                                post_url=it["url"],
+                                board=bo,
+                                category=detail.get("category", "") or sca,
+                                title=it["title"],
+                                body_excerpt=excerpt,
+                                body_text=body,
+                                writer=detail.get("writer", ""),
+                                posted_at=detail.get("posted_at", ""),
+                                kakao_ids=contact.kakao_ids,
+                                open_chats=contact.open_chat_urls,
+                                phones=contact.phones,
+                                emails=contact.emails,
+                                company=contact.company,
+                                min_price=min_price,
+                                price_text=price_text,
+                                matched_keywords=matched if cfg.keywords else [],
+                            )
+                            lead_id = upsert_lead(lead)
+                            lead.id = lead_id
+                            seen_urls.add(it["url"])
+                            new_count += 1
+                            page_new += 1
+                            if on_lead:
+                                on_lead(lead)
+
+                        if should_stop(cfg):
+                            break
+                        if page_new == 0:
+                            empty_streak += 1
+                            if empty_streak >= cfg.deep_stop_pages:
+                                on_log(f"  연속 매칭 0회 {empty_streak}페이지 → 조기 종료")
+                                break
+                        else:
+                            empty_streak = 0
+
+                        sleep_jitter(cfg.page_delay_min, cfg.page_delay_max, cfg.stop_event)
 
         on_log(f"[셀클럽] 수집 완료. 누적 신규/갱신 {new_count}건")
         return new_count
