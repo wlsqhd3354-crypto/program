@@ -1,7 +1,7 @@
 {
-  "version": "1.3.14",
-  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.14/SellClubBot.exe",
-  "notes": "영업 크롤러가 키워드 입력 시 각 키워드별 사이트 검색을 사용하도록 수정하고 셀클럽 검색 결과 파싱을 보강",
+  "version": "1.3.15",
+  "download_url": "https://github.com/wlsqhd3354-crypto/program/releases/download/v1.3.15/SellClubBot.exe",
+  "notes": "마멘토 글 작성 시 일반 줄바꿈을 HTML 줄바꿈으로 변환하도록 수정했습니다.",
   "sha256": "",
   "force": false
 }

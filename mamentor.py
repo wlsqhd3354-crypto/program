@@ -74,6 +74,11 @@ class WriteOptions:
     link2: str = ""
 
 
+def content_to_html(content: str) -> str:
+    """Mamentor writes in HTML mode, so plain text newlines need <br> tags."""
+    return (content or "").replace("\r\n", "\n").replace("\r", "\n").replace("\n", "<br>")
+
+
 class MamentorClient(BoardClient):
     site_name = "mamentor"
     supports_images = True
@@ -230,7 +235,7 @@ class MamentorClient(BoardClient):
             fields.append((k, (None, v.encode("utf-8"))))
         fields.append(("ca_name", (None, ca.encode("utf-8"))))
         fields.append(("wr_subject", (None, title.encode("utf-8"))))
-        fields.append(("wr_content", (None, content.encode("utf-8"))))
+        fields.append(("wr_content", (None, content_to_html(content).encode("utf-8"))))
         fields.append(("wr_link1", (None, options.link1.encode("utf-8"))))
         fields.append(("wr_link2", (None, options.link2.encode("utf-8"))))
 
